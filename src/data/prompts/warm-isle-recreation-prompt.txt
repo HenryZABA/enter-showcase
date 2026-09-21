@@ -1,0 +1,9 @@
+Build a polished, publish-ready interactive 3D home website titled “Warm Isle — A Little Home, A Slower Life.” This is a recreation brief; do not copy the original creator’s private information or unavailable assets.
+
+Use React and Three.js / React Three Fiber to create a genuine real-time 3D scene: an open miniature home with soft warm lighting, off-white walls, pale wood furniture, a few plants, and everyday objects. Frame the entire home with a restrained isometric or low-perspective camera. Objects must have credible proportions, bevels, and contact shadows; do not substitute a flat background or emoji for modeled geometry.
+
+Make at least five room objects explorable, such as a lamp, book, window, music device, and desktop. On hover, show the object name. On click, smoothly move the camera and reveal the corresponding short content; Close or Escape returns to the overview. A day/night switch changes environmental lighting, while lamp switches work independently. Sound may begin only after a user click and must include pause and mute controls. If no licensed audio is available, use an explicitly labeled original synthesized track.
+
+Keep generous whitespace and only a few compact controls; do not add unrelated marketing sections. On mobile, automatically adjust the field of view and provide a touch-friendly object menu. If WebGL is unavailable, show usable text-based entry points. Clearly mark sample content as editable and do not invent personal history.
+
+No login, database, or external AI is required. Persist day/night and mute preferences, cap mobile DPR, and clean up events and audio. Acceptance criteria: genuine 3D; five entry points; camera movement and return; working lights and day/night modes; audio controls; no desktop or mobile overflow; and every button works.

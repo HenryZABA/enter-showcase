@@ -1,0 +1,9 @@
+Build “Foldlab,” a packaging-structure laboratory that places a two-dimensional carton dieline and a foldable real-time 3D model in the same workspace. Prioritize the frontend and describe every supported capability honestly; do not claim that arbitrary image recognition has already been implemented.
+
+Include one structurally complete demonstration carton with panels, side flaps, and tuck tabs. In the 2D view, use solid lines for cuts and dashed lines for folds, with dimension labels. In 3D, rotate panels around their actual fold-line hinges; do not fake folding by scaling the whole box. Generate both views from the same parameters so changes to length, width, and height update them together.
+
+Provide a 0–100% fold progress control, play/pause, unfold/fold, camera reset, and component-selection highlighting. Control the folding sequence to prevent tabs from visibly passing through panels. Support a color or local packaging artwork as a texture, with a default example and clear input-error messages.
+
+Allow export of the SVG dieline and JSON parameters. If glTF export is implemented, the download must be a set of independent panel models that Blender can import and continue editing; state clearly that it is not a native .blend project. If an export is unsupported, disable it explicitly rather than returning an empty file. Treat automatic parsing of arbitrary uploaded dielines as unimplemented and never pretend it exists.
+
+Use a clean engineering-workbench interface with a light-gray background and clear units. On mobile, provide tabs for switching between 2D and 3D. Acceptance criteria: synchronized parameters; genuine hinge-based folding; progress controls; readable exported files; input validation; and usable desktop and mobile layouts.

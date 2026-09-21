@@ -1,0 +1,9 @@
+Build an interactive product showcase titled “Nook — Modular Play Sofa.” Its core experience is a ten-piece modular sofa that assembles into five layouts through real-time 3D animation. This is not a lamp website and does not require Shopify integration.
+
+Use React and Three.js to create ten independently identifiable upholstered modules with soft fabric materials, rounded edges, credible seams, a pale studio background, and contact shadows. Provide five clearly named layouts, such as Sofa, Lounger, Reading Nook, Play Fort, and Open Cushion Set. When switching layouts, interpolate every module from its current transform to its target position, avoiding intersections and teleportation. Repeated rapid switching must never leave the model scattered.
+
+The main viewport supports constrained rotation, zoom, and camera reset. Add colorway selection, a component inventory, and a short description for each layout. Any sample specifications, prices, or reviews must be labeled as demonstrations and must not fabricate sales evidence. Enable the purchase entry point only after a real destination URL is supplied; otherwise show an honest unconfigured state.
+
+The visual design should feel like a refined furniture catalog: a large 3D product, restrained typography, warm white and soft fabric colors, and no wall of cards obscuring the product. On mobile, place layout choices below the scene and ensure gestures do not block page scrolling.
+
+No backend or payment is required. Acceptance criteria: ten modules; five stable layouts; smooth repeated switching; working colorways and camera reset; an explanation when WebGL fails; and no mobile overflow or dead buttons.

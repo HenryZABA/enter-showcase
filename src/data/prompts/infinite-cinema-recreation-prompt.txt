@@ -1,0 +1,9 @@
+Build “Infinite Cinema,” a quiet, immersive website for watching short nature videos. Offer scene themes such as forest paths, an Atlantic-style coastline, autumn leaves, and snow, prioritizing genuine first-person footage. Do not present static images as filmed video.
+
+Use licensed video assets that can be verified to play, and record their sources. If a matching theme cannot be obtained, honestly reduce the library and show only available content. Do not use commercial films or fabricated video URLs. Focus the home page on one large player with subtitle-style scene titles, a compact library navigator, and a few fading controls. Do not add advertising, rankings, or unrelated marketing content.
+
+Playback and sound must begin only after an explicit click. Support play/pause, mute/volume, previous/next clip, seeking, loop toggle, and fullscreen. Stop the previous video when switching clips and persist volume preferences. Continuous autoplay may run only after the user enables it. On asset failure, offer retry and switching clips rather than showing an endless loader.
+
+Provide reduced-motion support and keyboard controls that reveal controls during playback. Adapt to portrait and landscape mobile layouts without forcing fullscreen. If genuine ambient audio is unavailable, silence is acceptable; do not misrepresent substitute audio as the video’s original recording.
+
+No account or backend is required. Acceptance criteria: every listed video genuinely plays; switching never overlaps audio tracks; pause and seeking work; fullscreen failure has a fallback; network errors and mobile layouts are usable; and the product makes no claims to treat anxiety or sleep disorders.

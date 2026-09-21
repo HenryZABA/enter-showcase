@@ -1,0 +1,9 @@
+Create “Digital Pottery,” an online pottery tool in which users can genuinely shape a vase, bowl, or cup. The core experience is a real-time 3D vessel whose profile changes through parameters, creating a quiet, focused activity rather than swapping pottery images.
+
+Use React and Three.js to generate the pottery mesh from a revolved profile, including the rim, inner wall, base, and credible thickness. Provide three switchable preset forms. Sliders control height, body width, opening ratio, and thickness, recalculating geometry immediately within safe limits that prevent self-intersection and negative dimensions.
+
+Support rotation, an optional slow turntable, camera reset, several glaze colors, and roughness options. Provide undo/redo or a clearly labeled reset to defaults, and persist current parameters across refreshes. Add Save artwork controls that genuinely download a PNG of the current 3D view and a parameter JSON file that can be reloaded; never export a fixed sample image that differs from the screen.
+
+Use warm white, earthy colors, and soft studio lighting. Keep controls sparse but clearly labeled, with no unrelated task system. Any sound must be explicitly enabled. On mobile, place controls below the model and prevent slider gestures from conflicting with model rotation.
+
+No account, database, or AI is required. Acceptance criteria: three vessel types; synchronized parameters and mesh; visible inner wall; color changes; reset; persistence after refresh; genuine export and reload; and mobile usability.

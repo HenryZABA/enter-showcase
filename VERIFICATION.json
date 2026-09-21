@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "home renders first 9 cases",
+    "expand renders all 14 cases",
+    "search empty state",
+    "search and category filtering",
+    "case detail and prompt controls",
+    "collection directory",
+    "collection route",
+    "Chinese translation",
+    "language URL stays in sync",
+    "language survives navigation",
+    "local showcase images load",
+    "mobile no horizontal overflow",
+    "forum, community, product navigation and backend adapters removed",
+    "no uncaught JavaScript errors",
+    "no failed local assets"
+  ],
+  "errors": [],
+  "badAssets": []
+}

@@ -1,0 +1,9 @@
+Build “Pocket Portfolio,” presenting a personal portfolio as a retro handheld console. The console shell, pixel-style screen, directional pad, and A/B buttons must form the primary interface; do not place a conventional website on top of a handheld background.
+
+Create understandable screen states for Boot, Main menu, About, Projects, Project details, Contact, and Settings. The D-pad moves selection, A confirms, and B goes back. Support physical keyboard arrows, Enter, Escape, and on-screen touch buttons. Every input method must share the same state logic and must not trigger duplicate navigation.
+
+Provide three clearly labeled demonstration projects, each with a description, technologies, a detail view, and local imagery. Use editable examples for the person’s name, background, and contact information. If no real contact destination is supplied, do not create fake email or social links. Project details may scroll, and returning preserves the previous selection.
+
+Keep the pixel font readable and give the shell refined materials and restrained shadows. Do not copy copyrighted game characters or brand marks. Sound effects may be enabled only by the user. Settings include volume/mute and reduced motion, persisted across refreshes.
+
+On mobile, scale the console within the viewport and keep touch buttons large enough to use. On desktop, center it without compressing information until it becomes unreadable. Acceptance criteria: complete menu navigation; three projects; detail return; consistent keyboard and touch controls; persistent settings; and no dead links or horizontal overflow.

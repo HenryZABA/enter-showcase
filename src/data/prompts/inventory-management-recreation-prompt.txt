@@ -1,0 +1,9 @@
+Build an “Inventory Management 3D Dashboard” that connects warehouse inventory data with an explorable 3D warehouse layout. Use one consistent local demonstration dataset and do not pretend it is connected to a real ERP or live inventory system.
+
+Include at least 24 SKUs, two warehouse zones, multiple racks, and storage locations. Each SKU has a name, category, quantity, low-stock threshold, location, and updated time. Summary cards show SKU count, total units, low-stock items, and zone capacity, all calculated from the dataset rather than hard-coded values that can diverge from the table.
+
+The table supports search, category and low-stock filters, sorting, and pagination. Clicking an SKU shows details and highlights its location in the 3D scene; clicking a rack or location filters the table in the opposite direction. Provide rotation, constrained zoom, and camera reset. In non-WebGL mode, every location remains usable through a 2D location list.
+
+Add local simulated stock-in and stock-out operations. Quantity must be positive, and stock-out cannot exceed current inventory. After submission, inventory, metrics, and location status update together and create a clearly labeled simulated transaction. Persist changes after refresh, provide confirmed reset, and export a genuine CSV of the current filtered results. Do not claim that any external system was updated.
+
+Use a clear, professional interface with moderate data density, and never communicate stock status by color alone. On mobile, allow switching between Data and Space tabs. Acceptance criteria: accurate metrics; filtering and sorting; two-way location linking; inventory validation; transaction history; persistence; readable CSV export; and mobile usability.

@@ -1,0 +1,9 @@
+Build “Spatial Designer,” a complete frontend flow for uploading a room photo, choosing a style, viewing an interior redesign concept, and receiving furniture suggestions. Styles include Nordic, Japandi, mid-century, and bohemian.
+
+No AI service credentials are provided for this version, so implement an honest example mode. The user’s photo is used only as an input preview; do not claim it has been transformed by AI. Results use clearly labeled, prebuilt style example images and display “Example result — not generated from your uploaded photo.” Keep a separate adapter layer for a future real service and never place secret keys in the frontend.
+
+Accept JPG, PNG, and WebP uploads with type and size validation, replacement, and removal. Process images locally only. After a style is selected, show a short design direction; clicking View example shows the result and allows returning to make changes. Do not use a fake progress animation that claims a backend is generating.
+
+Furniture suggestions must be labeled as sample matches rather than precise recognition from the photo. Each item includes category, color/material, and placement advice. Purchase links may use only supplied, reachable retailer URLs; otherwise disable them. If the input and output are different rooms, do not use a comparison slider that implies a before-and-after transformation.
+
+The visual design should feel like a refined interior editorial workspace with large imagery, soft neutrals, and clear style choices. Acceptance criteria: upload validation; preview and removal; style switching; genuine example images; return from results; example disclaimer; no false purchase entry points; and no mobile overflow.

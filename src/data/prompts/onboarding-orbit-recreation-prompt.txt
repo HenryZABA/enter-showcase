@@ -1,0 +1,9 @@
+Build “Onboarding Orbit,” turning a new-employee onboarding SOP into an interactive workspace with clear progression. Use a sample company, sample roles, and local data; do not invent real company policies or claim a connection to an internal HR system.
+
+Divide the process into Before joining, First day, First week, and First month. Provide at least twelve concrete tasks, each with a goal, estimated duration, completion criteria, and demonstration resource. The main interface shows the current phase, next step, and overall progress, with role-based filtering for relevant tasks.
+
+Opening a task reveals instructions, a short notes field, and a completion checkbox. Explain the reason for dependencies between required tasks. Completing or undoing a task must immediately update phase progress accurately. Use localStorage to preserve the selected role, completion state, and notes. Provide confirmed reset and local progress export; do not pretend progress is synchronized with HR.
+
+The Resources page must show readable built-in sample content or supplied real links. If no destination was supplied, show an unconfigured state. Add functional FAQ search; when nothing matches, offer a route back to the process.
+
+Use a professional, clean visual style with a subtle orbital phase navigator, but do not let decoration replace information structure. Tasks must be keyboard-operable, and phase navigation and details must remain readable on mobile. Acceptance criteria: role filtering; task details; mark and undo; dependency explanations; persistence after refresh; accurate progress; reset; and export.

@@ -1,0 +1,70 @@
+# Interactive 3D Private Room — Video Recreation Prompt
+
+Build a polished, publish-ready, genuinely interactive personal creative-space website titled “Henry’s Room.” The reference is a 67-second video: it first shows a minimalist text-based personal homepage; clicking a folded corner at the top right enters a realistic, restrained 3D studio. Clicking objects in the room smoothly moves the camera toward each object and opens its corresponding feature. Prioritize faithful recreation of the spatial composition, material quality, lighting, and interactions, with refined detail throughout. Use React + Three.js / React Three Fiber for real-time 3D. Do not substitute a flat illustration, background screenshot, card grid, or emoji room. Use controllable procedural geometry and material modeling rather than depending on a full set of unavailable external models.
+
+## Visual Design and Space — Highest Priority
+
+- Use a full-screen 3D scene with warm gray-white floors and walls, an open miniature room, and an orthographic or low-perspective camera positioned slightly right of center and approximately 20–30 degrees above the room, looking toward the wall and desk. Avoid a deep-perspective corridor. Center the room and let it occupy approximately 75–85% of the desktop viewport, clearly showing the wall and floor shadows. Show the room immediately on load so users see the core experience at once, while retaining an exit at the top right that returns to the text homepage.
+- Palette: off-white and pale-gray desk and walls, black electronics, chair, and lighting fixtures, plus light-oak desk legs and shelves. Daylight enters from the upper left, casting broad, soft but clearly directional shadows. Include ambient occlusion, contact shadows, and realistic roughness. Do not use purple gradients, decorative cards, or marketing headlines.
+- Place a wide white desk at the center, with a thin desktop and wood-toned A-frame or rectangular legs. In front, model a black five-star caster office chair with a distinct seat, curved backrest, support column, legs, and wheels; it must not be a simple block. Clicking the chair makes it rotate gently.
+- Arrange the desktop from left to right with a black folding double-arm desk lamp, a compact silver-and-black vintage camera and yellow film roll, an open white notebook and pen, an open black laptop with screen, keyboard, and trackpad, black headphones, and a black record player with base, circular record and colored center label, tonearm, and raised transparent dust cover. The record player is the main visual object on the right side.
+- On the floor left of the desk, place a slender floor lamp with a white cylindrical shade and a black-and-white electric guitar leaning against the wall, with separately modeled neck, strings, body, and stand.
+- On the wall behind the desk, place a vertical white roll-down whiteboard with a thin black top rail on the left. Above the center, add a pale-wood floating shelf holding five or six dark books, with a thin black linear light above it. On the right, add a vertical cinematic art poster in a narrow black frame. At the far right, vertically arrange three black vinyl records with green, blue-violet, and brown center labels. Do not omit objects, and prevent geometry intersections.
+- Apply subtle bevels to geometric edges. Objects must have natural scale and detail, and lighting should illuminate the desktop, poster, and whiteboard. Aim for a quiet architectural or product render rather than toy-like game blocks.
+
+## Camera Movement and Core Interaction
+
+- Hovering an interactive object shows subtle highlighting, a pointer cursor, and a very small object-name hint; do not cover the scene with labels.
+- Clicking the whiteboard, camera, laptop, record player, poster, or bookshelf smoothly eases the camera position and target into a close-up over approximately 0.8–1.2 seconds, then displays the corresponding feature panel. Closing a panel may retain the object close-up; a top-right Return to overview button or Escape restores the room view. Keep the sequence consistent and provide no dead ends that trap users in a close-up. Clicking the background may also return to the overview.
+- Place two small pill switches at the top center: a light switch with a bulb icon and a day/night switch with moon/sun icons. Day/night changes environmental brightness and wall color temperature. Lighting controls independently toggle actual illumination and emissive states for the desk lamp, floor lamp, and wall light. Support a warm nighttime atmosphere with lamps enabled.
+- Show a compact music player in the upper left only after playback begins, including cover art, track title, play/pause, previous, and next controls. Keep all other UI restrained.
+- On first use, show a brief bottom hint reading “Click objects to explore this room,” then fade it out after a few seconds. Provide a compact Explore menu as a touch and keyboard alternative listing the same features without obscuring the 3D scene.
+- Show an honest loading-progress state. If WebGL is unavailable, provide usable text-based access to the features instead of a permanently blank screen.
+
+## Features That Must Genuinely Work
+
+### 1. Whiteboard
+
+Open a rounded black translucent floating window with a small monospaced WHITEBOARD title. Its toolbar contains black, red, blue, green, and yellow color dots, an eraser, Undo, Clear, and a close control at the upper right. The center contains a vertical white paper Canvas. Support mouse and touch drawing, color changes, undo, and clear. After closing, the drawing must update the room’s wall-mounted whiteboard texture in real time and persist after refresh using localStorage. The window does not need to be draggable.
+
+### 2. Film Photography
+
+Clicking the camera opens a black FILM PHOTOGRAPHY window with small gold-yellow monospaced text, film-category or album switching, a horizontal filmstrip, and at least six genuinely loading photographs. Include film borders, frame numbers, sprocket holes, and yellow scale marks along the bottom. Support previous/next navigation, click-to-enlarge, and close. Use reliable image sources and explicitly label the collection as a demonstration photography selection; do not present it as the user’s own work. Both thumbnails and full images must load, and mobile swipe must be supported.
+
+### 3. Computer Terminal
+
+After the laptop close-up, show a black terminal matching the screen proportions, with an ASCII title reading HENRY and green, blue, and light-gray monospaced text. Implement real input commands: `help`, `about`, `projects`, `education`, `socials`, `echo <text>`, `history`, `clear`, and `welcome`. Enter executes commands, Up/Down navigate history, output auto-scrolls, and the input receives focus. Unknown commands receive a concise message. For `about`, `education`, and similar content, explicitly label text as editable demonstration data; do not fabricate Henry’s education, experience, or contact details. `projects` outputs descriptions for two or three built-in demonstration projects that can genuinely be viewed and are not dead links.
+
+### 4. Vinyl Music
+
+The record player or wall records open a dark music-library dialog with albums or playlists on the left, tracks on the right, and a player along the bottom. Provide at least three genuinely playable royalty-free or original sample tracks. You may use Web Audio to procedurally generate three distinct soft ambient or lo-fi pieces labeled “Room Sessions · Original Synthesized Track.” Do not display commercial song names while playing unrelated audio, and never pretend playback has started. Sound begins only after an explicit user click. Play/pause, track switching, progress, and volume must work. While playing, the record in the room rotates continuously; it stops when paused. After the dialog closes, the upper-left mini player must remain usable, and multiple audio sources must never overlap.
+
+### 5. Poster, Bookshelf, and Guitar
+
+Clicking the poster smoothly enlarges it and can open a local art-description panel using an original cinematic image or design rather than copying an unavailable source poster. Closing returns to the room. The bookshelf opens a compact reading list with at least three described entries. Clicking the guitar plays a short synthesized pluck and produces a subtle wobble; the sound obeys the mute setting.
+
+### 6. Text Homepage
+
+The top-right Text homepage control exits 3D and displays a white-background, black-text personal homepage in a centered narrow column with serif typography and underlined links. At the top, show `home · writings · working experiences`, followed by the title Henry and short everyday-life and interest paragraphs clearly labeled as editable demonstration profile content. `writings` and `working experiences` switch to corresponding sample content and allow returning. A dark-gray folded-corner control labeled Enter room at the upper right returns to 3D. Do not copy the video creator’s private life story, email address, or social accounts.
+
+## Engineering and Responsive Behavior
+
+- All core experiences work without login or payment. Use localStorage for the whiteboard and settings. No database, backend, payment integration, or external AI service is required in this version; all logic must genuinely run in the frontend.
+- Target desktop at 1440×900. At 390×844 on mobile, automatically adjust the camera and field of view so the room’s core layout remains visible. Controls must be tappable, feature dialogs must not exceed the viewport width and may scroll vertically, and Canvas must use correct touch-action settings.
+- Use requestAnimationFrame with delta time to rotate the record, and clean up audio, events, and texture resources. Cap DPR at 1.5–2, lower shadow resolution on mobile, and respect prefers-reduced-motion.
+- Give key feature entry points, buttons, and inputs accessible names. Support Escape to close, keyboard access, and clear focus states. Do not hide interactions only inside the canvas without touch alternatives.
+- Deliver a publish-ready website. Verify there are no runtime errors, 404s for critical images, horizontal overflow, or dead buttons. Do not stop after providing a design proposal; first produce a concise plan, then complete the implementation after approval.
+
+## Acceptance Criteria
+
+A. A genuine 3D room with all major objects, the warm gray, black, and wood composition, and soft shadows.  
+B. Six object categories with smooth close-ups, closing, and return to overview.  
+C. Whiteboard drawing synchronized to the wall and retained after refresh.  
+D. Album switching and image enlargement.  
+E. Working terminal commands: help, echo, history, and clear.  
+F. At least three real audio tracks, working playback/pause/track switching, and synchronized record rotation.  
+G. Independent day/night and lighting controls.  
+H. Round-trip navigation to the text homepage.  
+I. No overflow on desktop or mobile, with all critical paths usable.
+
+Prioritize the visual quality of the room model; do not weaken the recreation by adding unrelated content.

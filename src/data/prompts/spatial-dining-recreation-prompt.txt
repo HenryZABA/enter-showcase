@@ -1,0 +1,9 @@
+Build “Spatial Dining,” a restaurant experience page centered on spatial storytelling and scroll interaction. Use a demonstration restaurant identity and do not impersonate a real award-winning restaurant or fabricate chef biographies or customer reviews.
+
+Design five chapters: Arrival, Space, Table, Dishes, and Visit. Scrolling drives continuous changes in scene composition, depth of field, or camera movement while preserving spatial direction. You may combine real-time 3D with reliable image assets, but never hide an empty failed scene behind animation. Use soft warm light, natural materials, and refined editorial typography while keeping text readable.
+
+Every chapter has functional jump navigation. The Dishes section includes an expandable demonstration menu with prices and ingredient descriptions. Dietary labels reflect sample data only and must not make unverified allergy-safety promises.
+
+The reservation entry point is a frontend demonstration form with validation for date, party size, time, and name. After submission, show a local summary that clearly states “Demo reservation — not sent to a restaurant.” Do not fabricate a working service if no real reservation link, address, or map was supplied.
+
+Reduce heavy effects on mobile, and never trap scrolling indefinitely. Respect reduced-motion preferences and preserve all content when animation is disabled. Acceptance criteria: five readable chapters; accurate navigation; stable forward and reverse scrolling; expandable menu; form validation and demonstration summary; no missing images; and no mobile overflow.

@@ -1,0 +1,9 @@
+Build “Inside the Heat — Interactive 3D Phone Lab,” using an interactive exploded smartphone model to explain components and heat-flow paths. Position it as an educational illustration, not a measured phone benchmark, precise physics simulation, or medical atlas.
+
+Use React and Three.js to create a rotatable phone model with distinct screen, battery, mainboard, chip, heat-spreading layer, and enclosure. Provide assembled and exploded views. Clicking a component highlights it and shows a short explanation of its purpose; also provide a keyboard- and touch-accessible component list.
+
+Add lightweight workload and cooling-condition controls, such as Idle / Video / Gaming and Good airflow / Obstructed. Drive the heat-color layer, readings, and explanations with an understandable illustrative calculation, and always display “Educational simulation — not measured temperature.” Do not fabricate performance for any specific brand. When conditions change, colors, readings, and explanations update together; include reset to defaults.
+
+Add three small challenges, such as identifying the main heat source, improving cooling conditions, and observing the temperature difference between the enclosure and chip. After a choice is submitted, provide clear feedback and allow retrying; do not use nonfunctional buttons to imply completion.
+
+The visual design should resemble a refined technology workbench with a dark or neutral background, a clear legend, and restrained accent colors. No backend or AI is required. Acceptance criteria: component selection; explode/assemble; rotation and camera reset; linked condition changes; challenge feedback; the educational disclaimer; and no mobile overflow.

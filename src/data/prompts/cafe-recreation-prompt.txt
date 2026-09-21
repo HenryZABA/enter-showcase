@@ -1,0 +1,9 @@
+Build a mobile-first café ordering website. Fully implement the flow Browse menu → Customize drink → Add to cart → Confirm simulated order; do not deliver only a menu screenshot with a fake checkout button.
+
+Provide a clearly labeled demonstration café brand and at least eight products, with categories, search, image-failure fallbacks, prices, and descriptions. Opening a product lets users choose size, hot or iced, sweetness, and optional add-ons. Block adding to cart until required choices are complete, and update the price immediately when options change.
+
+The cart must keep differently customized versions of the same product separate and support quantity changes, removal, and clearing. Show the subtotal and the calculation rule for any fees. Persist the cart across refreshes. Checkout collects a pickup name and pickup method and validates required information. On submission, generate a local simulated order number and summary that clearly says “Demo order — no payment was taken and no real café was notified.” Do not integrate payment, request credit-card details, or invent a real order status.
+
+Use warm coffee tones, refined product photography, and an easy-to-reach bottom cart bar. Use reliably licensed images or local assets and do not impersonate a chain brand. At 390px, every customization control must remain usable; desktop should expand naturally, dialogs must close, and focus must be visible.
+
+Acceptance criteria: category filtering and search; customization pricing; cart editing and persistence; checkout validation; success summary; empty-cart and missing-image states; and no dead links or horizontal overflow.

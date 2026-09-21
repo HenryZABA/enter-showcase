@@ -1,0 +1,9 @@
+Build “Posture Guardian,” an on-device camera posture reminder with a 25-minute focus timer. Position it as a lifestyle habit prompt, not a medical diagnosis or clinical measurement, and do not claim to treat spinal conditions.
+
+Request camera access only after the user explicitly clicks and consents. Never upload or save video or pose data. Use a pose-detection solution that runs locally in the browser to identify the head, shoulders, and hips, and clearly show tracking status. If model files are unavailable, report the loading failure; never use random values to simulate detection. A separate demo mode may be provided but must be prominently labeled and never presented as a live camera result.
+
+First ask the user to calibrate a comfortable sitting baseline. After the posture deviates continuously for several seconds, give a gentle reminder. Threshold and reminder intensity are adjustable. Slight screen blur may be offered only as an optional effect; it must be dismissible in one click, never obscure the Stop button, and never flash repeatedly. When no person is detected, confidence is low, or key joints are hidden, do not make a posture judgment.
+
+The timer supports start, pause, resume, reset, and completion feedback. Calculate from timestamps so elapsed time remains correct after returning from a background tab. When monitoring stops, immediately stop every camera track, and clean up resources on unmount.
+
+Use a quiet, bright interface with states for permission denial, no camera, and model errors. The timer must work independently without a camera. Acceptance criteria: explicit permission; calibration; real tracking or an honest failure state; low-confidence handling; dismissible reminders; accurate timer; camera shutdown; and mobile usability.
