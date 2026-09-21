@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:56:38.259Z",
+  "generatedAt": "2026-09-21T06:59:14.696Z",
   "fallbackLng": "en",
   "total": 197,
   "items": [
@@ -2547,19 +2547,19 @@
     {
       "key": "nav.youcases",
       "group": "nav",
-      "source": "Library",
+      "source": "Case Library",
       "values": {
-        "en": "Library",
-        "zh-CN": "Library",
-        "zh-TW": "Library",
-        "es": "Library",
-        "pt-BR": "Library",
-        "pt-PT": "Library",
-        "fr": "Library",
-        "de": "Library",
-        "it": "Library",
-        "ja": "Library",
-        "ko": "Library"
+        "en": "Case Library",
+        "zh-CN": "Case Library",
+        "zh-TW": "Case Library",
+        "es": "Case Library",
+        "pt-BR": "Case Library",
+        "pt-PT": "Case Library",
+        "fr": "Case Library",
+        "de": "Case Library",
+        "it": "Case Library",
+        "ja": "Case Library",
+        "ko": "Case Library"
       },
       "used": true,
       "missingLanguages": [],
