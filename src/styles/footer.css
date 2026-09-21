@@ -1,0 +1,161 @@
+/* Footer-only tokens: independent of the page's orange accent and glass effects. */
+.enter-footer {
+  --footer-surface: 0 0% 3.14%;
+  --footer-divider: 0 0% 11%;
+  --footer-text: 0 0% 84%;
+  --footer-muted: 0 0% 58%;
+  --footer-hover: 0 0% 98%;
+  --footer-focus: 0 0% 82%;
+  --footer-font: var(--font-body, "DM Sans", sans-serif);
+  --footer-max-width: 1280px;
+  --footer-gutter: 24px;
+  --footer-padding-top: 44px;
+  --footer-padding-bottom: 22px;
+  --footer-brand-width: 320px;
+  --footer-logo-width: 100px;
+  --footer-logo-height: 18px;
+  --footer-column-gap: 24px;
+  --footer-heading-size: 10px;
+  --footer-heading-leading: 14px;
+  --footer-heading-tracking: .08em;
+  --footer-heading-gap: 20px;
+  --footer-link-size: 12px;
+  --footer-link-leading: 18px;
+  --footer-link-gap: 16px;
+  --footer-bottom-gap: 64px;
+  --footer-copyright-size: 10px;
+  --footer-bottom-leading: 20px;
+  --footer-social-size: 18px;
+  --footer-social-gap: 16px;
+  --footer-actions-gap: 56px;
+  --footer-arrow-size: 14px;
+  --footer-arrow-gap: 8px;
+  --footer-focus-width: 2px;
+  --footer-focus-offset: 5px;
+  --footer-hover-duration: 160ms;
+  background: hsl(var(--footer-surface));
+  border-top: 1px solid hsl(var(--footer-divider));
+  color: hsl(var(--footer-text));
+  font-family: var(--footer-font);
+}
+
+.enter-footer-container {
+  width: calc(100% - var(--footer-gutter) * 2);
+  max-width: var(--footer-max-width);
+  margin-inline: auto;
+  padding-block: var(--footer-padding-top) var(--footer-padding-bottom);
+}
+
+.enter-footer-top {
+  display: grid;
+  grid-template-columns: var(--footer-brand-width) minmax(0, 1fr);
+  gap: var(--footer-column-gap);
+  align-items: start;
+}
+
+.enter-footer-brand { display: block; width: var(--footer-logo-width); }
+.enter-footer-brand img {
+  display: block;
+  width: var(--footer-logo-width);
+  height: var(--footer-logo-height);
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left top;
+}
+
+.enter-footer-nav { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--footer-column-gap); }
+.enter-footer-nav section { min-width: 0; }
+.enter-footer .enter-footer-heading {
+  margin: 0 0 var(--footer-heading-gap);
+  font-family: var(--footer-font);
+  font-size: var(--footer-heading-size);
+  font-weight: 500;
+  line-height: var(--footer-heading-leading);
+  letter-spacing: var(--footer-heading-tracking);
+  color: hsl(var(--footer-muted));
+}
+.enter-footer-links, .enter-footer-socials { list-style: none; padding: 0; margin: 0; }
+.enter-footer-links { display: grid; gap: var(--footer-link-gap); }
+.enter-footer-links a {
+  display: inline-block;
+  font-size: var(--footer-link-size);
+  font-weight: 400;
+  line-height: var(--footer-link-leading);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+.enter-footer-links li { line-height: var(--footer-link-leading); }
+
+.enter-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--footer-column-gap);
+  margin-top: var(--footer-bottom-gap);
+}
+.enter-footer-copyright {
+  margin: 0;
+  color: hsl(var(--footer-muted));
+  font-size: var(--footer-copyright-size);
+  line-height: var(--footer-bottom-leading);
+}
+.enter-footer-actions { display: flex; align-items: center; gap: var(--footer-actions-gap); }
+.enter-footer-socials { display: flex; align-items: center; gap: var(--footer-social-gap); }
+.enter-footer-socials a { position: relative; display: flex; color: hsl(var(--footer-muted)); }
+/* Expand the hit area without changing the visual spacing of the symbols. */
+.enter-footer-socials a::after { content: ""; position: absolute; inset: -7px; }
+.enter-footer-social-icon {
+  display: block;
+  width: var(--footer-social-size);
+  height: var(--footer-social-size);
+  background-color: currentColor;
+  -webkit-mask: var(--footer-icon) center / contain no-repeat;
+  mask: var(--footer-icon) center / contain no-repeat;
+}
+.enter-footer-social-icon--x { --footer-icon: url("/brand-footer/x.svg"); }
+.enter-footer-social-icon--discord { --footer-icon: url("/brand-footer/discord.svg"); }
+.enter-footer-social-icon--tiktok { --footer-icon: url("/brand-footer/tiktok.svg"); }
+.enter-footer-social-icon--youtube { --footer-icon: url("/brand-footer/youtube.svg"); }
+.enter-footer-social-icon--linkedin { --footer-icon: url("/brand-footer/linkedin.svg"); }
+.enter-footer-back {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--footer-arrow-gap);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: hsl(var(--footer-muted));
+  font-family: inherit;
+  font-size: var(--footer-link-size);
+  font-weight: 400;
+  line-height: var(--footer-bottom-leading);
+  cursor: pointer;
+}
+.enter-footer-back svg { width: var(--footer-arrow-size); height: var(--footer-arrow-size); }
+.enter-footer a, .enter-footer-back { transition: color var(--footer-hover-duration) ease; }
+.enter-footer a:hover, .enter-footer-back:hover { color: hsl(var(--footer-hover)); }
+.enter-footer :is(a, button):focus-visible {
+  outline: var(--footer-focus-width) solid hsl(var(--footer-focus));
+  outline-offset: var(--footer-focus-offset);
+}
+
+@media (max-width: 1199px) {
+  .enter-footer { --footer-bottom-gap: 60px; }
+  .enter-footer-top { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .enter-footer-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 36px; }
+}
+@media (max-width: 639px) {
+  .enter-footer { --footer-padding-top: 36px; --footer-bottom-gap: 48px; --footer-actions-gap: 32px; }
+  .enter-footer-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .enter-footer-bottom { align-items: flex-start; flex-direction: column; }
+  .enter-footer-actions { width: 100%; justify-content: space-between; flex-wrap: wrap; row-gap: var(--footer-column-gap); }
+}
+@media (max-width: 319px) {
+  .enter-footer { --footer-gutter: 20px; }
+  .enter-footer-nav { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .enter-footer a, .enter-footer-back { transition: none; }
+}
