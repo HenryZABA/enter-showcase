@@ -10,11 +10,11 @@ export default function ShowcasesPage() {
   return <ShowcaseLibraryView
     entries={cases}
     layout="catalog"
-    documentTitle="Enter Showcase — Curated Case Collections"
+    documentTitle="Enter Library — Curated Case Collections"
     heading={t("gallery.heading")}
     hero={featured.hero}
     collectionHref={showcaseCollectionHref(featuredShowcaseCollection)}
     bundleTitle={t("showcase.bundleTitle")}
-    downloadFileName="showcase-selected-prompts.md"
+    downloadFileName="library-selected-prompts.md"
   />;
 }

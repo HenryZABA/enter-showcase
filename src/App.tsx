@@ -7,7 +7,7 @@ import { getShowcaseCollection, showcaseCollections } from "@/data/showcase-coll
 import ShowcasesPage from "@/pages/showcase/ShowcasesPage";
 import ShowcaseCollectionsPage from "@/pages/showcase/ShowcaseCollectionsPage";
 import CuratedShowcaseCollectionPage from "@/pages/showcase/CuratedShowcaseCollectionPage";
-function MissingPage() { return <main className="container py-20"><h1 className="text-3xl">404</h1><Link to="/showcases">Back to Showcase</Link></main>; }
+function MissingPage() { return <main className="container py-20"><h1 className="text-3xl">404</h1><Link to="/showcases">Back to Library</Link></main>; }
 function CollectionPage() {
  const {slug = ''} = useParams(); const collection = getShowcaseCollection(slug) ?? showcaseCollections.find(c => c.legacySlugs.includes(slug));
  return collection ? <CuratedShowcaseCollectionPage collection={collection} /> : <MissingPage />;

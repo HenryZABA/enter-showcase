@@ -1,13 +1,9 @@
 import { ArrowUp } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-border/50 bg-background">
-      <div className="container flex flex-wrap items-center justify-between gap-4 py-6">
-        <Link to="/showcases" className="font-display text-sm font-semibold text-foreground">
-          Enter Showcase
-        </Link>
+      <div className="container flex flex-wrap items-center justify-end gap-4 py-6">
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

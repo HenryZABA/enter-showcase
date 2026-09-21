@@ -1,0 +1,242 @@
+{
+  "generatedAt": "2026-09-21T06:56:38.259Z",
+  "fallbackLng": "en",
+  "totalKeys": 197,
+  "languageCount": 11,
+  "overallCompletionRate": 1,
+  "overallSourceCompletionRate": 1,
+  "sourceUsage": {
+    "scannedFiles": 43,
+    "usedKeys": 73,
+    "usedFallbackKeys": 73,
+    "unusedKeys": 124,
+    "unknownUsedKeys": 0,
+    "dynamicKeyUsages": 0
+  },
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "dir": "ltr"
+    },
+    {
+      "code": "zh-CN",
+      "label": "简体中文",
+      "dir": "ltr"
+    },
+    {
+      "code": "zh-TW",
+      "label": "繁體中文",
+      "dir": "ltr"
+    },
+    {
+      "code": "es",
+      "label": "Español",
+      "dir": "ltr"
+    },
+    {
+      "code": "pt-BR",
+      "label": "Português (Brasil)",
+      "dir": "ltr"
+    },
+    {
+      "code": "pt-PT",
+      "label": "Português (Portugal)",
+      "dir": "ltr"
+    },
+    {
+      "code": "fr",
+      "label": "Français",
+      "dir": "ltr"
+    },
+    {
+      "code": "de",
+      "label": "Deutsch",
+      "dir": "ltr"
+    },
+    {
+      "code": "it",
+      "label": "Italiano",
+      "dir": "ltr"
+    },
+    {
+      "code": "ja",
+      "label": "日本語",
+      "dir": "ltr"
+    },
+    {
+      "code": "ko",
+      "label": "한국어",
+      "dir": "ltr"
+    }
+  ],
+  "perLanguage": [
+    {
+      "code": "en",
+      "label": "English",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "zh-CN",
+      "label": "简体中文",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "zh-TW",
+      "label": "繁體中文",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "es",
+      "label": "Español",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "pt-BR",
+      "label": "Português (Brasil)",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "pt-PT",
+      "label": "Português (Portugal)",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "fr",
+      "label": "Français",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "de",
+      "label": "Deutsch",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "it",
+      "label": "Italiano",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "ja",
+      "label": "日本語",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    },
+    {
+      "code": "ko",
+      "label": "한국어",
+      "dir": "ltr",
+      "totalKeys": 197,
+      "translatedKeys": 197,
+      "missingKeys": 0,
+      "extraKeys": 0,
+      "completionRate": 1,
+      "sourceTotalKeys": 73,
+      "sourceTranslatedKeys": 73,
+      "sourceMissingKeys": 0,
+      "sourceCompletionRate": 1,
+      "lineCount": 200
+    }
+  ],
+  "warnings": [],
+  "issues": []
+}

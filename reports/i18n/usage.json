@@ -1,0 +1,1770 @@
+{
+  "generatedAt": "2026-09-21T06:56:38.259Z",
+  "fallbackLng": "en",
+  "sourceFiles": [
+    "src/App.tsx",
+    "src/components/case-library/card-live-preview.tsx",
+    "src/components/case-library/case-card.tsx",
+    "src/components/case-library/case-cover.tsx",
+    "src/components/case-library/case-detail-dialog.tsx",
+    "src/components/case-library/case-detail-shell.tsx",
+    "src/components/case-library/case-flip-transition.tsx",
+    "src/components/case-library/case-photo-card.tsx",
+    "src/components/case-library/collection-card.tsx",
+    "src/components/case-library/collection-carousel.tsx",
+    "src/components/case-library/detail-loader.ts",
+    "src/components/case-library/filter-bar.tsx",
+    "src/components/case-library/hero-stage.tsx",
+    "src/components/case-library/live-frame.tsx",
+    "src/components/case-library/prompt-download-success-dialog.tsx",
+    "src/components/case-library/prompt-panel.tsx",
+    "src/components/case-library/showcase-library-view.tsx",
+    "src/components/language-switcher.tsx",
+    "src/components/layout/Footer.tsx",
+    "src/components/layout/Header.tsx",
+    "src/data/case-gallery.ts",
+    "src/data/cases.ts",
+    "src/data/curved-gallery.ts",
+    "src/data/showcase-collections.ts",
+    "src/data/showcase-collections/gpt-6-astra.ts",
+    "src/data/showcase-collections/types.ts",
+    "src/hooks/use-case-filters.ts",
+    "src/hooks/use-case-flip.ts",
+    "src/hooks/use-current-language.ts",
+    "src/hooks/use-showcase-theme.ts",
+    "src/i18n/config.ts",
+    "src/i18n/util.ts",
+    "src/lib/curved-gallery/media.ts",
+    "src/lib/curved-gallery/renderer.ts",
+    "src/lib/curved-gallery/shaders.ts",
+    "src/lib/curved-gallery/surface.ts",
+    "src/lib/prompt-bundle.ts",
+    "src/lib/prompt-file.ts",
+    "src/lib/utils.ts",
+    "src/main.tsx",
+    "src/pages/showcase/CuratedShowcaseCollectionPage.tsx",
+    "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+    "src/pages/showcase/ShowcasesPage.tsx"
+  ],
+  "usedKeys": [
+    {
+      "key": "bundle.buttonWithCount",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 178,
+          "column": 20,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docCaseHeading",
+      "references": [
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 63,
+          "column": 23,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docOriginalKind",
+      "references": [
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 12,
+          "column": 7,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docPromptKind",
+      "references": [
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 30,
+          "column": 10,
+          "usageType": "function"
+        },
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 65,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docRecreationKind",
+      "references": [
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 13,
+          "column": 7,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docSelectedSummary",
+      "references": [
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 53,
+          "column": 10,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.docTitle",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 32,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.downloadSelectedCount",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 193,
+          "column": 20,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.failed",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 101,
+          "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.successBody",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "line": 36,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.successTitle",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "line": 33,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "bundle.tryInEnter",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "line": 47,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.artworkLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/case-cover.tsx",
+          "line": 88,
+          "column": 24,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.openDetails",
+      "references": [
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 73,
+          "column": 17,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-photo-card.tsx",
+          "line": 46,
+          "column": 73,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.preview",
+      "references": [
+        {
+          "file": "src/components/case-library/card-live-preview.tsx",
+          "line": 111,
+          "column": 32,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 105,
+          "column": 14,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-dialog.tsx",
+          "line": 15,
+          "column": 93,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.remixComingSoon",
+      "references": [
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 129,
+          "column": 16,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-dialog.tsx",
+          "line": 17,
+          "column": 269,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.remixUnavailable",
+      "references": [
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 125,
+          "column": 22,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-dialog.tsx",
+          "line": 18,
+          "column": 58,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "card.selectPrompt",
+      "references": [
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 63,
+          "column": 40,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 72,
+          "column": 17,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-photo-card.tsx",
+          "line": 46,
+          "column": 37,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-photo-card.tsx",
+          "line": 66,
+          "column": 38,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "category.all",
+      "references": [
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 27,
+          "column": 30,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "category.business",
+      "references": [
+        {
+          "file": "src/components/case-library/case-cover.tsx",
+          "line": 74,
+          "column": 11,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 36,
+          "column": 39,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 29,
+          "column": 35,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "category.creative",
+      "references": [
+        {
+          "file": "src/components/case-library/case-cover.tsx",
+          "line": 75,
+          "column": 11,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 36,
+          "column": 64,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 30,
+          "column": 12,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "category.interactive3d",
+      "references": [
+        {
+          "file": "src/components/case-library/case-cover.tsx",
+          "line": 72,
+          "column": 9,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 35,
+          "column": 62,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 28,
+          "column": 40,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.backToCollections",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 129,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.caseCount",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 101,
+          "column": 57,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/collection-carousel.tsx",
+          "line": 22,
+          "column": 17,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.comingSoon",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-carousel.tsx",
+          "line": 17,
+          "column": 64,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.directoryDescription",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+          "line": 30,
+          "column": 54,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.directoryEyebrow",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 95,
+          "column": 55,
+          "usageType": "function"
+        },
+        {
+          "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+          "line": 28,
+          "column": 56,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.directoryGpt6Description",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 30,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.directoryHeading",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+          "line": 29,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.directoryTitle",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+          "line": 17,
+          "column": 20,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.exploreCollection",
+      "references": [
+        {
+          "file": "src/components/case-library/hero-stage.tsx",
+          "line": 49,
+          "column": 42,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.gpt6Title",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 29,
+          "column": 12,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.openGpt6",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 31,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.playCarousel",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 111,
+          "column": 21,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 112,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.sectionTitle",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-carousel.tsx",
+          "line": 26,
+          "column": 46,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 137,
+          "column": 34,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.close",
+      "references": [
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 38,
+          "column": 73,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "line": 29,
+          "column": 34,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.copied",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 25,
+          "column": 21,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.copy",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 64,
+          "column": 16,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 91,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.copyFailed",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 27,
+          "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.download",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 68,
+          "column": 16,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 95,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.downloadFailed",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 38,
+          "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.downloadStarted",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 36,
+          "column": 21,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.error",
+      "references": [
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 25,
+          "column": 88,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.loading",
+      "references": [
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 25,
+          "column": 108,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.previewHeading",
+      "references": [
+        {
+          "file": "src/components/case-library/case-detail-shell.tsx",
+          "line": 46,
+          "column": 111,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptHeading",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 49,
+          "column": 12,
+          "usageType": "function"
+        },
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 32,
+          "column": 11,
+          "usageType": "function"
+        },
+        {
+          "file": "src/lib/prompt-bundle.ts",
+          "line": 68,
+          "column": 23,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptOriginalLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 84,
+          "column": 15,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptOriginalNote",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 109,
+          "column": 13,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptRecreationLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 85,
+          "column": 15,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptRecreationNote",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 110,
+          "column": 13,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptUnavailableBody",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 58,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "detail.promptUnavailableTitle",
+      "references": [
+        {
+          "file": "src/components/case-library/case-card.tsx",
+          "line": 63,
+          "column": 76,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/case-photo-card.tsx",
+          "line": 66,
+          "column": 74,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 55,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.clearSearch",
+      "references": [
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 55,
+          "column": 27,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.emptyBody",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 242,
+          "column": 83,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.emptyTitle",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 241,
+          "column": 80,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.exploreMore",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 233,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.filterLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 65,
+          "column": 23,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.heading",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcasesPage.tsx",
+          "line": 14,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.searchLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 47,
+          "column": 25,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "gallery.searchPlaceholder",
+      "references": [
+        {
+          "file": "src/components/case-library/filter-bar.tsx",
+          "line": 48,
+          "column": 26,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "hero.buildInEnter",
+      "references": [
+        {
+          "file": "src/components/case-library/hero-stage.tsx",
+          "line": 56,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "hero.eyebrow",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 34,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "hero.titleLine1",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 35,
+          "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "hero.titleLine2",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/gpt-6-astra.ts",
+          "line": 36,
+          "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "live.loading",
+      "references": [
+        {
+          "file": "src/components/case-library/card-live-preview.tsx",
+          "line": 139,
+          "column": 36,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/live-frame.tsx",
+          "line": 37,
+          "column": 116,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "live.openPreview",
+      "references": [
+        {
+          "file": "src/components/case-library/live-frame.tsx",
+          "line": 43,
+          "column": 65,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "live.ready",
+      "references": [
+        {
+          "file": "src/components/case-library/live-frame.tsx",
+          "line": 40,
+          "column": 58,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "live.slow",
+      "references": [
+        {
+          "file": "src/components/case-library/card-live-preview.tsx",
+          "line": 139,
+          "column": 19,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/live-frame.tsx",
+          "line": 41,
+          "column": 83,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "nav.youcases",
+      "references": [
+        {
+          "file": "src/components/layout/Header.tsx",
+          "line": 20,
+          "column": 98,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "showcase.bundleTitle",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcasesPage.tsx",
+          "line": 17,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "youcases.backToShowcases",
+      "references": [
+        {
+          "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
+          "line": 25,
+          "column": 12,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "youcases.collections",
+      "references": [
+        {
+          "file": "src/components/layout/Header.tsx",
+          "line": 21,
+          "column": 110,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "youcases.viewAll",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 143,
+          "column": 20,
+          "usageType": "function"
+        }
+      ]
+    }
+  ],
+  "unusedKeys": [
+    {
+      "key": "bundle.docMissingHeading",
+      "group": "bundle",
+      "source": "Cases without a shared prompt ({{value}})",
+      "severity": "warning"
+    },
+    {
+      "key": "bundle.docSummary",
+      "group": "bundle",
+      "source": "Available prompts: {{available}} of {{total}}",
+      "severity": "warning"
+    },
+    {
+      "key": "bundle.done",
+      "group": "bundle",
+      "source": "Prompt bundle downloaded",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.featuredLabel",
+      "group": "collections",
+      "source": "Featured collection",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.gpt6Description",
+      "group": "collections",
+      "source": "Fourteen interactive builds spanning 3D worlds, business tools and creative experiences — with prompts you can inspect and download.",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.openCollection",
+      "group": "collections",
+      "source": "Explore collection",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.pauseCarousel",
+      "group": "collections",
+      "source": "Pause autoplay",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.previewPlaceholder",
+      "group": "collections",
+      "source": "Collection preview",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.sectionDescription",
+      "group": "collections",
+      "source": "Dive into focused collections built around standout models, moments and creative directions.",
+      "severity": "warning"
+    },
+    {
+      "key": "collections.sectionEyebrow",
+      "group": "collections",
+      "source": "Curated series",
+      "severity": "warning"
+    },
+    {
+      "key": "common.actions",
+      "group": "common",
+      "source": "Actions",
+      "severity": "warning"
+    },
+    {
+      "key": "common.admin",
+      "group": "common",
+      "source": "Admin",
+      "severity": "warning"
+    },
+    {
+      "key": "common.adminPanel",
+      "group": "common",
+      "source": "Admin Panel",
+      "severity": "warning"
+    },
+    {
+      "key": "common.back",
+      "group": "common",
+      "source": "Back",
+      "severity": "warning"
+    },
+    {
+      "key": "common.cancel",
+      "group": "common",
+      "source": "Cancel",
+      "severity": "warning"
+    },
+    {
+      "key": "common.collapse",
+      "group": "common",
+      "source": "Show less",
+      "severity": "warning"
+    },
+    {
+      "key": "common.delete",
+      "group": "common",
+      "source": "Delete",
+      "severity": "warning"
+    },
+    {
+      "key": "common.enable",
+      "group": "common",
+      "source": "Enable",
+      "severity": "warning"
+    },
+    {
+      "key": "common.expand",
+      "group": "common",
+      "source": "Show more",
+      "severity": "warning"
+    },
+    {
+      "key": "common.member",
+      "group": "common",
+      "source": "Member",
+      "severity": "warning"
+    },
+    {
+      "key": "common.moderator",
+      "group": "common",
+      "source": "Moderator",
+      "severity": "warning"
+    },
+    {
+      "key": "common.newTopic",
+      "group": "common",
+      "source": "New Topic",
+      "severity": "warning"
+    },
+    {
+      "key": "common.next",
+      "group": "common",
+      "source": "Next",
+      "severity": "warning"
+    },
+    {
+      "key": "common.noData",
+      "group": "common",
+      "source": "No data found",
+      "severity": "warning"
+    },
+    {
+      "key": "common.noResults",
+      "group": "common",
+      "source": "No results found",
+      "severity": "warning"
+    },
+    {
+      "key": "common.none",
+      "group": "common",
+      "source": "None",
+      "severity": "warning"
+    },
+    {
+      "key": "common.page",
+      "group": "common",
+      "source": "Page",
+      "severity": "warning"
+    },
+    {
+      "key": "common.previous",
+      "group": "common",
+      "source": "Previous",
+      "severity": "warning"
+    },
+    {
+      "key": "common.profile",
+      "group": "common",
+      "source": "Profile",
+      "severity": "warning"
+    },
+    {
+      "key": "common.retry",
+      "group": "common",
+      "source": "Retry",
+      "severity": "warning"
+    },
+    {
+      "key": "common.save",
+      "group": "common",
+      "source": "Save",
+      "severity": "warning"
+    },
+    {
+      "key": "common.search",
+      "group": "common",
+      "source": "Search",
+      "severity": "warning"
+    },
+    {
+      "key": "common.settings",
+      "group": "common",
+      "source": "Settings",
+      "severity": "warning"
+    },
+    {
+      "key": "common.signIn",
+      "group": "common",
+      "source": "Sign In",
+      "severity": "warning"
+    },
+    {
+      "key": "common.signOut",
+      "group": "common",
+      "source": "Sign Out",
+      "severity": "warning"
+    },
+    {
+      "key": "common.signUp",
+      "group": "common",
+      "source": "Sign Up",
+      "severity": "warning"
+    },
+    {
+      "key": "common.view",
+      "group": "common",
+      "source": "View",
+      "severity": "warning"
+    },
+    {
+      "key": "detail.promptAvailableLabel",
+      "group": "detail",
+      "source": "Original build prompt",
+      "severity": "warning"
+    },
+    {
+      "key": "detail.promptTruncatedNote",
+      "group": "detail",
+      "source": "Shown exactly as shared. Scroll to read the whole prompt.",
+      "severity": "warning"
+    },
+    {
+      "key": "footer.builtWith",
+      "group": "footer",
+      "source": "Built with Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "gallery.communityError",
+      "group": "gallery",
+      "source": "We couldn’t load community Library.",
+      "severity": "warning"
+    },
+    {
+      "key": "gallery.communityHeading",
+      "group": "gallery",
+      "source": "Community Library",
+      "severity": "warning"
+    },
+    {
+      "key": "gallery.openCommunityCase",
+      "group": "gallery",
+      "source": "Open {{title}}",
+      "severity": "warning"
+    },
+    {
+      "key": "header.language",
+      "group": "header",
+      "source": "Language",
+      "severity": "warning"
+    },
+    {
+      "key": "header.wordmark",
+      "group": "header",
+      "source": "Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "hero.stageBadge",
+      "group": "hero",
+      "source": "Featured exhibit",
+      "severity": "warning"
+    },
+    {
+      "key": "hero.stageDetails",
+      "group": "hero",
+      "source": "Exhibit details",
+      "severity": "warning"
+    },
+    {
+      "key": "hero.statCases",
+      "group": "hero",
+      "source": "{{value}} published cases",
+      "severity": "warning"
+    },
+    {
+      "key": "hero.statPrompts",
+      "group": "hero",
+      "source": "{{value}} prompt shared",
+      "severity": "warning"
+    },
+    {
+      "key": "hero.subtitle",
+      "group": "hero",
+      "source": "14 published cases created with Enter and GPT-6 Astra — spanning interactive 3D worlds, business tools and creative experiences.",
+      "severity": "warning"
+    },
+    {
+      "key": "nav.activities",
+      "group": "nav",
+      "source": "Activities",
+      "severity": "warning"
+    },
+    {
+      "key": "nav.build",
+      "group": "nav",
+      "source": "Build with us",
+      "severity": "warning"
+    },
+    {
+      "key": "nav.topics",
+      "group": "nav",
+      "source": "Topics",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.addLink",
+      "group": "youcases",
+      "source": "Add Link",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.addMedia",
+      "group": "youcases",
+      "source": "Add Media",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.addTag",
+      "group": "youcases",
+      "source": "Add Tag",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.allCollections",
+      "group": "youcases",
+      "source": "All Collections",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.allShowcases",
+      "group": "youcases",
+      "source": "Browse Library",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.approved",
+      "group": "youcases",
+      "source": "Approved",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.browse",
+      "group": "youcases",
+      "source": "Browse",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.commentPlaceholder",
+      "group": "youcases",
+      "source": "Write a comment...",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.comments",
+      "group": "youcases",
+      "source": "Comments",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.coverImage",
+      "group": "youcases",
+      "source": "Cover Image",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.coverImageDesc",
+      "group": "youcases",
+      "source": "Upload a cover image for your Library entry",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.credits",
+      "group": "youcases",
+      "source": "gain more exposure",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.emptyDesc",
+      "group": "youcases",
+      "source": "We're cooking up exciting new features — get ready to share your amazing projects in Library!",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.emptyTitle",
+      "group": "youcases",
+      "source": "Something awesome is coming!",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.exploreShowcase",
+      "group": "youcases",
+      "source": "Explore This Project",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.featured",
+      "group": "youcases",
+      "source": "Featured",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.featuredCollections",
+      "group": "youcases",
+      "source": "Featured Collections",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.fileTooLarge",
+      "group": "youcases",
+      "source": "File too large",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.fileTooLargeDesc",
+      "group": "youcases",
+      "source": "Max file size is 100MB",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.getFeatured",
+      "group": "youcases",
+      "source": "Get your product in front of more people &",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.home",
+      "group": "youcases",
+      "source": "Home",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.hotWorks",
+      "group": "youcases",
+      "source": "Hot Works",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.hotWorksDesc",
+      "group": "youcases",
+      "source": "Trending projects from the community",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.latestWorks",
+      "group": "youcases",
+      "source": "Latest Works",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.like",
+      "group": "youcases",
+      "source": "Like",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.liked",
+      "group": "youcases",
+      "source": "Liked",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.likes",
+      "group": "youcases",
+      "source": "likes",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.loginToComment",
+      "group": "youcases",
+      "source": "Log in to leave a comment",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.madeWith",
+      "group": "youcases",
+      "source": "Built with Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.mediaImages",
+      "group": "youcases",
+      "source": "Screenshots / Media",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.mediaImagesDesc",
+      "group": "youcases",
+      "source": "Add up to 5 images or short videos to display your project (max 100MB each)",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.myShowcases",
+      "group": "youcases",
+      "source": "My Library",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.noCollections",
+      "group": "youcases",
+      "source": "No collections yet",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.noComments",
+      "group": "youcases",
+      "source": "No comments yet. Be the first to discuss!",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.noShowcases",
+      "group": "youcases",
+      "source": "Library is empty",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.noShowcasesDesc",
+      "group": "youcases",
+      "source": "Be the first to share your project in Library!",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.openProject",
+      "group": "youcases",
+      "source": "Open Project",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.pending",
+      "group": "youcases",
+      "source": "Pending",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectDesc",
+      "group": "youcases",
+      "source": "Description",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectDescPlaceholder",
+      "group": "youcases",
+      "source": "Tell us about your project...",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectTitle",
+      "group": "youcases",
+      "source": "Title",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectTitlePlaceholder",
+      "group": "youcases",
+      "source": "Your project name",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectUrl",
+      "group": "youcases",
+      "source": "Project URL",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.projectUrlPlaceholder",
+      "group": "youcases",
+      "source": "https://your-project.com",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.recentVisit",
+      "group": "youcases",
+      "source": "Recent Visit",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.recentVisits",
+      "group": "youcases",
+      "source": "Recent Visits",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.rejected",
+      "group": "youcases",
+      "source": "Rejected",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.reply",
+      "group": "youcases",
+      "source": "Reply",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.replyingTo",
+      "group": "youcases",
+      "source": "Replying to",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.saveTags",
+      "group": "youcases",
+      "source": "Save Tags",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.shareProject",
+      "group": "youcases",
+      "source": "Share Your Project",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.showLess",
+      "group": "youcases",
+      "source": "Show less",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.showMore",
+      "group": "youcases",
+      "source": "Show more",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.showcaseCount",
+      "group": "youcases",
+      "source": "{{count}} entries in Library",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.shuffle",
+      "group": "youcases",
+      "source": "Shuffle",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.socialLinks",
+      "group": "youcases",
+      "source": "Social Media Links",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.socialLinksHint",
+      "group": "youcases",
+      "source": "Share links to your project's social media posts or videos",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submit",
+      "group": "youcases",
+      "source": "Share for Review",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitDesc",
+      "group": "youcases",
+      "source": "Share your project built with Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitNow",
+      "group": "youcases",
+      "source": "Share Now",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitShowcase",
+      "group": "youcases",
+      "source": "Add to Library",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitSuccess",
+      "group": "youcases",
+      "source": "Project shared in Library successfully!",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitSuccessDesc",
+      "group": "youcases",
+      "source": "Your project has been shared for review. We'll notify you once it's approved.",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitTitle",
+      "group": "youcases",
+      "source": "Share Your Project",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.submitting",
+      "group": "youcases",
+      "source": "Sharing...",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.tagText",
+      "group": "youcases",
+      "source": "Tag text",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.tags",
+      "group": "youcases",
+      "source": "Tags",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.title",
+      "group": "youcases",
+      "source": "Library",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.top",
+      "group": "youcases",
+      "source": "TOP",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.uploadFailed",
+      "group": "youcases",
+      "source": "Upload failed",
+      "severity": "warning"
+    },
+    {
+      "key": "youcases.viewCount",
+      "group": "youcases",
+      "source": "{{count}} views",
+      "severity": "warning"
+    }
+  ],
+  "unknownUsedKeys": [],
+  "dynamicKeyUsages": []
+}
