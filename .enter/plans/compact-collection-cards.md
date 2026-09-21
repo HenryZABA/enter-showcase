@@ -1,38 +1,36 @@
 # Context
 
-当前 Collections 目录在只有一个主题时会把卡片横跨整行，并且只显示静态封面；用户希望每个主题始终保持小卡片尺寸，视频主题直接在卡片内播放。同时，合集详情页的 “Back to Collections” 需要与 “Explore More” 使用相同的液态玻璃效果、色彩和尺寸体系；左上角 Enter Pro Logo 需要去掉显得臃肿的额外底板与留白，并缩小到克制的导航栏尺寸。
+用户要求：Collections 每个主题是一张小卡片，视频封面直接播放；“Back to Collections” 与 “Explore More” 效果、颜色和规格一致。同时修复 Enter Logo 异常放大的 bug——不是重新设计或任意缩小正常 Logo。
 
-## Recommended approach
+当前代码确认：目录 `:only-child` 规则把单卡扩展至整行；CollectionCard 只渲染图片；返回按钮为普通链接；Logo 仅通过 `h-5 w-auto` 约束，没有 HTML width/height。当前桌面目录截图未复现 Logo 巨大问题，根因尚未确认，不能将缺少尺寸属性直接认定为原因。
 
-- 为合集数据增加可选的卡片视频字段，并为 GPT-6 Astra 指向现有 `/media/showcase-collections/gpt-6-astra-v1.mp4`，继续使用现有 poster 作为加载与降级画面。
-- `CollectionCard` 根据媒体类型渲染图片或 `<video>`；视频采用 `autoPlay`、`muted`、`loop`、`playsInline`，保持整张卡片可点击。
-- 删除单卡横跨整行及超宽比例规则；目录网格改为响应式小卡片布局，让一个主题只占一个正常卡位。
-- 在现有液态玻璃按钮组件中增加同样视觉结构的链接版本，避免复制样式；详情页返回链接改用该组件，并保持左箭头与原导航地址。
-- 调整 `Header` 中官方图片的展示尺寸，移除额外背景与内边距，仅保留透明 Logo 本体。
+## 推荐处理
 
-## Critical files
+1. 优先检查 Logo 尺寸样式加载与生效情况，使用明确的图片 width/height 属性及专用样式尺寸约束，避免原图尺寸撑开导航；保留用户提供的图片及正常约 20px 高的展示规格，不再擅自改成另一种 Logo 设计。
+2. 删除目录单卡跨列和超宽比例规则，采用桌面三列、平板两列、手机单列的小卡片网格，缩紧卡片标题与信息间距。保留首页曲面轮播和合集详情内容。
+3. 在合集数据中增加可选 `coverVideo`，GPT-6 Astra 使用已有 MP4；卡片视频静音、循环、自动内联播放，已有封面作 poster；无视频继续显示图片。
+4. 复用 `liquidButtonVariants`、玻璃内部结构和现有 CSS，提供语义正确的链接版本；返回按钮使用与 Explore More 相同的 `lg` 尺寸、默认非流动描边，保留左箭头和带语言参数的目标地址。
 
-- `src/data/showcase-collections/types.ts`
-- `src/data/showcase-collections/gpt-6-astra.ts`
-- `src/components/case-library/collection-card.tsx`
-- `src/styles/collection-directory.css`
-- `src/components/ui/liquid-glass-button.tsx`
-- `src/components/case-library/showcase-library-view.tsx`
-- `src/components/layout/Header.tsx`
+## 关键文件
+
+- `src/components/layout/Header.tsx`、`src/index.css`：Logo 尺寸约束。
+- `src/styles/collection-directory.css`：小卡片布局。
+- `src/components/case-library/collection-card.tsx`：媒体渲染。
+- `src/data/showcase-collections/types.ts`、`src/data/showcase-collections/gpt-6-astra.ts`：视频字段。
+- `src/components/ui/liquid-glass-button.tsx`、`src/components/case-library/showcase-library-view.tsx`：返回链接复用按钮视觉。
 
 ## Implementation checklist
 
-- [ ] 在 `ShowcaseCollection` 中增加可选卡片视频源，并为 GPT-6 Astra 绑定现有 MP4。
-- [ ] 在 `CollectionCard` 中按数据渲染视频或图片，视频静音自动循环播放且可内联播放。
-- [ ] 调整 Collections 目录网格，使单个主题在桌面端保持小卡片而不再铺满整行，移动端保持单列自适应。
-- [ ] 新增复用 `liquidButtonVariants` 和液态玻璃内部结构的链接组件。
-- [ ] 将合集详情页的 “Back to Collections” 替换为与 “Explore More” 同规格的液态玻璃链接按钮。
-- [ ] 缩小 `Header` 的官方 Enter Pro Logo，并移除 Logo 外层背景与额外内边距。
+- [ ] 排查 Logo 异常尺寸路径；补齐明确的尺寸属性及专用样式约束，不改变图片素材和正常展示比例。
+- [ ] 删除目录单主题铺满规则，改为紧凑网格；单卡不会随主题数量变大。
+- [ ] 为 GPT-6 Astra 绑定已有视频，并在卡片内静音循环内联播放。
+- [ ] 保留图片卡片分支、poster 和整卡导航。
+- [ ] 增加复用现有液态玻璃结构的链接组件，并替换 Back to Collections。
 
 ## Verification checklist
 
-- [ ] 打开 `/showcases/collections`，确认唯一主题只占一个小卡位，视频在卡片内静音循环播放。
-- [ ] 确认视频 poster 在加载前可见，未配置视频的合集仍正常显示静态图片。
-- [ ] 打开 `/showcases/collections/gpt6`，确认返回按钮的玻璃效果、渐变描边、圆角和尺寸与 “Explore More” 一致，点击可回到合集目录。
-- [ ] 在 `mobile_390` 与 `desktop_1280` 视口检查卡片尺寸、溢出、返回按钮布局与缩小后的 Logo 比例。
-- [ ] 运行 `pnpm run build`；项目无 lint 脚本时以 TypeScript + Vite 构建为准。
+- [ ] 按未指定设备的情况，以 `mobile_390`、`desktop_1280` 检查目录：Logo 不撑开导航、卡片不铺满桌面、无横向溢出。
+- [ ] 验证视频实际播放而非仅显示 poster；确认无视频字段时仍渲染图片。
+- [ ] 检查 `/showcases/collections/gpt6` 返回按钮外观及跳转，保持语言参数。
+- [ ] 检查 Logo 冷加载时尺寸约束；如无法复现用户截图中的异常，明确记录而不宣称已确认根因。
+- [ ] 运行 `pnpm run build`（含 TypeScript 校验）；项目无 lint 脚本，不宣称通过 lint。
