@@ -1,5 +1,5 @@
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { LiquidLink } from "@/components/ui/liquid-glass-button";
 import { useTranslation } from "react-i18next";
 import { CollectionCard } from "@/components/case-library/collection-card";
 import { Header } from "@/components/layout/Header";
@@ -20,10 +20,10 @@ export default function ShowcaseCollectionsPage() {
     <div className="showcase collection-directory flex min-h-screen flex-col">
       <Header showSearch={false} />
       <main className="container flex-1 pb-20">
-        <Link to={href("/showcases")} className="collection-directory-back">
-          <ArrowLeft size={15} aria-hidden="true" />
+        <LiquidLink to={href("/showcases")} size="lg" className="collection-directory-back">
+          <ArrowLeft aria-hidden="true" />
           {t("youcases.backToShowcases")}
-        </Link>
+        </LiquidLink>
         <div className="collection-directory-heading">
           <p className="collection-directory-eyebrow">{t("collections.directoryEyebrow")}</p>
           <h1>{t("collections.directoryHeading")}</h1>
