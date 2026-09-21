@@ -29,6 +29,7 @@ export default {
 				'xs': '480px',
 			},
 			colors: {
+				'brand-logo': 'hsl(var(--brand-logo))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
