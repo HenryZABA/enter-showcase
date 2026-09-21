@@ -5,6 +5,7 @@ export const gpt6AstraCollection: ShowcaseCollection = {
   slug: "gpt6",
   legacySlugs: ["gpt-6-astra"],
   coverImage: "/media/showcase-collections/gpt-6-astra-poster-v1.webp",
+  coverVideo: "/media/showcase-collections/gpt-6-astra-v1.mp4",
   displayName: "GPT-6 Astra",
   documentTitle: "Enter × GPT-6 Astra — Case Library",
   heroImage: "/images/showcase/prism-1280-v1.webp",

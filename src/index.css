@@ -3,6 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Explicit dimensions also protect the header before utility styles load. */
+.site-brand-logo {
+  display: block;
+  flex: none;
+  width: 116px;
+  height: 20px;
+  max-width: 116px;
+  max-height: 20px;
+  object-fit: contain;
+}
+
 @layer utilities {
   .scrollbar-none,
   .scrollbar-hide {

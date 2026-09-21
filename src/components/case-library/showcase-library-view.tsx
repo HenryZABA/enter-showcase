@@ -16,7 +16,7 @@ import { HeroStage } from "@/components/case-library/hero-stage";
 import { PromptDownloadSuccessDialog } from "@/components/case-library/prompt-download-success-dialog";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { LiquidButton } from "@/components/ui/liquid-glass-button";
+import { LiquidButton, LiquidLink } from "@/components/ui/liquid-glass-button";
 import type { CaseEntry } from "@/data/cases";
 import type { ShowcaseHeroContent } from "@/data/showcase-collections";
 import { useCaseFilters } from "@/hooks/use-case-filters";
@@ -124,13 +124,10 @@ export const ShowcaseLibraryView = ({
       <main className="flex-1">
         {isCollection && (
           <div className="container pt-5">
-            <Link
-              to={collectionsHref}
-              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              <ArrowLeft aria-hidden="true" className="h-4 w-4" />
+            <LiquidLink to={collectionsHref} size="lg">
+              <ArrowLeft aria-hidden="true" />
               {t("collections.backToCollections")}
-            </Link>
+            </LiquidLink>
           </div>
         )}
         <div className={showCollections ? "showcase-hero-ensemble" : undefined}>

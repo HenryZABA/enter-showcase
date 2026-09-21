@@ -1,5 +1,5 @@
 .collection-directory {
-  --collection-radius: 20px;
+  --collection-radius: 16px;
   --collection-overlay: linear-gradient(180deg, hsl(var(--background) / .12), transparent 45%);
 }
 .collection-directory-back { display: inline-flex; align-items: center; gap: 8px; margin-top: 28px; padding-block: 10px; color: hsl(var(--muted-foreground)); font-size: 13px; transition: color 180ms ease; }
@@ -9,34 +9,31 @@
 .collection-directory-eyebrow { margin: 0 0 18px; color: hsl(var(--primary)); font: 500 11px var(--font-mono); text-transform: uppercase; letter-spacing: .18em; }
 .collection-directory-heading h1 { margin: 0; color: hsl(var(--foreground)); font-family: var(--font-display); font-size: clamp(42px, 6.5vw, 80px); line-height: 1.05; font-weight: 500; letter-spacing: -.055em; }
 .collection-directory-intro { max-width: 48ch; margin: 22px 0 0; color: hsl(var(--muted-foreground)); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; text-wrap: pretty; }
-.collection-directory-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.collection-directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .collection-directory-card { display: block; min-width: 0; border-radius: var(--collection-radius); color: hsl(var(--foreground)); }
-.collection-directory-card:only-child { grid-column: 1 / -1; }
 .collection-directory-card:focus-visible { outline: 2px solid hsl(var(--ring)); outline-offset: 8px; }
 .collection-directory-media { position: relative; aspect-ratio: 16 / 9; isolation: isolate; overflow: hidden; border-radius: var(--collection-radius); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); }
-.collection-directory-card:only-child .collection-directory-media { aspect-ratio: 2.3 / 1; }
 .collection-directory-media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--collection-overlay); }
-.collection-directory-media img { width: 100%; height: 100%; object-fit: contain; transition: transform 450ms cubic-bezier(.22, 1, .36, 1); }
-.collection-directory-badge { position: absolute; z-index: 1; top: 22px; left: 22px; padding: 7px 12px; border: 1px solid hsl(var(--foreground) / .15); border-radius: 999px; color: hsl(var(--foreground)); background: hsl(var(--background) / .7); backdrop-filter: blur(8px); font: 500 10px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; }
-.collection-directory-info { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding: 26px 0 0; }
-.collection-directory-info h2 { margin: 0; font-family: var(--font-display); font-size: clamp(25px, 3vw, 36px); font-weight: 500; letter-spacing: -.04em; }
-.collection-directory-info p { margin: 10px 0 18px; color: hsl(var(--muted-foreground)); font-size: 15px; line-height: 1.65; text-wrap: pretty; }
-.collection-directory-count { color: hsl(var(--foreground) / .8); font: 400 12px var(--font-mono); }
-.collection-directory-arrow { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid hsl(var(--border)); border-radius: 50%; color: hsl(var(--foreground)); transition: background 180ms, color 180ms, transform 180ms; }
+.collection-directory-media :is(img, video) { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 450ms cubic-bezier(.22, 1, .36, 1); }
+.collection-directory-badge { position: absolute; z-index: 1; top: 12px; left: 12px; padding: 6px 10px; border: 1px solid hsl(var(--foreground) / .15); border-radius: 999px; color: hsl(var(--foreground)); background: hsl(var(--background) / .7); backdrop-filter: blur(8px); font: 500 9px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; }
+.collection-directory-info { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 16px 0 0; }
+.collection-directory-info h2 { margin: 0; font-family: var(--font-display); font-size: 22px; font-weight: 500; letter-spacing: -.04em; }
+.collection-directory-info p { margin: 8px 0 12px; color: hsl(var(--muted-foreground)); font-size: 13px; line-height: 1.55; text-wrap: pretty; }
+.collection-directory-count { color: hsl(var(--foreground) / .8); font: 400 11px var(--font-mono); }
+.collection-directory-arrow { display: grid; place-items: center; flex-shrink: 0; width: 36px; height: 36px; border: 1px solid hsl(var(--border)); border-radius: 50%; color: hsl(var(--foreground)); transition: background 180ms, color 180ms, transform 180ms; }
+.collection-directory-arrow svg { width: 18px; height: 18px; }
 @media (hover: hover) {
-  .collection-directory-card:hover img { transform: scale(1.015); }
+  .collection-directory-card:hover :is(img, video) { transform: scale(1.015); }
   .collection-directory-card:hover .collection-directory-arrow { background: hsl(var(--foreground)); color: hsl(var(--background)); transform: translate(2px, -2px); }
+}
+@media (max-width: 1023px) {
+  .collection-directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 639px) {
   .collection-directory-heading { padding: 34px 0 30px; }
   .collection-directory-grid { grid-template-columns: minmax(0, 1fr); }
-  .collection-directory-card:only-child .collection-directory-media { aspect-ratio: 16 / 10; }
-  .collection-directory-badge { top: 12px; left: 12px; font-size: 9px; }
-  .collection-directory-info { padding-top: 20px; gap: 16px; }
-  .collection-directory-info p { font-size: 14px; }
-  .collection-directory-arrow { width: 40px; height: 40px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .collection-directory-media img, .collection-directory-arrow, .collection-directory-back { transition: none; }
-  .collection-directory-card:hover img, .collection-directory-card:hover .collection-directory-arrow { transform: none; }
+  .collection-directory-media :is(img, video), .collection-directory-arrow, .collection-directory-back { transition: none; }
+  .collection-directory-card:hover :is(img, video), .collection-directory-card:hover .collection-directory-arrow { transform: none; }
 }

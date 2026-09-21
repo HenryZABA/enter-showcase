@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+import { Link, type LinkProps } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import "@/styles/liquid-glass-button.css";
 
@@ -24,6 +25,29 @@ const liquidButtonVariants = cva(
   },
 );
 
+function LiquidButtonContent({ children }: { children: React.ReactNode }) {
+  return <>
+    <span aria-hidden="true" className="liquid-glass-button-surface" />
+    <span className="liquid-glass-button-content">{children}</span>
+  </>;
+}
+
+type LiquidLinkProps = LinkProps & VariantProps<typeof liquidButtonVariants>;
+
+const LiquidLink = React.forwardRef<HTMLAnchorElement, LiquidLinkProps>(
+  ({ className, size, flowingBorder, children, ...props }, ref) => (
+    <Link
+      ref={ref}
+      data-slot="liquid-glass-button"
+      className={cn(liquidButtonVariants({ size, flowingBorder }), className)}
+      {...props}
+    >
+      <LiquidButtonContent>{children}</LiquidButtonContent>
+    </Link>
+  ),
+);
+LiquidLink.displayName = "LiquidLink";
+
 export interface LiquidButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof liquidButtonVariants> {}
@@ -36,11 +60,10 @@ const LiquidButton = React.forwardRef<HTMLButtonElement, LiquidButtonProps>(
       className={cn(liquidButtonVariants({ size, flowingBorder }), className)}
       {...props}
     >
-      <span aria-hidden="true" className="liquid-glass-button-surface" />
-      <span className="liquid-glass-button-content">{children}</span>
+      <LiquidButtonContent>{children}</LiquidButtonContent>
     </button>
   ),
 );
 LiquidButton.displayName = "LiquidButton";
 
-export { LiquidButton };
+export { LiquidButton, LiquidLink };

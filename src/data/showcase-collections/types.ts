@@ -14,6 +14,7 @@ export type ShowcaseCollection = {
   slug: string;
   legacySlugs?: readonly string[];
   coverImage: string;
+  coverVideo?: string;
   documentTitle: string;
   displayName: string;
   heroImage: string;

@@ -21,16 +21,31 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
       aria-label={copy.openLabel}
     >
       <div className="collection-directory-media">
-        <img
-          src={collection.coverImage}
-          alt=""
-          width={1280}
-          height={720}
-          loading={priority ? "eager" : "lazy"}
-          fetchPriority={priority ? "high" : "auto"}
-          decoding="async"
-          draggable={false}
-        />
+        {collection.coverVideo ? (
+          <video
+            src={collection.coverVideo}
+            poster={collection.coverImage}
+            width={1280}
+            height={720}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
+        ) : (
+          <img
+            src={collection.coverImage}
+            alt=""
+            width={1280}
+            height={720}
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
+            decoding="async"
+            draggable={false}
+          />
+        )}
         <span className="collection-directory-badge">{t("collections.directoryEyebrow")}</span>
       </div>
       <div className="collection-directory-info">

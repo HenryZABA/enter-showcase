@@ -11,7 +11,9 @@ export function Header({ showSearch: _showSearch = false }: { showSearch?: boole
     <img
      src="https://cdn.enter.pro/visual_resources/100006299/8631d642ad9cada400e29465df8d2c3a/2504949a.png"
      alt="Enter Pro"
-     className="h-5 w-auto"
+     width={116}
+     height={20}
+     className="site-brand-logo"
     />
    </Link>
    <nav aria-label="Showcase" className="ml-auto flex items-center gap-1">
