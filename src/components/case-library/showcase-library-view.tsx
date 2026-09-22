@@ -1,5 +1,6 @@
-import { ArrowDown, ArrowLeft, ChevronRight, Download } from "lucide-react";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { ArrowDown, ArrowLeft, ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { lazy, memo, Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { PreviewBudgetProvider } from "./preview-budget";
 import { CaseDetailShell } from "@/components/case-library/case-detail-shell";
 import { Link } from "react-router-dom";
 import "@/styles/showcase.css";
@@ -13,7 +14,6 @@ import { CollectionCarousel } from "@/components/case-library/collection-carouse
 import type { CaseFlipOrigin } from "@/hooks/use-case-flip";
 import { FilterBar } from "@/components/case-library/filter-bar";
 import { HeroStage } from "@/components/case-library/hero-stage";
-import { PromptDownloadSuccessDialog } from "@/components/case-library/prompt-download-success-dialog";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { LiquidButton, LiquidLink } from "@/components/ui/liquid-glass-button";
@@ -22,9 +22,14 @@ import type { ShowcaseHeroContent } from "@/data/showcase-collections";
 import { useCaseFilters } from "@/hooks/use-case-filters";
 import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
-import { buildPromptBundle } from "@/lib/prompt-bundle";
+
 import { downloadTextFile } from "@/lib/prompt-file";
 import { useShowcaseTheme } from "@/hooks/use-showcase-theme";
+
+const PromptDownloadSuccessDialog = lazy(() => import("./prompt-download-success-dialog").then(module => ({ default: module.PromptDownloadSuccessDialog })));
+const StableHeader = memo(Header);
+const StableFooter = memo(Footer);
+const StableCarousel = memo(CollectionCarousel);
 
 type ShowcaseLibraryViewProps = {
   entries: CaseEntry[];
@@ -42,7 +47,7 @@ export const ShowcaseLibraryView = ({
 }: ShowcaseLibraryViewProps) => {
   const isCollection = layout === "collection";
   const indexById = useMemo(() => new Map(entries.map((entry, position) => [entry.id, position + 1])), [entries]);
-  const availablePrompts = useMemo(() => entries.filter(entry => entry.prompt !== null), [entries]);
+  const availablePrompts = useMemo(() => entries.filter(entry => entry.promptUrl !== null), [entries]);
   const { t } = useTranslation();
   const language = useCurrentLanguage();
   const appHref = useAppHref();
@@ -59,6 +64,8 @@ export const ShowcaseLibraryView = ({
   } = useCaseFilters(entries);
 
   const [expanded, setExpanded] = useState(false);
+  const [page, setPage] = useState(1);
+  const [downloading, setDownloading] = useState(false);
   const [activeDetail, setActiveDetail] = useState<{
     entry: CaseEntry;
     origin: CaseFlipOrigin;
@@ -70,37 +77,38 @@ export const ShowcaseLibraryView = ({
     new Set(),
   );
 
-  const openDetails = (entry: CaseEntry, origin: CaseFlipOrigin) => {
-    if (!activeDetail) setActiveDetail({ entry, origin });
-  };
+  const openDetails = useCallback((entry: CaseEntry, origin: CaseFlipOrigin) => {
+    setActiveDetail(current => current ?? { entry, origin });
+  }, []);
   const closeDetails = useCallback(() => setActiveDetail(null), []);
 
   const toggleSelectionMode = () => {
-    setSelectionMode((current) => {
-      const next = !current;
-      if (!isCollection) setExpanded(next);
-      return next;
-    });
+    setSelectionMode(current => !current);
     setSelectedPromptIds(new Set());
   };
 
-  const setPromptSelected = (id: string, selected: boolean) => {
+  const setPromptSelected = useCallback((id: string, selected: boolean) => {
     setSelectedPromptIds((current) => {
       const next = new Set(current);
       if (selected) next.add(id);
       else next.delete(id);
       return next;
     });
-  };
+  }, []);
 
-  const downloadPrompts = (selectedEntries: CaseEntry[], fileName: string) => {
-    const content = buildPromptBundle(selectedEntries, t, language, { title: bundleTitle, total: entries.length });
-    const ok = downloadTextFile(fileName, content);
-    if (ok) {
+  const downloadPrompts = async (selectedEntries: CaseEntry[], fileName: string) => {
+    if (downloading) return;
+    setDownloading(true);
+    try {
+      const { buildPromptBundle } = await import("@/lib/prompt-bundle");
+      const content = await buildPromptBundle(selectedEntries, t, language, { title: bundleTitle, total: entries.length });
+      if (!downloadTextFile(fileName, content)) throw new Error("Download failed");
       setDownloadedPromptCount(selectedEntries.length);
       setDownloadSuccessOpen(true);
-    } else {
+    } catch {
       toast.error(t("bundle.failed"));
+    } finally {
+      setDownloading(false);
     }
   };
 
@@ -110,18 +118,26 @@ export const ShowcaseLibraryView = ({
 
   useEffect(() => {
     setExpanded(false);
-  }, [query, category]);
+    setPage(1);
+  }, [query, category, entries]);
 
   const totalFilteredCases = filteredCases.length;
-  const visibleLimit = isCollection || expanded ? totalFilteredCases : 9;
-  const displayedCases = filteredCases.slice(0, visibleLimit);
+  const pageSize = !isCollection && !expanded ? 9 : 24;
+  const pageCount = Math.max(1, Math.ceil(totalFilteredCases / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const displayedCases = filteredCases.slice((currentPage - 1) * pageSize, currentPage * pageSize);
   const canExploreMore = !isCollection && !expanded && totalFilteredCases > 9;
+  const changePage = (next: number) => {
+    setPage(next);
+    document.getElementById("cases-heading")?.focus({ preventScroll: true });
+    document.getElementById("cases")?.scrollIntoView({ block: "start" });
+  };
   const showCollections = !isCollection;
   const GalleryCard = isCollection ? CaseCard : CasePhotoCard;
 
   return (
     <div className="showcase flex min-h-screen flex-col">
-      <Header showSearch={false} />
+      <StableHeader showSearch={false} />
 
       <main className="flex-1">
         {isCollection && (
@@ -145,7 +161,7 @@ export const ShowcaseLibraryView = ({
                   {t("youcases.viewAll")}
                   <ChevronRight aria-hidden="true" className="h-4 w-4" />
                 </Link>
-                <CollectionCarousel paused={activeDetail !== null} />
+                <StableCarousel paused={activeDetail !== null} />
               </div>
             </section>
           )}
@@ -162,6 +178,7 @@ export const ShowcaseLibraryView = ({
                 <span className="block h-px w-8 bg-primary" />
                 <h2
                   id="cases-heading"
+                  tabIndex={-1}
                   className="font-display text-3xl font-semibold tracking-[-0.035em] text-foreground sm:text-4xl"
                 >
                   {heading}
@@ -183,7 +200,8 @@ export const ShowcaseLibraryView = ({
                   type="button"
                   size="sm"
                   flowingBorder
-                  disabled={selectedPrompts.length === 0}
+                  disabled={selectedPrompts.length === 0 || downloading}
+                  aria-busy={downloading}
                   onClick={() =>
                     downloadPrompts(
                       selectedPrompts,
@@ -192,7 +210,7 @@ export const ShowcaseLibraryView = ({
                   }
                 >
                   <Download aria-hidden="true" />
-                  {t("bundle.downloadSelectedCount", {
+                  {downloading ? t("common.loading") : t("bundle.downloadSelectedCount", {
                     value: selectedPrompts.length,
                   })}
                 </LiquidButton>}
@@ -209,6 +227,7 @@ export const ShowcaseLibraryView = ({
 
           {displayedCases.length > 0 && (
             <div className={isCollection ? "mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" : "case-photogrid"}>
+              <PreviewBudgetProvider paused={activeDetail !== null}>
               {displayedCases.map((entry) => (
                 <GalleryCard
                   key={entry.id}
@@ -216,12 +235,11 @@ export const ShowcaseLibraryView = ({
                   index={indexById.get(entry.id) ?? 1}
                   selectionMode={selectionMode}
                   selected={selectedPromptIds.has(entry.id)}
-                  onSelectedChange={(selected) =>
-                    setPromptSelected(entry.id, selected)
-                  }
+                  onSelectedChange={setPromptSelected}
                   onOpenDetails={openDetails}
                 />
               ))}
+              </PreviewBudgetProvider>
             </div>
           )}
 
@@ -238,6 +256,18 @@ export const ShowcaseLibraryView = ({
             </div>
           )}
 
+          {!canExploreMore && pageCount > 1 && (
+            <nav aria-label={t("common.page")} className="mt-10 flex items-center justify-center gap-4">
+              <LiquidButton type="button" size="sm" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)}>
+                <ChevronLeft aria-hidden="true" />{t("common.previous")}
+              </LiquidButton>
+              <span role="status" className="text-sm tabular-nums text-muted-foreground">{t("common.page")} {currentPage} / {pageCount}</span>
+              <LiquidButton type="button" size="sm" disabled={currentPage === pageCount} onClick={() => changePage(currentPage + 1)}>
+                {t("common.next")}<ChevronRight aria-hidden="true" />
+              </LiquidButton>
+            </nav>
+          )}
+
           {filteredCases.length === 0 && (
             <div className="mt-8 rounded-lg border border-dashed border-border bg-card p-10 text-center">
               <p className="font-display text-lg font-medium text-foreground">{t("gallery.emptyTitle")}</p>
@@ -249,13 +279,15 @@ export const ShowcaseLibraryView = ({
         </section>
       </main>
 
-      <Footer />
+      <StableFooter />
 
-      <PromptDownloadSuccessDialog
-        open={downloadSuccessOpen}
-        onOpenChange={setDownloadSuccessOpen}
-        count={downloadedPromptCount}
-      />
+      {downloadSuccessOpen && <Suspense fallback={null}>
+        <PromptDownloadSuccessDialog
+          open={downloadSuccessOpen}
+          onOpenChange={setDownloadSuccessOpen}
+          count={downloadedPromptCount}
+        />
+      </Suspense>}
 
       {activeDetail && (
         <CaseDetailShell

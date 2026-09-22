@@ -18,6 +18,6 @@ export const CaseDetailDialog = ({ entry }: { entry: CaseEntry }) => {
         <span className="text-xs text-muted-foreground">{t("card.remixUnavailable")}</span>
       </>}
     </div>
-    <div className="border-t border-border pt-5"><PromptPanel prompt={entry.prompt} promptKind={entry.promptKind} title={pickCaseTitle(entry, language)} /></div>
+    <div className="border-t border-border pt-5"><PromptPanel key={entry.id} promptUrl={entry.promptUrl} promptKind={entry.promptKind} title={pickCaseTitle(entry, language)} /></div>
   </div>;
 };

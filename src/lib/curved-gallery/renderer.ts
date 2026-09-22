@@ -18,6 +18,7 @@ export class CurvedGalleryRenderer {
   private program: WebGLProgram;
   private mesh: ReturnType<typeof createMesh>;
   private media: GalleryMedia;
+  private loadingMedia = false;
   private layouts: Layout[] = [];
   private visibleCards: VisibleCard[] = [];
   private visibleIndices = new Set<number>();
@@ -80,11 +81,27 @@ export class CurvedGalleryRenderer {
     this.resizeObserver.observe(canvas);
     document.addEventListener("visibilitychange", this.syncActivity);
     this.resize(false);
-    const order = [...this.layouts].sort((a, b) => Math.abs(this.center(a)) - Math.abs(this.center(b))).map(card => card.index);
+
+  }
+
+  private loadNearbyMedia() {
+    if (this.loadingMedia || !this.active()) return;
+    const count = this.items.length;
+    const nearby = new Set(this.visibleIndices);
+    for (const index of this.visibleIndices) {
+      nearby.add((index + count - 1) % count);
+      nearby.add((index + 1) % count);
+    }
+    this.media.retain(nearby);
+    const order = [...nearby].filter(index => !this.media.resources[index])
+      .sort((a, b) => Number(this.visibleIndices.has(b)) - Number(this.visibleIndices.has(a)) || Math.abs(this.center(this.layouts[a])) - Math.abs(this.center(this.layouts[b])));
+    if (!order.length) return;
+    this.loadingMedia = true;
     void this.media.load(order, this.layouts.map(card => card.width * Math.min(devicePixelRatio || 1, 2)), () => {
       if (this.disposed) return;
       this.canvas.dataset.ready = "true"; this.invalidate();
-    }).catch(() => { if (!this.disposed) { this.onFallback(); this.destroy(); } });
+    }).catch(() => { if (!this.disposed) { this.onFallback(); this.destroy(); } })
+      .finally(() => { this.loadingMedia = false; if (!this.disposed) this.invalidate(); });
   }
 
   private center(layout: Layout) {
@@ -197,6 +214,7 @@ export class CurvedGalleryRenderer {
       return bounds.right >= 0 && bounds.left <= view.width && bounds.bottom >= 0 && bounds.top <= view.height;
     });
     this.visibleIndices = new Set(this.visibleCards.map(card => card.index));
+    this.loadNearbyMedia();
     this.media.sync(this.visibleIndices, this.active() && !this.reducedMotion);
     this.visibleCards.forEach(card => {
       const resource = this.media.resources[card.index];

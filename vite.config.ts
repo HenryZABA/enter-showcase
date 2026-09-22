@@ -52,5 +52,14 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: SUBPATH_ASSETS_DIR,
     manifest: true,
+    rollupOptions: {
+      output: {
+        // Keep the unchanged SDK content hash independent of catalog releases.
+        // This remains a synchronous dependency: no consent, event or replay delay.
+        manualChunks(id) {
+          if (id.includes("/node_modules/") && id.includes("/mixpanel-browser/")) return "mixpanel-sdk";
+        },
+      },
+    },
   },
 });

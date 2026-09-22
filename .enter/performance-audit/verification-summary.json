@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-22",
+  "profile": "marketing",
+  "overall": "代码优化已实施；完整性能验收未通过，不能宣称线上提速达标",
+  "verification": {
+    "productionBuild": "通过",
+    "typecheck": "通过",
+    "patchCheck": "通过",
+    "strictBuildAudit": "失败：退出码 1，保留预算和公开 HTML 告警，无缺失产物错误",
+    "componentFunctionalRegression": "通过：25 项 JSDOM 测试，包含 100/300/500 条合成数据",
+    "browserPerformance": "未验证：Chromium 启动 SIGTRAP，未取得有效冷暖样本",
+    "browserEndToEndRegression": "未验证：视频/WebGL/同意管理/录制完整流程缺少浏览器证据",
+    "responsiveVisualRegression": "未验证：mobile_390 截图取得，desktop_1280 超时；移动截图 Cookie 提示覆盖现象需另行核查",
+    "deployedHttp": "未验证：没有确认的真实部署 URL 与响应头"
+  },
+  "implemented": [
+    "目录初始 9 条，展开后与合集每页最多 24 条；搜索全量案例，跨页保留选择并按原案例顺序下载",
+    "多语言搜索文本一次索引、分类计数单次遍历；稳定回调与卡片/页头/轮播/页脚 memo 减少无关更新",
+    "可见卡片 iframe：桌面最多 3 个、手机最多 1 个；离屏/详情打开/后台/切页释放，去除 2400ms 人为等待",
+    "Collection 视频近视口加载、可见播放、离屏/后台暂停；保留手动重试",
+    "曲面轮播媒体仅加载可见项及直接相邻项，回收远端 GPU 纹理与视频回调；保留原有帧率和减少动态效果策略",
+    "提示词正文改为构建生成的 hash 资源，详情/导出按需读取；同 URL 请求合并，成功正文 LRU 最多 32 项，失败可重试，批量最多 4 路",
+    "导出代码和成功弹窗按用户操作加载；14 份 prompt 产物与源文件逐字节一致",
+    "Mixpanel 独立为同步 SDK chunk，保留 100% 录制与早期事件启动时序；隔离构建已验证修改案例不会改变 SDK hash"
+  ],
+  "unchanged": ["真实案例与预览/remix URL", "全部语言内容和首帧内置语言包", "Cookie 同意/拒绝/撤回语义", "GTM/Clarity/Mixpanel 配置", "Header/Footer 品牌资源", "根入口、/prompts、/showcases、历史 slug、hl 参数和 /_prompts 资源命名空间"],
+  "buildMetrics": {
+    "scope": "入口的完整同步依赖合计，不仅是入口文件",
+    "before": {"jsRawBytes": 1568780, "jsGzipEstimateBytes": 451230, "jsBrotliEstimateBytes": 338250},
+    "after": {"jsRawBytes": 1535100, "jsGzipEstimateBytes": 437837, "jsBrotliEstimateBytes": 330134},
+    "gzipReductionPercent": 2.97,
+    "stableSdk": {"rawBytes": 433609, "gzipEstimateBytes": 130013, "sameHashAfterCatalogChange": true},
+    "actualTransferBytes": null,
+    "note": "本地压缩估算不是实际传输量，也不能推导 LCP 或打开速度；SDK 分包改善跨版本复用，不等于减少全部首屏下载"
+  },
+  "remainingAuditFindings": [
+    "首屏 JS 仍超默认 raw 512000 B / Brotli 153600 B 预算，统计/录制和 Cookie SDK 保留必要同步启动",
+    "保留品牌多字体，声明的保守初始字体集合 6–7 个 / 123240–146904 B，超默认预算；实际首屏字体请求未验证",
+    "已批准保留 CSR，因此原始 HTML 没有静态 H1/正文、canonical 和有效 JSON-LD；SSG 需单独架构改造",
+    "Enter 构建插件注入远程多字体 CSS，真实下载和服务端压缩未验证；插件未移除",
+    "发布 HTTP 的 immutable/revalidate、robots/sitemap/crawler 策略未核实，未添加无依据的缓存头配置",
+    "移动截图存在 Cookie 提示覆盖现象，本轮未修改 Cookie 代码或样式，缺少前后截图不能归因"
+  ],
+  "browserBenchmark": {
+    "status": "未运行成功",
+    "validSamples": 0,
+    "planned": {"viewport": "390x844", "dpr": 2, "cpuSlowdown": 4, "rttMs": 150, "downloadMbps": 1.6, "uploadKbps": 750, "samplesPerRoutePerCache": 5},
+    "routes": ["/prompts", "/prompts/collections", "/prompts/collections/gpt6"],
+    "lcp": null,
+    "cls": null,
+    "interactionDuration": null,
+    "longTasks": null
+  },
+  "evidence": ["build-before.json", "build-after.json", "audit-before.config.json", "audit-after.config.json", "functional-results.json", "cache-probe.json"],
+  "commands": [
+    "pnpm run typecheck",
+    "pnpm run build",
+    "git diff --check",
+    "pnpm --dir .enter/performance-audit test:app",
+    "node .enter/performance-audit/run-audit.mjs dist after",
+    "node .enter/performance-audit/cache-probe.mjs",
+    "node .enter/performance-audit/browser-benchmark.mjs dist .enter/performance-audit/browser-after.json"
+  ]
+}

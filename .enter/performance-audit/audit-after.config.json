@@ -1,0 +1,303 @@
+{
+  "base": "/",
+  "routes": [
+    {
+      "url": "/",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2",
+        "_prompts/media/curved-gallery/inter-regular.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/prompts",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2",
+        "_prompts/media/curved-gallery/inter-regular.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/prompts/collections",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ]
+    },
+    {
+      "url": "/prompts/collections/gpt6",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/prompts/collections/gpt-6-astra",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/showcases",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2",
+        "_prompts/media/curved-gallery/inter-regular.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/showcases/collections",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ]
+    },
+    {
+      "url": "/showcases/collections/gpt6",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    },
+    {
+      "url": "/showcases/collections/gpt-6-astra",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "initialDynamicImports": [],
+      "deferredDynamicImports": [
+        {
+          "key": "_prompt-bundle-B2W11fih.js",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        },
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
+          "trigger": "interaction",
+          "reason": "Shown only after successful user export"
+        }
+      ],
+      "initialFonts": [
+        "_prompts/fonts/poppins-400-v1.woff2",
+        "_prompts/fonts/poppins-500-v1.woff2",
+        "_prompts/fonts/poppins-600-v1.woff2",
+        "_prompts/fonts/space-grotesk-v1.woff2",
+        "_prompts/fonts/dm-sans-v1.woff2",
+        "_prompts/fonts/jetbrains-mono-v1.woff2"
+      ],
+      "lcpImage": "/_prompts/images/showcase/prism-1280-v1.webp"
+    }
+  ]
+}

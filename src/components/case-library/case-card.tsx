@@ -1,5 +1,5 @@
 import { ArrowUpRight, Lock } from "lucide-react";
-import { useRef, type MouseEvent } from "react";
+import { memo, useRef, type MouseEvent } from "react";
 import type { CaseFlipOrigin } from "@/hooks/use-case-flip";
 import { useTranslation } from "react-i18next";
 
@@ -15,18 +15,18 @@ export type CaseCardProps = {
   index: number;
   selectionMode: boolean;
   selected: boolean;
-  onSelectedChange: (selected: boolean) => void;
+  onSelectedChange: (id: string, selected: boolean) => void;
   onOpenDetails: (entry: CaseEntry, origin: CaseFlipOrigin) => void;
 };
 
-export const CaseCard = ({
+export const CaseCard = memo(function CaseCard({
   entry,
   index,
   selectionMode,
   selected,
   onSelectedChange,
   onOpenDetails,
-}: CaseCardProps) => {
+}: CaseCardProps) {
   const { t } = useTranslation();
   const cardRef = useRef<HTMLElement>(null);
   const openDetails = (trigger: HTMLElement) => {
@@ -43,7 +43,7 @@ export const CaseCard = ({
     if ((event.target as HTMLElement).closest("[data-selection-control]")) return;
     event.preventDefault();
     event.stopPropagation();
-    if (entry.prompt) onSelectedChange(!selected);
+    if (entry.promptUrl) onSelectedChange(entry.id, !selected);
   };
 
   return (
@@ -57,10 +57,10 @@ export const CaseCard = ({
           <Checkbox
             data-selection-control
             checked={selected}
-            disabled={!entry.prompt}
-            onCheckedChange={(value) => entry.prompt && onSelectedChange(value === true)}
+            disabled={!entry.promptUrl}
+            onCheckedChange={(value) => entry.promptUrl && onSelectedChange(entry.id, value === true)}
             onClick={(event) => event.stopPropagation()}
-            aria-label={entry.prompt ? t("card.selectPrompt", { title }) : t("detail.promptUnavailableTitle")}
+            aria-label={entry.promptUrl ? t("card.selectPrompt", { title }) : t("detail.promptUnavailableTitle")}
             className="absolute left-3 top-3 z-20 h-8 w-8 border-2 border-foreground bg-background text-primary-foreground shadow-none data-[state=checked]:border-primary"
           />
         )}
@@ -133,4 +133,4 @@ export const CaseCard = ({
       </div>
     </article>
   );
-};
+});

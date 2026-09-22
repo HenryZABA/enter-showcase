@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { memo } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,7 @@ type HeroStageProps = {
   blended?: boolean;
 };
 
-export const HeroStage = ({ content, collectionHref, blended = false }: HeroStageProps) => {
+export const HeroStage = memo(function HeroStage({ content, collectionHref, blended = false }: HeroStageProps) {
   const { t } = useTranslation();
 
   return (
@@ -61,4 +62,4 @@ export const HeroStage = ({ content, collectionHref, blended = false }: HeroStag
       </div>
     </section>
   );
-};
+});

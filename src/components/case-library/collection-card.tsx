@@ -22,8 +22,9 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
     const video = videoRef.current;
     if (!video) return;
     let disposed = false;
+    let visible = false;
     const resume = () => {
-      if (document.hidden) {
+      if (document.hidden || !visible) {
         video.pause();
         return;
       }
@@ -31,6 +32,7 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
       video.muted = true;
       video.defaultMuted = true;
       void video.play().then(() => {
+        if (disposed || !visible || document.hidden) video.pause();
         if (!disposed) setPlaybackBlocked(false);
       }).catch((error: unknown) => {
         if (!disposed && !(error instanceof DOMException && error.name === "AbortError")) {
@@ -38,12 +40,23 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
         }
       });
     };
+    const nearby = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting || !collection.coverVideo) return;
+      video.src = collection.coverVideo;
+      video.load();
+      nearby.disconnect();
+    }, { rootMargin: "240px" });
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; resume(); });
+    nearby.observe(video);
+    observer.observe(video);
     video.addEventListener("loadeddata", resume);
     document.addEventListener("visibilitychange", resume);
     window.addEventListener("pageshow", resume);
     resume();
     return () => {
       disposed = true;
+      nearby.disconnect();
+      observer.disconnect();
       video.removeEventListener("loadeddata", resume);
       document.removeEventListener("visibilitychange", resume);
       window.removeEventListener("pageshow", resume);
@@ -69,15 +82,13 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
         {collection.coverVideo ? (
           <video
             ref={videoRef}
-            src={collection.coverVideo}
             poster={collection.coverImage}
             width={1280}
             height={720}
-            autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="none"
             aria-hidden="true"
           />
         ) : (

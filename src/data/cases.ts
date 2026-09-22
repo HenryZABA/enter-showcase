@@ -1,17 +1,17 @@
-import cafeRecreationPrompt from "./prompts/cafe-recreation-prompt.txt?raw";
-import digitalPotteryRecreationPrompt from "./prompts/digital-pottery-recreation-prompt.txt?raw";
-import foldlabRecreationPrompt from "./prompts/foldlab-recreation-prompt.txt?raw";
-import infiniteCinemaRecreationPrompt from "./prompts/infinite-cinema-recreation-prompt.txt?raw";
-import insideTheHeatRecreationPrompt from "./prompts/inside-the-heat-recreation-prompt.txt?raw";
-import inventoryManagementRecreationPrompt from "./prompts/inventory-management-recreation-prompt.txt?raw";
-import nookRecreationPrompt from "./prompts/nook-recreation-prompt.txt?raw";
-import onboardingOrbitRecreationPrompt from "./prompts/onboarding-orbit-recreation-prompt.txt?raw";
-import pocketPortfolioRecreationPrompt from "./prompts/pocket-portfolio-recreation-prompt.txt?raw";
-import postureGuardianRecreationPrompt from "./prompts/posture-guardian-recreation-prompt.txt?raw";
-import spatialDesignerRecreationPrompt from "./prompts/spatial-designer-recreation-prompt.txt?raw";
-import spatialDiningRecreationPrompt from "./prompts/spatial-dining-recreation-prompt.txt?raw";
-import warmIsleRecreationPrompt from "./prompts/warm-isle-recreation-prompt.txt?raw";
-import wrensRoomBuildPrompt from "./prompts/wrens-room-build-prompt.txt?raw";
+import cafeRecreationPrompt from "./prompts/cafe-recreation-prompt.txt?url&no-inline";
+import digitalPotteryRecreationPrompt from "./prompts/digital-pottery-recreation-prompt.txt?url&no-inline";
+import foldlabRecreationPrompt from "./prompts/foldlab-recreation-prompt.txt?url&no-inline";
+import infiniteCinemaRecreationPrompt from "./prompts/infinite-cinema-recreation-prompt.txt?url&no-inline";
+import insideTheHeatRecreationPrompt from "./prompts/inside-the-heat-recreation-prompt.txt?url&no-inline";
+import inventoryManagementRecreationPrompt from "./prompts/inventory-management-recreation-prompt.txt?url&no-inline";
+import nookRecreationPrompt from "./prompts/nook-recreation-prompt.txt?url&no-inline";
+import onboardingOrbitRecreationPrompt from "./prompts/onboarding-orbit-recreation-prompt.txt?url&no-inline";
+import pocketPortfolioRecreationPrompt from "./prompts/pocket-portfolio-recreation-prompt.txt?url&no-inline";
+import postureGuardianRecreationPrompt from "./prompts/posture-guardian-recreation-prompt.txt?url&no-inline";
+import spatialDesignerRecreationPrompt from "./prompts/spatial-designer-recreation-prompt.txt?url&no-inline";
+import spatialDiningRecreationPrompt from "./prompts/spatial-dining-recreation-prompt.txt?url&no-inline";
+import warmIsleRecreationPrompt from "./prompts/warm-isle-recreation-prompt.txt?url&no-inline";
+import wrensRoomBuildPrompt from "./prompts/wrens-room-build-prompt.txt?url&no-inline";
 
 import { fallbackLng, normalizeLanguage } from "@/i18n/config";
 
@@ -48,8 +48,8 @@ export type CaseEntry = {
    * here is all that is needed to enable the Remix button for that case.
    */
   remixUrl: string | null;
-  /** Verbatim prompt text, or `null` when no prompt is available. */
-  prompt: string | null;
+  /** Versioned asset containing verbatim prompt text; null when unavailable. */
+  promptUrl: string | null;
   /** Whether the prompt is the creator's original or a catalog-based recreation. */
   promptKind: PromptKind | null;
   /**
@@ -89,7 +89,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://d6b40daaf4ea4ba88b2a5aa5d3f4c6d8.prod.enterapp.pro",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=d6b40daaf4ea4ba88b2a5aa5d3f4c6d8",
-    prompt: wrensRoomBuildPrompt,
+    promptUrl: wrensRoomBuildPrompt,
     promptKind: "original",
     sourceTitle: "可交互 3D 房间作品集（每个物件都能点）",
   },
@@ -106,7 +106,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://8913089c9e184d1aad4b0310a5b7fb96.prod.enterapp.pro/",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=8913089c9e184d1aad4b0310a5b7fb96",
-    prompt: warmIsleRecreationPrompt,
+    promptUrl: warmIsleRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "Astra 一句话 Prompt 生成 three.js 3D 互动网页场景（nocoo 演示）",
@@ -124,7 +124,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://ac436982c25144eb83faf94a06cb904a.prod.enterapp.pro/",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=ac436982c25144eb83faf94a06cb904a",
-    prompt: nookRecreationPrompt,
+    promptUrl: nookRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Astra 电商商品互动展示：台灯双形态切换上线 Shopify",
   },
@@ -141,7 +141,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://a2a3b1836aac46d1bb5d3d09715848db.prod.enterapp.pro",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=a2a3b1836aac46d1bb5d3d09715848db",
-    prompt: foldlabRecreationPrompt,
+    promptUrl: foldlabRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "GPT-6 Astra: 包装刀版图(dieline)→Blender 可编辑折叠纸盒 3D 模型+折叠动画",
@@ -159,7 +159,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://674a7f6546ea4ff5a2c6fd7394aa5a2b.prod.enterapp.pro",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=674a7f6546ea4ff5a2c6fd7394aa5a2b",
-    prompt: insideTheHeatRecreationPrompt,
+    promptUrl: insideTheHeatRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "GPT-6 Astra: 单次对话生成个人踝痛交互式 3D 解剖图谱(骨骼/韧带/肌腱+运动轴+实时读数)",
@@ -177,7 +177,7 @@ const baseCases: CaseEntry[] = [
     category: "interactive3d",
     previewUrl: "https://b84a5c72086842a7ab8c77b6fa935f01.prod.enterapp.pro/",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=b84a5c72086842a7ab8c77b6fa935f01",
-    prompt: spatialDiningRecreationPrompt,
+    promptUrl: spatialDiningRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Spatial Dining 餐厅沉浸式互动体验页",
   },
@@ -194,7 +194,7 @@ const baseCases: CaseEntry[] = [
     category: "business",
     previewUrl: "https://741bada9961f4d2186c85316f16a05c8.prod.enterapp.pro",
     remixUrl: null,
-    prompt: inventoryManagementRecreationPrompt,
+    promptUrl: inventoryManagementRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Inventory Management 3D Dashboard",
   },
@@ -211,7 +211,7 @@ const baseCases: CaseEntry[] = [
     category: "business",
     previewUrl: "https://3b395dba2e1f49138c9b8d5ac5b6710e.prod.enterapp.pro",
     remixUrl: null,
-    prompt: cafeRecreationPrompt,
+    promptUrl: cafeRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Astra 一条提示词5分钟直出咖啡馆移动点单系统",
   },
@@ -228,7 +228,7 @@ const baseCases: CaseEntry[] = [
     category: "business",
     previewUrl: "https://92ef2d78e1b6478ab1f5bda3ca160641.prod.enterapp.pro",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=92ef2d78e1b6478ab1f5bda3ca160641",
-    prompt: onboardingOrbitRecreationPrompt,
+    promptUrl: onboardingOrbitRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "ONBOARDING ORBIT Interactive Employee SOP 新员工入职sop",
   },
@@ -245,7 +245,7 @@ const baseCases: CaseEntry[] = [
     category: "creative",
     previewUrl: "https://d5025a8116e04650b4f1aa05ceda76e4.prod.enterapp.pro",
     remixUrl: null,
-    prompt: spatialDesignerRecreationPrompt,
+    promptUrl: spatialDesignerRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "Spatial Designer（Astra）AI 室内设计工具，上传房间照片并选择风格（北欧、Japandi、中古、波西米亚等），AI 即可生成改造后的概念图，还能查看图中家具「买下这个造型」。",
@@ -263,7 +263,7 @@ const baseCases: CaseEntry[] = [
     category: "creative",
     previewUrl: "https://ef0378ba7d45412ca7550377eec9f180.prod.enterapp.pro",
     remixUrl: null,
-    prompt: infiniteCinemaRecreationPrompt,
+    promptUrl: infiniteCinemaRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "Infinite Cinema 「无限影院」，提供一系列第一人称实拍的自然风光短视频（森林小径、大西洋海岸、秋日落叶、雪地等），用于放空与沉浸式放松。",
@@ -281,7 +281,7 @@ const baseCases: CaseEntry[] = [
     category: "creative",
     previewUrl: "https://fea402c71dab4f66b91fadb41946b70f.prod.enterapp.pro",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=fea402c71dab4f66b91fadb41946b70f",
-    prompt: digitalPotteryRecreationPrompt,
+    promptUrl: digitalPotteryRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "Digital Pottery在线数字陶艺小工具，通过调节高度、瓶身宽度、开口比例来捏制花瓶 / 碗 / 杯，主打「小小宁静」的减压体验。",
@@ -299,7 +299,7 @@ const baseCases: CaseEntry[] = [
     category: "creative",
     previewUrl: "https://cc26e5a341804bfbb139d28f5e49c237.prod.enterapp.pro",
     remixUrl: null,
-    prompt: postureGuardianRecreationPrompt,
+    promptUrl: postureGuardianRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
       "Posture Guardian「姿势守护者」健康应用，通过摄像头在本机实时监测坐姿（头、肩、髋），驼背时屏幕会轻微模糊提醒，并配有 25 分钟专注计时器，帮你改善久坐习惯。",
@@ -317,7 +317,7 @@ const baseCases: CaseEntry[] = [
     category: "creative",
     previewUrl: "https://9a3b574243ac45b39c004db93ea520b3.prod.enterapp.pro/",
     remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=9a3b574243ac45b39c004db93ea520b3",
-    prompt: pocketPortfolioRecreationPrompt,
+    promptUrl: pocketPortfolioRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Pocket Portfolio 复古掌机个人作品集",
   },
@@ -504,7 +504,7 @@ export const pickLocalized = (value: Localized, language: string): string => {
 };
 
 export const casesWithPrompt = cases.filter(
-  (entry): entry is CaseEntry & { prompt: string } => entry.prompt !== null,
+  (entry): entry is CaseEntry & { promptUrl: string } => entry.promptUrl !== null,
 );
 
-export const casesWithoutPrompt = cases.filter((entry) => entry.prompt === null);
+export const casesWithoutPrompt = cases.filter((entry) => entry.promptUrl === null);

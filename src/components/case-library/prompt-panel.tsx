@@ -1,4 +1,6 @@
 import { Copy, Download, FileX2 } from "lucide-react";
+import { useEffect, useState } from "react";
+import { loadPrompt } from "@/lib/prompt-cache";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 
@@ -8,15 +10,27 @@ import { buildSinglePromptMarkdown } from "@/lib/prompt-bundle";
 import { copyText, downloadTextFile, sanitizeFilename } from "@/lib/prompt-file";
 
 type PromptPanelProps = {
-  /** Exact prompt text, or null when no prompt is available. */
-  prompt: string | null;
+  /** Versioned prompt asset; the body is loaded only inside the detail panel. */
+  promptUrl: string | null;
   promptKind: PromptKind | null;
   /** Display title, used only to build the download filename. */
   title: string;
 };
 
-export const PromptPanel = ({ prompt, promptKind, title }: PromptPanelProps) => {
+export const PromptPanel = ({ promptUrl, promptKind, title }: PromptPanelProps) => {
   const { t } = useTranslation();
+  const [prompt, setPrompt] = useState<string | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => {
+    let active = true;
+    setPrompt(null);
+    setFailed(false);
+    if (promptUrl) void loadPrompt(promptUrl).then(text => {
+      if (active) setPrompt(text);
+    }).catch(() => { if (active) setFailed(true); });
+    return () => { active = false; };
+  }, [promptUrl, attempt]);
 
   const handleCopy = async () => {
     if (!prompt) return;
@@ -38,6 +52,13 @@ export const PromptPanel = ({ prompt, promptKind, title }: PromptPanelProps) => 
       toast.error(t("common.downloadFailed"));
     }
   };
+
+  if (promptUrl && prompt === null) {
+    return <section className="min-h-32 space-y-3 rounded-lg border border-border bg-secondary/40 p-4" aria-busy={!failed}>
+      <p role="status" className="text-sm text-muted-foreground">{failed ? t("common.error") : t("common.loading")}</p>
+      {failed && <Button type="button" variant="secondary" onClick={() => setAttempt(value => value + 1)}>{t("common.retry")}</Button>}
+    </section>;
+  }
 
   if (!prompt) {
     return (

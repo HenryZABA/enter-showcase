@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { CaseCover } from "@/components/case-library/case-cover";
 import type { CaseEntry } from "@/data/cases";
 import { cn } from "@/lib/utils";
+import { usePreviewSlot } from "./preview-budget";
 
 type CardLivePreviewProps = {
   entry: CaseEntry;
@@ -29,10 +30,8 @@ export const CardLivePreview = ({
   title,
 }: CardLivePreviewProps) => {
   const { t } = useTranslation();
-  const rootRef = useRef<HTMLDivElement>(null);
-  const revealTimerRef = useRef<number | null>(null);
+  const [rootRef, shouldMount] = usePreviewSlot();
   const slowTimerRef = useRef<number | null>(null);
-  const [shouldMount, setShouldMount] = useState(false);
   const [readyToReveal, setReadyToReveal] = useState(false);
   const [slow, setSlow] = useState(false);
   const [scale, setScale] = useState(1);
@@ -53,51 +52,19 @@ export const CardLivePreview = ({
   }, []);
 
   useEffect(() => {
-    const node = rootRef.current;
-    if (!node || shouldMount) return;
-
-    if (!("IntersectionObserver" in window)) {
-      setShouldMount(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entryState]) => {
-        if (!entryState.isIntersecting) return;
-        setShouldMount(true);
-        observer.disconnect();
-      },
-      { rootMargin: "320px 0px" },
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, [shouldMount]);
-
-  useEffect(() => {
+    setReadyToReveal(false);
+    setSlow(false);
     if (!shouldMount) return;
     slowTimerRef.current = window.setTimeout(() => setSlow(true), 12000);
     return () => {
       if (slowTimerRef.current !== null) window.clearTimeout(slowTimerRef.current);
     };
-  }, [shouldMount]);
-
-  useEffect(() => {
-    return () => {
-      if (revealTimerRef.current !== null) window.clearTimeout(revealTimerRef.current);
-      if (slowTimerRef.current !== null) window.clearTimeout(slowTimerRef.current);
-    };
-  }, []);
+  }, [shouldMount, entry.previewUrl]);
 
   const handleLoad = () => {
-    if (revealTimerRef.current !== null) {
-      window.clearTimeout(revealTimerRef.current);
-    }
-    revealTimerRef.current = window.setTimeout(() => {
-      if (slowTimerRef.current !== null) window.clearTimeout(slowTimerRef.current);
-      setSlow(false);
-      setReadyToReveal(true);
-    }, 2400);
+    if (slowTimerRef.current !== null) window.clearTimeout(slowTimerRef.current);
+    setSlow(false);
+    setReadyToReveal(true);
   };
 
   return (
@@ -130,7 +97,7 @@ export const CardLivePreview = ({
         index={index}
         className={cn(
           "absolute inset-0 z-10 h-full transition-opacity duration-300",
-          readyToReveal && "pointer-events-none opacity-0",
+          shouldMount && readyToReveal && "pointer-events-none opacity-0",
         )}
       />
 

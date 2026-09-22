@@ -15,16 +15,8 @@ export type CategoryFilter = CaseCategoryId | "all";
  * either "pottery" or "陶艺" regardless of the active UI language. The internal
  * sourceTitle is deliberately excluded from the index.
  */
-const matchesQuery = (entry: CaseEntry, query: string): boolean => {
-  const haystack = [
-    ...Object.values(entry.title),
-    ...Object.values(entry.description),
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  return haystack.includes(query);
-};
+const searchText = (entry: CaseEntry): string =>
+  [...Object.values(entry.title), ...Object.values(entry.description)].join(" ").toLowerCase();
 
 export const useCaseFilters = (
   entries: readonly CaseEntry[] = cases,
@@ -33,18 +25,17 @@ export const useCaseFilters = (
   const [category, setCategory] = useState<CategoryFilter>("all");
 
   const normalizedQuery = query.trim().toLowerCase();
+  const searchIndex = useMemo(() => entries.map(entry => ({ entry, text: searchText(entry) })), [entries]);
 
-  const filteredCases = useMemo(() => entries.filter((entry) => {
-    const categoryMatch = category === "all" || entry.category === category;
-    const queryMatch = normalizedQuery.length === 0 || matchesQuery(entry, normalizedQuery);
-    return categoryMatch && queryMatch;
-  }), [entries, category, normalizedQuery]);
+  const filteredCases = useMemo(() => searchIndex.filter(({ entry, text }) =>
+    (category === "all" || entry.category === category) &&
+    (normalizedQuery.length === 0 || text.includes(normalizedQuery)),
+  ).map(({ entry }) => entry), [searchIndex, category, normalizedQuery]);
 
   const categoryCounts = useMemo(() => {
     const counts = new Map<CategoryFilter, number>([["all", entries.length]]);
-    for (const id of CASE_CATEGORY_IDS) {
-      counts.set(id, entries.filter((entry) => entry.category === id).length);
-    }
+    for (const id of CASE_CATEGORY_IDS) counts.set(id, 0);
+    for (const entry of entries) counts.set(entry.category, (counts.get(entry.category) ?? 0) + 1);
     return counts;
   }, [entries]);
 

@@ -152,17 +152,24 @@ export class GalleryMedia {
     });
   }
 
-  destroy() {
-    this.disposed = true;
-    this.pending.forEach(cancel => cancel()); this.pending.clear();
-    this.resources.forEach(resource => {
-      if (!resource) return;
+  /** Keep only visible cards and the renderer's immediate neighbors on the GPU. */
+  retain(indices: Set<number>) {
+    this.resources.forEach((resource, index) => {
+      if (!resource || indices.has(index)) return;
       if (resource.video) {
         resource.playing = false;
         if (resource.frameId !== undefined) resource.video.cancelVideoFrameCallback(resource.frameId);
+        resource.video.onloadedmetadata = null;
         resource.video.pause(); resource.video.removeAttribute("src"); resource.video.load();
       }
       this.gl.deleteTexture(resource.media); this.gl.deleteTexture(resource.overlay);
+      this.resources[index] = undefined;
     });
+  }
+
+  destroy() {
+    this.disposed = true;
+    this.pending.forEach(cancel => cancel()); this.pending.clear();
+    this.retain(new Set());
   }
 }

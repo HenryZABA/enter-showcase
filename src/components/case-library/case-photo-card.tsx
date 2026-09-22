@@ -1,4 +1,4 @@
-import { useId, useRef } from "react";
+import { memo, useId, useRef } from "react";
 import { preloadCaseDetail } from "./detail-loader";
 import { useTranslation } from "react-i18next";
 import type { CaseCardProps } from "@/components/case-library/case-card";
@@ -8,7 +8,7 @@ import { pickLocalized } from "@/data/cases";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { pickCaseTitle } from "@/hooks/use-case-filters";
 
-export function CasePhotoCard({ entry, selectionMode, selected, onSelectedChange, onOpenDetails }: CaseCardProps) {
+export const CasePhotoCard = memo(function CasePhotoCard({ entry, selectionMode, selected, onSelectedChange, onOpenDetails }: CaseCardProps) {
   const cardRef = useRef<HTMLElement>(null);
   const captionId = useId();
   const { t } = useTranslation();
@@ -46,13 +46,13 @@ export function CasePhotoCard({ entry, selectionMode, selected, onSelectedChange
         aria-label={selectionMode ? t("card.selectPrompt", { title }) : t("card.openDetails", { title })}
         aria-describedby={captionId}
         tabIndex={selectionMode ? -1 : 0}
-        disabled={selectionMode && !entry.prompt}
+        disabled={selectionMode && !entry.promptUrl}
         onPointerEnter={selectionMode ? undefined : preloadCaseDetail}
         onFocus={selectionMode ? undefined : preloadCaseDetail}
         onPointerDown={selectionMode ? undefined : preloadCaseDetail}
         onClick={(event) => {
           if (selectionMode) {
-            if (entry.prompt) onSelectedChange(!selected);
+            if (entry.promptUrl) onSelectedChange(entry.id, !selected);
           } else if (cardRef.current) {
             onOpenDetails(entry, { source: cardRef.current, trigger: event.currentTarget });
           }
@@ -61,12 +61,12 @@ export function CasePhotoCard({ entry, selectionMode, selected, onSelectedChange
       {selectionMode && (
         <Checkbox
           checked={selected}
-          disabled={!entry.prompt}
-          onCheckedChange={(value) => entry.prompt && onSelectedChange(value === true)}
-          aria-label={entry.prompt ? t("card.selectPrompt", { title }) : t("detail.promptUnavailableTitle")}
+          disabled={!entry.promptUrl}
+          onCheckedChange={(value) => entry.promptUrl && onSelectedChange(entry.id, value === true)}
+          aria-label={entry.promptUrl ? t("card.selectPrompt", { title }) : t("detail.promptUnavailableTitle")}
           className="absolute left-3 top-3 z-20 h-8 w-8 border-2 border-foreground bg-background text-primary-foreground shadow-none data-[state=checked]:border-primary"
         />
       )}
     </article>
   );
-}
+});

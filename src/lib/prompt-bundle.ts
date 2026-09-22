@@ -1,5 +1,6 @@
 import type { CaseEntry, PromptKind } from "@/data/cases";
 import { pickLocalized } from "@/data/cases";
+import { loadPromptBatch } from "@/lib/prompt-cache";
 
 /** Minimal structural shape of i18next's `t`. */
 export type PromptTranslate = (
@@ -36,15 +37,14 @@ export const buildSinglePromptMarkdown = (
   ].join("\n");
 
 /** Build a provenance-labelled Markdown bundle from the selected cases. */
-export const buildPromptBundle = (
+export const buildPromptBundle = async (
   selectedCases: CaseEntry[],
   t: PromptTranslate,
   language: string,
   context: { title: string; total: number },
-): string => {
-  const entries = selectedCases.filter(
-    (entry): entry is CaseEntry & { prompt: string } => entry.prompt !== null,
-  );
+): Promise<string> => {
+  const loaded = await loadPromptBatch(selectedCases.filter(entry => entry.promptUrl !== null));
+  const entries = loaded.filter((entry): entry is CaseEntry & { prompt: string } => entry.prompt !== null);
   const lines: string[] = [];
 
   lines.push(`# ${context.title}`);
