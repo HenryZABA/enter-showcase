@@ -123,7 +123,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "interactive3d",
     previewUrl: "https://ac436982c25144eb83faf94a06cb904a.prod.enterapp.pro/",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=ac436982c25144eb83faf94a06cb904a",
     prompt: nookRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Astra 电商商品互动展示：台灯双形态切换上线 Shopify",
