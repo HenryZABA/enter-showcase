@@ -13,7 +13,13 @@ export function withEntryPrefix(path: string, pathname: string): string {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   const prefix = getEntryPrefix(pathname);
   if (!prefix || isWithinPath(normalizedPath, prefix)) return normalizedPath;
-  return normalizedPath === "/" ? prefix : `${prefix}${normalizedPath}`;
+
+  const subpathPage = normalizedPath === "/showcases"
+    ? ""
+    : normalizedPath.startsWith("/showcases/")
+      ? normalizedPath.slice("/showcases".length)
+      : normalizedPath;
+  return subpathPage === "/" ? prefix : `${prefix}${subpathPage}`;
 }
 
 export function assetPath(path: string): string {

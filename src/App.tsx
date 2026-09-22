@@ -32,7 +32,7 @@ function CollectionPage() {
 
 function RootRedirect({ prefix }: { prefix: string }) {
   const { search } = useLocation();
-  return <Navigate to={`${prefix}/showcases${search}`} replace />;
+  return <Navigate to={`${prefix || "/showcases"}${search}`} replace />;
 }
 
 function LanguageSync() {
@@ -48,11 +48,14 @@ function LanguageSync() {
 
 function createShowcaseRoutes(prefix: "" | typeof SUBPATH_ROUTE): ReactNode[] {
   const key = prefix || "root";
+  const showcasePath = prefix || "/showcases";
   return [
-    <Route key={`${key}-index`} path={prefix || "/"} element={<RootRedirect prefix={prefix} />} />,
-    <Route key={`${key}-showcases`} path={`${prefix}/showcases`} element={<ShowcasesPage />} />,
-    <Route key={`${key}-collections`} path={`${prefix}/showcases/collections`} element={<ShowcaseCollectionsPage />} />,
-    <Route key={`${key}-collection`} path={`${prefix}/showcases/collections/:slug`} element={<CollectionPage />} />,
+    ...(prefix
+      ? []
+      : [<Route key="root-index" path="/" element={<RootRedirect prefix="" />} />]),
+    <Route key={`${key}-showcases`} path={showcasePath} element={<ShowcasesPage />} />,
+    <Route key={`${key}-collections`} path={`${showcasePath}/collections`} element={<ShowcaseCollectionsPage />} />,
+    <Route key={`${key}-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage />} />,
   ];
 }
 
