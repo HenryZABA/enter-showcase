@@ -227,7 +227,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "business",
     previewUrl: "https://92ef2d78e1b6478ab1f5bda3ca160641.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=92ef2d78e1b6478ab1f5bda3ca160641",
     prompt: onboardingOrbitRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "ONBOARDING ORBIT Interactive Employee SOP 新员工入职sop",
