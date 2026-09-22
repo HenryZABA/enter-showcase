@@ -105,7 +105,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "interactive3d",
     previewUrl: "https://8913089c9e184d1aad4b0310a5b7fb96.prod.enterapp.pro/",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=8913089c9e184d1aad4b0310a5b7fb96",
     prompt: warmIsleRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
