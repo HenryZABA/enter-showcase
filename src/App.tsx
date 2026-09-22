@@ -30,9 +30,9 @@ function CollectionPage() {
   return collection ? <CuratedShowcaseCollectionPage collection={collection} /> : <MissingPage />;
 }
 
-function RootRedirect({ prefix }: { prefix: string }) {
+function RootRedirect() {
   const { search } = useLocation();
-  return <Navigate to={`${prefix || "/showcases"}${search}`} replace />;
+  return <Navigate to={`${SUBPATH_ROUTE}${search}`} replace />;
 }
 
 function LanguageSync() {
@@ -52,7 +52,7 @@ function createShowcaseRoutes(prefix: "" | typeof SUBPATH_ROUTE): ReactNode[] {
   return [
     ...(prefix
       ? []
-      : [<Route key="root-index" path="/" element={<RootRedirect prefix="" />} />]),
+      : [<Route key="root-index" path="/" element={<RootRedirect />} />]),
     <Route key={`${key}-showcases`} path={showcasePath} element={<ShowcasesPage />} />,
     <Route key={`${key}-collections`} path={`${showcasePath}/collections`} element={<ShowcaseCollectionsPage />} />,
     <Route key={`${key}-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage />} />,
