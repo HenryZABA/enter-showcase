@@ -316,7 +316,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "creative",
     previewUrl: "https://9a3b574243ac45b39c004db93ea520b3.prod.enterapp.pro/",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=9a3b574243ac45b39c004db93ea520b3",
     prompt: pocketPortfolioRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Pocket Portfolio 复古掌机个人作品集",
