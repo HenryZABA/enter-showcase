@@ -45,7 +45,9 @@ export const HeroStage = ({ content, collectionHref, blended = false }: HeroStag
           </h1>
 
           <Button asChild className="theme-primary-gradient mt-6 h-11 rounded-lg border-0 px-7 font-medium hover:bg-transparent">
-            {collectionHref ? (
+            {collectionHref?.startsWith("#") ? (
+              <a href={collectionHref}>{t("collections.exploreCollection")}</a>
+            ) : collectionHref ? (
               <Link to={collectionHref}>{t("collections.exploreCollection")}</Link>
             ) : (
               <a
