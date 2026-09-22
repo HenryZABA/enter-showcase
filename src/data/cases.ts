@@ -140,7 +140,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "interactive3d",
     previewUrl: "https://a2a3b1836aac46d1bb5d3d09715848db.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=a2a3b1836aac46d1bb5d3d09715848db",
     prompt: foldlabRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
