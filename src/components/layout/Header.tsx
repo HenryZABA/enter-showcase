@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 export function Header({ showSearch: _showSearch = false }: { showSearch?: boolean }) {
- const {t} = useTranslation(); const language = useCurrentLanguage();
- const href = (path: string) => `${path}?hl=${encodeURIComponent(language)}`;
+ const {t} = useTranslation(); const language = useCurrentLanguage(); const appHref = useAppHref();
+ const href = (path: string) => `${appHref(path)}?hl=${encodeURIComponent(language)}`;
  return <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur-xl">
   <div className="container flex min-h-14 flex-wrap items-center gap-3 py-2">
    <Link to={href('/showcases')} className="inline-flex rounded-md bg-brand-logo px-2.5 py-1.5" aria-label="Enter Pro">

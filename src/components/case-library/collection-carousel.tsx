@@ -4,12 +4,14 @@ import { useLocation } from "react-router-dom";
 import { CurvedGallery } from "@/components/ui/curved-gallery";
 import { curvedGalleryItems } from "@/data/curved-gallery";
 import { getShowcaseCollection, getShowcaseCollectionCases } from "@/data/showcase-collections";
+import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { normalizeLanguage } from "@/i18n/util";
 
 export function CollectionCarousel({ paused = false }: { paused?: boolean }) {
   const { t } = useTranslation();
   const currentLanguage = useCurrentLanguage();
+  const appHref = useAppHref();
   const { search } = useLocation();
   // Preserve all configured locale codes even when a legacy header hook normalizes its own copy.
   const language = normalizeLanguage(new URLSearchParams(search).get("hl")) ?? currentLanguage;
@@ -20,8 +22,8 @@ export function CollectionCarousel({ paused = false }: { paused?: boolean }) {
     return {
       ...item,
       subtitle: t("collections.caseCount", { lng: language, value: collection ? getShowcaseCollectionCases(collection).length : 0 }),
-      href: item.href ? `${item.href}?${query}` : undefined,
+      href: item.href ? `${appHref(item.href)}?${query}` : undefined,
     };
-  }), [t, language]);
+  }), [appHref, t, language]);
   return <CurvedGallery items={items} label={t("collections.sectionTitle")} paused={paused} />;
 }

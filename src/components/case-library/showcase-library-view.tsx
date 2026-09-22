@@ -20,6 +20,7 @@ import { LiquidButton, LiquidLink } from "@/components/ui/liquid-glass-button";
 import type { CaseEntry } from "@/data/cases";
 import type { ShowcaseHeroContent } from "@/data/showcase-collections";
 import { useCaseFilters } from "@/hooks/use-case-filters";
+import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { buildPromptBundle } from "@/lib/prompt-bundle";
 import { downloadTextFile } from "@/lib/prompt-file";
@@ -44,7 +45,8 @@ export const ShowcaseLibraryView = ({
   const availablePrompts = useMemo(() => entries.filter(entry => entry.prompt !== null), [entries]);
   const { t } = useTranslation();
   const language = useCurrentLanguage();
-  const collectionsHref = `/showcases/collections?${new URLSearchParams({ hl: language })}`;
+  const appHref = useAppHref();
+  const collectionsHref = `${appHref("/showcases/collections")}?${new URLSearchParams({ hl: language })}`;
   useShowcaseTheme(documentTitle);
 
   const {

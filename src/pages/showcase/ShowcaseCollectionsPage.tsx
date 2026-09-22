@@ -5,6 +5,7 @@ import { CollectionCard } from "@/components/case-library/collection-card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { showcaseCollections, showcaseCollectionHref } from "@/data/showcase-collections";
+import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { useShowcaseTheme } from "@/hooks/use-showcase-theme";
 import "@/styles/showcase.css";
@@ -13,7 +14,8 @@ import "@/styles/collection-directory.css";
 export default function ShowcaseCollectionsPage() {
   const { t } = useTranslation();
   const language = useCurrentLanguage();
-  const href = (path: string) => `${path}?${new URLSearchParams({ hl: language })}`;
+  const appHref = useAppHref();
+  const href = (path: string) => `${appHref(path)}?${new URLSearchParams({ hl: language })}`;
   useShowcaseTheme(t("collections.directoryTitle"));
 
   return (

@@ -231,4 +231,4 @@ export const caseGallery: Record<string, CaseGalleryEntry> = {
 };
 
 export const caseGalleryImage = (id: string, small = false) =>
-  `/images/case-gallery/${id}${small ? "-sm" : ""}.webp`;
+  `/_prompts/images/case-gallery/${id}${small ? "-sm" : ""}.webp`;

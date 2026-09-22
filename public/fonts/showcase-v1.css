@@ -1,7 +1,7 @@
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:400 600;font-display:swap;src:url("/fonts/dm-sans-v1.woff2") format("woff2");}
-@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:400 600;font-display:swap;src:url("/fonts/space-grotesk-v1.woff2") format("woff2");}
-@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/fonts/jetbrains-mono-v1.woff2") format("woff2");}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/poppins-400-v1.woff2") format("woff2");}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/poppins-500-v1.woff2") format("woff2");}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("/fonts/poppins-600-v1.woff2") format("woff2");}
-@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/poppins-700-v1.woff2") format("woff2");}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400 600;font-display:swap;src:url("/_prompts/fonts/dm-sans-v1.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:400 600;font-display:swap;src:url("/_prompts/fonts/space-grotesk-v1.woff2") format("woff2");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400 500;font-display:swap;src:url("/_prompts/fonts/jetbrains-mono-v1.woff2") format("woff2");}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url("/_prompts/fonts/poppins-400-v1.woff2") format("woff2");}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url("/_prompts/fonts/poppins-500-v1.woff2") format("woff2");}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url("/_prompts/fonts/poppins-600-v1.woff2") format("woff2");}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url("/_prompts/fonts/poppins-700-v1.woff2") format("woff2");}

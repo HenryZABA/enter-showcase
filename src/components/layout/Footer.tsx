@@ -1,12 +1,14 @@
 import { ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { footerColumns, footerSocialLinks } from "@/data/footer";
+import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import "@/styles/footer.css";
 
 export function Footer() {
   const language = useCurrentLanguage();
-  const homeHref = `/showcases?${new URLSearchParams({ hl: language })}`;
+  const appHref = useAppHref();
+  const homeHref = `${appHref("/showcases")}?${new URLSearchParams({ hl: language })}`;
 
   const scrollToTop = () => {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

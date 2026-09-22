@@ -46,7 +46,8 @@ export const FilterBar = ({
             onChange={(event) => onQueryChange(event.target.value)}
             aria-label={t("gallery.searchLabel")}
             placeholder={t("gallery.searchPlaceholder")}
-            className="h-11 border-border bg-background/60 pl-9 pr-10"
+            data-clarity-mask="true"
+            className="mp-no-track mp-block mp-sensitive h-11 border-border bg-background/60 pl-9 pr-10"
           />
           {query.length > 0 && (
             <button

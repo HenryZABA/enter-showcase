@@ -113,11 +113,11 @@
   -webkit-mask: var(--footer-icon) center / contain no-repeat;
   mask: var(--footer-icon) center / contain no-repeat;
 }
-.enter-footer-social-icon--x { --footer-icon: url("/brand-footer/x.svg"); }
-.enter-footer-social-icon--discord { --footer-icon: url("/brand-footer/discord.svg"); }
-.enter-footer-social-icon--tiktok { --footer-icon: url("/brand-footer/tiktok.svg"); }
-.enter-footer-social-icon--youtube { --footer-icon: url("/brand-footer/youtube.svg"); }
-.enter-footer-social-icon--linkedin { --footer-icon: url("/brand-footer/linkedin.svg"); }
+.enter-footer-social-icon--x { --footer-icon: url("/_prompts/brand-footer/x.svg"); }
+.enter-footer-social-icon--discord { --footer-icon: url("/_prompts/brand-footer/discord.svg"); }
+.enter-footer-social-icon--tiktok { --footer-icon: url("/_prompts/brand-footer/tiktok.svg"); }
+.enter-footer-social-icon--youtube { --footer-icon: url("/_prompts/brand-footer/youtube.svg"); }
+.enter-footer-social-icon--linkedin { --footer-icon: url("/_prompts/brand-footer/linkedin.svg"); }
 .enter-footer-back {
   display: inline-flex;
   align-items: center;

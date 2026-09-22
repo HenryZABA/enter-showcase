@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/app-paths";
 import { gpt6AstraCollection } from "./showcase-collections/gpt-6-astra";
 import { showcaseCollectionHref } from "./showcase-collections";
 
@@ -14,7 +15,7 @@ export type CurvedGalleryItem = {
   href?: string;
 };
 
-const mediaRoot = "/media/showcase-collections";
+const mediaRoot = assetPath("media/showcase-collections");
 
 /** Newly generated abstract art is decorative, not a promised product or collection. */
 export const curvedGalleryItems: CurvedGalleryItem[] = [

@@ -1,14 +1,15 @@
+import { assetPath } from "@/lib/app-paths";
 import type { ShowcaseCollection } from "./types";
 
 /** One curated collection, not the identity or implicit membership of Showcase. */
 export const gpt6AstraCollection: ShowcaseCollection = {
   slug: "gpt6",
   legacySlugs: ["gpt-6-astra"],
-  coverImage: "/media/showcase-collections/gpt-6-astra-poster-v1.webp",
-  coverVideo: "/media/showcase-collections/gpt-6-astra-v1.mp4",
+  coverImage: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
+  coverVideo: assetPath("media/showcase-collections/gpt-6-astra-v1.mp4"),
   displayName: "GPT-6 Astra",
   documentTitle: "Enter × GPT-6 Astra — Case Library",
-  heroImage: "/images/showcase/prism-1280-v1.webp",
+  heroImage: assetPath("images/showcase/prism-1280-v1.webp"),
   caseIds: [
     "d6b40daaf4ea4ba88b2a5aa5d3f4c6d8",
     "8913089c9e184d1aad4b0310a5b7fb96",
@@ -34,8 +35,12 @@ export const gpt6AstraCollection: ShowcaseCollection = {
       eyebrow: t("hero.eyebrow"),
       titleLine1: t("hero.titleLine1"),
       titleLine2: t("hero.titleLine2"),
-      image: "/images/showcase/prism-1280-v1.webp",
-      imageSrcSet: "/images/showcase/prism-640-v1.webp 640w, /images/showcase/prism-1280-v1.webp 1280w, /images/showcase/prism-1920-v1.webp 1920w",
+      image: assetPath("images/showcase/prism-1280-v1.webp"),
+      imageSrcSet: [
+        `${assetPath("images/showcase/prism-640-v1.webp")} 640w`,
+        `${assetPath("images/showcase/prism-1280-v1.webp")} 1280w`,
+        `${assetPath("images/showcase/prism-1920-v1.webp")} 1920w`,
+      ].join(", "),
       imageWidth: 1920,
       imageHeight: 1072,
     },
