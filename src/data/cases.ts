@@ -88,7 +88,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "interactive3d",
     previewUrl: "https://d6b40daaf4ea4ba88b2a5aa5d3f4c6d8.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=d6b40daaf4ea4ba88b2a5aa5d3f4c6d8",
     prompt: wrensRoomBuildPrompt,
     promptKind: "original",
     sourceTitle: "可交互 3D 房间作品集（每个物件都能点）",
