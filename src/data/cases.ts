@@ -280,7 +280,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "creative",
     previewUrl: "https://fea402c71dab4f66b91fadb41946b70f.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=fea402c71dab4f66b91fadb41946b70f",
     prompt: digitalPotteryRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
