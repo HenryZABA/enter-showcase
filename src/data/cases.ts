@@ -176,7 +176,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "interactive3d",
     previewUrl: "https://b84a5c72086842a7ab8c77b6fa935f01.prod.enterapp.pro/",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=b84a5c72086842a7ab8c77b6fa935f01",
     prompt: spatialDiningRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Spatial Dining 餐厅沉浸式互动体验页",
