@@ -46,7 +46,7 @@ export const HeroStage = ({ content, collectionHref, blended = false }: HeroStag
 
           <Button asChild className="theme-primary-gradient mt-6 h-11 rounded-lg border-0 px-7 font-medium hover:bg-transparent">
             {collectionHref ? (
-              <Link reloadDocument to={collectionHref}>{t("collections.exploreCollection")}</Link>
+              <Link to={collectionHref}>{t("collections.exploreCollection")}</Link>
             ) : (
               <a
                 href="https://enter.converge.ai/"

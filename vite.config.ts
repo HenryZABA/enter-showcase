@@ -51,5 +51,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: SUBPATH_ASSETS_DIR,
+    manifest: true,
   },
 });
