@@ -244,7 +244,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "creative",
     previewUrl: "https://d5025a8116e04650b4f1aa05ceda76e4.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=d5025a8116e04650b4f1aa05ceda76e4",
     promptUrl: spatialDesignerRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
