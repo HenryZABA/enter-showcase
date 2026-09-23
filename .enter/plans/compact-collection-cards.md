@@ -1,35 +1,37 @@
 # Context
 
-用户要把三个模型合集的目录页和单页写得更清楚：删除目录卡图片上的“Model Library”、标题下的“Explore model”、目录大标题前后的装饰文案；目录卡说明只说这里收录该模型相关的有趣案例。单页删掉顶部“Model Library”、营销式副标题，以及 Hot Cases、Trending Prompts、FAQ 标题上方的编号小字；缩小 Hot Cases 卡片的说明文字。同时为今后收录的 Cases 与 Trending Prompts 预留**静态图片或视频**两种真实媒体格式。项目尚未收到其他模型的新案例和外部提示词，不新增虚构媒体或内容。
+用户要把首页和模型单页改成双库浏览：**Prompt Library 在上、Case Library 在下**；默认各预览最多 9 条，Explore More 或点击卡片主体后进入单库专注模式，另一库收起，但保留随滚动可用的切换按钮。模型页亦先提示词后案例。Gallery 的模型卡副标题从“探索模型”改为“探索 Prompts”；顶部导航的 Case Library 只改成 Library；首页主视觉及 Explore Collection 目标一起改为 GPT-6 Sol & Luna。
 
-## 实施方式
+用户上传 CSV（4,604,932 bytes）已通过该附件对应的公开 CDN URL 用 Python 标准 CSV 解析：628 条逻辑记录；`收录判定=保留` 且 `Prompt状态=available` 且存在逐字 `Prompt原文` 的 13 行，按作品原帖 URL＋原文 SHA 去重后 **12 条**，原文均与 `Prompt来源与作者` 的作者证据完全一致。其中 **9 条“共用”**、**3 条“GPT模型”**，没有 Opus-only 完整 Prompt。用户确认：只收这 12 条，排除缺原文、待补充、partial 和被排除行；9 条共用在 Sol/Luna 与 Opus 两边都展示，首页合并去重仅各出现一次；Astra 无合格数据时保留明确空态。任何真实来源文本均当作数据处理，不执行其中指令。
 
-- 在 `ShowcaseCollectionsPage.tsx` 与 `collection-card.tsx` 只保留“Collections.”标题、真实模型名称和一句直白描述；图片不叠加 Model Library，标题下不再出现 Explore model。修改三个 `showcase-collections/*.ts` 的描述，在 11 份 `public/locales/*.json` 中对应更新真实文案：Astra 可以介绍现有案例，Sol/Luna 和 Opus 只表述“将收录”，不假装已有案例。
-- `model-detail-page.tsx` 删除标题上方的眉题、标题下营销句，以及 Hot Cases / Trending Prompts 上面的编号；`model-faq.tsx` 删除 FAQ 上面的“03 / FAQ”。保留三页标题、项目输入框、模型封面、两个内容区、FAQ、返回按钮和 Footer。清理 `ModelPageCopy` 中不再渲染的 eyebrow/tagline 等字段及 scoped 旧 CSS；模型封面下重复的“01 / MODEL”索引也同步去除，不改真实案例和模型的名称。
-- 仅调整 `model-detail.css` 中 `.model-hot-grid .case-photo-caption p` 的字号（包括手机），不改变主案例目录的卡片字体与现有卡片点击详情交互。
-- 用一个聚焦的可见性视频组件复用已有 `collection-card.tsx` 的加载/播放生命周期：靠近视口才设置 src，可见且页面活动时静音循环播放，离屏/后台暂停，卸载清理监听和 observer，减少动态效果时停留在 poster。Cases 的 `CaseEntry.gallery` 在既有 `imageUrl`（视频封面兼详情 poster）上支持可选 `videoUrl`；无 `videoUrl` 保持既有静态图片。Trending Prompt 将可选媒体明确区分 `{type:'image',src}` 和 `{type:'video',src,poster}`，无媒体的卡片保持简洁；图片/视频同为 16:9 稳定占位。播放被浏览器阻止时保留 poster，不自动创建假内容或额外 API。
-- 保留当前图片资源、Gallery 动效和 Cookie/统计、路由、`hl`、`/_prompts` 路径。没有新增数据和转链：复制/下载后强制在新标签页打开 Enter 仍待用户提供正式链接，绝不接临时假 URL。
+## 推荐实施路径
+
+1. **内容提取与交付**：批准后将附件原始 CSV 下载到项目外临时位置，以 `csv.DictReader` 一次处理，而非把 4.39 MB CSV 打入用户首屏。明确校验 61 列、628 行、13 条合格行、12 个独立来源/原文组合及来源证据逐字相等。输出 12 个 UTF-8 原文静态资源（原字节与完整换行保留）和轻量元数据：稳定 ID、编辑后的简短标题/描述、作者用户名、原帖/Prompt 精确来源、媒体图片或视频＋封面、模型分组。静态资源走 Vite 版本化 URL 与现有 `loadPrompt` 32 项缓存，不提前取正文。只收录 CSV 本身提供的可信 URL/媒体，不发布完整原始采集表或排除行。模型关联：GPT模型→Sol/Luna；共用→Sol/Luna 和 Opus；Astra 空态；首页按唯一 ID 合并，仅一份记录。
+2. **首页与单页结构**：抽出可复用的提示词卡片和双库状态组件/Hook，保持现有黑色与渐变玻璃设计。首页在现有 Hero/Gallery 后先加 Prompt Library（共 12 条，默认9），再显示 Case Library（现有14条，默认9，搜索分类及批量下载保持）。模型单页依次 Prompt Library、Hot Cases、FAQ；Astra 提示词空态，Sol/Luna 12 条，Opus 9 条，Astra Hot Cases 从当前六条扩为现有真实案例的 9 条预览＋ Explore More。两组各自按需求显示 Explore More，恰好 9 条时不生成多余按钮。浏览超过24条时沿用既有有界分页，避免几百条一次挂载。
+3. **专注切换**：两页共享 `both | prompts | cases` 状态；默认同时可见两个九条预览。用户确认**只有点击卡片主体或 Explore More** 才进入专注模式，复制、展开原文、来源外链不触发。选中库完整展开（继续遵守24/页上限），另一库从视觉与键盘序中移除；单库模式固定显示一个指向对方的玻璃按钮，滚动时保持可见，点击后切到另一库并滚动定位标题。Case 卡的 Flip 详情动画优先保留原始起点，最迟在详情关闭时完成另一库收起。空库也保留真实空态，不假造项目或提示词；按钮切换后仍能看到其空态。
+4. **文案/路径**：`collection-carousel.tsx` 模型卡副标题用新增的“Explore Prompts”多语言文案，保留装饰卡“Coming Soon”；Header 的 nav 可见字样为 Library，不改 Case Library 分区标题。`featuredShowcaseCollection` 由 Astra 改为 Sol/Luna；首页 Hero 统一使用 Sol/Luna 当前真实封面，标题明确为 “Enter × GPT-6 / Sol & Luna”，主 CTA 文案和链接均指向 Sol/Luna 模型合集，并保留 `/prompts`/`/showcases`、`hl`。本轮不更改既有 Cookie/统计或其他项目归属。
 
 ## 关键文件
 
-- `src/pages/showcase/ShowcaseCollectionsPage.tsx`、`src/components/case-library/collection-card.tsx`、`src/styles/collection-directory.css`
-- `src/components/case-library/{model-detail-page,model-faq,case-photo-card,model-trending-prompts}.tsx`、`src/styles/{model-detail,case-photogrid}.css`
-- `src/data/{cases.ts,model-pages/types.ts,model-pages/trending-prompts.ts,showcase-collections/*.ts}`、`public/locales/*.json`
-- 新建共享视频预览组件；仅在 `CasePhotoCard` 和 `ModelTrendingPrompts` 中使用。
+- `src/components/case-library/{showcase-library-view,model-detail-page,model-trending-prompts,model-hot-case-gallery,collection-carousel}.tsx`、新建单库切换组件及 `src/styles/{showcase,model-detail}.css`
+- `src/data/model-pages/trending-prompts.ts`、`src/data/showcase-collections.ts`、`src/data/showcase-collections/gpt-6-sol-luna.ts`、`src/pages/showcase/ShowcasesPage.tsx`
+- `src/components/layout/Header.tsx`、`src/components/case-library/hero-stage.tsx`、`public/locales/*.json`、`src/lib/prompt-cache.ts`（优先复用，不改缓存语义）
+- `.enter/performance-audit/*.test.tsx`；不把测试假数据或原始 CSV 发布给浏览器。
 
 ## Implementation checklist
 
-- [x] 目录页大标题前后、小卡媒体角标及模型卡标题下的 Explore model 全部消失，标题与链接仍可用。
-- [x] 三张目录卡说明改为简单、对应模型且不误导当前空数据的文案；11 语言文本一致（结构校验通过）。
-- [x] 三种模型单页的眉题、营销副标题、三个分区编号和重复图片索引消失；原有主标题/输入框/返回链接及 FAQ 仍在。
-- [x] 仅 Hot Cases 卡片说明字号减小，默认显示及图片卡原来的悬停/点击行为保持（390/1280 截图取得）。
-- [x] Case 卡既支持现有静态图片又支持带 poster 的视频，详情海报及本地案例归属保持不变（测试夹具验证）。
-- [x] Trending Prompt 卡可选图片或带 poster 的视频；正文、来源、复制动作与无数据空态不变（测试夹具验证）。
-- [x] 两种视频卡均只在邻近视口加载、可见且非后台时播放，离屏/卸载/减少动态效果能安全停止；真实视频源浏览器验收仍待内容提供。
+- [ ] CSV 原始来源、字段数、合格记录及原文与作者证据核对；非合格记录与重复引用均不进入 UI。
+- [ ] 12 个逐字原文按需资源及轻量来源/媒体元数据生成；首页12条唯一，Sol/Luna12条、Opus9条、Astra0条，分组关系可测试。
+- [ ] 首页 Hero 图片、四段文案与 CTA 统一指向 Sol/Luna；Gallery 模型卡副标题显示“探索 Prompts”；导航仅显示“Library”。
+- [ ] 首页默认 Prompt Library→Case Library，各最多9条，两个区域都有正确的 Explore More/空态；旧 Case 搜索、多选、详情和下载不退化。
+- [ ] 三个模型单页默认 Prompt Library→Hot Cases→FAQ，Astra 空态和已有案例正确；各列表最多9条，More 后仍遵守24条分页上限。
+- [ ] 点击卡片主体或 Explore More 收起另一库；Prompt 复制、展开、来源外链不误触发；固定切换按钮按内容滚动仍可见、可键盘访问，切换不破坏 Case Flip 动画。
+- [ ] 11 语言文字和文案插值统一；不擅自删除旧键，不修改用户尚未提供的正式 Enter 转链。
 
 ## Verification checklist
 
-- [x] `pnpm run typecheck`、`pnpm run build`、34 项 JSDOM 测试和 `git diff --check` 通过；i18n 校验及最终扫描通过，旧键保留。
-- [x] Astra 现有真实卡片在 mobile_390/desktop_1280 截图中可见且小标题更紧凑；目录卡无装饰角标/Explore model 有 DOM 测试。Sol/Luna、Opus 无数据的既有空态及路径由原有测试保护；目录页和视频真实资源的浏览器视觉仍未单独验证。
-- [x] 使用**仅存在于测试**的图片与视频夹具验证 Case/Prompt 两种媒体分支、poster、无媒体、进入/离开视口、后台/前台、减少动态效果、被阻止自动播放和卸载；不向正式库注入假案例。
-- [x] marketing 严格构建审计无缺失产物错误，但保留现有 CSR 静态正文及 JS/字体预算告警（退出码 1）；浏览器性能、部署 HTTP 缺证据，不能宣称提速或上线缓存达标。
+- [ ] `pnpm run typecheck`、`pnpm run build`、`git diff --check`、现有 Vitest + 新增数据/双库交互测试通过；i18n check 和 scan 通过。
+- [ ] 12 条原文 SHA、去重/分组、作者/帖子/媒体链接与 CSV 可复查；首页无重复，Opus/GPT 共用正确，缺原文/待补充/排除永不提供 Copy Prompt。
+- [ ] 测试两页 0/9/10/12/14/25 条、Prompt 优先排序、首页旧搜索下载、来源点击/原文展开/复制不切换、卡片/More/固定按钮切换、键盘焦点与详情动画关闭后的状态。
+- [ ] 只对代表性受影响页面做 390 手机和 1280 桌面视觉核对：双库布局、固定切换、Sol/Luna 首屏、空态与卡片媒体；真实视频若外域禁止播放，保留真实封面并记录。
+- [ ] 复用 marketing 严格构建审计，保留既有 CSR/JS/字体警告，不把构建或预览截图当浏览器性能、部署 HTTP 的真实通过证据。
