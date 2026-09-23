@@ -1,4 +1,5 @@
 import type { CurvedGalleryItem } from "@/data/curved-gallery";
+import { fitGalleryLabel } from "./label";
 
 export type GalleryResource = {
   media: WebGLTexture;
@@ -22,14 +23,15 @@ function overlay(item: CurvedGalleryItem, width: number, density: number) {
   const gradient = context.createLinearGradient(0, height * (decorative ? .75 : .5), 0, height);
   gradient.addColorStop(0, "rgba(0,0,0,0)"); gradient.addColorStop(1, decorative ? "rgba(0,0,0,.55)" : "rgba(0,0,0,.78)");
   context.fillStyle = gradient; context.fillRect(0, 0, width, height);
-  context.font = `${Math.round(Math.max(25 * scale, 14 * density))}px "Curved Gallery Inter", Inter, sans-serif`;
+  context.font = `${Math.round(Math.max(25 * scale, 14 * density))}px "Curved Gallery Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif`;
   context.textBaseline = "bottom"; context.fillStyle = "rgba(255,255,255,.96)";
   const maxTextWidth = width - (item.href ? 126 : 76) * scale;
-  context.fillText(item.title, 38 * scale, height - (item.subtitle ? Math.max(69 * scale, 34 * scale + 16 * density) : 34 * scale), maxTextWidth);
+  const measure = (text: string) => context.measureText(text).width;
+  context.fillText(fitGalleryLabel(item.title, maxTextWidth, measure), 38 * scale, height - (item.subtitle ? Math.max(69 * scale, 34 * scale + 16 * density) : 34 * scale));
   if (item.subtitle) {
-    context.font = `${Math.round(Math.max(20 * scale, 12 * density))}px "Curved Gallery Inter", Inter, sans-serif`;
+    context.font = `${Math.round(Math.max(20 * scale, 12 * density))}px "Curved Gallery Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif`;
     context.fillStyle = "rgba(255,255,255,.8)";
-    context.fillText(item.subtitle, 38 * scale, height - 34 * scale, maxTextWidth);
+    context.fillText(fitGalleryLabel(item.subtitle, maxTextWidth, measure), 38 * scale, height - 34 * scale);
   }
   // Upcoming concepts are not links: never draw a misleading navigation arrow.
   if (!item.href) return canvas;
