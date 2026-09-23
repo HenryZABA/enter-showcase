@@ -22,10 +22,10 @@ export function getAstraCopy(t: TFunction): ModelPageCopy {
     heading: t("modelAstra.heading"),
     tagline: t("modelAstra.tagline"),
     browse: t("modelAstra.browse"),
-    hotPrompts: t("modelAstra.hotPrompts"),
+    hotCases: t("modelPages.hotCases"),
     hotDescription: t("modelAstra.hotDescription"),
-    allPrompts: t("modelAstra.allPrompts"),
-    allDescription: t("modelAstra.allDescription"),
+    trendingPrompts: t("modelPages.trendingPrompts"),
+    trendingDescription: t("modelPages.trendingDescription"),
     aboutTitle: t("modelAstra.aboutTitle"),
     aboutBody: t("modelAstra.aboutBody"),
     useTitle: t("modelAstra.useTitle"),
@@ -35,12 +35,6 @@ export function getAstraCopy(t: TFunction): ModelPageCopy {
     libraryLink: t("modelAstra.libraryLink"),
     composer: {
       label: t("modelAstra.composerLabel"), hint: t("modelAstra.composerHint"), copyOpen: t("modelAstra.copyOpen"), copying: t("modelAstra.copying"), copyError: t("modelAstra.copyError"),
-    },
-    placeholder: {
-      pending: t("modelAstra.pending"), videoPending: t("modelAstra.videoPending"), casePending: t("modelAstra.casePending"), cardDescription: t("modelAstra.cardDescription"), promptLabel: t("modelAstra.promptLabel"), promptPending: t("modelAstra.promptPending"), cardAction: t("modelAstra.cardAction"), cardNote: t("modelAstra.cardNote"),
-    },
-    categories: {
-      label: t("modelAstra.categoryLabel"), all: t("modelAstra.categoryAll"), website: t("modelAstra.categoryWebsite"), app: t("modelAstra.categoryApp"), other: t("modelAstra.categoryOther"), empty: t("modelAstra.categoryEmpty"),
     },
     faqs: [
       { id: "build", question: t("modelAstra.faqBuildQuestion"), answer: t("modelAstra.faqBuildAnswer") },

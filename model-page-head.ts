@@ -5,6 +5,7 @@ import type { PluginOption } from "vite";
 import en from "./public/locales/en.json";
 import { astraModel, getAstraCopy } from "./src/data/model-pages/gpt-6-astra";
 import { getSolLunaCopy, solLunaModel } from "./src/data/model-pages/gpt-6-sol-luna";
+import { getOpusCopy, opusModel } from "./src/data/model-pages/claude-opus-5-5";
 import { modelFaqSchema, type ModelPageCopy, type ModelPageModel } from "./src/data/model-pages/types";
 
 const escapeAttribute = (value: string) => value.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -13,6 +14,7 @@ type StaticModelPage = { model: ModelPageModel; getCopy: (t: TFunction) => Model
 const modelPages: StaticModelPage[] = [
   { model: astraModel, getCopy: getAstraCopy },
   { model: solLunaModel, getCopy: getSolLunaCopy },
+  { model: opusModel, getCopy: getOpusCopy },
 ];
 
 /** Page-specific head output only; intentionally does not claim to prerender the CSR body. */
@@ -39,7 +41,7 @@ export function modelPageHeadPlugin(projectRoot: string): PluginOption {
           meta("og:type", "website", true),
           meta("og:url", model.canonical, true),
           meta("og:image", new URL(model.image, model.canonical).href, true),
-          `<script data-model-static type="application/ld+json">${JSON.stringify(modelFaqSchema(copy.faqs)).replaceAll("<", "\\u003c")}</script>`,
+          ...(copy.faqs.length ? [`<script data-model-static type="application/ld+json">${JSON.stringify(modelFaqSchema(copy.faqs)).replaceAll("<", "\\u003c")}</script>`] : []),
         ].join("");
         const html = source
           .replace(/<title>.*?<\/title>/s, `<title>${escapeAttribute(copy.title)}</title>`)

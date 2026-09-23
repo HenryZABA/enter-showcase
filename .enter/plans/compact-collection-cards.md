@@ -14,21 +14,28 @@
 
 ## Implementation checklist
 
-- [ ] Hot Cases 标题/说明指向站内真实项目，Astra 保留前六项，Sol/Luna/Opus 无项目时显示诚实空态。
-- [ ] Hot Cases 卡片说明及遮罩默认可见，目录与其他案例卡悬停效果不变。
-- [ ] Trending Prompts 模型、简洁卡片和无数据空态完成；只对有已核实来源及原文的数据启用标签、来源链接、展开和复制。
-- [ ] 用 nano-banana-2 生成 Opus 抽象封面并放入 `/_prompts/` 对应的本地媒体路径；保留 Sol/Luna 原有封面。
-- [ ] 新增 Opus 页面/合集注册与静态 head；Gallery 前两个装饰项替换为 Sol/Luna、Opus 可点击卡，其余保持不变。
-- [ ] 移除批量下载完成弹窗；正式转链未到前不增加假跳转。
+- [x] Hot Cases 标题/说明指向站内真实项目，Astra 保留前六项，Sol/Luna/Opus 无项目时显示诚实空态（组件测试通过）。
+- [x] 仅 Hot Cases 卡片说明及遮罩默认可见，目录与其他案例卡悬停效果不变（CSS 范围检查；实际悬停视觉未实测）。
+- [x] Trending Prompts 模型、简洁卡片和无数据空态完成；测试数据验证来源链接、原文按需读取和复制；线上暂无真实收录项。
+- [x] 用 nano-banana-2 生成 Opus 抽象封面并压缩为站内 54 KB WebP；保留 Sol/Luna 原有封面。
+- [x] 新增 Opus 页面/合集注册与两套静态 head；Gallery 前两个装饰项替换为 Sol/Luna、Opus 可点击卡，其余保持不变（组件测试通过）。
+- [x] 移除批量下载完成弹窗；正式转链未到前不增加假跳转。
 - [ ] 仅收到用户的真实提示词/项目后填充对应合集数据，不把 Astra 项目归入其他模型。
 - [ ] 仅收到正式转链后统一实现新标签页跳转，覆盖所有复制及单项/批量下载入口与失败/拦截状态；在此之前保持待办。
-- [ ] 所有新增/变更的 UI 文案在 11 个 locale 中成对维护；不主动删除未用的旧翻译键。
+- [x] 所有新增/变更的 UI 文案在 11 个 locale 中成对维护；不主动删除未用的旧翻译键（check-i18n 与 scan-i18n 均通过）。
 
 ## Verification checklist
 
-- [ ] `pnpm run typecheck`、`pnpm run build`、`git diff --check`、i18n `check-i18n.mjs` 与 `scan-i18n.mjs` 通过；确认 Opus 静态 HTML 有正确 title/description/canonical/OG 且不会在别的模型页串位。
-- [ ] 测试 Astra 的六个项目、Sol/Luna 和 Opus 零项目/零提示词空态；测试有真实记录时来源/Original Prompts/正文/复制只对应所属模型，输入无关页面后不残留状态。
+- [x] `pnpm run typecheck`、`pnpm run build`、`git diff --check`、i18n `check-i18n.mjs` 与 `scan-i18n.mjs` 均通过；Opus 两套静态 HTML 的 title/description/canonical/OG 已核对。
+- [x] 测试 Astra 的六个项目、Sol/Luna 和 Opus 零项目/零提示词空态；测试夹具验证来源/Original Prompts/原文/复制只在有真实形态数据时可见（29 项组件测试通过，实际外部数据仍待用户提供）。
 - [ ] 检查 `/prompts`、`/showcases` 的三个模型页与合集目录直接进入、刷新、Gallery 点击、`hl` 保留和旧 Astra slug 不退化；无数据时不出现可点击的虚构项目或作者。
 - [ ] 后续收到正式链接再测：剪贴板成功/拒绝、正文加载失败、单项和批量下载成功/失败、弹窗受阻、重复点击；每次成功只打开一个正确的新标签页，不显示旧弹窗。
 - [ ] 手机 390 与桌面 1280 核对新增模型页/Trending 区块，验证默认标题可读、链接焦点可见与缩减动态效果；不能取得浏览器证据时标记未验证而不是通过。
-- [ ] 用 marketing 构建审计记录新公开路由及新增资源；分别报告构建审计、浏览器性能、功能回归、部署 HTTP 状态，保留现有性能预算未达标事实，不把构建当作线上速度证据。
+- [x] 用 marketing 严格构建审计记录所有模型/合集入口与媒体：无缺失产物/未映射 HTML 错误，仍有原有 CSR 静态正文及 JS/字体预算告警（退出码 1）；浏览器性能、真实部署 HTTP 仍未验证。
+
+## 本轮交付证据与未完成依赖
+
+- `pnpm run typecheck`、`pnpm run build`、`git diff --check`、i18n 校验及 29 项 JSDOM 测试通过。模型页 `/prompts/{gpt-6-astra,gpt-6-sol-luna,claude-opus-5-5}` 与 `/showcases/…` 共 6 份静态 HTML 产物均有 canonical 与 OG 图片；Opus 页面手机 390/桌面 1280 截图已取得。Opus 封面压缩为约 54 KB 本地 WebP；Gallery 两个入口的 `hl` 路径映射有单元测试。
+- 目录用现有 `/prompts` 与 `/showcases` 路由工厂、`useAppHref` 和 `/_prompts` 资产命名空间；Cookie 管理、GTM、Clarity、Mixpanel 均由既有 app root 统一挂载，没有为 Opus 新建实例，真实 consent/事件端到端尚未验证。当前语言仍遵守项目已有 `hl` 参数模式，不重建另一套路由式 i18n。
+- Hot Cases 与 Trending Prompt 测试夹具不进入生产数据。**仍需用户提供** Sol/Luna/Opus 站内项目、各模型抓取提示词的完整原文及来源、以及正式转链；在此之前没有假项目、假作者或带错误 URL 的强制跳转。正式链接到来后需完成所有复制与下载动作的新标签页契约，不能将当前阶段表述为全量完成。
+- 严格构建审计保留已有 CSR 无静态 H1/正文和部分 canonical/JSON-LD、远程字体未验证、JS 与字体默认预算超限的告警。浏览器冷暖 5 次性能测试和线上缓存/HTTP 响应头未做，本轮不宣称速度或部署达标。

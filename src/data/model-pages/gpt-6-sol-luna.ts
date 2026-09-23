@@ -11,7 +11,7 @@ export const solLunaModel: ModelPageModel = {
   artCaption: "ENTER × GPT-6 SOL / LUNA",
 };
 
-export const solLunaInitialPrompt = "Build a polished product launch workspace with a campaign overview, an execution board, and a rapid iteration area. Make it responsive, visually refined, and easy to evolve from first concept to final release.";
+export const solLunaInitialPrompt = ""; // No model-attributed prompt is published yet.
 
 export function getSolLunaCopy(t: TFunction): ModelPageCopy {
   return {
@@ -22,10 +22,10 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     heading: t("modelSolLuna.heading"),
     tagline: t("modelSolLuna.tagline"),
     browse: t("modelAstra.browse"),
-    hotPrompts: t("modelSolLuna.hotPrompts"),
-    hotDescription: t("modelSolLuna.hotDescription"),
-    allPrompts: t("modelAstra.allPrompts"),
-    allDescription: t("modelSolLuna.allDescription"),
+    hotCases: t("modelPages.hotCases"),
+    hotDescription: t("modelPages.hotDescriptionPending"),
+    trendingPrompts: t("modelPages.trendingPrompts"),
+    trendingDescription: t("modelPages.trendingDescription"),
     aboutTitle: t("modelSolLuna.aboutTitle"),
     aboutBody: t("modelSolLuna.aboutBody"),
     useTitle: t("modelSolLuna.useTitle"),
@@ -35,12 +35,6 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     libraryLink: t("modelAstra.libraryLink"),
     composer: {
       label: t("modelAstra.composerLabel"), hint: t("modelAstra.composerHint"), copyOpen: t("modelAstra.copyOpen"), copying: t("modelAstra.copying"), copyError: t("modelAstra.copyError"),
-    },
-    placeholder: {
-      pending: t("modelAstra.pending"), videoPending: t("modelAstra.videoPending"), casePending: t("modelAstra.casePending"), cardDescription: t("modelAstra.cardDescription"), promptLabel: t("modelAstra.promptLabel"), promptPending: t("modelAstra.promptPending"), cardAction: t("modelAstra.cardAction"), cardNote: t("modelAstra.cardNote"),
-    },
-    categories: {
-      label: t("modelAstra.categoryLabel"), all: t("modelAstra.categoryAll"), website: t("modelAstra.categoryWebsite"), app: t("modelAstra.categoryApp"), other: t("modelAstra.categoryOther"), empty: t("modelAstra.categoryEmpty"),
     },
     faqs: [
       { id: "build", question: t("modelSolLuna.faqBuildQuestion"), answer: t("modelSolLuna.faqBuildAnswer") },

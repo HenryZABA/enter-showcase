@@ -1,11 +1,12 @@
 import { cases, type CaseEntry } from "@/data/cases";
 import { gpt6AstraCollection } from "./showcase-collections/gpt-6-astra";
 import { gpt6SolLunaCollection } from "./showcase-collections/gpt-6-sol-luna";
+import { claudeOpus55Collection } from "./showcase-collections/claude-opus-5-5";
 import type { ShowcaseCollection } from "./showcase-collections/types";
 
 export type { ShowcaseCollection, ShowcaseHeroContent } from "./showcase-collections/types";
 
-export const showcaseCollections: readonly ShowcaseCollection[] = [gpt6AstraCollection, gpt6SolLunaCollection];
+export const showcaseCollections: readonly ShowcaseCollection[] = [gpt6AstraCollection, gpt6SolLunaCollection, claudeOpus55Collection];
 export const featuredShowcaseCollection = showcaseCollections[0];
 
 export const getShowcaseCollection = (slug: string) =>

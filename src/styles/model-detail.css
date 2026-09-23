@@ -51,11 +51,35 @@
 .model-prompts-heading h2 { margin: 16px 0; }
 .model-prompts-heading > p { font-size: 14px; line-height: 1.7; color: hsl(var(--muted-foreground)); }
 .model-prompts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.model-hot-prompts { padding-bottom: var(--model-space); }
+.model-hot-cases { padding-bottom: var(--model-space); }
 .model-hot-grid { --photo-radius: 14px; --photo-overlay: linear-gradient(180deg, transparent 0%, hsl(var(--background) / .5) 38%, hsl(var(--background) / .96) 100%); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .model-hot-grid .case-photo-card, .model-hot-grid .case-photo-card[data-format="square"] { grid-row: auto; aspect-ratio: 4 / 3; }
+/* Only model Hot Cases reveal captions at rest; the main Case Library keeps its hover treatment. */
+.model-hot-grid .case-photo-caption::before,
+.model-hot-grid .case-photo-caption p { opacity: 1; transform: none; }
 @media (max-width: 767px) { .model-hot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
 @media (max-width: 639px) { .model-hot-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+.model-trending-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.model-trending-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); box-shadow: var(--shadow-panel); }
+.model-trending-media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--model-rule); }
+.model-trending-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; gap: 16px; padding: clamp(20px, 2.4vw, 30px); }
+.model-trending-media + .model-trending-content { min-height: 310px; }
+.model-trending-content h3 { font-family: var(--font-display); font-size: clamp(21px, 2.2vw, 29px); font-weight: 600; line-height: 1.2; letter-spacing: -.04em; color: hsl(var(--foreground)); }
+.model-trending-description { font-size: 14px; line-height: 1.75; color: hsl(var(--muted-foreground)); }
+.model-original-badge { display: inline-flex; align-items: center; min-height: 30px; padding: 5px 12px; border: 1px solid hsl(var(--primary) / .25); border-radius: 999px; background: hsl(var(--accent) / .5); font-size: 11px; font-weight: 600; color: hsl(var(--foreground)); }
+.model-trending-source { font-size: 12px; line-height: 1.6; color: hsl(var(--muted-foreground)); }
+.model-trending-source a { display: inline-flex; align-items: center; gap: 3px; color: hsl(var(--foreground)); text-decoration: underline; text-decoration-color: hsl(var(--foreground) / .4); text-underline-offset: 3px; overflow-wrap: anywhere; }
+.model-trending-source a:hover { text-decoration-color: hsl(var(--primary)); }
+.model-trending-disclosure { width: 100%; margin-top: auto; border-top: 1px solid var(--model-rule); color: hsl(var(--foreground)); }
+.model-trending-disclosure summary { display: flex; align-items: center; gap: 8px; padding: 16px 0; font-size: 12px; font-weight: 600; cursor: pointer; list-style: none; }
+.model-trending-disclosure summary::-webkit-details-marker { display: none; }
+.model-trending-disclosure[open] summary svg { transform: rotate(90deg); }
+.model-trending-disclosure pre { max-height: 260px; overflow: auto; padding: 16px; border: 1px solid var(--model-rule); border-radius: 10px; background: hsl(var(--background) / .5); color: hsl(var(--foreground)); font-family: var(--font-mono); font-size: 11px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+.model-trending-feedback { padding: 12px 0; color: hsl(var(--muted-foreground)); font-size: 12px; }
+.model-trending-feedback button { color: hsl(var(--foreground)); text-decoration: underline; text-underline-offset: 3px; }
+.model-trending-copy { width: 100%; border: 0; cursor: pointer; }
+.model-trending-copy:focus-visible, .model-trending-source a:focus-visible, .model-trending-disclosure summary:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+@media (max-width: 767px) { .model-trending-grid { grid-template-columns: minmax(0, 1fr); } }
 .model-category-browser { width: 100%; }
 .model-category-browser > .model-collection-empty { max-width: 920px; margin-inline: auto; }
 .model-category-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }

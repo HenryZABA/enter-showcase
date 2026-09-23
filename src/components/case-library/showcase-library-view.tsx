@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowLeft, ChevronLeft, ChevronRight, Download } from "lucide-react";
-import { lazy, memo, Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { PreviewBudgetProvider } from "./preview-budget";
 import { CaseDetailShell } from "@/components/case-library/case-detail-shell";
 import { Link } from "react-router-dom";
@@ -26,7 +26,6 @@ import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { downloadTextFile } from "@/lib/prompt-file";
 import { useShowcaseTheme } from "@/hooks/use-showcase-theme";
 
-const PromptDownloadSuccessDialog = lazy(() => import("./prompt-download-success-dialog").then(module => ({ default: module.PromptDownloadSuccessDialog })));
 const StableHeader = memo(Header);
 const StableFooter = memo(Footer);
 const StableCarousel = memo(CollectionCarousel);
@@ -71,8 +70,6 @@ export const ShowcaseLibraryView = ({
     origin: CaseFlipOrigin;
   } | null>(null);
   const [selectionMode, setSelectionMode] = useState(false);
-  const [downloadSuccessOpen, setDownloadSuccessOpen] = useState(false);
-  const [downloadedPromptCount, setDownloadedPromptCount] = useState(0);
   const [selectedPromptIds, setSelectedPromptIds] = useState<Set<string>>(
     new Set(),
   );
@@ -103,8 +100,7 @@ export const ShowcaseLibraryView = ({
       const { buildPromptBundle } = await import("@/lib/prompt-bundle");
       const content = await buildPromptBundle(selectedEntries, t, language, { title: bundleTitle, total: entries.length });
       if (!downloadTextFile(fileName, content)) throw new Error("Download failed");
-      setDownloadedPromptCount(selectedEntries.length);
-      setDownloadSuccessOpen(true);
+      toast.success(t("bundle.done"));
     } catch {
       toast.error(t("bundle.failed"));
     } finally {
@@ -280,14 +276,6 @@ export const ShowcaseLibraryView = ({
       </main>
 
       <StableFooter />
-
-      {downloadSuccessOpen && <Suspense fallback={null}>
-        <PromptDownloadSuccessDialog
-          open={downloadSuccessOpen}
-          onOpenChange={setDownloadSuccessOpen}
-          count={downloadedPromptCount}
-        />
-      </Suspense>}
 
       {activeDetail && (
         <CaseDetailShell

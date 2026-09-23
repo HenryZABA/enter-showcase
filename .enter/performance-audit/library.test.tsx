@@ -13,7 +13,6 @@ vi.mock('@/components/layout/Footer',()=>({Footer:()=>null}));
 vi.mock('@/components/case-library/hero-stage',()=>({HeroStage:()=>null}));
 vi.mock('@/components/case-library/collection-carousel',()=>({CollectionCarousel:()=>null}));
 vi.mock('@/components/case-library/case-detail-shell',()=>({CaseDetailShell:()=>null}));
-vi.mock('@/components/case-library/prompt-download-success-dialog',()=>({PromptDownloadSuccessDialog:()=>null}));
 const download = vi.hoisted(()=>vi.fn(()=>true));
 vi.mock('@/lib/prompt-file',()=>({downloadTextFile:download}));
 let container:HTMLDivElement,root:Root;
@@ -54,6 +53,7 @@ describe('bounded real card rendering (synthetic data only in tests)',()=>{
   await click(button('bundle.downloadSelectedCount'));
   await act(async()=>{await new Promise(r=>setTimeout(r,50));});
   expect(download).toHaveBeenCalledOnce();
+  expect(container.querySelector('[role="dialog"]')).toBeNull();
   const markdown=download.mock.calls[0][1] as string;
   expect(markdown).toContain('VERBATIM /fixture-0.txt\n  spacing\n');expect(markdown).toContain('VERBATIM /fixture-24.txt');
   expect(markdown.indexOf('Case 0')).toBeLessThan(markdown.indexOf('Case 24'));

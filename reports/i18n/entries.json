@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T09:58:25.613Z",
+  "generatedAt": "2026-09-23T11:34:34.023Z",
   "fallbackLng": "en",
-  "total": 275,
+  "total": 296,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -209,7 +209,7 @@
         "ja": "プロンプト集をダウンロードしました",
         "ko": "프롬프트 묶음을 다운로드했습니다"
       },
-      "used": false,
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -272,7 +272,7 @@
         "ja": "選択した{{value}}件のプロンプトを利用できます。Enterで制作を試してみましょう。",
         "ko": "선택한 프롬프트 {{value}}개가 준비되었습니다. Enter에서 제작해 보세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -293,7 +293,7 @@
         "ja": "プロンプトをダウンロードしました",
         "ko": "프롬프트를 다운로드했습니다"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -314,7 +314,7 @@
         "ja": "Try in Enter",
         "ko": "Try in Enter"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -823,6 +823,27 @@
       "status": "complete"
     },
     {
+      "key": "collections.openOpus",
+      "group": "collections",
+      "source": "Open the Claude Opus 5.5 collection",
+      "values": {
+        "en": "Open the Claude Opus 5.5 collection",
+        "zh-CN": "打开 Claude Opus 5.5 合集",
+        "zh-TW": "開啟 Claude Opus 5.5 合集",
+        "es": "Abrir la colección Claude Opus 5.5",
+        "pt-BR": "Abrir a coleção Claude Opus 5.5",
+        "pt-PT": "Abrir a coleção Claude Opus 5.5",
+        "fr": "Ouvrir la collection Claude Opus 5.5",
+        "de": "Claude Opus 5.5 Kollektion öffnen",
+        "it": "Apri la collezione Claude Opus 5.5",
+        "ja": "Claude Opus 5.5コレクションを開く",
+        "ko": "Claude Opus 5.5 컬렉션 열기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
       "key": "collections.openSolLuna",
       "group": "collections",
       "source": "Open the Enter × GPT-6 Sol & Luna model page",
@@ -838,6 +859,48 @@
         "it": "Apri la pagina GPT-6 Sol e Luna",
         "ja": "GPT-6 Sol・Lunaモデルページを開く",
         "ko": "GPT-6 Sol 및 Luna 모델 페이지 열기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "collections.opusDescription",
+      "group": "collections",
+      "source": "A home for verified projects and attributed prompts. Content will appear when available.",
+      "values": {
+        "en": "A home for verified projects and attributed prompts. Content will appear when available.",
+        "zh-CN": "收录经过核实的项目和注明来源的提示词；有内容后即会展示。",
+        "zh-TW": "收錄經核實的專案和標明來源的提示詞；有內容時即會顯示。",
+        "es": "Un espacio para proyectos verificados y prompts atribuidos. El contenido aparecerá cuando esté disponible.",
+        "pt-BR": "Um espaço para projetos verificados e prompts com atribuição. O conteúdo aparecerá quando estiver disponível.",
+        "pt-PT": "Um espaço para projetos verificados e prompts atribuídos. O conteúdo aparecerá quando estiver disponível.",
+        "fr": "Un espace pour les projets vérifiés et les prompts attribués. Le contenu apparaîtra dès qu’il sera disponible.",
+        "de": "Ein Ort für verifizierte Projekte und Prompts mit Quellenangabe. Inhalte folgen, sobald sie verfügbar sind.",
+        "it": "Uno spazio per progetti verificati e prompt attribuiti. I contenuti appariranno quando disponibili.",
+        "ja": "検証済みプロジェクトと出典付きプロンプトを紹介します。内容は準備が整い次第公開されます。",
+        "ko": "검증된 프로젝트와 출처가 명시된 프롬프트를 위한 공간입니다. 콘텐츠는 준비되는 대로 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "collections.opusTitle",
+      "group": "collections",
+      "source": "Enter × Claude Opus 5.5",
+      "values": {
+        "en": "Enter × Claude Opus 5.5",
+        "zh-CN": "Enter × Claude Opus 5.5",
+        "zh-TW": "Enter × Claude Opus 5.5",
+        "es": "Enter × Claude Opus 5.5",
+        "pt-BR": "Enter × Claude Opus 5.5",
+        "pt-PT": "Enter × Claude Opus 5.5",
+        "fr": "Enter × Claude Opus 5.5",
+        "de": "Enter × Claude Opus 5.5",
+        "it": "Enter × Claude Opus 5.5",
+        "ja": "Enter × Claude Opus 5.5",
+        "ko": "Enter × Claude Opus 5.5"
       },
       "used": true,
       "missingLanguages": [],
@@ -2603,7 +2666,7 @@
         "ja": "アイデア、ライブプレビュー、そして作品を生むプロンプトを集める場所。",
         "ko": "아이디어, 라이브 미리보기, 그리고 그 뒤에 있는 프롬프트를 위한 공간."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2645,7 +2708,7 @@
         "ja": "すべてのプロンプト",
         "ko": "모든 프롬프트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2729,7 +2792,7 @@
         "ja": "Enterで開く",
         "ko": "Enter에서 열기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2750,7 +2813,7 @@
         "ja": "プレビューとプロジェクトの説明がここに表示されます。",
         "ko": "미리보기와 프로젝트 소개가 여기에 표시됩니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2771,7 +2834,7 @@
         "ja": "コンテンツ追加後に利用できます。",
         "ko": "콘텐츠 추가 후 이용할 수 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2792,7 +2855,7 @@
         "ja": "アプリ事例は近日追加予定",
         "ko": "앱 사례 추가 예정"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2834,7 +2897,7 @@
         "ja": "すべて",
         "ko": "전체"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2855,7 +2918,7 @@
         "ja": "アプリ",
         "ko": "앱"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2876,7 +2939,7 @@
         "ja": "このカテゴリにはまだプロンプトがありません。",
         "ko": "이 카테고리에는 아직 프롬프트가 없습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2897,7 +2960,7 @@
         "ja": "プロンプトのカテゴリ",
         "ko": "프롬프트 카테고리"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2918,7 +2981,7 @@
         "ja": "その他",
         "ko": "기타"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2939,7 +3002,7 @@
         "ja": "ウェブサイト",
         "ko": "웹사이트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3177,19 +3240,19 @@
     {
       "key": "modelAstra.faqSourcesAnswer",
       "group": "modelAstra",
-      "source": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The library is currently empty; creators can contact support@enter.pro about future listings.",
+      "source": "Hot Cases are published Enter projects. Some case prompts are catalog-based reconstructions and are labeled as such. Trending Prompts will include the original creator and source when available.",
       "values": {
-        "en": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The library is currently empty; creators can contact support@enter.pro about future listings.",
-        "zh-CN": "精选提示词将由 Enter 团队制作并测试。外部整理的提示词将注明作者与来源。目前提示词库为空；创作者可通过 support@enter.pro 联系我们，咨询未来收录事宜。",
-        "zh-TW": "精選提示詞將由 Enter 團隊製作並測試。外部整理的提示詞將註明作者與來源。目前提示詞庫為空；創作者可透過 support@enter.pro 聯絡我們，詢問未來收錄事宜。",
-        "es": "Enter creará y probará los prompts destacados. Los prompts externos incluirán autor y fuente. La biblioteca está vacía por ahora; los creadores pueden contactar con support@enter.pro sobre futuras publicaciones.",
-        "pt-BR": "Os prompts em destaque serão criados e testados pelo Enter. Os prompts externos incluirão autor e fonte. A biblioteca está vazia no momento; criadores podem entrar em contato pelo support@enter.pro sobre futuras publicações.",
-        "pt-PT": "Os prompts em destaque serão criados e testados pelo Enter. Os prompts externos incluirão autor e fonte. A biblioteca está vazia neste momento; os criadores podem contactar support@enter.pro sobre futuras publicações.",
-        "fr": "Les prompts sélectionnés seront créés et testés par Enter. Les prompts externes mentionneront leur auteur et leur source. La bibliothèque est actuellement vide ; les créateurs peuvent écrire à support@enter.pro au sujet de futurs ajouts.",
-        "de": "Ausgewählte Prompts werden von Enter erstellt und getestet. Externe Prompts erhalten Autoren- und Quellenangaben. Die Bibliothek ist derzeit leer; Urheber können sich zu künftigen Einträgen an support@enter.pro wenden.",
-        "it": "I prompt in evidenza saranno creati e testati da Enter. Quelli esterni riporteranno autore e fonte. La libreria è attualmente vuota; i creatori possono scrivere a support@enter.pro per le future pubblicazioni.",
-        "ja": "厳選プロンプトはEnterチームが作成・検証する予定です。外部のプロンプトには作者と出典を明記します。現在ライブラリは空です。今後の掲載についてはsupport@enter.proまでお問い合わせください。",
-        "ko": "추천 프롬프트는 Enter 팀이 제작하고 테스트할 예정입니다. 외부 프롬프트에는 작성자와 출처를 표기합니다. 현재 라이브러리는 비어 있으며, 향후 게재 문의는 support@enter.pro로 보내실 수 있습니다."
+        "en": "Hot Cases are published Enter projects. Some case prompts are catalog-based reconstructions and are labeled as such. Trending Prompts will include the original creator and source when available.",
+        "zh-CN": "Hot Cases 是已发布的 Enter 项目。部分案例提示词根据目录内容复刻，并会明确标注。Trending Prompts 上线后将注明原创者与来源。",
+        "zh-TW": "Hot Cases 是已發佈的 Enter 專案。部分案例提示詞依目錄內容重建，並會清楚標示。Trending Prompts 上線後將註明原作者與來源。",
+        "es": "Hot Cases son proyectos publicados en Enter. Algunos prompts de casos son reconstrucciones basadas en el catálogo y están etiquetados como tales. Trending Prompts incluirá el autor original y la fuente cuando estén disponibles.",
+        "pt-BR": "Hot Cases reúne projetos publicados no Enter. Alguns prompts dos cases são reconstruções baseadas no catálogo e estão identificados como tal. Trending Prompts indicará o autor original e a fonte quando disponíveis.",
+        "pt-PT": "Hot Cases reúne projetos publicados no Enter. Alguns prompts dos casos são reconstruções baseadas no catálogo e estão identificados como tal. Trending Prompts indicará o autor original e a fonte quando estiverem disponíveis.",
+        "fr": "Hot Cases présente des projets Enter publiés. Certains prompts de cas sont des reconstitutions basées sur le catalogue et sont signalés comme tels. Trending Prompts indiquera l’auteur original et la source dès leur disponibilité.",
+        "de": "Hot Cases sind veröffentlichte Enter-Projekte. Einige Case-Prompts sind Rekonstruktionen auf Basis des Katalogs und entsprechend gekennzeichnet. Trending Prompts nennen Urheber und Quelle, sobald sie verfügbar sind.",
+        "it": "Hot Cases raccoglie progetti Enter pubblicati. Alcuni prompt dei casi sono ricostruzioni basate sul catalogo e sono etichettati come tali. Trending Prompts indicherà autore originale e fonte quando disponibili.",
+        "ja": "Hot CasesはEnterで公開されたプロジェクトです。一部の事例プロンプトはカタログを基に再構成され、その旨を明記しています。Trending Promptsには公開時に原作者と出典を記載します。",
+        "ko": "Hot Cases는 공개된 Enter 프로젝트입니다. 일부 사례 프롬프트는 카탈로그를 바탕으로 재구성했으며 이를 명시합니다. Trending Prompts에는 원작자와 출처를 표시합니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -3380,7 +3443,7 @@
         "ja": "人気のプロンプト",
         "ko": "인기 프롬프트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3408,19 +3471,19 @@
     {
       "key": "modelAstra.metaDescription",
       "group": "modelAstra",
-      "source": "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
+      "source": "Explore published GPT-6 Astra projects in Enter. Attributed original prompts from public sources will appear as they are added.",
       "values": {
-        "en": "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
-        "zh-CN": "了解在 Enter 中用于网站、应用及交互体验的 GPT-6 Astra 提示词。探索入门方法；精选提示词与应用案例即将推出。",
-        "zh-TW": "了解在 Enter 中用於網站、應用程式及互動體驗的 GPT-6 Astra 提示詞。探索入門方法；精選提示詞與應用案例即將推出。",
-        "es": "Descubre prompts de GPT-6 Astra para sitios web, apps y experiencias interactivas en Enter. Próximamente: prompts seleccionados y ejemplos de apps.",
-        "pt-BR": "Descubra prompts do GPT-6 Astra para sites, apps e experiências interativas no Enter. Prompts selecionados e exemplos de apps estarão disponíveis em breve.",
-        "pt-PT": "Descobre prompts do GPT-6 Astra para sites, apps e experiências interativas no Enter. Prompts selecionados e exemplos de apps estarão disponíveis em breve.",
-        "fr": "Découvrez les prompts GPT-6 Astra pour créer des sites, apps et expériences interactives dans Enter. Prompts sélectionnés et exemples bientôt disponibles.",
-        "de": "Entdecke GPT-6 Astra Prompts für Websites, Apps und interaktive Erlebnisse in Enter. Kuratierte Prompts und App-Beispiele folgen in Kürze.",
-        "it": "Scopri prompt GPT-6 Astra per siti, app ed esperienze interattive in Enter. Prompt selezionati ed esempi di app saranno disponibili a breve.",
-        "ja": "Enterでウェブサイト、アプリ、インタラクティブ体験を作るためのGPT-6 Astraプロンプトをご紹介。厳選プロンプトとアプリ事例は近日公開予定です。",
-        "ko": "Enter에서 웹사이트, 앱, 인터랙티브 경험을 위한 GPT-6 Astra 프롬프트를 알아보세요. 엄선된 프롬프트와 앱 사례가 곧 공개됩니다."
+        "en": "Explore published GPT-6 Astra projects in Enter. Attributed original prompts from public sources will appear as they are added.",
+        "zh-CN": "探索在 Enter 中发布的 GPT-6 Astra 项目。注明出处的公开来源原创提示词将在收录后展示。",
+        "zh-TW": "探索在 Enter 中發佈的 GPT-6 Astra 專案。註明出處的公開來源原創提示詞將在收錄後顯示。",
+        "es": "Explora proyectos GPT-6 Astra publicados en Enter. Los prompts originales de fuentes públicas aparecerán con su atribución a medida que se añadan.",
+        "pt-BR": "Explore projetos GPT-6 Astra publicados no Enter. Prompts originais de fontes públicas serão exibidos com atribuição conforme forem adicionados.",
+        "pt-PT": "Explora projetos GPT-6 Astra publicados no Enter. Os prompts originais de fontes públicas serão apresentados com atribuição à medida que forem adicionados.",
+        "fr": "Explorez les projets GPT-6 Astra publiés sur Enter. Des prompts originaux issus de sources publiques apparaîtront avec leur attribution au fur et à mesure de leur ajout.",
+        "de": "Entdecke veröffentlichte GPT-6 Astra Projekte in Enter. Original-Prompts aus öffentlichen Quellen mit Namensnennung folgen, sobald sie hinzugefügt werden.",
+        "it": "Esplora i progetti GPT-6 Astra pubblicati su Enter. I prompt originali da fonti pubbliche saranno aggiunti con le relative attribuzioni.",
+        "ja": "Enterで公開されたGPT-6 Astraプロジェクトを紹介します。公開情報に基づく出典付きオリジナルプロンプトは追加され次第表示します。",
+        "ko": "Enter에 공개된 GPT-6 Astra 프로젝트를 살펴보세요. 공개 출처의 원본 프롬프트는 출처와 함께 추가되는 대로 표시됩니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -3464,7 +3527,7 @@
         "ja": "準備中",
         "ko": "준비 중"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3485,7 +3548,7 @@
         "ja": "プロンプト",
         "ko": "프롬프트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3506,7 +3569,7 @@
         "ja": "プロンプト全文をここに追加します。",
         "ko": "전체 프롬프트가 여기에 추가됩니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3611,7 +3674,7 @@
         "ja": "動画は近日追加予定",
         "ko": "영상 추가 예정"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3631,6 +3694,384 @@
         "it": "Scopri il modello",
         "ja": "モデルを詳しく見る",
         "ko": "모델 알아보기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.aboutBody",
+      "group": "modelOpus",
+      "source": "This collection brings together Enter projects and attributed prompts for Claude Opus 5.5. Content will be added once its source and model attribution are verified.",
+      "values": {
+        "en": "This collection brings together Enter projects and attributed prompts for Claude Opus 5.5. Content will be added once its source and model attribution are verified.",
+        "zh-CN": "这个合集将收录 Claude Opus 5.5 的 Enter 项目与注明出处的提示词。只有核实来源及模型归属后，内容才会在这里展示。",
+        "zh-TW": "這個合集將收錄 Claude Opus 5.5 的 Enter 專案及註明出處的提示詞。內容僅在核實來源與模型歸屬後顯示。",
+        "es": "Esta colección reúne proyectos de Enter y prompts con sus fuentes para Claude Opus 5.5. El contenido aparecerá tras verificar su origen y atribución al modelo.",
+        "pt-BR": "Esta coleção reúne projetos do Enter e prompts com atribuição para Claude Opus 5.5. O conteúdo aparece após a verificação da fonte e do modelo.",
+        "pt-PT": "Esta coleção reúne projetos Enter e prompts atribuídos para Claude Opus 5.5. O conteúdo aparece depois de verificadas a fonte e a atribuição ao modelo.",
+        "fr": "Cette collection rassemble des projets Enter et des prompts attribués pour Claude Opus 5.5. Leur source et leur modèle seront vérifiés avant publication.",
+        "de": "Diese Kollektion vereint Enter-Projekte und Prompts mit Quellenangabe für Claude Opus 5.5. Inhalte werden erst nach Prüfung ihrer Quelle und Modellzuordnung veröffentlicht.",
+        "it": "Questa collezione riunisce progetti Enter e prompt con fonte per Claude Opus 5.5. I contenuti vengono pubblicati dopo la verifica di origine e modello.",
+        "ja": "Claude Opus 5.5のEnterプロジェクトと、出典を明記したプロンプトを紹介するコレクションです。情報源とモデルの帰属を確認してから公開します。",
+        "ko": "이 컬렉션은 Claude Opus 5.5로 만든 Enter 프로젝트와 출처를 밝힌 프롬프트를 모읍니다. 출처와 모델 귀속을 확인한 뒤 콘텐츠를 게시합니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.aboutTitle",
+      "group": "modelOpus",
+      "source": "About this collection",
+      "values": {
+        "en": "About this collection",
+        "zh-CN": "关于这个合集",
+        "zh-TW": "關於這個合集",
+        "es": "Acerca de esta colección",
+        "pt-BR": "Sobre esta coleção",
+        "pt-PT": "Sobre esta coleção",
+        "fr": "À propos de cette collection",
+        "de": "Über diese Kollektion",
+        "it": "Informazioni sulla collezione",
+        "ja": "このコレクションについて",
+        "ko": "컬렉션 소개"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.metaDescription",
+      "group": "modelOpus",
+      "source": "Explore the Claude Opus 5.5 collection in Enter. Verified projects and attributed original prompts will appear here as they are added.",
+      "values": {
+        "en": "Explore the Claude Opus 5.5 collection in Enter. Verified projects and attributed original prompts will appear here as they are added.",
+        "zh-CN": "探索 Enter 的 Claude Opus 5.5 合集。经过核实的项目与标注来源的原创提示词将在收录后展示。",
+        "zh-TW": "探索 Enter 的 Claude Opus 5.5 合集。經核實的專案及標明來源的原創提示詞將在收錄後顯示。",
+        "es": "Explora la colección Claude Opus 5.5 en Enter. Los proyectos verificados y los prompts originales atribuidos aparecerán a medida que se añadan.",
+        "pt-BR": "Explore a coleção Claude Opus 5.5 no Enter. Projetos verificados e prompts originais com atribuição aparecerão conforme forem adicionados.",
+        "pt-PT": "Explora a coleção Claude Opus 5.5 no Enter. Os projetos verificados e os prompts originais atribuídos aparecerão à medida que forem adicionados.",
+        "fr": "Explorez la collection Claude Opus 5.5 sur Enter. Les projets vérifiés et les prompts originaux attribués apparaîtront au fur et à mesure de leur ajout.",
+        "de": "Entdecke die Claude Opus 5.5 Kollektion in Enter. Verifizierte Projekte und Original-Prompts mit Quellenangabe erscheinen, sobald sie hinzugefügt wurden.",
+        "it": "Esplora la collezione Claude Opus 5.5 su Enter. I progetti verificati e i prompt originali attribuiti appariranno man mano che saranno aggiunti.",
+        "ja": "EnterのClaude Opus 5.5コレクション。検証済みのプロジェクトと出典付きオリジナルプロンプトを、追加され次第紹介します。",
+        "ko": "Enter의 Claude Opus 5.5 컬렉션을 살펴보세요. 검증된 프로젝트와 출처를 밝힌 원본 프롬프트는 추가되는 대로 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.metaTitle",
+      "group": "modelOpus",
+      "source": "Claude Opus 5.5 Collection | Enter",
+      "values": {
+        "en": "Claude Opus 5.5 Collection | Enter",
+        "zh-CN": "Claude Opus 5.5 合集 | Enter",
+        "zh-TW": "Claude Opus 5.5 合集 | Enter",
+        "es": "Colección Claude Opus 5.5 | Enter",
+        "pt-BR": "Coleção Claude Opus 5.5 | Enter",
+        "pt-PT": "Coleção Claude Opus 5.5 | Enter",
+        "fr": "Collection Claude Opus 5.5 | Enter",
+        "de": "Claude Opus 5.5 Kollektion | Enter",
+        "it": "Collezione Claude Opus 5.5 | Enter",
+        "ja": "Claude Opus 5.5 コレクション | Enter",
+        "ko": "Claude Opus 5.5 컬렉션 | Enter"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.tagline",
+      "group": "modelOpus",
+      "source": "A dedicated space for Claude Opus 5.5 projects and sourced prompts.",
+      "values": {
+        "en": "A dedicated space for Claude Opus 5.5 projects and sourced prompts.",
+        "zh-CN": "汇集 Claude Opus 5.5 项目和注明来源的提示词。",
+        "zh-TW": "匯集 Claude Opus 5.5 專案及標明來源的提示詞。",
+        "es": "Un espacio para proyectos Claude Opus 5.5 y prompts con sus fuentes.",
+        "pt-BR": "Um espaço para projetos Claude Opus 5.5 e prompts com fontes.",
+        "pt-PT": "Um espaço para projetos Claude Opus 5.5 e prompts com fonte.",
+        "fr": "Un espace dédié aux projets Claude Opus 5.5 et aux prompts sourcés.",
+        "de": "Ein Ort für Claude Opus 5.5 Projekte und Prompts mit Quellenangabe.",
+        "it": "Uno spazio per i progetti Claude Opus 5.5 e i prompt con fonte.",
+        "ja": "Claude Opus 5.5のプロジェクトと出典付きプロンプトを集める場所です。",
+        "ko": "Claude Opus 5.5 프로젝트와 출처를 밝힌 프롬프트를 위한 공간입니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.useBody",
+      "group": "modelOpus",
+      "source": "Write your own prompt to start a project in Enter. Once verified examples are available, explore their sources and adapt the ideas to your own work.",
+      "values": {
+        "en": "Write your own prompt to start a project in Enter. Once verified examples are available, explore their sources and adapt the ideas to your own work.",
+        "zh-CN": "写下自己的提示词，在 Enter 中开启项目。经过核实的案例上线后，你也可以了解来源，再按自己的需求改写想法。",
+        "zh-TW": "寫下自己的提示詞，在 Enter 中開始專案。經核實的案例推出後，你也可以查看其來源，並依需求調整想法。",
+        "es": "Escribe tu propio prompt para empezar un proyecto en Enter. Cuando haya ejemplos verificados, explora sus fuentes y adapta las ideas a tu trabajo.",
+        "pt-BR": "Escreva seu próprio prompt para iniciar um projeto no Enter. Quando houver exemplos verificados, confira as fontes e adapte as ideias ao seu trabalho.",
+        "pt-PT": "Escreve o teu próprio prompt para começares um projeto no Enter. Quando houver exemplos verificados, consulta as fontes e adapta as ideias ao teu trabalho.",
+        "fr": "Rédigez votre propre prompt pour démarrer un projet sur Enter. Quand des exemples vérifiés seront disponibles, consultez leurs sources et adaptez les idées à votre travail.",
+        "de": "Schreibe deinen eigenen Prompt, um ein Projekt in Enter zu beginnen. Wenn verifizierte Beispiele verfügbar sind, prüfe ihre Quellen und passe die Ideen an dein Vorhaben an.",
+        "it": "Scrivi il tuo prompt per avviare un progetto su Enter. Quando saranno disponibili esempi verificati, esplora le fonti e adatta le idee al tuo lavoro.",
+        "ja": "自分のプロンプトを書いてEnterでプロジェクトを始めましょう。検証済みの事例が公開されたら出典を確認し、自分の目的に合わせて活用できます。",
+        "ko": "직접 프롬프트를 작성해 Enter에서 프로젝트를 시작하세요. 검증된 사례가 등록되면 출처를 살펴보고 자신의 목적에 맞게 활용할 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelOpus.useTitle",
+      "group": "modelOpus",
+      "source": "Create your next project in Enter",
+      "values": {
+        "en": "Create your next project in Enter",
+        "zh-CN": "在 Enter 中创建下一个项目",
+        "zh-TW": "在 Enter 中建立下一個專案",
+        "es": "Crea tu próximo proyecto en Enter",
+        "pt-BR": "Crie seu próximo projeto no Enter",
+        "pt-PT": "Cria o teu próximo projeto no Enter",
+        "fr": "Créez votre prochain projet sur Enter",
+        "de": "Starte dein nächstes Projekt in Enter",
+        "it": "Crea il tuo prossimo progetto su Enter",
+        "ja": "Enterで次のプロジェクトを始める",
+        "ko": "Enter에서 다음 프로젝트 시작하기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.casesEmpty",
+      "group": "modelPages",
+      "source": "No verified Enter projects for this model yet.",
+      "values": {
+        "en": "No verified Enter projects for this model yet.",
+        "zh-CN": "该模型目前暂无经过核实的 Enter 项目。",
+        "zh-TW": "此模型目前沒有經過核實的 Enter 專案。",
+        "es": "Todavía no hay proyectos de Enter verificados para este modelo.",
+        "pt-BR": "Ainda não há projetos do Enter verificados para este modelo.",
+        "pt-PT": "Ainda não há projetos Enter verificados para este modelo.",
+        "fr": "Aucun projet Enter vérifié pour ce modèle pour le moment.",
+        "de": "Noch keine verifizierten Enter-Projekte für dieses Modell.",
+        "it": "Non ci sono ancora progetti Enter verificati per questo modello.",
+        "ja": "このモデルの検証済みEnterプロジェクトはまだありません。",
+        "ko": "이 모델의 검증된 Enter 프로젝트가 아직 없습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.characters",
+      "group": "modelPages",
+      "source": "characters",
+      "values": {
+        "en": "characters",
+        "zh-CN": "个字符",
+        "zh-TW": "個字元",
+        "es": "caracteres",
+        "pt-BR": "caracteres",
+        "pt-PT": "caracteres",
+        "fr": "caractères",
+        "de": "Zeichen",
+        "it": "caratteri",
+        "ja": "文字",
+        "ko": "자"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.copyPrompt",
+      "group": "modelPages",
+      "source": "Copy Prompt",
+      "values": {
+        "en": "Copy Prompt",
+        "zh-CN": "复制提示词",
+        "zh-TW": "複製提示詞",
+        "es": "Copiar prompt",
+        "pt-BR": "Copiar prompt",
+        "pt-PT": "Copiar prompt",
+        "fr": "Copier le prompt",
+        "de": "Prompt kopieren",
+        "it": "Copia prompt",
+        "ja": "プロンプトをコピー",
+        "ko": "프롬프트 복사"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.hotCases",
+      "group": "modelPages",
+      "source": "Hot Cases",
+      "values": {
+        "en": "Hot Cases",
+        "zh-CN": "热门案例",
+        "zh-TW": "熱門案例",
+        "es": "Casos destacados",
+        "pt-BR": "Cases em destaque",
+        "pt-PT": "Casos em destaque",
+        "fr": "Cas à la une",
+        "de": "Beliebte Cases",
+        "it": "Casi in evidenza",
+        "ja": "注目の事例",
+        "ko": "인기 사례"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.hotDescriptionPending",
+      "group": "modelPages",
+      "source": "Verified Enter projects for this model will appear here once available.",
+      "values": {
+        "en": "Verified Enter projects for this model will appear here once available.",
+        "zh-CN": "该模型在 Enter 中经过核实的项目上线后将在这里展示。",
+        "zh-TW": "此模型在 Enter 中經過核實的專案推出後將在這裡顯示。",
+        "es": "Los proyectos de Enter verificados para este modelo aparecerán aquí cuando estén disponibles.",
+        "pt-BR": "Projetos do Enter verificados para este modelo aparecerão aqui quando estiverem disponíveis.",
+        "pt-PT": "Os projetos Enter verificados para este modelo aparecerão aqui quando estiverem disponíveis.",
+        "fr": "Les projets Enter vérifiés pour ce modèle apparaîtront ici dès qu’ils seront disponibles.",
+        "de": "Verifizierte Enter-Projekte für dieses Modell erscheinen hier, sobald sie verfügbar sind.",
+        "it": "I progetti Enter verificati per questo modello appariranno qui quando disponibili.",
+        "ja": "このモデルを使用した検証済みのEnterプロジェクトは、準備ができ次第ここに表示されます。",
+        "ko": "이 모델로 만든 검증된 Enter 프로젝트가 준비되면 여기에 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.originalPrompts",
+      "group": "modelPages",
+      "source": "Original Prompts",
+      "values": {
+        "en": "Original Prompts",
+        "zh-CN": "原创提示词",
+        "zh-TW": "原創提示詞",
+        "es": "Prompts originales",
+        "pt-BR": "Prompts originais",
+        "pt-PT": "Prompts originais",
+        "fr": "Prompts originaux",
+        "de": "Original-Prompts",
+        "it": "Prompt originali",
+        "ja": "オリジナルプロンプト",
+        "ko": "원본 프롬프트"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.promptsEmpty",
+      "group": "modelPages",
+      "source": "No sourced original prompts have been added yet.",
+      "values": {
+        "en": "No sourced original prompts have been added yet.",
+        "zh-CN": "目前尚未收录标明来源的原创提示词。",
+        "zh-TW": "目前尚未收錄標明來源的原創提示詞。",
+        "es": "Aún no se han añadido prompts originales con fuente verificada.",
+        "pt-BR": "Ainda não há prompts originais com fonte verificada.",
+        "pt-PT": "Ainda não foram adicionados prompts originais com fonte verificada.",
+        "fr": "Aucun prompt original sourcé n’a encore été ajouté.",
+        "de": "Noch keine Original-Prompts mit belegter Quelle vorhanden.",
+        "it": "Non sono ancora stati aggiunti prompt originali con fonte verificata.",
+        "ja": "出典を確認したオリジナルプロンプトはまだ登録されていません。",
+        "ko": "출처를 확인한 원본 프롬프트가 아직 등록되지 않았습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.readPrompt",
+      "group": "modelPages",
+      "source": "Read original prompt",
+      "values": {
+        "en": "Read original prompt",
+        "zh-CN": "查看原始提示词",
+        "zh-TW": "閱讀原始提示詞",
+        "es": "Leer el prompt original",
+        "pt-BR": "Ler prompt original",
+        "pt-PT": "Ler o prompt original",
+        "fr": "Lire le prompt original",
+        "de": "Original-Prompt lesen",
+        "it": "Leggi il prompt originale",
+        "ja": "元のプロンプトを読む",
+        "ko": "원본 프롬프트 읽기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.source",
+      "group": "modelPages",
+      "source": "Source:",
+      "values": {
+        "en": "Source:",
+        "zh-CN": "来源：",
+        "zh-TW": "來源：",
+        "es": "Fuente:",
+        "pt-BR": "Fonte:",
+        "pt-PT": "Fonte:",
+        "fr": "Source :",
+        "de": "Quelle:",
+        "it": "Fonte:",
+        "ja": "出典：",
+        "ko": "출처:"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.trendingDescription",
+      "group": "modelPages",
+      "source": "Original prompts collected from public sources, with attribution to their creators.",
+      "values": {
+        "en": "Original prompts collected from public sources, with attribution to their creators.",
+        "zh-CN": "收录公开来源的原创提示词，并注明创作者与出处。",
+        "zh-TW": "收錄公開來源的原創提示詞，並標明創作者與出處。",
+        "es": "Prompts originales recopilados de fuentes públicas, con reconocimiento a sus autores.",
+        "pt-BR": "Prompts originais reunidos de fontes públicas, com atribuição aos autores.",
+        "pt-PT": "Prompts originais reunidos de fontes públicas, com atribuição aos autores.",
+        "fr": "Prompts originaux issus de sources publiques, avec mention de leurs auteurs.",
+        "de": "Original-Prompts aus öffentlichen Quellen mit Namensnennung der Urheber.",
+        "it": "Prompt originali raccolti da fonti pubbliche, con attribuzione agli autori.",
+        "ja": "公開された情報源から集めたオリジナルプロンプトを、作成者と出典を明記して紹介します。",
+        "ko": "공개된 출처에서 수집한 원본 프롬프트를 작성자와 함께 소개합니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelPages.trendingPrompts",
+      "group": "modelPages",
+      "source": "Trending Prompts",
+      "values": {
+        "en": "Trending Prompts",
+        "zh-CN": "热门提示词",
+        "zh-TW": "熱門提示詞",
+        "es": "Prompts en tendencia",
+        "pt-BR": "Prompts em alta",
+        "pt-PT": "Prompts em destaque",
+        "fr": "Prompts tendance",
+        "de": "Trendende Prompts",
+        "it": "Prompt di tendenza",
+        "ja": "話題のプロンプト",
+        "ko": "인기 프롬프트"
       },
       "used": true,
       "missingLanguages": [],
@@ -3695,7 +4136,7 @@
         "ja": "集中した制作、素早い改善、そしてその背景にあるプロンプトが集まるスペースです。",
         "ko": "집중한 제작, 빠른 반복, 그리고 그 뒤의 프롬프트가 모이는 공간을 살펴보세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3968,7 +4409,7 @@
         "ja": "EnterでGPT-6 SolとLunaを使って制作した注目プロジェクトを紹介。事例を開くとライブプレビューとプロンプトを確認できます。",
         "ko": "Enter에서 GPT-6 Sol 및 Luna로 만든 주목할 프로젝트를 살펴보세요. 사례를 열어 라이브 미리보기와 프롬프트를 확인하세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4010,26 +4451,26 @@
         "ja": "人気のプロンプト",
         "ko": "인기 프롬프트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
     {
       "key": "modelSolLuna.metaDescription",
       "group": "modelSolLuna",
-      "source": "Explore GPT-6 Sol and Luna prompts for websites, apps, and interactive experiences. Build with thoughtful structure or move quickly through ideas in Enter.",
+      "source": "Explore the GPT-6 Sol & Luna collection in Enter. Verified Enter projects and attributed original prompts will appear when available.",
       "values": {
-        "en": "Explore GPT-6 Sol and Luna prompts for websites, apps, and interactive experiences. Build with thoughtful structure or move quickly through ideas in Enter.",
-        "zh-CN": "探索适用于网站、应用与交互体验的 GPT-6 Sol 和 Luna 提示词。在 Enter 中进行结构化构建，或快速探索不同想法。",
-        "zh-TW": "探索在 Enter 中用於網站、應用程式與互動體驗的 GPT-6 Sol 和 GPT-6 Luna 提示詞，了解兩種互補的建立與迭代方式。",
-        "es": "Descubre prompts de GPT-6 Sol y GPT-6 Luna para sitios, apps y experiencias interactivas en Enter. Explora dos formas complementarias de crear e iterar.",
-        "pt-BR": "Descubra prompts do GPT-6 Sol e GPT-6 Luna para sites, apps e experiências interativas no Enter. Explore duas formas complementares de criar e iterar.",
-        "pt-PT": "Descobre prompts do GPT-6 Sol e GPT-6 Luna para sites, apps e experiências interativas no Enter. Explora duas formas complementares de criar e iterar.",
-        "fr": "Découvrez des prompts GPT-6 Sol et GPT-6 Luna pour sites, apps et expériences interactives dans Enter. Explorez deux façons complémentaires de créer et d’itérer.",
-        "de": "Entdecke GPT-6 Sol und GPT-6 Luna Prompts für Websites, Apps und interaktive Erlebnisse in Enter. Erkunde zwei ergänzende Arten zu bauen und zu iterieren.",
-        "it": "Scopri prompt GPT-6 Sol e GPT-6 Luna per siti, app ed esperienze interattive in Enter. Esplora due modi complementari di creare e iterare.",
-        "ja": "Enterでウェブサイト、アプリ、インタラクティブ体験を作るためのGPT-6 SolとGPT-6 Lunaプロンプトを紹介。補完し合う2つの制作・改善方法を探れます。",
-        "ko": "Enter에서 웹사이트, 앱, 인터랙티브 경험을 위한 GPT-6 Sol 및 GPT-6 Luna 프롬프트를 만나보세요. 서로 보완하는 두 가지 제작과 반복 방식을 살펴볼 수 있습니다."
+        "en": "Explore the GPT-6 Sol & Luna collection in Enter. Verified Enter projects and attributed original prompts will appear when available.",
+        "zh-CN": "探索 Enter 的 GPT-6 Sol 与 Luna 合集。经过核实的站内项目和注明来源的原创提示词将在收录后展示。",
+        "zh-TW": "探索 Enter 的 GPT-6 Sol 與 Luna 合集。經核實的站內專案和標明來源的原創提示詞將在收錄後顯示。",
+        "es": "Explora la colección GPT-6 Sol y Luna en Enter. Los proyectos verificados y los prompts originales atribuidos aparecerán cuando estén disponibles.",
+        "pt-BR": "Explore a coleção GPT-6 Sol e Luna no Enter. Projetos verificados e prompts originais com atribuição aparecerão quando estiverem disponíveis.",
+        "pt-PT": "Explora a coleção GPT-6 Sol e Luna no Enter. Os projetos verificados e os prompts originais atribuídos aparecerão quando estiverem disponíveis.",
+        "fr": "Explorez la collection GPT-6 Sol et Luna sur Enter. Les projets vérifiés et les prompts originaux attribués apparaîtront dès qu’ils seront disponibles.",
+        "de": "Entdecke die GPT-6 Sol & Luna Kollektion in Enter. Verifizierte Projekte und Original-Prompts mit Quellenangabe erscheinen, sobald sie verfügbar sind.",
+        "it": "Esplora la collezione GPT-6 Sol e Luna su Enter. Progetti verificati e prompt originali attribuiti appariranno quando disponibili.",
+        "ja": "EnterのGPT-6 Sol・Lunaコレクション。検証済みプロジェクトと出典付きオリジナルプロンプトを、準備が整い次第紹介します。",
+        "ko": "Enter의 GPT-6 Sol 및 Luna 컬렉션입니다. 검증된 프로젝트와 출처를 밝힌 원본 프롬프트는 준비되는 대로 표시됩니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -4038,19 +4479,19 @@
     {
       "key": "modelSolLuna.metaTitle",
       "group": "modelSolLuna",
-      "source": "Free GPT-6 Sol & Luna Prompts and App Examples | Enter",
+      "source": "GPT-6 Sol & Luna Collection | Enter",
       "values": {
-        "en": "Free GPT-6 Sol & Luna Prompts and App Examples | Enter",
-        "zh-CN": "免费 GPT-6 Sol 与 Luna 提示词及应用案例 | Enter",
-        "zh-TW": "免費 GPT-6 Sol 與 Luna 提示詞及應用案例 | Enter",
-        "es": "Prompts gratuitos de GPT-6 Sol y Luna y ejemplos de apps | Enter",
-        "pt-BR": "Prompts gratuitos do GPT-6 Sol e Luna e exemplos de apps | Enter",
-        "pt-PT": "Prompts gratuitos do GPT-6 Sol e Luna e exemplos de apps | Enter",
-        "fr": "Prompts GPT-6 Sol et Luna gratuits et exemples d’apps | Enter",
-        "de": "Kostenlose GPT-6 Sol & Luna Prompts und App-Beispiele | Enter",
-        "it": "Prompt GPT-6 Sol e Luna gratuiti ed esempi di app | Enter",
-        "ja": "無料のGPT-6 Sol・Lunaプロンプトとアプリ事例 | Enter",
-        "ko": "무료 GPT-6 Sol 및 Luna 프롬프트와 앱 사례 | Enter"
+        "en": "GPT-6 Sol & Luna Collection | Enter",
+        "zh-CN": "GPT-6 Sol 与 Luna 合集 | Enter",
+        "zh-TW": "GPT-6 Sol 與 Luna 合集 | Enter",
+        "es": "Colección GPT-6 Sol y Luna | Enter",
+        "pt-BR": "Coleção GPT-6 Sol e Luna | Enter",
+        "pt-PT": "Coleção GPT-6 Sol e Luna | Enter",
+        "fr": "Collection GPT-6 Sol et Luna | Enter",
+        "de": "GPT-6 Sol & Luna Kollektion | Enter",
+        "it": "Collezione GPT-6 Sol e Luna | Enter",
+        "ja": "GPT-6 Sol・Lunaコレクション | Enter",
+        "ko": "GPT-6 Sol 및 Luna 컬렉션 | Enter"
       },
       "used": true,
       "missingLanguages": [],

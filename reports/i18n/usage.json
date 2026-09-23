@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:58:25.613Z",
+  "generatedAt": "2026-09-23T11:34:34.023Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -19,12 +19,10 @@
     "src/components/case-library/model-detail-page.tsx",
     "src/components/case-library/model-empty-section.tsx",
     "src/components/case-library/model-faq.tsx",
-    "src/components/case-library/model-hot-prompt-gallery.tsx",
-    "src/components/case-library/model-prompt-categories.tsx",
+    "src/components/case-library/model-hot-case-gallery.tsx",
     "src/components/case-library/model-prompt-composer.tsx",
-    "src/components/case-library/model-prompt-placeholder.tsx",
+    "src/components/case-library/model-trending-prompts.tsx",
     "src/components/case-library/preview-budget.tsx",
-    "src/components/case-library/prompt-download-success-dialog.tsx",
     "src/components/case-library/prompt-panel.tsx",
     "src/components/case-library/showcase-library-view.tsx",
     "src/components/language-switcher.tsx",
@@ -34,10 +32,13 @@
     "src/data/cases.ts",
     "src/data/curved-gallery.ts",
     "src/data/footer.ts",
+    "src/data/model-pages/claude-opus-5-5.ts",
     "src/data/model-pages/gpt-6-astra.ts",
     "src/data/model-pages/gpt-6-sol-luna.ts",
+    "src/data/model-pages/trending-prompts.ts",
     "src/data/model-pages/types.ts",
     "src/data/showcase-collections.ts",
+    "src/data/showcase-collections/claude-opus-5-5.ts",
     "src/data/showcase-collections/gpt-6-astra.ts",
     "src/data/showcase-collections/gpt-6-sol-luna.ts",
     "src/data/showcase-collections/types.ts",
@@ -63,6 +64,7 @@
     "src/lib/prompt-file.ts",
     "src/lib/utils.ts",
     "src/main.tsx",
+    "src/pages/showcase/ClaudeOpus55Page.tsx",
     "src/pages/showcase/CuratedShowcaseCollectionPage.tsx",
     "src/pages/showcase/Gpt6AstraPage.tsx",
     "src/pages/showcase/Gpt6SolLunaPage.tsx",
@@ -77,7 +79,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 197,
+          "line": 193,
           "column": 20,
           "usageType": "function"
         }
@@ -148,6 +150,12 @@
       "key": "bundle.docTitle",
       "references": [
         {
+          "file": "src/data/showcase-collections/claude-opus-5-5.ts",
+          "line": 20,
+          "column": 18,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
           "line": 34,
           "column": 18,
@@ -162,11 +170,22 @@
       ]
     },
     {
+      "key": "bundle.done",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 103,
+          "column": 21,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
       "key": "bundle.downloadSelectedCount",
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 213,
+          "line": 209,
           "column": 56,
           "usageType": "function"
         }
@@ -177,41 +196,8 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 109,
+          "line": 105,
           "column": 19,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "bundle.successBody",
-      "references": [
-        {
-          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "line": 36,
-          "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "bundle.successTitle",
-      "references": [
-        {
-          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "line": 33,
-          "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "bundle.tryInEnter",
-      "references": [
-        {
-          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "line": 47,
-          "column": 16,
           "usageType": "function"
         }
       ]
@@ -415,7 +401,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 147,
+          "line": 143,
           "column": 16,
           "usageType": "function"
         }
@@ -470,6 +456,12 @@
           "usageType": "function"
         },
         {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 20,
+          "column": 14,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 21,
           "column": 14,
@@ -479,6 +471,12 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 21,
           "column": 14,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/showcase-collections/claude-opus-5-5.ts",
+          "line": 22,
+          "column": 16,
           "usageType": "function"
         },
         {
@@ -562,12 +560,45 @@
       ]
     },
     {
+      "key": "collections.openOpus",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/claude-opus-5-5.ts",
+          "line": 19,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
       "key": "collections.openSolLuna",
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-sol-luna.ts",
           "line": 16,
           "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.opusDescription",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/claude-opus-5-5.ts",
+          "line": 18,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "collections.opusTitle",
+      "references": [
+        {
+          "file": "src/data/showcase-collections/claude-opus-5-5.ts",
+          "line": 17,
+          "column": 12,
           "usageType": "function"
         }
       ]
@@ -600,7 +631,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 155,
+          "line": 151,
           "column": 34,
           "usageType": "function"
         }
@@ -636,18 +667,18 @@
           "line": 38,
           "column": 73,
           "usageType": "function"
-        },
-        {
-          "file": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "line": 29,
-          "column": 34,
-          "usageType": "function"
         }
       ]
     },
     {
       "key": "common.copied",
       "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 37,
+          "column": 21,
+          "usageType": "function"
+        },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
           "line": 39,
@@ -676,6 +707,12 @@
     {
       "key": "common.copyFailed",
       "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 39,
+          "column": 19,
+          "usageType": "function"
+        },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
           "line": 41,
@@ -750,6 +787,12 @@
           "usageType": "function"
         },
         {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 56,
+          "column": 219,
+          "usageType": "function"
+        },
+        {
           "file": "src/components/case-library/prompt-panel.tsx",
           "line": 58,
           "column": 96,
@@ -757,7 +800,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 213,
+          "line": 209,
           "column": 34,
           "usageType": "function"
         }
@@ -768,7 +811,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 266,
+          "line": 262,
           "column": 18,
           "usageType": "function"
         }
@@ -779,13 +822,13 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 260,
+          "line": 256,
           "column": 30,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 264,
+          "line": 260,
           "column": 91,
           "usageType": "function"
         }
@@ -796,7 +839,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 262,
+          "line": 258,
           "column": 52,
           "usageType": "function"
         }
@@ -805,6 +848,12 @@
     {
       "key": "common.retry",
       "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 56,
+          "column": 189,
+          "usageType": "function"
+        },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
           "line": 59,
@@ -941,7 +990,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 274,
+          "line": 270,
           "column": 83,
           "usageType": "function"
         }
@@ -952,7 +1001,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 273,
+          "line": 269,
           "column": 80,
           "usageType": "function"
         }
@@ -963,7 +1012,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 253,
+          "line": 249,
           "column": 18,
           "usageType": "function"
         }
@@ -1136,36 +1185,14 @@
       ]
     },
     {
-      "key": "modelAstra.allDescription",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 28,
-          "column": 21,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.allPrompts",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 27,
-          "column": 17,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 27,
-          "column": 17,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelAstra.back",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 19,
+          "column": 11,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 20,
@@ -1184,6 +1211,12 @@
       "key": "modelAstra.browse",
       "references": [
         {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 23,
+          "column": 13,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 24,
           "column": 13,
@@ -1201,6 +1234,12 @@
       "key": "modelAstra.buildWithEnter",
       "references": [
         {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 32,
+          "column": 21,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 33,
           "column": 21,
@@ -1210,176 +1249,6 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 33,
           "column": 21,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.cardAction",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 277,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 277,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.cardDescription",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 144,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 144,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.cardNote",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 315,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 315,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.casePending",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 98,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 98,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryAll",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 50,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 50,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryApp",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 126,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 126,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryEmpty",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 200,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 200,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryLabel",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 14,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryOther",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 162,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 162,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.categoryWebsite",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 43,
-          "column": 88,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 43,
-          "column": 88,
           "usageType": "function"
         }
       ]
@@ -1387,6 +1256,12 @@
     {
       "key": "modelAstra.composerHint",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 36,
+          "column": 51,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 37,
@@ -1405,6 +1280,12 @@
       "key": "modelAstra.composerLabel",
       "references": [
         {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 36,
+          "column": 14,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 37,
           "column": 14,
@@ -1421,6 +1302,12 @@
     {
       "key": "modelAstra.copyError",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 36,
+          "column": 162,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 37,
@@ -1439,6 +1326,12 @@
       "key": "modelAstra.copyOpen",
       "references": [
         {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 36,
+          "column": 91,
+          "usageType": "function"
+        },
+        {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 37,
           "column": 91,
@@ -1455,6 +1348,12 @@
     {
       "key": "modelAstra.copying",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 36,
+          "column": 126,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 37,
@@ -1474,7 +1373,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 46,
+          "line": 40,
           "column": 74,
           "usageType": "function"
         }
@@ -1485,7 +1384,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 46,
+          "line": 40,
           "column": 32,
           "usageType": "function"
         }
@@ -1496,7 +1395,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 48,
+          "line": 42,
           "column": 72,
           "usageType": "function"
         }
@@ -1507,7 +1406,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 48,
+          "line": 42,
           "column": 31,
           "usageType": "function"
         }
@@ -1518,7 +1417,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 50,
+          "line": 44,
           "column": 74,
           "usageType": "function"
         }
@@ -1529,7 +1428,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 50,
+          "line": 44,
           "column": 32,
           "usageType": "function"
         }
@@ -1540,7 +1439,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 49,
+          "line": 43,
           "column": 78,
           "usageType": "function"
         }
@@ -1551,7 +1450,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 49,
+          "line": 43,
           "column": 34,
           "usageType": "function"
         }
@@ -1573,7 +1472,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 47,
+          "line": 41,
           "column": 70,
           "usageType": "function"
         }
@@ -1584,7 +1483,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 47,
+          "line": 41,
           "column": 30,
           "usageType": "function"
         }
@@ -1593,6 +1492,12 @@
     {
       "key": "modelAstra.heading",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 21,
+          "column": 14,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 22,
@@ -1613,19 +1518,14 @@
       ]
     },
     {
-      "key": "modelAstra.hotPrompts",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 25,
-          "column": 17,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelAstra.libraryLink",
       "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 34,
+          "column": 18,
+          "usageType": "function"
+        },
         {
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 35,
@@ -1658,57 +1558,6 @@
           "file": "src/data/model-pages/gpt-6-astra.ts",
           "line": 18,
           "column": 12,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.pending",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 16,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 16,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.promptLabel",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 190,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 190,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.promptPending",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 234,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 234,
           "usageType": "function"
         }
       ]
@@ -1747,23 +1596,6 @@
       ]
     },
     {
-      "key": "modelAstra.videoPending",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 40,
-          "column": 55,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 40,
-          "column": 55,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelAstra.viewModel",
       "references": [
         {
@@ -1782,6 +1614,246 @@
           "file": "src/components/case-library/collection-carousel.tsx",
           "line": 25,
           "column": 11,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.aboutBody",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 29,
+          "column": 16,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.aboutTitle",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 28,
+          "column": 17,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.metaDescription",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 18,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.metaTitle",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 17,
+          "column": 12,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.tagline",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 22,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.useBody",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 31,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelOpus.useTitle",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 30,
+          "column": 15,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.casesEmpty",
+      "references": [
+        {
+          "file": "src/components/case-library/model-hot-case-gallery.tsx",
+          "line": 21,
+          "column": 156,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.characters",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 55,
+          "column": 130,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.copyPrompt",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 60,
+          "column": 10,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.hotCases",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 24,
+          "column": 15,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 25,
+          "column": 15,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 25,
+          "column": 15,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.hotDescriptionPending",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 25,
+          "column": 21,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 26,
+          "column": 21,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.originalPrompts",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 50,
+          "column": 47,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.promptsEmpty",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 68,
+          "column": 154,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.readPrompt",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 55,
+          "column": 64,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.source",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 51,
+          "column": 45,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.trendingDescription",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 27,
+          "column": 26,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 28,
+          "column": 26,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 28,
+          "column": 26,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelPages.trendingPrompts",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 26,
+          "column": 22,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 27,
+          "column": 22,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 27,
+          "column": 22,
           "usageType": "function"
         }
       ]
@@ -1809,22 +1881,11 @@
       ]
     },
     {
-      "key": "modelSolLuna.allDescription",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 28,
-          "column": 21,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelSolLuna.faqBuildAnswer",
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 46,
+          "line": 40,
           "column": 76,
           "usageType": "function"
         }
@@ -1835,7 +1896,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 46,
+          "line": 40,
           "column": 32,
           "usageType": "function"
         }
@@ -1846,7 +1907,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 48,
+          "line": 42,
           "column": 78,
           "usageType": "function"
         }
@@ -1857,7 +1918,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 48,
+          "line": 42,
           "column": 33,
           "usageType": "function"
         }
@@ -1868,7 +1929,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 49,
+          "line": 43,
           "column": 74,
           "usageType": "function"
         }
@@ -1879,7 +1940,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 49,
+          "line": 43,
           "column": 31,
           "usageType": "function"
         }
@@ -1890,7 +1951,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 50,
+          "line": 44,
           "column": 76,
           "usageType": "function"
         }
@@ -1901,7 +1962,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 50,
+          "line": 44,
           "column": 32,
           "usageType": "function"
         }
@@ -1923,7 +1984,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 47,
+          "line": 41,
           "column": 72,
           "usageType": "function"
         }
@@ -1934,7 +1995,7 @@
       "references": [
         {
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 47,
+          "line": 41,
           "column": 30,
           "usageType": "function"
         }
@@ -1947,28 +2008,6 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 22,
           "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelSolLuna.hotDescription",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 26,
-          "column": 21,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelSolLuna.hotPrompts",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 25,
-          "column": 17,
           "usageType": "function"
         }
       ]
@@ -2077,7 +2116,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 161,
+          "line": 157,
           "column": 20,
           "usageType": "function"
         }
@@ -2098,9 +2137,21 @@
       "severity": "warning"
     },
     {
-      "key": "bundle.done",
+      "key": "bundle.successBody",
       "group": "bundle",
-      "source": "Prompt bundle downloaded",
+      "source": "Your {{value}} selected prompts are ready. Open Enter to try building with them.",
+      "severity": "warning"
+    },
+    {
+      "key": "bundle.successTitle",
+      "group": "bundle",
+      "source": "Prompts downloaded",
+      "severity": "warning"
+    },
+    {
+      "key": "bundle.tryInEnter",
+      "group": "bundle",
+      "source": "Try in Enter",
       "severity": "warning"
     },
     {
@@ -2362,15 +2413,87 @@
       "severity": "warning"
     },
     {
+      "key": "modelAstra.allDescription",
+      "group": "modelAstra",
+      "source": "A space for ideas, live previews, and the prompts behind them.",
+      "severity": "warning"
+    },
+    {
       "key": "modelAstra.allEmpty",
       "group": "modelAstra",
       "source": "Curated prompts will appear here when they're available.",
       "severity": "warning"
     },
     {
+      "key": "modelAstra.allPrompts",
+      "group": "modelAstra",
+      "source": "All Prompts",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.cardAction",
+      "group": "modelAstra",
+      "source": "Open in Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.cardDescription",
+      "group": "modelAstra",
+      "source": "A preview and project description will appear here.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.cardNote",
+      "group": "modelAstra",
+      "source": "Available when the content is added.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.casePending",
+      "group": "modelAstra",
+      "source": "App example to be added",
+      "severity": "warning"
+    },
+    {
       "key": "modelAstra.casesEmpty",
       "group": "modelAstra",
       "source": "Curated app examples will appear here.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryAll",
+      "group": "modelAstra",
+      "source": "All",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryApp",
+      "group": "modelAstra",
+      "source": "App",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryEmpty",
+      "group": "modelAstra",
+      "source": "No prompts in this category yet.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryLabel",
+      "group": "modelAstra",
+      "source": "Prompt categories",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryOther",
+      "group": "modelAstra",
+      "source": "Other",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.categoryWebsite",
+      "group": "modelAstra",
+      "source": "Website",
       "severity": "warning"
     },
     {
@@ -2386,15 +2509,63 @@
       "severity": "warning"
     },
     {
+      "key": "modelAstra.hotPrompts",
+      "group": "modelAstra",
+      "source": "Hot Prompts",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.pending",
+      "group": "modelAstra",
+      "source": "Content pending",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.promptLabel",
+      "group": "modelAstra",
+      "source": "Prompt",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.promptPending",
+      "group": "modelAstra",
+      "source": "The full prompt will be added here.",
+      "severity": "warning"
+    },
+    {
       "key": "modelAstra.promptsEmpty",
       "group": "modelAstra",
       "source": "The prompt library is on its way.",
       "severity": "warning"
     },
     {
+      "key": "modelAstra.videoPending",
+      "group": "modelAstra",
+      "source": "Video to be added",
+      "severity": "warning"
+    },
+    {
+      "key": "modelSolLuna.allDescription",
+      "group": "modelSolLuna",
+      "source": "Explore prompts for structured builds, rapid experiments, and everything in between.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelSolLuna.hotDescription",
+      "group": "modelSolLuna",
+      "source": "Explore standout projects built with GPT-6 Sol and Luna in Enter. Open a case to see its live preview and prompt.",
+      "severity": "warning"
+    },
+    {
       "key": "modelSolLuna.hotEmpty",
       "group": "modelSolLuna",
       "source": "New prompts and live examples are being prepared.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelSolLuna.hotPrompts",
+      "group": "modelSolLuna",
+      "source": "Hot Prompts",
       "severity": "warning"
     },
     {

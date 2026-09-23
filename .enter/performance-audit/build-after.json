@@ -50,18 +50,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -115,18 +115,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/prompts",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/prompts",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -180,18 +180,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/prompts/collections",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/prompts/collections",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -245,18 +245,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/prompts/collections/gpt6",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/prompts/collections/gpt6",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -310,18 +310,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/prompts/collections/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/prompts/collections/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -338,6 +338,296 @@
       "route": "/prompts/collections/gpt-6-astra",
       "budget": "initialFontCount",
       "actual": 6,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a canonical link",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "canonical"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/prompts/collections/gpt-6-sol-luna"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 123240 > 102400",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "budget": "initialFontRaw",
+      "actual": 123240,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 6 > 2",
+      "route": "/prompts/collections/gpt-6-sol-luna",
+      "budget": "initialFontCount",
+      "actual": 6,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a canonical link",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "canonical"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/prompts/collections/claude-opus-5-5"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 123240 > 102400",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "budget": "initialFontRaw",
+      "actual": 123240,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 6 > 2",
+      "route": "/prompts/collections/claude-opus-5-5",
+      "budget": "initialFontCount",
+      "actual": 6,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/prompts/gpt-6-astra",
+      "file": "prompts/gpt-6-astra/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/prompts/gpt-6-astra",
+      "file": "prompts/gpt-6-astra/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/prompts/gpt-6-astra"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/prompts/gpt-6-astra",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/prompts/gpt-6-astra",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/prompts/gpt-6-astra",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/prompts/gpt-6-astra",
+      "budget": "initialFontCount",
+      "actual": 7,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/prompts/gpt-6-sol-luna",
+      "file": "prompts/gpt-6-sol-luna/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/prompts/gpt-6-sol-luna",
+      "file": "prompts/gpt-6-sol-luna/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/prompts/gpt-6-sol-luna"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/prompts/gpt-6-sol-luna",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/prompts/gpt-6-sol-luna",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/prompts/gpt-6-sol-luna",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/prompts/gpt-6-sol-luna",
+      "budget": "initialFontCount",
+      "actual": 7,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/prompts/claude-opus-5-5",
+      "file": "prompts/claude-opus-5-5/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/prompts/claude-opus-5-5",
+      "file": "prompts/claude-opus-5-5/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/prompts/claude-opus-5-5",
+      "file": "prompts/claude-opus-5-5/index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/prompts/claude-opus-5-5"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/prompts/claude-opus-5-5",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/prompts/claude-opus-5-5",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/prompts/claude-opus-5-5",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/prompts/claude-opus-5-5",
+      "budget": "initialFontCount",
+      "actual": 7,
       "limit": 2
     },
     {
@@ -375,18 +665,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/showcases",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/showcases",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -440,18 +730,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/showcases/collections",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/showcases/collections",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -505,18 +795,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/showcases/collections/gpt6",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/showcases/collections/gpt6",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -570,18 +860,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 330134 > 153600",
+      "message": "initialJsBrotli: 357436 > 153600",
       "route": "/showcases/collections/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 330134,
+      "actual": 357436,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1535100 > 512000",
+      "message": "initialJsRaw: 1729636 > 512000",
       "route": "/showcases/collections/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1535100,
+      "actual": 1729636,
       "limit": 512000
     },
     {
@@ -599,38 +889,327 @@
       "budget": "initialFontCount",
       "actual": 6,
       "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a canonical link",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "canonical"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "file": "index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/showcases/collections/gpt-6-sol-luna"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 123240 > 102400",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "budget": "initialFontRaw",
+      "actual": 123240,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 6 > 2",
+      "route": "/showcases/collections/gpt-6-sol-luna",
+      "budget": "initialFontCount",
+      "actual": 6,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a canonical link",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "canonical"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "file": "index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/showcases/collections/claude-opus-5-5"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 123240 > 102400",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "budget": "initialFontRaw",
+      "actual": 123240,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 6 > 2",
+      "route": "/showcases/collections/claude-opus-5-5",
+      "budget": "initialFontCount",
+      "actual": 6,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/showcases/gpt-6-astra",
+      "file": "showcases/gpt-6-astra/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/showcases/gpt-6-astra",
+      "file": "showcases/gpt-6-astra/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/showcases/gpt-6-astra"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/showcases/gpt-6-astra",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/showcases/gpt-6-astra",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/showcases/gpt-6-astra",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/showcases/gpt-6-astra",
+      "budget": "initialFontCount",
+      "actual": 7,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/showcases/gpt-6-sol-luna",
+      "file": "showcases/gpt-6-sol-luna/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/showcases/gpt-6-sol-luna",
+      "file": "showcases/gpt-6-sol-luna/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/showcases/gpt-6-sol-luna"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/showcases/gpt-6-sol-luna",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/showcases/gpt-6-sol-luna",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/showcases/gpt-6-sol-luna",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/showcases/gpt-6-sol-luna",
+      "budget": "initialFontCount",
+      "actual": 7,
+      "limit": 2
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing a nonempty static H1",
+      "route": "/showcases/claude-opus-5-5",
+      "file": "showcases/claude-opus-5-5/index.html",
+      "field": "hasStaticH1"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing static text inside #root",
+      "route": "/showcases/claude-opus-5-5",
+      "file": "showcases/claude-opus-5-5/index.html",
+      "field": "rootHasText"
+    },
+    {
+      "code": "PUBLIC_HTML_MISSING_CONTENT",
+      "message": "Public HTML is missing valid nonempty JSON-LD content",
+      "route": "/showcases/claude-opus-5-5",
+      "file": "showcases/claude-opus-5-5/index.html",
+      "field": "hasValidJsonLd"
+    },
+    {
+      "code": "UNVERIFIED_ASSET",
+      "message": "Cannot verify css asset \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap\": external URL; origin and size unknown",
+      "route": "/showcases/claude-opus-5-5"
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsBrotli: 357436 > 153600",
+      "route": "/showcases/claude-opus-5-5",
+      "budget": "initialJsBrotli",
+      "actual": 357436,
+      "limit": 153600
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialJsRaw: 1729636 > 512000",
+      "route": "/showcases/claude-opus-5-5",
+      "budget": "initialJsRaw",
+      "actual": 1729636,
+      "limit": 512000
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontRaw: 146904 > 102400",
+      "route": "/showcases/claude-opus-5-5",
+      "budget": "initialFontRaw",
+      "actual": 146904,
+      "limit": 102400
+    },
+    {
+      "code": "BUDGET_EXCEEDED",
+      "message": "initialFontCount: 7 > 2",
+      "route": "/showcases/claude-opus-5-5",
+      "budget": "initialFontCount",
+      "actual": 7,
+      "limit": 2
     }
   ],
   "entries": [
     {
       "key": "index.html",
-      "file": "_prompts/index-DqXD9cFM.js",
+      "file": "_prompts/index-ChJhnHI8.js",
       "size": {
-        "raw": 1101491,
-        "gzip": 307824,
-        "brotli": 245606
+        "raw": 1296027,
+        "gzip": 344339,
+        "brotli": 272908
       },
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "staticImports": [
         "_mixpanel-sdk-Z8GMaB9G.js"
       ],
       "staticJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -644,16 +1223,16 @@
         ]
       },
       "staticCss": {
-        "raw": 57110,
-        "gzip": 11765,
-        "brotli": 10323,
+        "raw": 75695,
+        "gzip": 14878,
+        "brotli": 12973,
         "files": [
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -662,24 +1241,16 @@
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ]
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ]
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -714,28 +1285,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -745,30 +1304,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -782,9 +1341,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -795,11 +1354,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -890,14 +1449,10 @@
         "unverified": []
       },
       "lcpImage": {
-        "url": "/_prompts/images/showcase/prism-1280-v1.webp",
-        "file": "_prompts/images/showcase/prism-1280-v1.webp",
-        "status": "local",
-        "size": {
-          "raw": 34568,
-          "gzip": 34601,
-          "brotli": 34572
-        }
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
       },
       "assetReferences": [
         {
@@ -913,16 +1468,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -940,15 +1495,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -990,28 +1545,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1021,30 +1564,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -1058,9 +1601,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1071,11 +1614,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -1189,16 +1732,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -1216,15 +1759,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -1266,28 +1809,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1297,30 +1828,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -1334,9 +1865,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1347,11 +1878,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -1450,16 +1981,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -1477,15 +2008,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -1527,28 +2058,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1558,30 +2077,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -1595,9 +2114,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1608,11 +2127,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -1692,14 +2211,10 @@
         "unverified": []
       },
       "lcpImage": {
-        "url": "/_prompts/images/showcase/prism-1280-v1.webp",
-        "file": "_prompts/images/showcase/prism-1280-v1.webp",
-        "status": "local",
-        "size": {
-          "raw": 34568,
-          "gzip": 34601,
-          "brotli": 34572
-        }
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
       },
       "assetReferences": [
         {
@@ -1715,16 +2230,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -1742,15 +2257,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -1792,28 +2307,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1823,30 +2326,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -1860,9 +2363,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1873,11 +2376,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -1957,14 +2460,10 @@
         "unverified": []
       },
       "lcpImage": {
-        "url": "/_prompts/images/showcase/prism-1280-v1.webp",
-        "file": "_prompts/images/showcase/prism-1280-v1.webp",
-        "status": "local",
-        "size": {
-          "raw": 34568,
-          "gzip": 34601,
-          "brotli": 34572
-        }
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
       },
       "assetReferences": [
         {
@@ -1980,16 +2479,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -2007,15 +2506,1313 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/prompts/collections/gpt-6-sol-luna",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Enter Library",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore Enter Library collections, live previews, and creative prompts.",
+        "canonical": "",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 6,
+        "localCount": 6,
+        "raw": 123240,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/prompts/collections/claude-opus-5-5",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Enter Library",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore Enter Library collections, live previews, and creative prompts.",
+        "canonical": "",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 6,
+        "localCount": 6,
+        "raw": 123240,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/prompts/gpt-6-astra",
+      "html": "prompts/gpt-6-astra/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Free GPT-6 Astra Prompts and App Examples | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore published GPT-6 Astra projects in Enter. Attributed original prompts from public sources will appear as they are added.",
+        "canonical": "https://enter.converge.ai/prompts/gpt-6-astra",
+        "jsonLd": [
+          {
+            "valid": true
+          }
+        ],
+        "hasValidJsonLd": true
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/gpt-6-astra-poster-v1.webp",
+        "file": "_prompts/media/showcase-collections/gpt-6-astra-poster-v1.webp",
+        "status": "local",
+        "size": {
+          "raw": 16376,
+          "gzip": 16399,
+          "brotli": 16380
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/prompts/gpt-6-sol-luna",
+      "html": "prompts/gpt-6-sol-luna/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "GPT-6 Sol & Luna Collection | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore the GPT-6 Sol & Luna collection in Enter. Verified Enter projects and attributed original prompts will appear when available.",
+        "canonical": "https://enter.converge.ai/prompts/gpt-6-sol-luna",
+        "jsonLd": [
+          {
+            "valid": true
+          }
+        ],
+        "hasValidJsonLd": true
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "file": "_prompts/media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "status": "local",
+        "size": {
+          "raw": 30560,
+          "gzip": 30588,
+          "brotli": 30564
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/prompts/claude-opus-5-5",
+      "html": "prompts/claude-opus-5-5/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Claude Opus 5.5 Collection | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore the Claude Opus 5.5 collection in Enter. Verified projects and attributed original prompts will appear here as they are added.",
+        "canonical": "https://enter.converge.ai/prompts/claude-opus-5-5",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "file": "_prompts/media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "status": "local",
+        "size": {
+          "raw": 53410,
+          "gzip": 53188,
+          "brotli": 53014
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -2057,28 +3854,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2088,30 +3873,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -2125,9 +3910,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2138,11 +3923,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -2256,16 +4041,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -2283,15 +4068,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -2333,28 +4118,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2364,30 +4137,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -2401,9 +4174,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2414,11 +4187,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -2517,16 +4290,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -2544,15 +4317,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -2594,28 +4367,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2625,30 +4386,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -2662,9 +4423,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2675,11 +4436,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -2759,14 +4520,10 @@
         "unverified": []
       },
       "lcpImage": {
-        "url": "/_prompts/images/showcase/prism-1280-v1.webp",
-        "file": "_prompts/images/showcase/prism-1280-v1.webp",
-        "status": "local",
-        "size": {
-          "raw": 34568,
-          "gzip": 34601,
-          "brotli": 34572
-        }
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
       },
       "assetReferences": [
         {
@@ -2782,16 +4539,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -2809,15 +4566,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -2859,28 +4616,16 @@
       ],
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
-        "_prompt-bundle-B2W11fih.js",
         "index.html",
         "src/components/case-library/case-detail-dialog.tsx",
-        "src/components/case-library/prompt-download-success-dialog.tsx"
+        "src/lib/prompt-bundle.ts"
       ],
       "potentialDynamicDepth": 1,
       "hasDynamicCycle": true,
       "potentialDynamicImports": [
         {
-          "key": "_prompt-bundle-B2W11fih.js",
-          "file": "_prompts/prompt-bundle-B2W11fih.js",
-          "potentialDynamicDepth": 1,
-          "importedBy": [
-            "index.html"
-          ],
-          "classification": "deferred",
-          "trigger": "interaction",
-          "reason": "Prompt view or explicit selected-prompt export"
-        },
-        {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-vWbWnpig.js",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2890,30 +4635,30 @@
           "reason": "Case card hover/focus intent or opening detail"
         },
         {
-          "key": "src/components/case-library/prompt-download-success-dialog.tsx",
-          "file": "_prompts/prompt-download-success-dialog-DVtEvx6s.js",
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
           ],
           "classification": "deferred",
           "trigger": "interaction",
-          "reason": "Shown only after successful user export"
+          "reason": "Prompt view or explicit selected-prompt export"
         }
       ],
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1535100,
-        "gzip": 437837,
-        "brotli": 330134,
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
         "files": [
           {
-            "file": "_prompts/index-DqXD9cFM.js",
+            "file": "_prompts/index-ChJhnHI8.js",
             "size": {
-              "raw": 1101491,
-              "gzip": 307824,
-              "brotli": 245606
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
             }
           },
           {
@@ -2927,9 +4672,9 @@
         ]
       },
       "initialCss": {
-        "raw": 58193,
-        "gzip": 12006,
-        "brotli": 10538,
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2940,11 +4685,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bzx8e2MN.css",
+            "file": "_prompts/index-Bp_JkqjP.css",
             "size": {
-              "raw": 57110,
-              "gzip": 11765,
-              "brotli": 10323
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
             }
           }
         ]
@@ -3024,14 +4769,10 @@
         "unverified": []
       },
       "lcpImage": {
-        "url": "/_prompts/images/showcase/prism-1280-v1.webp",
-        "file": "_prompts/images/showcase/prism-1280-v1.webp",
-        "status": "local",
-        "size": {
-          "raw": 34568,
-          "gzip": 34601,
-          "brotli": 34572
-        }
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
       },
       "assetReferences": [
         {
@@ -3047,16 +4788,16 @@
           }
         },
         {
-          "url": "/_prompts/index-DqXD9cFM.js",
+          "url": "/_prompts/index-ChJhnHI8.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-DqXD9cFM.js",
+          "file": "_prompts/index-ChJhnHI8.js",
           "status": "local",
           "size": {
-            "raw": 1101491,
-            "gzip": 307824,
-            "brotli": 245606
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
           }
         },
         {
@@ -3074,15 +4815,1313 @@
           }
         },
         {
-          "url": "/_prompts/index-Bzx8e2MN.css",
+          "url": "/_prompts/index-Bp_JkqjP.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bzx8e2MN.css",
+          "file": "_prompts/index-Bp_JkqjP.css",
           "status": "local",
           "size": {
-            "raw": 57110,
-            "gzip": 11765,
-            "brotli": 10323
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/showcases/collections/gpt-6-sol-luna",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Enter Library",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore Enter Library collections, live previews, and creative prompts.",
+        "canonical": "",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 6,
+        "localCount": 6,
+        "raw": 123240,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/showcases/collections/claude-opus-5-5",
+      "html": "index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Enter Library",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore Enter Library collections, live previews, and creative prompts.",
+        "canonical": "",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 6,
+        "localCount": 6,
+        "raw": 123240,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "status": "not-declared",
+        "url": null,
+        "file": null,
+        "size": null
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/showcases/gpt-6-astra",
+      "html": "showcases/gpt-6-astra/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Free GPT-6 Astra Prompts and App Examples | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore published GPT-6 Astra projects in Enter. Attributed original prompts from public sources will appear as they are added.",
+        "canonical": "https://enter.converge.ai/prompts/gpt-6-astra",
+        "jsonLd": [
+          {
+            "valid": true
+          }
+        ],
+        "hasValidJsonLd": true
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/gpt-6-astra-poster-v1.webp",
+        "file": "_prompts/media/showcase-collections/gpt-6-astra-poster-v1.webp",
+        "status": "local",
+        "size": {
+          "raw": 16376,
+          "gzip": 16399,
+          "brotli": 16380
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/showcases/gpt-6-sol-luna",
+      "html": "showcases/gpt-6-sol-luna/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "GPT-6 Sol & Luna Collection | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore the GPT-6 Sol & Luna collection in Enter. Verified Enter projects and attributed original prompts will appear when available.",
+        "canonical": "https://enter.converge.ai/prompts/gpt-6-sol-luna",
+        "jsonLd": [
+          {
+            "valid": true
+          }
+        ],
+        "hasValidJsonLd": true
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "file": "_prompts/media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "status": "local",
+        "size": {
+          "raw": 30560,
+          "gzip": 30588,
+          "brotli": 30564
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
+          }
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Funnel+Display:wght@300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+          "source": "link[href]",
+          "category": "css",
+          "file": null,
+          "status": "unverified",
+          "size": null,
+          "reason": "external URL; origin and size unknown"
+        }
+      ],
+      "imageCandidates": [],
+      "externalScriptCandidates": [],
+      "srcsetObservations": []
+    },
+    {
+      "url": "/showcases/claude-opus-5-5",
+      "html": "showcases/claude-opus-5-5/index.html",
+      "entry": "index.html",
+      "kind": "public",
+      "metadata": {
+        "title": "Claude Opus 5.5 Collection | Enter",
+        "hasStaticH1": false,
+        "rootHasText": false,
+        "rootTextLength": 0,
+        "bodyTextLength": 0,
+        "description": "Explore the Claude Opus 5.5 collection in Enter. Verified projects and attributed original prompts will appear here as they are added.",
+        "canonical": "https://enter.converge.ai/prompts/claude-opus-5-5",
+        "jsonLd": [],
+        "hasValidJsonLd": false
+      },
+      "staticImports": [
+        "_mixpanel-sdk-Z8GMaB9G.js"
+      ],
+      "htmlScriptManifestKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html"
+      ],
+      "reachableKeys": [
+        "_mixpanel-sdk-Z8GMaB9G.js",
+        "index.html",
+        "src/components/case-library/case-detail-dialog.tsx",
+        "src/lib/prompt-bundle.ts"
+      ],
+      "potentialDynamicDepth": 1,
+      "hasDynamicCycle": true,
+      "potentialDynamicImports": [
+        {
+          "key": "src/components/case-library/case-detail-dialog.tsx",
+          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Case card hover/focus intent or opening detail"
+        },
+        {
+          "key": "src/lib/prompt-bundle.ts",
+          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "potentialDynamicDepth": 1,
+          "importedBy": [
+            "index.html"
+          ],
+          "classification": "deferred",
+          "trigger": "interaction",
+          "reason": "Prompt view or explicit selected-prompt export"
+        }
+      ],
+      "initialDepth": 0,
+      "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
+      "initialJs": {
+        "raw": 1729636,
+        "gzip": 474352,
+        "brotli": 357436,
+        "files": [
+          {
+            "file": "_prompts/index-ChJhnHI8.js",
+            "size": {
+              "raw": 1296027,
+              "gzip": 344339,
+              "brotli": 272908
+            }
+          },
+          {
+            "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+            "size": {
+              "raw": 433609,
+              "gzip": 130013,
+              "brotli": 84528
+            }
+          }
+        ]
+      },
+      "initialCss": {
+        "raw": 76778,
+        "gzip": 15119,
+        "brotli": 13188,
+        "files": [
+          {
+            "file": "_prompts/fonts/showcase-v1.css",
+            "size": {
+              "raw": 1083,
+              "gzip": 241,
+              "brotli": 215
+            }
+          },
+          {
+            "file": "_prompts/index-Bp_JkqjP.css",
+            "size": {
+              "raw": 75695,
+              "gzip": 14878,
+              "brotli": 12973
+            }
+          }
+        ]
+      },
+      "initialFonts": {
+        "count": 7,
+        "localCount": 7,
+        "raw": 146904,
+        "files": [
+          {
+            "file": "_prompts/fonts/dm-sans-v1.woff2",
+            "size": {
+              "raw": 36916,
+              "gzip": 36852,
+              "brotli": 36920
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/jetbrains-mono-v1.woff2",
+            "size": {
+              "raw": 40404,
+              "gzip": 40437,
+              "brotli": 40408
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-400-v1.woff2",
+            "size": {
+              "raw": 7884,
+              "gzip": 7907,
+              "brotli": 7888
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-500-v1.woff2",
+            "size": {
+              "raw": 7748,
+              "gzip": 7771,
+              "brotli": 7752
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/poppins-600-v1.woff2",
+            "size": {
+              "raw": 8000,
+              "gzip": 8023,
+              "brotli": 8004
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/fonts/space-grotesk-v1.woff2",
+            "size": {
+              "raw": 22288,
+              "gzip": 22316,
+              "brotli": 22282
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          },
+          {
+            "file": "_prompts/media/curved-gallery/inter-regular.woff2",
+            "size": {
+              "raw": 23664,
+              "gzip": 23667,
+              "brotli": 23623
+            },
+            "sources": [
+              "config.initialFonts"
+            ]
+          }
+        ],
+        "unverified": []
+      },
+      "lcpImage": {
+        "url": "/_prompts/media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "file": "_prompts/media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "status": "local",
+        "size": {
+          "raw": 53410,
+          "gzip": 53188,
+          "brotli": 53014
+        }
+      },
+      "assetReferences": [
+        {
+          "url": "/_prompts/fonts/showcase-v1.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/fonts/showcase-v1.css",
+          "status": "local",
+          "size": {
+            "raw": 1083,
+            "gzip": 241,
+            "brotli": 215
+          }
+        },
+        {
+          "url": "/_prompts/index-ChJhnHI8.js",
+          "source": "script[src]",
+          "category": "script",
+          "module": true,
+          "file": "_prompts/index-ChJhnHI8.js",
+          "status": "local",
+          "size": {
+            "raw": 1296027,
+            "gzip": 344339,
+            "brotli": 272908
+          }
+        },
+        {
+          "url": "/_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "source": "link[href]",
+          "category": "script",
+          "module": true,
+          "preload": true,
+          "file": "_prompts/mixpanel-sdk-Z8GMaB9G.js",
+          "status": "local",
+          "size": {
+            "raw": 433609,
+            "gzip": 130013,
+            "brotli": 84528
+          }
+        },
+        {
+          "url": "/_prompts/index-Bp_JkqjP.css",
+          "source": "link[href]",
+          "category": "css",
+          "file": "_prompts/index-Bp_JkqjP.css",
+          "status": "local",
+          "size": {
+            "raw": 75695,
+            "gzip": 14878,
+            "brotli": 12973
           }
         },
         {
@@ -3107,7 +6146,7 @@
         "size": {
           "raw": 7158,
           "gzip": 2100,
-          "brotli": 1723
+          "brotli": 1724
         },
         "status": "mapped",
         "routes": [
@@ -3116,10 +6155,86 @@
           "/prompts/collections",
           "/prompts/collections/gpt6",
           "/prompts/collections/gpt-6-astra",
+          "/prompts/collections/gpt-6-sol-luna",
+          "/prompts/collections/claude-opus-5-5",
           "/showcases",
           "/showcases/collections",
           "/showcases/collections/gpt6",
-          "/showcases/collections/gpt-6-astra"
+          "/showcases/collections/gpt-6-astra",
+          "/showcases/collections/gpt-6-sol-luna",
+          "/showcases/collections/claude-opus-5-5"
+        ]
+      },
+      {
+        "file": "prompts/claude-opus-5-5/index.html",
+        "size": {
+          "raw": 8135,
+          "gzip": 2337,
+          "brotli": 1918
+        },
+        "status": "mapped",
+        "routes": [
+          "/prompts/claude-opus-5-5"
+        ]
+      },
+      {
+        "file": "prompts/gpt-6-astra/index.html",
+        "size": {
+          "raw": 9749,
+          "gzip": 2964,
+          "brotli": 2398
+        },
+        "status": "mapped",
+        "routes": [
+          "/prompts/gpt-6-astra"
+        ]
+      },
+      {
+        "file": "prompts/gpt-6-sol-luna/index.html",
+        "size": {
+          "raw": 9645,
+          "gzip": 2925,
+          "brotli": 2347
+        },
+        "status": "mapped",
+        "routes": [
+          "/prompts/gpt-6-sol-luna"
+        ]
+      },
+      {
+        "file": "showcases/claude-opus-5-5/index.html",
+        "size": {
+          "raw": 8135,
+          "gzip": 2337,
+          "brotli": 1918
+        },
+        "status": "mapped",
+        "routes": [
+          "/showcases/claude-opus-5-5"
+        ]
+      },
+      {
+        "file": "showcases/gpt-6-astra/index.html",
+        "size": {
+          "raw": 9749,
+          "gzip": 2964,
+          "brotli": 2398
+        },
+        "status": "mapped",
+        "routes": [
+          "/showcases/gpt-6-astra"
+        ]
+      },
+      {
+        "file": "showcases/gpt-6-sol-luna/index.html",
+        "size": {
+          "raw": 9645,
+          "gzip": 2925,
+          "brotli": 2347
+        },
+        "status": "mapped",
+        "routes": [
+          "/showcases/gpt-6-sol-luna"
         ]
       }
     ],
@@ -3551,6 +6666,14 @@
         }
       },
       {
+        "file": "_prompts/media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "size": {
+          "raw": 53410,
+          "gzip": 53188,
+          "brotli": 53014
+        }
+      },
+      {
         "file": "_prompts/media/showcase-collections/coral-flow-v2.webp",
         "size": {
           "raw": 57302,
@@ -3564,6 +6687,14 @@
           "raw": 16376,
           "gzip": 16399,
           "brotli": 16380
+        }
+      },
+      {
+        "file": "_prompts/media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "size": {
+          "raw": 30560,
+          "gzip": 30588,
+          "brotli": 30564
         }
       },
       {
@@ -3895,6 +7026,14 @@
         }
       },
       {
+        "file": "media/showcase-collections/claude-opus-5-5-cover-v1.webp",
+        "size": {
+          "raw": 53410,
+          "gzip": 53188,
+          "brotli": 53014
+        }
+      },
+      {
         "file": "media/showcase-collections/coral-flow-v2.webp",
         "size": {
           "raw": 57302,
@@ -3908,6 +7047,14 @@
           "raw": 16376,
           "gzip": 16399,
           "brotli": 16380
+        }
+      },
+      {
+        "file": "media/showcase-collections/gpt-6-sol-luna-dual-star.webp",
+        "size": {
+          "raw": 30560,
+          "gzip": 30588,
+          "brotli": 30564
         }
       },
       {

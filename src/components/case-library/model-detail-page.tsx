@@ -1,14 +1,16 @@
 import { ArrowDown, ArrowLeft, ArrowUpRight, Layers3 } from "lucide-react";
-import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import type { ModelPageCopy, ModelPageModel } from "@/data/model-pages/types";
+import { trendingPromptsByModel } from "@/data/model-pages/trending-prompts";
+import type { ShowcaseCollection } from "@/data/showcase-collections";
 import { useAppHref } from "@/hooks/use-app-href";
 import { useModelPageSeo } from "@/hooks/use-model-page-seo";
 import { useShowcaseTheme } from "@/hooks/use-showcase-theme";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ModelFaq } from "./model-faq";
-import { ModelPromptCategories } from "./model-prompt-categories";
+import { ModelHotCaseGallery } from "./model-hot-case-gallery";
+import { ModelTrendingPrompts } from "./model-trending-prompts";
 import { ModelPromptComposer } from "./model-prompt-composer";
 import "@/styles/showcase.css";
 import "@/styles/model-detail.css";
@@ -17,10 +19,10 @@ type Props = {
   model: ModelPageModel;
   copy: ModelPageCopy;
   initialPrompt: string;
-  hotContent: ReactNode;
+  collection: ShowcaseCollection;
 };
 
-export function ModelDetailPage({ model, copy, initialPrompt, hotContent }: Props) {
+export function ModelDetailPage({ model, collection, copy, initialPrompt }: Props) {
   const appHref = useAppHref();
   const { search } = useLocation();
   const libraryHref = `${appHref("/showcases")}${search}`;
@@ -38,20 +40,20 @@ export function ModelDetailPage({ model, copy, initialPrompt, hotContent }: Prop
             <h1 id="model-title"><span className="model-name">{model.name}</span>{" "}<span className="model-headline">{copy.heading}</span></h1>
             <p className="model-hero-tagline">{copy.tagline}</p>
             <ModelPromptComposer modelLabel={model.name.toUpperCase()} initialPrompt={initialPrompt} copy={copy.composer} />
-            <a href="#hot-prompts" className="model-action model-action-secondary model-browse-link">{copy.browse}<ArrowDown size={15} aria-hidden="true" /></a>
+            {collection.caseIds.length > 0 && <a href="#hot-cases" className="model-action model-action-secondary model-browse-link">{copy.browse}<ArrowDown size={15} aria-hidden="true" /></a>}
           </div>
           <div className="model-hero-art">
             <div className="model-art-stage"><img src={model.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" /></div>
             <div className="model-art-caption"><span>{model.artCaption}</span><span aria-hidden="true">01 / MODEL</span></div>
           </div>
         </section>
-        <section id="hot-prompts" className="model-section model-prompts model-hot-prompts" aria-labelledby="hot-prompts-title">
-          <div className="model-prompts-heading"><span className="model-section-index" aria-hidden="true">01 / ENTER ORIGINALS</span><h2 id="hot-prompts-title">{copy.hotPrompts}</h2><p>{copy.hotDescription}</p></div>
-          {hotContent}
+        <section id="hot-cases" className="model-section model-prompts model-hot-cases" aria-labelledby="hot-cases-title">
+          <div className="model-prompts-heading"><span className="model-section-index" aria-hidden="true">01 / ENTER CASES</span><h2 id="hot-cases-title">{copy.hotCases}</h2><p>{copy.hotDescription}</p></div>
+          <ModelHotCaseGallery collection={collection} />
         </section>
-        <section id="all-prompts" className="model-section model-prompts" aria-labelledby="all-prompts-title">
-          <div className="model-prompts-heading"><span className="model-section-index" aria-hidden="true">02 / PROMPT LIBRARY</span><h2 id="all-prompts-title">{copy.allPrompts}</h2><p>{copy.allDescription}</p></div>
-          <ModelPromptCategories copy={copy.categories} placeholderCopy={copy.placeholder} />
+        <section id="trending-prompts" className="model-section model-prompts" aria-labelledby="trending-prompts-title">
+          <div className="model-prompts-heading"><span className="model-section-index" aria-hidden="true">02 / COMMUNITY PROMPTS</span><h2 id="trending-prompts-title">{copy.trendingPrompts}</h2><p>{copy.trendingDescription}</p></div>
+          <ModelTrendingPrompts entries={trendingPromptsByModel[model.slug] ?? []} />
         </section>
         <section className="model-section model-about" aria-labelledby="model-about-title">
           <div className="model-about-heading"><span className="model-section-index" aria-hidden="true">03 / {model.name.toUpperCase()}</span><h2 id="model-about-title">{copy.aboutTitle}</h2></div>
@@ -60,7 +62,7 @@ export function ModelDetailPage({ model, copy, initialPrompt, hotContent }: Prop
             <div className="model-usage"><h3>{copy.useTitle}</h3><p>{copy.useBody}</p><div className="model-about-actions"><a className="model-action theme-primary-gradient" href="https://enter.converge.ai/workspace">{copy.buildWithEnter}<ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
           </div>
         </section>
-        <ModelFaq title={copy.faqTitle} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={copy.libraryLink} />
+        {copy.faqs.length > 0 && <ModelFaq title={copy.faqTitle} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={copy.libraryLink} />}
       </main>
       <Footer />
     </div>

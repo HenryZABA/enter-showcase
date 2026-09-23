@@ -37,7 +37,7 @@ export function useModelPageSeo(model: ModelPageModel, title: string, descriptio
     structuredData.type = "application/ld+json";
     structuredData.dataset.modelSeo = model.slug;
     structuredData.textContent = schema;
-    document.head.append(structuredData);
+    if (faqs.length) document.head.append(structuredData);
     return () => { restore.reverse().forEach(cleanup => cleanup()); structuredData.remove(); };
-  }, [model, title, description, schema]);
+  }, [model, title, description, schema, faqs.length]);
 }

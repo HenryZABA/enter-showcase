@@ -21,26 +21,6 @@ export type ModelComposerCopy = {
   copyError: string;
 };
 
-export type ModelPlaceholderCopy = {
-  pending: string;
-  videoPending: string;
-  casePending: string;
-  cardDescription: string;
-  promptLabel: string;
-  promptPending: string;
-  cardAction: string;
-  cardNote: string;
-};
-
-export type ModelCategoryCopy = {
-  label: string;
-  all: string;
-  website: string;
-  app: string;
-  other: string;
-  empty: string;
-};
-
 export type ModelPageCopy = {
   title: string;
   description: string;
@@ -49,10 +29,10 @@ export type ModelPageCopy = {
   heading: string;
   tagline: string;
   browse: string;
-  hotPrompts: string;
+  hotCases: string;
   hotDescription: string;
-  allPrompts: string;
-  allDescription: string;
+  trendingPrompts: string;
+  trendingDescription: string;
   aboutTitle: string;
   aboutBody: string;
   useTitle: string;
@@ -61,8 +41,6 @@ export type ModelPageCopy = {
   faqTitle: string;
   libraryLink: string;
   composer: ModelComposerCopy;
-  placeholder: ModelPlaceholderCopy;
-  categories: ModelCategoryCopy;
   faqs: ModelFaq[];
 };
 
