@@ -1,57 +1,47 @@
-# GPT-6 Astra 单页调整
+# GPT-6 Sol & Luna 合并模型页
 
 ## Context
-参考 Combos 模型单页与用户提供的两张截图，优化当前 Astra 页面。本次以最新确认覆盖上次“不放输入框”的要求：增加可编辑 Prompt；仅保留 All Prompts；展示三张明确标注待补充的组件样式卡；美化 About 与 FAQ。
-
-## 已确认范围
-- H1 改为 **GPT-6 Astra Prompts and App Examples**，只把 `&` 改为 `and`。
-- 首屏仍左文右图：左侧标题下加入 Prompt 输入框，右侧保留 Astra 模型图。
-- 输入框预填原文档的项目仪表盘 Prompt。按钮复制用户当前输入，再打开 `https://enter.converge.ai/`；**不宣称自动传入或自动生成**。
-- 移除 Featured Prompts，仅保留 All Prompts。三张卡片标明“待补充”，不使用真实或虚构案例数据。
-- 用户所说的下方 feature 指 **FAQ**；不新增 Features 区、不修改公共 Footer。
+在现有 GPT-6 Astra 模型详情页与 Collections 目录基础上，新增一个合并介绍 GPT-6 Sol 与 GPT-6 Luna 的页面。新页使用已确认的 `/prompts/gpt-6-sol-luna` 主入口，并同时支持 `/showcases/gpt-6-sol-luna`；整体结构与 Astra 一致，但内容围绕 Sol 的高强度构建能力与 Luna 的快速迭代能力展开。Hot Prompts 与 All Prompts 暂时展示明确的占位卡，不虚构已发布案例。首屏使用 nano-banana-pro 生成无文字的双星主题专属视觉。
 
 ## 推荐实现
-### 首屏输入框
-复用现有深色主题、字体和粉橙渐变，参考 Combos 的圆角玻璃面板：顶部短标签、分隔线、可编辑多行文本、底部说明与主按钮。桌面位于左栏，手机全宽。
-按钮采用准确表达“复制并打开 Enter”的文案；复制成功后同标签页跳转首页，避免异步复制后的弹窗拦截。空白内容禁用按钮；复制失败保留输入并明确提示，不虚报成功、不自动离页。
-输入区域与复制操作使用项目已有的隐私排除规则，避免现有分析工具采集 Prompt；不新增埋点或后台能力。
-
-### All Prompts
-居中区块标题，桌面三列、手机单列。每张卡片：
-1. 上方 16:9 视频预留区与视频图标，明确“视频待补充”，不是可播放的假视频。
-2. 下方标题预留、简短说明、提示词预留面板。
-3. 底部完整样式的禁用跳转按钮，清晰说明内容待补充。
-不添加没有数据可筛选的假分类按钮。首屏 Browse Examples 锚点更新为 `#all-prompts`。
-
-### About 与 FAQ
-About 改为有背景层次、细边框及品牌细节的介绍面板，整理“关于模型提示词”和“在 Enter 中使用”层级。FAQ 改为独立圆角折叠项，保留原 5 问、原生 details/summary 键盘行为；展开、悬停、焦点状态一致。
-
-### 保持不变
-详情路径 `/prompts/gpt-6-astra` 与 `/showcases/gpt-6-astra`、入口卡片跳转、旧案例集合、Header/Footer、语言切换和资源命名空间 `/_prompts` 均保留。复用现有 `useShowcaseTheme`、`useModelPageSeo`、`getAstraCopy`、语言资源和通知组件。SEO 中对应英文标题将 `&` 同步为 `and`，保留 canonical 与结构化数据；构建插件继续放根目录 `model-page-head.ts`，不得移回被忽略的 `build/`。
+- 抽取一个数据驱动的共享模型详情页壳层，让 Astra 与 Sol/Luna 复用同一 Hero、Prompt Composer、占位内容、About、FAQ 结构；模型名称、i18n 前缀、图片、区块编号与 SEO 数据通过 props/data 注入，避免复制后残留 Astra 文案。
+- 将 `ModelPromptComposer`、`ModelPromptCategories`、`ModelPromptPlaceholder` 的 Astra 固定键改为显式文案/模型标签参数，保持现有复制后打开 Enter、隐私屏蔽与错误处理行为不变。
+- Sol/Luna 页面用双模型叙事：标题显示 “GPT-6 Sol & Luna”，副标题、About、FAQ 分别解释两者适合的构建节奏与使用方式；不声称未经项目来源验证的具体规格、价格或基准成绩。
+- Hot Prompts 使用三张与 All Prompts 一致语义的“内容待补充”占位卡；非 All 分类继续显示空状态。后续加入真实案例时可直接替换数据，不改变页面结构。
+- 用 nano-banana-pro 生成深色双星/双轨道抽象视觉，不放模型商标字样或其他文字；保存到 `public/media/showcase-collections/`，同时作为首屏图片与 Collections 卡片封面。仅增加 Sol/Luna 局部视觉变体，保留 Astra 样式。
+- 将运行时 SEO hook 与构建时 `model-page-head.ts` 改为模型数据驱动：为两条 Sol/Luna 路由输出独立 title、description、keywords、canonical、OG image 与 5 项 FAQ JSON-LD，同时保持 Astra 两条静态详情入口不变。
+- 新增 Sol/Luna collection registry 项，卡片链接到模型页；不把它设为首页 featured collection，也不改变旧 Astra collection 的 slug、案例数据或 legacy route。
+- 为 `modelSolLuna.*` 与新增 Collections 文案补齐现有 11 个 locale JSON；继续由 `src/i18n/config.ts` 直接打包，不改变语言清单。
 
 ## 关键文件
-- `src/pages/showcase/Gpt6AstraPage.tsx`：组合输入区、单一 All Prompts、About 和 FAQ。
-- `src/components/case-library/model-prompt-composer.tsx`（新增）：输入与复制后跳转。
-- `src/components/case-library/model-prompt-placeholder.tsx`（新增）：三张待补充卡片复用同一组件。
-- `src/components/case-library/model-faq.tsx`、`src/styles/model-detail.css`：局部视觉与状态。
-- `src/data/model-pages/gpt-6-astra.ts`、`public/locales/*.json`：标题与新文案，沿用现有 i18n。
-- 只在必要时调整 `src/components/case-library/model-empty-section.tsx` 的使用，不改旧集合内容。
+- `src/pages/showcase/Gpt6AstraPage.tsx`、新增 `src/pages/showcase/Gpt6SolLunaPage.tsx`：接入共享模型页结构。
+- 新增 `src/components/case-library/model-detail-page.tsx`：承载 Astra 与 Sol/Luna 共用页面组合。
+- `src/components/case-library/model-prompt-composer.tsx`、`model-prompt-categories.tsx`、`model-prompt-placeholder.tsx`：移除 Astra 固定文案依赖，改为可复用参数。
+- 新增 `src/data/model-pages/gpt-6-sol-luna.ts`，并调整 `src/data/model-pages/gpt-6-astra.ts`：统一模型页数据与 FAQ schema 形状。
+- `src/hooks/use-model-page-seo.ts`、`model-page-head.ts`：按模型数据生成运行时与构建时 metadata。
+- 新增 `src/data/showcase-collections/gpt-6-sol-luna.ts`，更新 `src/data/showcase-collections.ts`、`src/App.tsx`。
+- `src/styles/model-detail.css`：仅加入双星首图所需的局部 modifier 与窄屏标题适配。
+- `public/locales/*.json`、`public/media/showcase-collections/`：11 语言文案与生成图片。
 
 ## Implementation checklist
-- [x] 首屏英文标题及对应 SEO 标题使用 and，移除该位置的 &。
-- [x] 左栏新增有标签的可编辑 Prompt 输入框，右侧模型图保留。
-- [x] 按钮复制最新输入成功后打开 Enter 首页；空输入禁用、失败留页提示。
-- [x] 输入/操作区加入 mp-no-track、mp-block 与 data-clarity-mask；未添加 Prompt 上报逻辑。线上 SDK 屏蔽效果未实测。
-- [x] 移除 Featured 区块，锚点指向唯一 All Prompts 区。
-- [x] All Prompts 展示三张明确待补充的卡片，含视频位、提示词位和禁用按钮。
-- [x] About 与 5 条 FAQ 应用新面板样式，原 Header/Footer 不变。
-- [x] 新文案加入所有现有语言资源，不改变语言清单或 URL 规则。
+- [ ] 使用 nano-banana-pro 生成无文字的 Sol/Luna 双星主题首图，并将可用资源保存到 `public/media/showcase-collections/`。
+- [ ] 建立共享模型详情页配置/组件，使 Astra 页面视觉、CTA、复制逻辑、FAQ 与现有路由行为保持不变。
+- [ ] 新增 Sol/Luna 模型数据与页面，H1 为 “GPT-6 Sol & Luna”，页面正文明确区分两种构建节奏而不写未经验证的规格。
+- [ ] Sol/Luna 的 Hot Prompts 展示三张明确禁用的占位卡；All Prompts 保留 All 三张占位与其他分类空状态。
+- [ ] Composer 在 Sol/Luna 页显示对应模型标签与专属初始 Prompt，复制成功后仍打开 Enter，失败时不离页。
+- [ ] `/prompts/gpt-6-sol-luna` 与 `/showcases/gpt-6-sol-luna` 渲染同一页面，并通过 `useAppHref` 与 `?hl=` 保留入口前缀和语言。
+- [ ] Collections 新增 GPT-6 Sol & Luna 卡片并指向新模型页；Astra 仍为 featured，旧 collection/legacy 路由不变。
+- [ ] 运行时 SEO 使用当前模型的 canonical、keywords、OG image 与 FAQ schema，不再固定引用 Astra。
+- [ ] 构建时为 Astra 与 Sol/Luna 各两条入口写出各自独立 head，根页面不被模型 metadata 污染。
+- [ ] 11 个 locale 文件包含完整 `modelSolLuna.*` 和 collection 文案，`src/i18n/config.ts` 的直接打包机制不变。
+- [ ] 样式仅新增 Sol/Luna 局部 modifier，并确保长模型名在桌面与手机不横向溢出。
 
 ## Verification checklist
-- [x] `tests/model-prompt-action.test.mjs` 的 5 项自动测试通过：原样复制编辑内容、复制先于跳转、空白输入不执行、权限拒绝和剪贴板不可用时不跳转。
-- [x] 卡片使用明确的 disabled 按钮，无 video/source 或假视频请求；输入失败提示与空白禁用逻辑已实现。浏览器系统剪贴板权限弹窗未实测。
-- [ ] 浏览器键盘 FAQ、实际锚点点击、路由往返尚未进行完整交互测试；沿用原生 details/summary 与现有路由，代码未更改旧入口。
-- [x] 两个入口构建 HTML 的英文标题、canonical 与 5 项 FAQ JSON-LD 断言通过；i18n check/scan 通过，完整语言切换交互未实测。
-- [x] `mobile_390` 与 `desktop_1280` 同一路径截图已检查：输入框、三列转单列、About 与 FAQ 无可见横向溢出。现有 Cookie 提示仍可覆盖部分首屏，未更改该公共组件。
-- [x] `pnpm run typecheck`、`pnpm run build`、i18n check/scan 与 `git diff --check` 通过。
-- [x] 严格审计已执行，零错误但因既有 JS/字体预算、CSR 静态正文和外部字体告警未通过；未抬高预算。浏览器性能与发布 HTTP 未验证，未宣称达标。
+- [ ] 正向检查 Collections 卡片可进入两种前缀的新页面，Prompt 复制、浏览锚点、分类切换、FAQ 展开均可用。
+- [ ] 默认/回归检查 Astra 两条模型路由、旧 collection route、Astra 卡片与首页 featured collection 均保持原行为。
+- [ ] 边界检查空 Prompt 禁用，复制失败不跳转；Hot/All 占位卡无假视频请求且按钮为 disabled。
+- [ ] 使用 `?hl=zh-CN` 与至少一个非中文 locale 检查新页无原始 i18n key，路径与语言参数往返保留。
+- [ ] 运行 `node /workspace/.agents/skills/enter_i18n@1/assets/scripts/check-i18n.mjs` 与 `scan-i18n.mjs`，要求 11 语言无缺键、无未知动态 key。
+- [ ] 运行 `pnpm run typecheck` 与 `pnpm run build`；检查 `dist/prompts/gpt-6-sol-luna/index.html` 和 `dist/showcases/gpt-6-sol-luna/index.html` 的 title、canonical、OG 与 5 项 FAQ JSON-LD，并核对 Astra 构建页未回归。
+- [ ] 在 `mobile_390` 与 `desktop_1280` 检查同一 Sol/Luna 路由：双星首图、长 H1、占位卡、About、FAQ 无横向溢出或不可读对比。
+- [ ] 执行既有 marketing build audit；如仅命中已知共享 JS/字体、CSR 正文和外部字体告警，保持预算不变并如实记录，不能宣称性能通过。
