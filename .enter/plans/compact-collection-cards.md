@@ -1,101 +1,34 @@
 # Context
 
-目标：减少打开等待、滚动与操作卡顿，并支持用户确认的“几百个以内”案例规模。按 **500 个案例**做压力验证，不引入数据库、大型虚拟列表或后台服务。保持既有视觉、案例内容、链接、语言、Cookie 同意管理和统计功能。
+当前模型合集页把站内案例称为 Hot Prompts，并把 Astra 的六个项目误展示在 Sol & Luna 页；下方 All Prompts 是无真实内容的占位卡。用户希望两块分别成为 **Hot Cases（Enter 站内项目）** 和 **Trending Prompts（有来源的外部原始提示词）**，并新增 Claude Opus 5.5 合集，让 Sol & Luna 与 Opus 占据 Case Library 曲面 Gallery 中紧随 Astra 的两个 Coming Soon 位置。参考图用于 Trending Prompt 卡片的信息层级，不照搬色彩。
 
-本项目属于公开目录（marketing）。直接访问入口包括 `/prompts`、`/prompts/collections`、`/prompts/collections/:slug`，兼容 `/showcases` 下的对应地址；`/` 保持现有重定向。`/_prompts/` 资源命名空间和 `hl` 参数不能破坏。
+用户确认：Sol/Luna 与 Opus 的真实站内项目、Trending Prompts 正文及来源均稍后提供；正式 Enter 转链稍后提供，届时所有复制/下载动作才接入**成功后在新标签页打开**的统一跳转；Opus 封面用 **nano-banana-2** 生成，Sol/Luna 沿用现有素材。没有真实数据时必须呈现准确空态，不复制 Astra 项目、不发明作者/来源/Prompt，也不把抽象封面当作实际项目。此计划先交付可用结构、Opus 展示与移除下载完成弹窗；数据与正式转链的接入保持明确未完成，等待用户提供。
 
-## 已确认的问题与已有保护
+## 实现方向
 
-- 列表默认 9 条，但 Explore More、合集页和选择模式会一次挂载全部案例。
-- `CardLivePreview` 接近视口后只挂载不卸载；持续滚动会积累运行中的第三方 iframe，且加载完成后固定再等 2.4 秒显示。
-- 搜索每次重新拼接全部标题和描述；计数重复遍历；内联回调让卡片难以跳过无关更新。
-- 全部 prompt 文本随案例元数据同步打包；详情动画壳、下载相关模块、Mixpanel/Clarity 也存在静态加载链。
-- 曲面轮播已有离屏暂停、30fps 空闲绘制和纹理释放，不重写这些已有效的机制；继续检查纹理预载和反复初始化。
-- Collection 视频会在标签页隐藏时暂停，但缺少卡片离屏时的暂停与加载约束。
-- 所有语言包同步内置是为修复 CDN 拦截和首帧显示翻译 key 的历史问题，本轮不贸然改回远程 JSON 加载。
-
-当前尚无本版本的生产性能实测；批准后先生成并保留优化前基线，不把历史构建数据或开发预览当成当前性能结论。
-
-## 推荐方案
-
-### 1. 先建立可对比的生产基线
-
-使用现有 `pnpm run build`、manifest 和 `.enter/performance-audit/` 审计器，配置真实入口并执行 marketing 严格审计。保存每个入口的首屏 JS/CSS、字体、实际请求、LCP、CLS、长任务和代表性交互数据。
-
-优先处理测得收益明确的加载链；保留 Enter 构建插件。首屏导航、Hero 和核心按钮保持同步可用，不用空白 Suspense 或延迟透明显示掩盖等待。
-
-### 2. 给案例列表设置明确上限
-
-- 首页保留先展示 9 个案例；点击 Explore More 后进入 **24 个/页** 的浏览方式。合集超过 24 个案例时同样分页，避免全量挂载。
-- 分页控件沿用现有按钮体系；全部案例仍可访问。搜索和分类针对全量数据，条件变化回到第一页。
-- 多选用案例 ID 保存，跨页不丢失；下载基于完整选中集合，不限当前页。打开选择模式不再强制挂载全部案例。
-- 为案例元数据建立可复用搜索索引，一次性标准化多语言文本；分类计数单次遍历。输入即时更新，结果计算与大树更新解耦；按实际渲染证据稳定回调、隔离列表和必要的 memo。
-
-### 3. 控制预览和动画开销
-
-- 保持现有卡片内实时预览，但仅允许可见卡片运行：桌面最多 **3 个**、手机最多 **1 个**，其余保留封面，滚动时替换活动项。
-- 离屏、切页或打开详情时释放无关预览 iframe；详情保留一个当前项目实例。跨域 iframe 无法安全“暂停内部代码”，不假装缓存整个运行中的网页。
-- 移除统一的 2.4 秒额外显示等待，用真实 load 状态与现有慢加载提示控制反馈。
-- Collection 视频接近视口再加载、进入视口播放、离屏/后台暂停；保留静音循环、自动播放受限后的手动播放和返回页面恢复。
-- 轮播保留外观、交互与已有暂停机制；限制提前加载到可见项及有限邻居，检查切换语言/路由/详情时是否重复创建 WebGL、纹理和监听器。
-
-### 4. 按需加载与有限缓存
-
-- 分离案例展示元数据与 prompt 正文。详情查看、复制、单项下载或批量下载时才取正文；统计与可选状态不依赖预先下载全部正文。
-- 用当前构建生成的版本化资源 URL 获取 prompt；同一请求合并，成功正文采用有容量上限的内存缓存（最多 32 项），失败不永久缓存，允许重试。
-- 批量下载并发最多 4 个，并按原选择顺序输出；新版本 URL 自动使旧缓存失效。保持原始文本和原创/复刻标记不变。
-- 延后详情、导出等真正交互触发的代码，复用现有预加载入口；禁止提前抓取全部详情、全部 prompt 或全部媒体。
-- 不添加 Service Worker，不把全部案例和媒体塞入 localStorage，不缓存授权状态或以缓存掩盖错误。
-- 核实 HTTP 缓存：带 hash/版本的静态资源适合长期缓存，HTML 与可变内容需要重新验证。仅在现有发布机制支持时提交配置；未验证 CDN 生效前不宣称线上缓存完成。
-
-### 5. 保留统计、语言和路径契约
-
-- 单独测量 Cookie SDK、GTM、Clarity、Mixpanel 的下载和运行成本；用已有 SDK 的加载/队列能力拆分非关键下载，不自行实现采集替代品。
-- 不删除统计、不改变 100% 录制配置、不改变拒绝/同意/撤回语义；如果某 SDK 无法保留早期事件，则保留其必要启动时序，明确记录剩余成本。
-- 语言包当前先保持内置，避免重现首帧 key 闪烁；新增分页/加载文案遵守现有国际化结构。
-- 保持 `useAppHref`、`assetPath`、根入口与 `/prompts` 入口及历史 slug。若涉及这些适配代码，先加载对应子路径适配指导。
-- 本轮保留 CSR：`hl`/cookie 语言选择及多入口兼容下，SSG 需要独立构建和 hydration 改造，尚未证明是本次主要瓶颈；记录为独立评估项，不用静态骨架冒充预渲染正文。
-
-## 关键文件
-
-- `src/components/case-library/showcase-library-view.tsx`、`src/hooks/use-case-filters.ts`：分页、选择、索引与渲染范围。
-- `src/components/case-library/card-live-preview.tsx`、`collection-card.tsx`、`src/lib/curved-gallery/{renderer,media}.ts`：预览预算与媒体生命周期。
-- `src/data/cases.ts`、`src/components/case-library/prompt-panel.tsx`、`src/lib/prompt-bundle.ts`：正文按需读取与下载。
-- `src/App.tsx`、`src/providers/analytics-provider.tsx`、`src/lib/analytics/`：首屏依赖及统计契约。
-- `vite.config.ts`、`.enter/performance-audit/`：构建基线、产物和路径验证。
+1. **共享模型页结构**：`src/components/case-library/model-detail-page.tsx` 更名可见标题为 Hot Cases 和 Trending Prompts；保持现有 Hero、输入框、About、FAQ 与响应式布局。Astra 的前六个真实项目继续显示；`src/components/case-library/model-hot-prompt-gallery.tsx` 改从当前合集 `caseIds` 读取，不再硬编码 Astra 内容供所有模型复用。Sol/Luna 和 Opus 在案例未到时显示“暂无站内项目”空态。仅在 `.model-hot-grid` 范围调整 `src/styles/model-detail.css`，让图片说明及可读遮罩默认可见，其他 Case Library 卡片仍按原悬停行为。
+2. **简洁的 Trending Prompts**：用专门的数据结构及卡片替代 `model-prompt-categories.tsx` 的虚构占位。每条真实记录才显示名称、简介、可验证的来源（有 URL 才链接）、Original Prompts 标签、可展开原文和 Copy Prompt；没有数据时展示明确空态，无可操作的假卡片。沿用 `--primary`、`--card`、`--foreground` 等已有语义色和现有字体，手机单列、桌面网格；键盘和焦点可用。真实提示词正文延续 `loadPrompt` 的按需加载/失败重试，不预先打入首屏。此轮不抓取或杜撰外部内容。
+3. **Opus 合集与 Gallery**：新增 `src/data/model-pages/claude-opus-5-5.ts`、`src/data/showcase-collections/claude-opus-5-5.ts` 和模型页入口，注册到 `src/App.tsx`、`src/data/showcase-collections.ts`、`model-page-head.ts`；生成一张抽象、无伪造 logo 或案例截图的 Opus 封面并作为站内静态媒体。`src/data/curved-gallery.ts` 只替换 Astra 后面两个装饰性 Coming Soon 项：Sol/Luna 用现有封面、Opus 用新封面；余下装饰项保留。目录卡、Gallery 和模型页路由用既有 `showcaseCollectionHref` / `useAppHref` 保留 `/prompts`、`/showcases` 和 `hl`。
+4. **复制/下载动作分阶段**：`src/components/case-library/showcase-library-view.tsx` 去掉下载完成弹窗和无关加载，现有单项/批量下载在正式链接到来之前继续只报告真实成功或失败；不加假转链。后续收到链接后，在 `src/lib/model-prompt-action.ts` 统一实现用户手势时预留新标签页、复制/下载真正成功才跳转正式 URL；失败时关闭空白页并报告错误，弹窗受阻时不谎称完成。接入模型顶部输入框、Trending Prompt Copy、`src/components/case-library/prompt-panel.tsx` 的单项复制/下载，以及 Case Library 批量下载；保留 UTF-8 原文、文件顺序与现有剪贴板失败反馈。
+5. **文案与约束**：`src/data/model-pages/{types,gpt-6-astra,gpt-6-sol-luna}.ts` 和 `public/locales/*.json` 更新真实含义，新增 Opus 的中性、无未经证实能力声明的介绍。所有 11 种语言的键一致；按 `enter_i18n` 规则检查并重扫报告。不修改项目原有预览/remix URL、Cookie/统计、语言探测、旧路由或平台构建插件；不启用数据库或在线抓取。
 
 ## Implementation checklist
 
-- [ ] 保存优化前的生产构建及浏览器基线，声明真实入口、初始/延迟模块和测试条件。
-- [x] 实现首页 9 条预览及展开后/合集 24 条分页，跨页选择与全量搜索不丢失（组件测试通过）。
-- [x] 搜索文本索引和分类计数复用，减少无关卡片重复渲染。
-- [x] 建立桌面 3 个/手机 1 个卡片 iframe 并发上限，离屏、详情开启和卸载正确释放（调度与组件测试；真实浏览器长时间回归未验证）。
-- [x] 移除固定 2.4 秒 iframe 显示延迟，保留慢加载反馈。
-- [ ] 视频和轮播可见区域加载、离屏暂停、可见项及相邻纹理回收代码已实现；手动播放和真实 WebGL 浏览器回归未验证。
-- [x] prompt 正文与首屏元数据分离，请求去重、32 项缓存、4 路批量读取与失败重试有效（测试通过，14 份产物与原文逐字节一致）。
-- [x] 导出模块与下载成功弹窗改为用户操作后加载。Mixpanel 独立为同步 SDK chunk，保留 Cookie、自动采集和 100% 录制启动时序；未采用会延迟录制开头、存在撤回竞态的异步 recorder loader。
-- [ ] 版本化资源产物和路径契约已检查；没有真实部署地址/响应头证据，未添加未经验证的 CDN 缓存配置，线上缓存保持未验证。
+- [ ] Hot Cases 标题/说明指向站内真实项目，Astra 保留前六项，Sol/Luna/Opus 无项目时显示诚实空态。
+- [ ] Hot Cases 卡片说明及遮罩默认可见，目录与其他案例卡悬停效果不变。
+- [ ] Trending Prompts 模型、简洁卡片和无数据空态完成；只对有已核实来源及原文的数据启用标签、来源链接、展开和复制。
+- [ ] 用 nano-banana-2 生成 Opus 抽象封面并放入 `/_prompts/` 对应的本地媒体路径；保留 Sol/Luna 原有封面。
+- [ ] 新增 Opus 页面/合集注册与静态 head；Gallery 前两个装饰项替换为 Sol/Luna、Opus 可点击卡，其余保持不变。
+- [ ] 移除批量下载完成弹窗；正式转链未到前不增加假跳转。
+- [ ] 仅收到用户的真实提示词/项目后填充对应合集数据，不把 Astra 项目归入其他模型。
+- [ ] 仅收到正式转链后统一实现新标签页跳转，覆盖所有复制及单项/批量下载入口与失败/拦截状态；在此之前保持待办。
+- [ ] 所有新增/变更的 UI 文案在 11 个 locale 中成对维护；不主动删除未用的旧翻译键。
 
 ## Verification checklist
 
-- [ ] `pnpm run typecheck`、`pnpm run build`、`git diff --check` 通过；复用现有审计器以 `--profile marketing --strict` 验证真实 manifest/入口配置，逐项记录未通过项，不能靠调高预算消除警告。
-- [ ] 使用真实现有案例，以及仅限测试环境的 100/300/500 条合成数据，验证搜索、分类、分页、跨页选择、详情与下载；不把测试数据加入正式案例库。
-- [ ] 验证 0 条、1 条、9/24/25 条及末页边界；快速搜索/清空/切换分类、中文输入法、跨页多选和下载顺序正常。
-- [ ] 验证断网/正文读取失败后能重试；同项并发只发一次请求，缓存容量不超限，改变构建资源 URL 后不返回旧正文。
-- [ ] 滚动、反复开关详情、反复切换路由，统计 iframe、视频、监听器和 WebGL 资源，不随访问次数持续累积。
-- [ ] 按固定 390×844、DPR 2、4 倍 CPU 节流及相同网络条件，对关键生产入口冷/暖加载至少各测 5 次，报告前后中位数与最差值；桌面 1280 同时检查交互和布局。目标参考 LCP ≤2.5s、CLS ≤0.1、代表性交互到下一次绘制 ≤200ms，未达到则如实报告。
-- [ ] 回归 `/prompts`、`/showcases` 及对应目录/合集直接访问、刷新、旧 slug、`hl` 语言参数和资源地址。
-- [ ] 回归 Cookie 拒绝、同意、撤回、SDK 加载失败、首次及快速路由访问，确认无新增错误或重复采集。
-- [ ] 对影响到的列表页面核对手机与桌面视觉，保留 Logo、Footer、曲面轮播和玻璃按钮风格。
-- [x] 完成后分别给出构建审计、浏览器性能、功能回归、部署 HTTP 状态；无真实部署证据时明确标为未验证，不将实验室结果当作线上指标。
-
-## 实施记录（2026-09-22）
-
-- 生产基线已保存到 `/workspace/performance-baseline-dist`；审计报告和逐入口配置位于 `.enter/performance-audit/`。首屏同步 JS 合计 raw 从 1,568,780 B 降至 1,535,100 B，gzip 估算从 451,230 B 降至 437,837 B（约 3%）；这是产物估算，不是浏览器实际传输或打开速度。
-- 统计 SDK 433,609 B raw / 130,013 B gzip 被独立为同步 chunk。独立测试构建仅改变案例标题时，主入口 hash 改变、SDK hash 不变；不延迟 Cookie、统计或 100% 会话录制。仍须线上缓存头验证后才能宣称实际命中。
-- 真实案例的 14 份 prompt 产物逐字节等于原文；URL、语言内容、原创/复刻标记未修改。全部测试数据只在 `.enter/performance-audit/*.test.*` 或隔离测试构建，未进入正式库。
-- 构建、类型检查、补丁检查通过。严格构建审计退出码 1（未达标）：保留 JS/字体预算告警、CSR 无静态正文/完整 metadata 告警和平台插件注入远程字体未验证告警；没有抬高预算或删除插件。
-- 本地 Chromium（预装版、全新版、单进程模式）均在启动时 SIGTRAP，Firefox 也无法启动。未取得任何有效的冷/暖 5 次样本，LCP、CLS、长任务、实际交互耗时均未验证；浏览器验收脚本保留用于环境恢复后执行。
-- 已取得合集路径 mobile_390 截图；desktop_1280 截图超时。移动截图中 Cookie 提示有覆盖现象，Cookie 代码和样式本轮未改，无法从缺少基线的截图认定来源；响应式视觉回归和真实视频/WebGL/录制回归不判定通过。
-- JSDOM 组件回归覆盖 100/300/500 条案例、0/1/9/24/25 边界、跨页选择与下载顺序、全语言搜索、4 路请求、32 项 LRU、去重/失败重试、iframe 授权调度、GPU 资源清理和路径契约。它们不替代真实浏览器性能及同意管理端到端验收。
-- 无明确真实部署 URL，未添加 `_headers` 或 Service Worker；发布 HTTP 缓存、压缩、canonical/robots/sitemap 和完整抓取结果未验证。
+- [ ] `pnpm run typecheck`、`pnpm run build`、`git diff --check`、i18n `check-i18n.mjs` 与 `scan-i18n.mjs` 通过；确认 Opus 静态 HTML 有正确 title/description/canonical/OG 且不会在别的模型页串位。
+- [ ] 测试 Astra 的六个项目、Sol/Luna 和 Opus 零项目/零提示词空态；测试有真实记录时来源/Original Prompts/正文/复制只对应所属模型，输入无关页面后不残留状态。
+- [ ] 检查 `/prompts`、`/showcases` 的三个模型页与合集目录直接进入、刷新、Gallery 点击、`hl` 保留和旧 Astra slug 不退化；无数据时不出现可点击的虚构项目或作者。
+- [ ] 后续收到正式链接再测：剪贴板成功/拒绝、正文加载失败、单项和批量下载成功/失败、弹窗受阻、重复点击；每次成功只打开一个正确的新标签页，不显示旧弹窗。
+- [ ] 手机 390 与桌面 1280 核对新增模型页/Trending 区块，验证默认标题可读、链接焦点可见与缩减动态效果；不能取得浏览器证据时标记未验证而不是通过。
+- [ ] 用 marketing 构建审计记录新公开路由及新增资源；分别报告构建审计、浏览器性能、功能回归、部署 HTTP 状态，保留现有性能预算未达标事实，不把构建当作线上速度证据。
