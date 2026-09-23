@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:01:56.279Z",
+  "generatedAt": "2026-09-23T12:42:51.728Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -15,6 +15,8 @@
     "src/components/case-library/detail-loader.ts",
     "src/components/case-library/filter-bar.tsx",
     "src/components/case-library/hero-stage.tsx",
+    "src/components/case-library/library-focus.tsx",
+    "src/components/case-library/library-window.ts",
     "src/components/case-library/live-frame.tsx",
     "src/components/case-library/model-detail-page.tsx",
     "src/components/case-library/model-empty-section.tsx",
@@ -80,7 +82,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 193,
+          "line": 208,
           "column": 20,
           "usageType": "function"
         }
@@ -175,7 +177,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 103,
+          "line": 110,
           "column": 21,
           "usageType": "function"
         }
@@ -186,7 +188,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 209,
+          "line": 224,
           "column": 56,
           "usageType": "function"
         }
@@ -197,7 +199,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 105,
+          "line": 112,
           "column": 19,
           "usageType": "function"
         }
@@ -402,7 +404,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 143,
+          "line": 150,
           "column": 16,
           "usageType": "function"
         }
@@ -574,7 +576,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 151,
+          "line": 158,
           "column": 34,
           "usageType": "function"
         }
@@ -731,7 +733,7 @@
         },
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 58,
+          "line": 59,
           "column": 219,
           "usageType": "function"
         },
@@ -743,7 +745,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 209,
+          "line": 224,
           "column": 34,
           "usageType": "function"
         }
@@ -753,9 +755,9 @@
       "key": "common.next",
       "references": [
         {
-          "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 262,
-          "column": 18,
+          "file": "src/components/case-library/library-focus.tsx",
+          "line": 52,
+          "column": 111,
           "usageType": "function"
         }
       ]
@@ -764,15 +766,15 @@
       "key": "common.page",
       "references": [
         {
-          "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 256,
-          "column": 30,
+          "file": "src/components/case-library/library-focus.tsx",
+          "line": 49,
+          "column": 27,
           "usageType": "function"
         },
         {
-          "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 260,
-          "column": 91,
+          "file": "src/components/case-library/library-focus.tsx",
+          "line": 51,
+          "column": 81,
           "usageType": "function"
         }
       ]
@@ -781,9 +783,9 @@
       "key": "common.previous",
       "references": [
         {
-          "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 258,
-          "column": 52,
+          "file": "src/components/case-library/library-focus.tsx",
+          "line": 50,
+          "column": 141,
           "usageType": "function"
         }
       ]
@@ -793,7 +795,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 58,
+          "line": 59,
           "column": 189,
           "usageType": "function"
         },
@@ -933,7 +935,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 270,
+          "line": 263,
           "column": 83,
           "usageType": "function"
         }
@@ -944,7 +946,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 269,
+          "line": 262,
           "column": 80,
           "usageType": "function"
         }
@@ -954,9 +956,9 @@
       "key": "gallery.exploreMore",
       "references": [
         {
-          "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 249,
-          "column": 18,
+          "file": "src/components/case-library/library-focus.tsx",
+          "line": 42,
+          "column": 6,
           "usageType": "function"
         }
       ]
@@ -1034,6 +1036,45 @@
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
           "line": 38,
           "column": 19,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "library.explorePrompts",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-carousel.tsx",
+          "line": 25,
+          "column": 11,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "library.openPrompts",
+      "references": [
+        {
+          "file": "src/components/case-library/model-trending-prompts.tsx",
+          "line": 47,
+          "column": 103,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "library.prompts",
+      "references": [
+        {
+          "file": "src/components/case-library/model-detail-page.tsx",
+          "line": 55,
+          "column": 90,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 175,
+          "column": 149,
           "usageType": "function"
         }
       ]
@@ -1450,17 +1491,6 @@
       ]
     },
     {
-      "key": "modelAstra.viewModel",
-      "references": [
-        {
-          "file": "src/components/case-library/collection-carousel.tsx",
-          "line": 25,
-          "column": 11,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelOpus.metaDescription",
       "references": [
         {
@@ -1487,7 +1517,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-hot-case-gallery.tsx",
-          "line": 21,
+          "line": 24,
           "column": 156,
           "usageType": "function"
         }
@@ -1498,7 +1528,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 57,
+          "line": 58,
           "column": 130,
           "usageType": "function"
         }
@@ -1509,7 +1539,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 62,
+          "line": 63,
           "column": 10,
           "usageType": "function"
         }
@@ -1560,7 +1590,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 52,
+          "line": 53,
           "column": 47,
           "usageType": "function"
         }
@@ -1571,7 +1601,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 70,
+          "line": 71,
           "column": 154,
           "usageType": "function"
         }
@@ -1582,7 +1612,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 57,
+          "line": 58,
           "column": 64,
           "usageType": "function"
         }
@@ -1593,7 +1623,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 53,
+          "line": 54,
           "column": 45,
           "usageType": "function"
         }
@@ -1848,7 +1878,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 157,
+          "line": 164,
           "column": 20,
           "usageType": "function"
         }
@@ -2163,6 +2193,18 @@
       "severity": "warning"
     },
     {
+      "key": "library.switchCases",
+      "group": "library",
+      "source": "Switch to Case Library",
+      "severity": "warning"
+    },
+    {
+      "key": "library.switchPrompts",
+      "group": "library",
+      "source": "Switch to Prompt Library",
+      "severity": "warning"
+    },
+    {
       "key": "modelAstra.aboutBody",
       "group": "modelAstra",
       "source": "From business dashboards and landing pages to 3D scenes and interactive tools, a clear prompt is a starting point for your next project in Enter. Adapt the details to your own goal and preserve the original context of multi-step instructions. Curated prompts and live examples will be added to this collection.",
@@ -2328,6 +2370,12 @@
       "key": "modelAstra.videoPending",
       "group": "modelAstra",
       "source": "Video to be added",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.viewModel",
+      "group": "modelAstra",
+      "source": "Explore the model",
       "severity": "warning"
     },
     {
@@ -2860,5 +2908,14 @@
     }
   ],
   "unknownUsedKeys": [],
-  "dynamicKeyUsages": []
+  "dynamicKeyUsages": [
+    {
+      "file": "src/components/case-library/library-focus.tsx",
+      "line": 28,
+      "column": 43,
+      "usageType": "function",
+      "expression": "t(other === \"prompts\" ? \"library.switchPrompts\" : \"library.switchCases\")",
+      "severity": "warning"
+    }
+  ]
 }

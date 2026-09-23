@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol 및 Luna 컬렉션 | Enter",
-  "modelSolLuna.metaDescription": "Enter의 GPT-6 Sol 및 Luna 컬렉션입니다. 검증된 프로젝트와 출처를 밝힌 원본 프롬프트는 준비되는 대로 표시됩니다.",
+  "modelSolLuna.metaDescription": "Enter에서 GPT-6 Sol 및 Luna의 출처가 명시된 원본 프롬프트 12개를 살펴보세요. 검증된 프로젝트는 준비되면 추가됩니다.",
   "modelSolLuna.heading": "프롬프트와 앱 사례",
   "modelSolLuna.tagline": "집중해서 만들고, 빠르게 다듬고, Enter에서 모두 완성하세요.",
   "modelSolLuna.hotPrompts": "인기 프롬프트",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "라이브러리",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "자",
   "modelPages.copyPrompt": "프롬프트 복사",
   "modelOpus.metaTitle": "Claude Opus 5.5 컬렉션 | Enter",
-  "modelOpus.metaDescription": "Enter의 Claude Opus 5.5 컬렉션을 살펴보세요. 검증된 프로젝트와 출처를 밝힌 원본 프롬프트는 추가되는 대로 표시됩니다.",
+  "modelOpus.metaDescription": "Enter에서 Claude Opus 5.5의 출처가 명시된 원본 프롬프트 9개를 살펴보세요. 검증된 프로젝트는 준비되면 추가됩니다.",
   "modelOpus.tagline": "Claude Opus 5.5 프로젝트와 출처를 밝힌 프롬프트를 위한 공간입니다.",
   "modelOpus.aboutTitle": "컬렉션 소개",
   "modelOpus.aboutBody": "이 컬렉션은 Claude Opus 5.5로 만든 Enter 프로젝트와 출처를 밝힌 프롬프트를 모읍니다. 출처와 모델 귀속을 확인한 뒤 콘텐츠를 게시합니다.",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "직접 프롬프트를 작성해 Enter에서 프로젝트를 시작하세요. 검증된 사례가 등록되면 출처를 살펴보고 자신의 목적에 맞게 활용할 수 있습니다.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "재미있는 Claude Opus 5.5 사례를 이곳에 추가할 예정입니다.",
-  "collections.openOpus": "Claude Opus 5.5 컬렉션 열기"
+  "collections.openOpus": "Claude Opus 5.5 컬렉션 열기",
+  "library.prompts": "프롬프트 라이브러리",
+  "library.switchPrompts": "프롬프트 라이브러리로 전환",
+  "library.switchCases": "사례 라이브러리로 전환",
+  "library.openPrompts": "이 프롬프트 탐색",
+  "library.explorePrompts": "프롬프트 탐색"
 }

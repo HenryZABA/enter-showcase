@@ -22,7 +22,7 @@ export function CollectionCarousel({ paused = false }: { paused?: boolean }) {
     return {
       ...item,
       subtitle: collection?.modelPagePath
-        ? t("modelAstra.viewModel", { lng: language })
+        ? t("library.explorePrompts", { lng: language })
         : t("collections.caseCount", { lng: language, value: collection ? getShowcaseCollectionCases(collection).length : 0 }),
       href: item.href ? `${appHref(item.href)}?${query}` : undefined,
     };

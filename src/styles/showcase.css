@@ -83,6 +83,13 @@ html.showcase-active,
     font-feature-settings: "ss01", "cv01";
   }
 
+  .library-prompt-section { --model-rule: hsl(var(--foreground) / .1); --model-panel-gradient: radial-gradient(ellipse at 0% 0%, hsl(var(--accent) / .55), transparent 65%); --model-panel-radius: 20px; }
+  .library-prompt-section .model-trending-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .library-prompt-section .model-trending-card { --shadow-panel: 0 18px 50px -28px hsl(var(--background) / .9); }
+  #prompts-heading, #cases-heading { scroll-margin-top: 100px; }
+  .library-switch { position: fixed; z-index: 43; bottom: max(24px, env(safe-area-inset-bottom)); right: 24px; filter: drop-shadow(0 12px 20px hsl(var(--background) / .75)); }
+  @media (max-width: 767px) { .library-prompt-section .model-trending-grid { grid-template-columns: minmax(0, 1fr); } .library-switch { bottom: max(16px, env(safe-area-inset-bottom)); right: 16px; } }
+
   .showcase-hero-ensemble {
     --hero-collection-blend: linear-gradient(180deg, hsl(var(--background) / .48) 0%, hsl(var(--background) / .18) 38%, hsl(var(--background) / .72) 70%, hsl(var(--background)) 88%, hsl(var(--background)) 100%);
     background: hsl(var(--background));

@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "Collezione GPT-6 Sol e Luna | Enter",
-  "modelSolLuna.metaDescription": "Esplora la collezione GPT-6 Sol e Luna su Enter. Progetti verificati e prompt originali attribuiti appariranno quando disponibili.",
+  "modelSolLuna.metaDescription": "Esplora 12 prompt originali con fonti per GPT-6 Sol e Luna su Enter. I progetti verificati saranno aggiunti quando disponibili.",
   "modelSolLuna.heading": "Prompt ed esempi di app",
   "modelSolLuna.tagline": "Crea con attenzione. Itera con slancio. Dai forma a entrambi con Enter.",
   "modelSolLuna.hotPrompts": "Prompt popolari",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Libreria",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "caratteri",
   "modelPages.copyPrompt": "Copia prompt",
   "modelOpus.metaTitle": "Collezione Claude Opus 5.5 | Enter",
-  "modelOpus.metaDescription": "Esplora la collezione Claude Opus 5.5 su Enter. I progetti verificati e i prompt originali attribuiti appariranno man mano che saranno aggiunti.",
+  "modelOpus.metaDescription": "Esplora 9 prompt originali con fonti per Claude Opus 5.5 su Enter. I progetti verificati saranno aggiunti quando disponibili.",
   "modelOpus.tagline": "Uno spazio per i progetti Claude Opus 5.5 e i prompt con fonte.",
   "modelOpus.aboutTitle": "Informazioni sulla collezione",
   "modelOpus.aboutBody": "Questa collezione riunisce progetti Enter e prompt con fonte per Claude Opus 5.5. I contenuti vengono pubblicati dopo la verifica di origine e modello.",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "Scrivi il tuo prompt per avviare un progetto su Enter. Quando saranno disponibili esempi verificati, esplora le fonti e adatta le idee al tuo lavoro.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "Qui arriveranno casi interessanti legati a Claude Opus 5.5.",
-  "collections.openOpus": "Apri la collezione Claude Opus 5.5"
+  "collections.openOpus": "Apri la collezione Claude Opus 5.5",
+  "library.prompts": "Libreria dei prompt",
+  "library.switchPrompts": "Vai alla libreria dei prompt",
+  "library.switchCases": "Vai alla libreria dei casi",
+  "library.openPrompts": "Esplora questo prompt",
+  "library.explorePrompts": "Esplora i prompt"
 }

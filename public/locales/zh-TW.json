@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol 與 Luna 合集 | Enter",
-  "modelSolLuna.metaDescription": "探索 Enter 的 GPT-6 Sol 與 Luna 合集。經核實的站內專案和標明來源的原創提示詞將在收錄後顯示。",
+  "modelSolLuna.metaDescription": "探索 Enter 的 GPT-6 Sol 與 Luna 合集，閱讀 12 條標明來源的原創提示詞。經核實的站內專案將在收錄後顯示。",
   "modelSolLuna.heading": "提示詞與應用案例",
   "modelSolLuna.tagline": "專注建立，快速迭代，在 Enter 中塑造兩種節奏。",
   "modelSolLuna.hotPrompts": "熱門提示詞",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Library",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "個字元",
   "modelPages.copyPrompt": "複製提示詞",
   "modelOpus.metaTitle": "Claude Opus 5.5 合集 | Enter",
-  "modelOpus.metaDescription": "探索 Enter 的 Claude Opus 5.5 合集。經核實的專案及標明來源的原創提示詞將在收錄後顯示。",
+  "modelOpus.metaDescription": "探索 Enter 的 Claude Opus 5.5 合集，閱讀 9 條標明來源的原創提示詞。經核實的站內專案將在收錄後顯示。",
   "modelOpus.tagline": "匯集 Claude Opus 5.5 專案及標明來源的提示詞。",
   "modelOpus.aboutTitle": "關於這個合集",
   "modelOpus.aboutBody": "這個合集將收錄 Claude Opus 5.5 的 Enter 專案及註明出處的提示詞。內容僅在核實來源與模型歸屬後顯示。",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "寫下自己的提示詞，在 Enter 中開始專案。經核實的案例推出後，你也可以查看其來源，並依需求調整想法。",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "這裡將展示好玩有趣的 Claude Opus 5.5 案例。",
-  "collections.openOpus": "開啟 Claude Opus 5.5 合集"
+  "collections.openOpus": "開啟 Claude Opus 5.5 合集",
+  "library.prompts": "Prompt Library",
+  "library.switchPrompts": "切換至 Prompt Library",
+  "library.switchCases": "切換至 Case Library",
+  "library.openPrompts": "探索此提示詞",
+  "library.explorePrompts": "探索 Prompts"
 }

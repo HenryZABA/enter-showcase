@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol・Lunaコレクション | Enter",
-  "modelSolLuna.metaDescription": "EnterのGPT-6 Sol・Lunaコレクション。検証済みプロジェクトと出典付きオリジナルプロンプトを、準備が整い次第紹介します。",
+  "modelSolLuna.metaDescription": "EnterでGPT-6 Sol・Lunaの出典付きオリジナルプロンプト12件を紹介します。検証済みプロジェクトは公開後に追加します。",
   "modelSolLuna.heading": "プロンプトとアプリ事例",
   "modelSolLuna.tagline": "集中して作り、勢いよく磨く。Enterで両方を形に。",
   "modelSolLuna.hotPrompts": "人気のプロンプト",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "ライブラリ",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "文字",
   "modelPages.copyPrompt": "プロンプトをコピー",
   "modelOpus.metaTitle": "Claude Opus 5.5 コレクション | Enter",
-  "modelOpus.metaDescription": "EnterのClaude Opus 5.5コレクション。検証済みのプロジェクトと出典付きオリジナルプロンプトを、追加され次第紹介します。",
+  "modelOpus.metaDescription": "EnterでClaude Opus 5.5の出典付きオリジナルプロンプト9件を紹介します。検証済みプロジェクトは公開後に追加します。",
   "modelOpus.tagline": "Claude Opus 5.5のプロジェクトと出典付きプロンプトを集める場所です。",
   "modelOpus.aboutTitle": "このコレクションについて",
   "modelOpus.aboutBody": "Claude Opus 5.5のEnterプロジェクトと、出典を明記したプロンプトを紹介するコレクションです。情報源とモデルの帰属を確認してから公開します。",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "自分のプロンプトを書いてEnterでプロジェクトを始めましょう。検証済みの事例が公開されたら出典を確認し、自分の目的に合わせて活用できます。",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "Claude Opus 5.5を使った楽しい事例を今後紹介します。",
-  "collections.openOpus": "Claude Opus 5.5コレクションを開く"
+  "collections.openOpus": "Claude Opus 5.5コレクションを開く",
+  "library.prompts": "プロンプトライブラリ",
+  "library.switchPrompts": "プロンプトライブラリへ切り替え",
+  "library.switchCases": "ケースライブラリへ切り替え",
+  "library.openPrompts": "このプロンプトを見る",
+  "library.explorePrompts": "プロンプトを探す"
 }

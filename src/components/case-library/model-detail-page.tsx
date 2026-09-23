@@ -1,4 +1,6 @@
 import { ArrowDown, ArrowLeft } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { LibraryMore, LibraryPagination, LibrarySwitch, useLibraryFocus, useLibraryPage } from "./library-focus";
 import { useLocation } from "react-router-dom";
 import { LiquidLink } from "@/components/ui/liquid-glass-button";
 import type { ModelPageCopy, ModelPageModel } from "@/data/model-pages/types";
@@ -24,6 +26,10 @@ type Props = {
 };
 
 export function ModelDetailPage({ model, collection, copy, initialPrompt }: Props) {
+  const { t } = useTranslation();
+  const { focus, activate, switchTo } = useLibraryFocus();
+  const promptEntries = trendingPromptsByModel[model.slug] ?? [];
+  const promptPage = useLibraryPage(promptEntries.length, focus === "prompts");
   const appHref = useAppHref();
   const { search } = useLocation();
   const libraryHref = `${appHref("/showcases")}${search}`;
@@ -45,17 +51,20 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
             <div className="model-art-stage"><img src={model.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" /></div>
           </div>
         </section>
-        <section id="hot-cases" className="model-section model-prompts model-hot-cases" aria-labelledby="hot-cases-title">
-          <div className="model-prompts-heading"><h2 id="hot-cases-title">{copy.hotCases}</h2><p>{copy.hotDescription}</p></div>
-          <ModelHotCaseGallery collection={collection} />
-        </section>
-        <section id="trending-prompts" className="model-section model-prompts" aria-labelledby="trending-prompts-title">
-          <div className="model-prompts-heading"><h2 id="trending-prompts-title">{copy.trendingPrompts}</h2><p>{copy.trendingDescription}</p></div>
-          <ModelTrendingPrompts entries={trendingPromptsByModel[model.slug] ?? []} />
-        </section>
+        {focus !== "cases" && <section id="prompts" className="model-section model-prompts" aria-labelledby="prompts-heading">
+          <div className="model-prompts-heading"><h2 id="prompts-heading" tabIndex={-1}>{t("library.prompts")}</h2><p>{copy.trendingDescription}</p></div>
+          <ModelTrendingPrompts entries={promptEntries.slice(promptPage.start, promptPage.start + promptPage.size)} onPrimaryAction={() => activate("prompts")} />
+          {promptPage.more && <LibraryMore onClick={() => { promptPage.expand(); activate("prompts"); }} />}
+          {!promptPage.more && <LibraryPagination current={promptPage.current} pages={promptPage.pages} onChange={next => { promptPage.changePage(next); document.getElementById("prompts-heading")?.scrollIntoView({ block: "start" }); }} />}
+        </section>}
+        {focus !== "prompts" && <section id="hot-cases" className="model-section model-prompts model-hot-cases" aria-labelledby="cases-heading">
+          <div className="model-prompts-heading"><h2 id="cases-heading" tabIndex={-1}>{copy.hotCases}</h2><p>{copy.hotDescription}</p></div>
+          <ModelHotCaseGallery collection={collection} focused={focus === "cases"} onFocus={() => activate("cases")} />
+        </section>}
         {copy.faqs.length > 0 && <ModelFaq title={copy.faqTitle} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={copy.libraryLink} />}
       </main>
       <Footer />
+      <LibrarySwitch focus={focus} onSwitch={switchTo} />
     </div>
   );
 }

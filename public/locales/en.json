@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol & Luna Collection | Enter",
-  "modelSolLuna.metaDescription": "Explore the GPT-6 Sol & Luna collection in Enter. Verified Enter projects and attributed original prompts will appear when available.",
+  "modelSolLuna.metaDescription": "Explore 12 sourced original prompts for GPT-6 Sol & Luna in Enter. Verified Enter projects will appear when available.",
   "modelSolLuna.heading": "Prompts and App Examples",
   "modelSolLuna.tagline": "Two models. Two creative rhythms. One place to build.",
   "modelSolLuna.hotPrompts": "Hot Prompts",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Library",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "characters",
   "modelPages.copyPrompt": "Copy Prompt",
   "modelOpus.metaTitle": "Claude Opus 5.5 Collection | Enter",
-  "modelOpus.metaDescription": "Explore the Claude Opus 5.5 collection in Enter. Verified projects and attributed original prompts will appear here as they are added.",
+  "modelOpus.metaDescription": "Explore 9 sourced original prompts for Claude Opus 5.5 in Enter. Verified Enter projects will appear when available.",
   "modelOpus.tagline": "A dedicated space for Claude Opus 5.5 projects and sourced prompts.",
   "modelOpus.aboutTitle": "About this collection",
   "modelOpus.aboutBody": "This collection brings together Enter projects and attributed prompts for Claude Opus 5.5. Content will be added once its source and model attribution are verified.",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "Write your own prompt to start a project in Enter. Once verified examples are available, explore their sources and adapt the ideas to your own work.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "Fun Claude Opus 5.5 cases will be added here.",
-  "collections.openOpus": "Open the Claude Opus 5.5 collection"
+  "collections.openOpus": "Open the Claude Opus 5.5 collection",
+  "library.prompts": "Prompt Library",
+  "library.switchPrompts": "Switch to Prompt Library",
+  "library.switchCases": "Switch to Case Library",
+  "library.openPrompts": "Explore this prompt",
+  "library.explorePrompts": "Explore Prompts"
 }

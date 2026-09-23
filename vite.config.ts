@@ -15,7 +15,7 @@ function copyPublicAssetsToNamespace(): PluginOption {
     name: "enter-public-assets-prompts-namespace",
     configureServer(server) {
       server.middlewares.use((request, _response, next) => {
-        if (request.url?.startsWith(`/${SUBPATH_ASSETS_DIR}/`)) {
+        if (request.url?.startsWith(`/${SUBPATH_ASSETS_DIR}/`) && !request.url.startsWith(`/${SUBPATH_ASSETS_DIR}/sourced/`)) {
           request.url = request.url.slice(SUBPATH_ASSETS_DIR.length + 1);
         }
         next();

@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "Coleção GPT-6 Sol e Luna | Enter",
-  "modelSolLuna.metaDescription": "Explora a coleção GPT-6 Sol e Luna no Enter. Os projetos verificados e os prompts originais atribuídos aparecerão quando estiverem disponíveis.",
+  "modelSolLuna.metaDescription": "Explora 12 prompts originais com fontes para GPT-6 Sol e Luna no Enter. Os projetos verificados serão adicionados quando estiverem disponíveis.",
   "modelSolLuna.heading": "Prompts e exemplos de apps",
   "modelSolLuna.tagline": "Cria com foco. Itera com ritmo. Dá forma aos dois com Enter.",
   "modelSolLuna.hotPrompts": "Prompts em destaque",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Biblioteca",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "caracteres",
   "modelPages.copyPrompt": "Copiar prompt",
   "modelOpus.metaTitle": "Coleção Claude Opus 5.5 | Enter",
-  "modelOpus.metaDescription": "Explora a coleção Claude Opus 5.5 no Enter. Os projetos verificados e os prompts originais atribuídos aparecerão à medida que forem adicionados.",
+  "modelOpus.metaDescription": "Explora 9 prompts originais com fontes para Claude Opus 5.5 no Enter. Os projetos verificados serão adicionados quando estiverem disponíveis.",
   "modelOpus.tagline": "Um espaço para projetos Claude Opus 5.5 e prompts com fonte.",
   "modelOpus.aboutTitle": "Sobre esta coleção",
   "modelOpus.aboutBody": "Esta coleção reúne projetos Enter e prompts atribuídos para Claude Opus 5.5. O conteúdo aparece depois de verificadas a fonte e a atribuição ao modelo.",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "Escreve o teu próprio prompt para começares um projeto no Enter. Quando houver exemplos verificados, consulta as fontes e adapta as ideias ao teu trabalho.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "Aqui serão adicionados casos interessantes de Claude Opus 5.5.",
-  "collections.openOpus": "Abrir a coleção Claude Opus 5.5"
+  "collections.openOpus": "Abrir a coleção Claude Opus 5.5",
+  "library.prompts": "Biblioteca de prompts",
+  "library.switchPrompts": "Ir para a biblioteca de prompts",
+  "library.switchCases": "Ir para a biblioteca de casos",
+  "library.openPrompts": "Explorar este prompt",
+  "library.explorePrompts": "Explorar prompts"
 }

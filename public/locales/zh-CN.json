@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol 与 Luna 合集 | Enter",
-  "modelSolLuna.metaDescription": "探索 Enter 的 GPT-6 Sol 与 Luna 合集。经过核实的站内项目和注明来源的原创提示词将在收录后展示。",
+  "modelSolLuna.metaDescription": "探索 Enter 的 GPT-6 Sol 与 Luna 合集，阅读 12 条注明来源的原创提示词。核实后的站内项目将在收录后展示。",
   "modelSolLuna.heading": "提示词与应用案例",
   "modelSolLuna.tagline": "两个模型，两种创作节奏，一个构建空间。",
   "modelSolLuna.hotPrompts": "热门提示词",
@@ -191,7 +191,7 @@
   "nav.activities": "活动",
   "nav.build": "跟我们一起开发！",
   "nav.topics": "话题",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Library",
   "youcases.addLink": "添加链接",
   "youcases.addMedia": "添加媒体",
   "youcases.addTag": "添加标签",
@@ -286,7 +286,7 @@
   "modelPages.characters": "个字符",
   "modelPages.copyPrompt": "复制提示词",
   "modelOpus.metaTitle": "Claude Opus 5.5 合集 | Enter",
-  "modelOpus.metaDescription": "探索 Enter 的 Claude Opus 5.5 合集。经过核实的项目与标注来源的原创提示词将在收录后展示。",
+  "modelOpus.metaDescription": "探索 Enter 的 Claude Opus 5.5 合集，阅读 9 条注明来源的原创提示词。核实后的站内项目将在收录后展示。",
   "modelOpus.tagline": "汇集 Claude Opus 5.5 项目和注明来源的提示词。",
   "modelOpus.aboutTitle": "关于这个合集",
   "modelOpus.aboutBody": "这个合集将收录 Claude Opus 5.5 的 Enter 项目与注明出处的提示词。只有核实来源及模型归属后，内容才会在这里展示。",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "写下自己的提示词，在 Enter 中开启项目。经过核实的案例上线后，你也可以了解来源，再按自己的需求改写想法。",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "这里将展示好玩有趣的 Claude Opus 5.5 案例。",
-  "collections.openOpus": "打开 Claude Opus 5.5 合集"
+  "collections.openOpus": "打开 Claude Opus 5.5 合集",
+  "library.prompts": "Prompt Library",
+  "library.switchPrompts": "切换至 Prompt Library",
+  "library.switchCases": "切换至 Case Library",
+  "library.openPrompts": "探索此提示词",
+  "library.explorePrompts": "探索 Prompts"
 }

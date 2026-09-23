@@ -1,6 +1,6 @@
 {
   "modelSolLuna.metaTitle": "GPT-6 Sol & Luna Kollektion | Enter",
-  "modelSolLuna.metaDescription": "Entdecke die GPT-6 Sol & Luna Kollektion in Enter. Verifizierte Projekte und Original-Prompts mit Quellenangabe erscheinen, sobald sie verfügbar sind.",
+  "modelSolLuna.metaDescription": "Entdecke 12 Original-Prompts mit Quellenangaben für GPT-6 Sol & Luna in Enter. Verifizierte Enter-Projekte folgen, sobald sie verfügbar sind.",
   "modelSolLuna.heading": "Prompts und App-Beispiele",
   "modelSolLuna.tagline": "Baue fokussiert. Iteriere mit Schwung. Gestalte beides mit Enter.",
   "modelSolLuna.hotPrompts": "Beliebte Prompts",
@@ -191,7 +191,7 @@
   "nav.activities": "Activities",
   "nav.build": "Build with us",
   "nav.topics": "Topics",
-  "nav.youcases": "Case Library",
+  "nav.youcases": "Bibliothek",
   "youcases.addLink": "Add Link",
   "youcases.addMedia": "Add Media",
   "youcases.addTag": "Add Tag",
@@ -286,7 +286,7 @@
   "modelPages.characters": "Zeichen",
   "modelPages.copyPrompt": "Prompt kopieren",
   "modelOpus.metaTitle": "Claude Opus 5.5 Kollektion | Enter",
-  "modelOpus.metaDescription": "Entdecke die Claude Opus 5.5 Kollektion in Enter. Verifizierte Projekte und Original-Prompts mit Quellenangabe erscheinen, sobald sie hinzugefügt wurden.",
+  "modelOpus.metaDescription": "Entdecke 9 Original-Prompts mit Quellenangaben für Claude Opus 5.5 in Enter. Verifizierte Enter-Projekte folgen, sobald sie verfügbar sind.",
   "modelOpus.tagline": "Ein Ort für Claude Opus 5.5 Projekte und Prompts mit Quellenangabe.",
   "modelOpus.aboutTitle": "Über diese Kollektion",
   "modelOpus.aboutBody": "Diese Kollektion vereint Enter-Projekte und Prompts mit Quellenangabe für Claude Opus 5.5. Inhalte werden erst nach Prüfung ihrer Quelle und Modellzuordnung veröffentlicht.",
@@ -294,5 +294,10 @@
   "modelOpus.useBody": "Schreibe deinen eigenen Prompt, um ein Projekt in Enter zu beginnen. Wenn verifizierte Beispiele verfügbar sind, prüfe ihre Quellen und passe die Ideen an dein Vorhaben an.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
   "collections.opusDescription": "Spannende Fälle mit Claude Opus 5.5 folgen hier.",
-  "collections.openOpus": "Claude Opus 5.5 Kollektion öffnen"
+  "collections.openOpus": "Claude Opus 5.5 Kollektion öffnen",
+  "library.prompts": "Prompt-Bibliothek",
+  "library.switchPrompts": "Zur Prompt-Bibliothek wechseln",
+  "library.switchCases": "Zur Fallbibliothek wechseln",
+  "library.openPrompts": "Diesen Prompt erkunden",
+  "library.explorePrompts": "Prompts erkunden"
 }

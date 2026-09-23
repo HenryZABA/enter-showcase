@@ -9,7 +9,7 @@ import { loadPrompt } from "@/lib/prompt-cache";
 import { copyText } from "@/lib/prompt-file";
 import { ViewportVideo } from "./viewport-video";
 
-function TrendingPromptCard({ entry }: { entry: TrendingPrompt }) {
+function TrendingPromptCard({ entry, onPrimaryAction }: { entry: TrendingPrompt; onPrimaryAction: () => void }) {
   const { t } = useTranslation();
   const language = useCurrentLanguage();
   const [body, setBody] = useState<string | null>(null);
@@ -44,11 +44,12 @@ function TrendingPromptCard({ entry }: { entry: TrendingPrompt }) {
   };
 
   return <article className="model-trending-card">
-    {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
-    {entry.media?.type === "video" && <ViewportVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
+    <button type="button" className="model-trending-primary" onClick={onPrimaryAction} aria-label={`${t("library.openPrompts")}: ${pickLocalized(entry.title, language)}`}>
+      {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
+      {entry.media?.type === "video" && <ViewportVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
+      <span className="model-trending-intro"><span className="model-trending-title">{pickLocalized(entry.title, language)}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></span>
+    </button>
     <div className="model-trending-content">
-      <h3>{pickLocalized(entry.title, language)}</h3>
-      <p className="model-trending-description">{pickLocalized(entry.description, language)}</p>
       <span className="model-original-badge">{t("modelPages.originalPrompts")}</span>
       <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>
       <details className="model-trending-disclosure" onToggle={event => {
@@ -65,8 +66,8 @@ function TrendingPromptCard({ entry }: { entry: TrendingPrompt }) {
   </article>;
 }
 
-export function ModelTrendingPrompts({ entries }: { entries: readonly TrendingPrompt[] }) {
+export function ModelTrendingPrompts({ entries, onPrimaryAction }: { entries: readonly TrendingPrompt[]; onPrimaryAction: () => void }) {
   const { t } = useTranslation();
   if (entries.length === 0) return <div className="model-collection-empty" role="status"><BookText size={26} strokeWidth={1.25} aria-hidden="true" /><p>{t("modelPages.promptsEmpty")}</p></div>;
-  return <div className="model-trending-grid">{entries.map(entry => <TrendingPromptCard key={entry.id} entry={entry} />)}</div>;
+  return <div className="model-trending-grid">{entries.map(entry => <TrendingPromptCard key={entry.id} entry={entry} onPrimaryAction={onPrimaryAction} />)}</div>;
 }

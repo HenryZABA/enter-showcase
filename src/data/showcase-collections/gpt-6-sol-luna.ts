@@ -17,8 +17,8 @@ export const gpt6SolLunaCollection: ShowcaseCollection = {
     bundleTitle: t("bundle.docTitle"),
     hero: {
       eyebrow: "",
-      titleLine1: "GPT-6 Sol",
-      titleLine2: "& Luna",
+      titleLine1: "Enter × GPT-6",
+      titleLine2: "Sol & Luna",
       image: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
       imageWidth: 1376,
       imageHeight: 768,

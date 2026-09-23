@@ -7,7 +7,7 @@ import type { ShowcaseCollection } from "./showcase-collections/types";
 export type { ShowcaseCollection, ShowcaseHeroContent } from "./showcase-collections/types";
 
 export const showcaseCollections: readonly ShowcaseCollection[] = [gpt6AstraCollection, gpt6SolLunaCollection, claudeOpus55Collection];
-export const featuredShowcaseCollection = showcaseCollections[0];
+export const featuredShowcaseCollection = gpt6SolLunaCollection;
 
 export const getShowcaseCollection = (slug: string) =>
   showcaseCollections.find((collection) => collection.slug === slug) ?? null;

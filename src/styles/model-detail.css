@@ -57,9 +57,11 @@
 .model-trending-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .model-trending-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); box-shadow: var(--shadow-panel); }
 .model-trending-media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--model-rule); }
-.model-trending-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; gap: 16px; padding: clamp(20px, 2.4vw, 30px); }
-.model-trending-media + .model-trending-content { min-height: 310px; }
-.model-trending-content h3 { font-family: var(--font-display); font-size: clamp(21px, 2.2vw, 29px); font-weight: 600; line-height: 1.2; letter-spacing: -.04em; color: hsl(var(--foreground)); }
+.model-trending-primary { display: block; width: 100%; padding: 0; border: 0; background: transparent; text-align: left; cursor: pointer; }
+.model-trending-primary:hover .model-trending-title { color: hsl(var(--primary)); }
+.model-trending-intro { display: grid; gap: 12px; padding: clamp(20px, 2.4vw, 30px) clamp(20px, 2.4vw, 30px) 0; }
+.model-trending-title { font-family: var(--font-display); font-size: clamp(21px, 2.2vw, 29px); font-weight: 600; line-height: 1.2; letter-spacing: -.04em; color: hsl(var(--foreground)); }
+.model-trending-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; gap: 16px; padding: 16px clamp(20px, 2.4vw, 30px) clamp(20px, 2.4vw, 30px); }
 .model-trending-description { font-size: 14px; line-height: 1.75; color: hsl(var(--muted-foreground)); }
 .model-original-badge { display: inline-flex; align-items: center; min-height: 30px; padding: 5px 12px; border: 1px solid hsl(var(--primary) / .25); border-radius: 999px; background: hsl(var(--accent) / .5); font-size: 11px; font-weight: 600; color: hsl(var(--foreground)); }
 .model-trending-source { font-size: 12px; line-height: 1.6; color: hsl(var(--muted-foreground)); }

@@ -1,4 +1,8 @@
-import { ArrowDown, ArrowLeft, ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { ArrowLeft, ChevronRight, Download } from "lucide-react";
+import { LibraryMore, LibraryPagination, LibrarySwitch, useLibraryFocus, useLibraryPage } from "./library-focus";
+import { ModelTrendingPrompts } from "./model-trending-prompts";
+import { sourcedPrompts } from "@/data/model-pages/trending-prompts";
+import "@/styles/model-detail.css";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import { PreviewBudgetProvider } from "./preview-budget";
 import { CaseDetailShell } from "@/components/case-library/case-detail-shell";
@@ -62,6 +66,9 @@ export const ShowcaseLibraryView = ({
     categoryCounts,
   } = useCaseFilters(entries);
 
+  const { focus, activate, switchTo } = useLibraryFocus();
+  const promptEntries = isCollection ? [] : sourcedPrompts;
+  const promptPage = useLibraryPage(promptEntries.length, focus === "prompts");
   const [expanded, setExpanded] = useState(false);
   const [page, setPage] = useState(1);
   const [downloading, setDownloading] = useState(false);
@@ -77,7 +84,7 @@ export const ShowcaseLibraryView = ({
   const openDetails = useCallback((entry: CaseEntry, origin: CaseFlipOrigin) => {
     setActiveDetail(current => current ?? { entry, origin });
   }, []);
-  const closeDetails = useCallback(() => setActiveDetail(null), []);
+  const closeDetails = useCallback(() => { setActiveDetail(null); if (!isCollection) activate("cases"); }, [isCollection, activate]);
 
   const toggleSelectionMode = () => {
     setSelectionMode(current => !current);
@@ -118,11 +125,11 @@ export const ShowcaseLibraryView = ({
   }, [query, category, entries]);
 
   const totalFilteredCases = filteredCases.length;
-  const pageSize = !isCollection && !expanded ? 9 : 24;
+  const pageSize = !isCollection && !expanded && focus !== "cases" ? 9 : 24;
   const pageCount = Math.max(1, Math.ceil(totalFilteredCases / pageSize));
   const currentPage = Math.min(page, pageCount);
   const displayedCases = filteredCases.slice((currentPage - 1) * pageSize, currentPage * pageSize);
-  const canExploreMore = !isCollection && !expanded && totalFilteredCases > 9;
+  const canExploreMore = !isCollection && !expanded && focus !== "cases" && totalFilteredCases > 9;
   const changePage = (next: number) => {
     setPage(next);
     document.getElementById("cases-heading")?.focus({ preventScroll: true });
@@ -163,7 +170,15 @@ export const ShowcaseLibraryView = ({
           )}
         </div>
 
-        <section
+        {!isCollection && focus !== "cases" && <section id="prompts" className="ambient-section library-prompt-section scroll-mt-16 py-12 lg:py-16" aria-labelledby="prompts-heading">
+          <div className="container">
+            <h2 id="prompts-heading" tabIndex={-1} className="font-display text-3xl font-semibold tracking-[-0.035em] text-foreground sm:text-4xl">{t("library.prompts")}</h2>
+            <div className="mt-8"><ModelTrendingPrompts entries={promptEntries.slice(promptPage.start, promptPage.start + promptPage.size)} onPrimaryAction={() => activate("prompts")} /></div>
+            {promptPage.more && <LibraryMore onClick={() => { promptPage.expand(); activate("prompts"); }} />}
+            {!promptPage.more && <LibraryPagination current={promptPage.current} pages={promptPage.pages} onChange={next => { promptPage.changePage(next); document.getElementById("prompts-heading")?.scrollIntoView({ block: "start" }); }} />}
+          </div>
+        </section>}
+        {(isCollection || focus !== "prompts") && <section
           id="cases"
           aria-labelledby="cases-heading"
           className="ambient-section scroll-mt-16 py-12 lg:py-16"
@@ -239,30 +254,8 @@ export const ShowcaseLibraryView = ({
             </div>
           )}
 
-          {canExploreMore && (
-            <div className="mt-10 flex justify-center">
-              <LiquidButton
-                type="button"
-                size="lg"
-                onClick={() => setExpanded(true)}
-              >
-                {t("gallery.exploreMore")}
-                <ArrowDown aria-hidden="true" />
-              </LiquidButton>
-            </div>
-          )}
-
-          {!canExploreMore && pageCount > 1 && (
-            <nav aria-label={t("common.page")} className="mt-10 flex items-center justify-center gap-4">
-              <LiquidButton type="button" size="sm" disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)}>
-                <ChevronLeft aria-hidden="true" />{t("common.previous")}
-              </LiquidButton>
-              <span role="status" className="text-sm tabular-nums text-muted-foreground">{t("common.page")} {currentPage} / {pageCount}</span>
-              <LiquidButton type="button" size="sm" disabled={currentPage === pageCount} onClick={() => changePage(currentPage + 1)}>
-                {t("common.next")}<ChevronRight aria-hidden="true" />
-              </LiquidButton>
-            </nav>
-          )}
+          {canExploreMore && <LibraryMore onClick={() => { setExpanded(true); activate("cases"); }} />}
+          {!canExploreMore && <LibraryPagination current={currentPage} pages={pageCount} onChange={changePage} />}
 
           {filteredCases.length === 0 && (
             <div className="mt-8 rounded-lg border border-dashed border-border bg-card p-10 text-center">
@@ -272,10 +265,11 @@ export const ShowcaseLibraryView = ({
           )}
 
           </div>
-        </section>
+        </section>}
       </main>
 
       <StableFooter />
+      {!isCollection && <LibrarySwitch focus={activeDetail ? null : focus} onSwitch={switchTo} />}
 
       {activeDetail && (
         <CaseDetailShell
