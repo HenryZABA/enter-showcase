@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T08:11:24.216Z",
+  "generatedAt": "2026-09-23T08:49:34.484Z",
   "fallbackLng": "en",
-  "total": 239,
+  "total": 249,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -2545,6 +2545,27 @@
       "status": "complete"
     },
     {
+      "key": "modelAstra.allEmpty",
+      "group": "modelAstra",
+      "source": "Curated prompts will appear here when they're available.",
+      "values": {
+        "en": "Curated prompts will appear here when they're available.",
+        "zh-CN": "精选提示词上线后将在这里展示。",
+        "zh-TW": "精選提示詞推出後將在這裡展示。",
+        "es": "Los prompts seleccionados aparecerán aquí cuando estén disponibles.",
+        "pt-BR": "Os prompts selecionados aparecerão aqui quando estiverem disponíveis.",
+        "pt-PT": "Os prompts selecionados aparecerão aqui quando estiverem disponíveis.",
+        "fr": "Les prompts sélectionnés apparaîtront ici dès qu’ils seront disponibles.",
+        "de": "Kuratierte Prompts erscheinen hier, sobald sie verfügbar sind.",
+        "it": "I prompt selezionati appariranno qui quando saranno disponibili.",
+        "ja": "厳選プロンプトが公開され次第、ここに表示されます。",
+        "ko": "엄선된 프롬프트가 공개되면 여기에 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
       "key": "modelAstra.allPrompts",
       "group": "modelAstra",
       "source": "All Prompts",
@@ -2730,6 +2751,132 @@
         "ko": "엄선된 앱 사례가 여기에 표시됩니다."
       },
       "used": false,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryAll",
+      "group": "modelAstra",
+      "source": "All",
+      "values": {
+        "en": "All",
+        "zh-CN": "全部",
+        "zh-TW": "全部",
+        "es": "Todos",
+        "pt-BR": "Todos",
+        "pt-PT": "Todos",
+        "fr": "Tous",
+        "de": "Alle",
+        "it": "Tutti",
+        "ja": "すべて",
+        "ko": "전체"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryApp",
+      "group": "modelAstra",
+      "source": "App",
+      "values": {
+        "en": "App",
+        "zh-CN": "应用",
+        "zh-TW": "應用程式",
+        "es": "Apps",
+        "pt-BR": "Apps",
+        "pt-PT": "Apps",
+        "fr": "Apps",
+        "de": "App",
+        "it": "App",
+        "ja": "アプリ",
+        "ko": "앱"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryEmpty",
+      "group": "modelAstra",
+      "source": "No prompts in this category yet.",
+      "values": {
+        "en": "No prompts in this category yet.",
+        "zh-CN": "此分类暂无提示词。",
+        "zh-TW": "此分類目前沒有提示詞。",
+        "es": "Aún no hay prompts en esta categoría.",
+        "pt-BR": "Ainda não há prompts nesta categoria.",
+        "pt-PT": "Ainda não há prompts nesta categoria.",
+        "fr": "Aucun prompt dans cette catégorie pour le moment.",
+        "de": "In dieser Kategorie gibt es noch keine Prompts.",
+        "it": "Non ci sono ancora prompt in questa categoria.",
+        "ja": "このカテゴリにはまだプロンプトがありません。",
+        "ko": "이 카테고리에는 아직 프롬프트가 없습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryLabel",
+      "group": "modelAstra",
+      "source": "Prompt categories",
+      "values": {
+        "en": "Prompt categories",
+        "zh-CN": "提示词分类",
+        "zh-TW": "提示詞分類",
+        "es": "Categorías de prompts",
+        "pt-BR": "Categorias de prompts",
+        "pt-PT": "Categorias de prompts",
+        "fr": "Catégories de prompts",
+        "de": "Prompt-Kategorien",
+        "it": "Categorie di prompt",
+        "ja": "プロンプトのカテゴリ",
+        "ko": "프롬프트 카테고리"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryOther",
+      "group": "modelAstra",
+      "source": "Other",
+      "values": {
+        "en": "Other",
+        "zh-CN": "其他",
+        "zh-TW": "其他",
+        "es": "Otros",
+        "pt-BR": "Outros",
+        "pt-PT": "Outros",
+        "fr": "Autres",
+        "de": "Sonstiges",
+        "it": "Altro",
+        "ja": "その他",
+        "ko": "기타"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.categoryWebsite",
+      "group": "modelAstra",
+      "source": "Website",
+      "values": {
+        "en": "Website",
+        "zh-CN": "网站",
+        "zh-TW": "網站",
+        "es": "Sitios web",
+        "pt-BR": "Sites",
+        "pt-PT": "Sites",
+        "fr": "Sites web",
+        "de": "Website",
+        "it": "Siti web",
+        "ja": "ウェブサイト",
+        "ko": "웹사이트"
+      },
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3106,6 +3253,69 @@
         "it": "Prompt ed esempi di app",
         "ja": "プロンプトとアプリ事例",
         "ko": "프롬프트와 앱 사례"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.hotDescription",
+      "group": "modelAstra",
+      "source": "Original prompts created by Enter.",
+      "values": {
+        "en": "Original prompts created by Enter.",
+        "zh-CN": "Enter 原创提示词。",
+        "zh-TW": "Enter 原創提示詞。",
+        "es": "Prompts originales creados por Enter.",
+        "pt-BR": "Prompts originais criados pelo Enter.",
+        "pt-PT": "Prompts originais criados pelo Enter.",
+        "fr": "Prompts originaux créés par Enter.",
+        "de": "Original-Prompts von Enter.",
+        "it": "Prompt originali creati da Enter.",
+        "ja": "Enterが制作したオリジナルプロンプト。",
+        "ko": "Enter에서 제작한 오리지널 프롬프트."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.hotEmpty",
+      "group": "modelAstra",
+      "source": "Enter originals are coming soon.",
+      "values": {
+        "en": "Enter originals are coming soon.",
+        "zh-CN": "Enter 原创内容即将上线。",
+        "zh-TW": "Enter 原創內容即將推出。",
+        "es": "Los prompts originales de Enter llegarán pronto.",
+        "pt-BR": "Os prompts originais do Enter estarão disponíveis em breve.",
+        "pt-PT": "Os prompts originais do Enter estarão disponíveis em breve.",
+        "fr": "Les créations originales d’Enter arrivent bientôt.",
+        "de": "Original-Prompts von Enter folgen in Kürze.",
+        "it": "I prompt originali di Enter arriveranno presto.",
+        "ja": "Enterオリジナルのプロンプトは近日公開予定です。",
+        "ko": "Enter 오리지널 프롬프트가 곧 공개됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.hotPrompts",
+      "group": "modelAstra",
+      "source": "Hot Prompts",
+      "values": {
+        "en": "Hot Prompts",
+        "zh-CN": "热门提示词",
+        "zh-TW": "熱門提示詞",
+        "es": "Prompts populares",
+        "pt-BR": "Prompts em alta",
+        "pt-PT": "Prompts em destaque",
+        "fr": "Prompts populaires",
+        "de": "Beliebte Prompts",
+        "it": "Prompt popolari",
+        "ja": "人気のプロンプト",
+        "ko": "인기 프롬프트"
       },
       "used": true,
       "missingLanguages": [],
