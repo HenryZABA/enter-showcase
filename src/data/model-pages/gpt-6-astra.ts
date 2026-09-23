@@ -5,7 +5,7 @@ export const astraModel = {
   name: "GPT-6 Astra",
   path: "/showcases/gpt-6-astra",
   canonical: "https://enter.converge.ai/prompts/gpt-6-astra",
-  title: "Free GPT-6 Astra Prompts & App Examples | Enter",
+  title: "Free GPT-6 Astra Prompts and App Examples | Enter",
   description: "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
   keywords: "GPT-6 Astra, GPT-6 Astra prompt, GPT-6 Astra prompts, GPT-6 Astra app examples",
   image: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),

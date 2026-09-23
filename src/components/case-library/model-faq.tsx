@@ -7,7 +7,7 @@ type Props = { title: string; faqs: FaqItem[]; libraryHref: string; libraryLabel
 export function ModelFaq({ title, faqs, libraryHref, libraryLabel }: Props) {
   return (
     <section className="model-section model-faq" aria-labelledby="model-faq-title">
-      <div className="model-faq-intro"><span className="model-section-index" aria-hidden="true">04 / FAQ</span><h2 id="model-faq-title">{title}</h2></div>
+      <div className="model-faq-intro"><span className="model-section-index" aria-hidden="true">03 / FAQ</span><h2 id="model-faq-title">{title}</h2></div>
       <div className="model-faq-list">
         {faqs.map(faq => (
           <details className="model-faq-item" key={faq.id}>

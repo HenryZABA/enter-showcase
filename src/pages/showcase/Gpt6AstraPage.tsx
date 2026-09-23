@@ -1,9 +1,10 @@
-import { ArrowDown, ArrowLeft, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowLeft, ArrowUpRight, Layers3, SlidersHorizontal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ModelEmptySection } from "@/components/case-library/model-empty-section";
+import { ModelPromptComposer } from "@/components/case-library/model-prompt-composer";
+import { ModelPromptPlaceholder } from "@/components/case-library/model-prompt-placeholder";
 import { ModelFaq } from "@/components/case-library/model-faq";
 import { astraModel, getAstraCopy } from "@/data/model-pages/gpt-6-astra";
 import { useAppHref } from "@/hooks/use-app-href";
