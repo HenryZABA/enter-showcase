@@ -7,9 +7,7 @@
   --model-media-gradient: radial-gradient(ellipse at 50% 110%, hsl(var(--accent) / .7), transparent 70%);
   --model-panel-radius: 20px;
 }
-.model-breadcrumb { display: flex; align-items: center; gap: 16px; padding-top: 32px; font-size: 12px; color: hsl(var(--muted-foreground)); }
-.model-breadcrumb a { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; transition: color .15s; }
-.model-breadcrumb a:hover { color: hsl(var(--foreground)); }
+.model-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding-top: 32px; font-size: 12px; color: hsl(var(--muted-foreground)); }
 .model-hero { display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 32px; padding: 50px 0 80px; }
 .model-hero-copy { position: relative; z-index: 1; min-width: 0; }
 .model-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }

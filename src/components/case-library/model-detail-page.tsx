@@ -1,5 +1,6 @@
 import { ArrowDown, ArrowLeft } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { LiquidLink } from "@/components/ui/liquid-glass-button";
 import type { ModelPageCopy, ModelPageModel } from "@/data/model-pages/types";
 import { trendingPromptsByModel } from "@/data/model-pages/trending-prompts";
 import type { ShowcaseCollection } from "@/data/showcase-collections";
@@ -33,7 +34,7 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
     <div className="showcase model-detail flex min-h-screen flex-col">
       <Header />
       <main className="container flex-1">
-        <div className="model-breadcrumb"><Link to={libraryHref}><ArrowLeft size={15} aria-hidden="true" />{copy.back}</Link><span aria-hidden="true">/</span><span>{model.name}</span></div>
+        <div className="model-breadcrumb"><LiquidLink to={libraryHref} size="lg"><ArrowLeft aria-hidden="true" />{copy.back}</LiquidLink><span aria-hidden="true">/</span><span>{model.name}</span></div>
         <section className="model-hero" aria-labelledby="model-title">
           <div className="model-hero-copy">
             <p className="model-eyebrow"><span className="model-eyebrow-line" aria-hidden="true" />{copy.eyebrow}</p>
