@@ -1,4 +1,5 @@
 {
+  "modelAstra.buildWithEnter": "Enter로 만들기",
   "modelAstra.composerLabel": "다음 프로젝트를 여기서 시작하세요",
   "modelAstra.composerHint": "프롬프트를 복사한 뒤 Enter에 붙여 넣으세요.",
   "modelAstra.copyOpen": "복사하고 Enter 열기",

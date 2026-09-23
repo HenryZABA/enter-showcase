@@ -1,4 +1,5 @@
 {
+  "modelAstra.buildWithEnter": "用 Enter 创建",
   "modelAstra.composerLabel": "你的下一个项目，从这里开始",
   "modelAstra.composerHint": "复制提示词后，请在 Enter 中粘贴。",
   "modelAstra.copyOpen": "复制并打开 Enter",

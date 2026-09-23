@@ -70,7 +70,7 @@
 .model-about-panels .model-usage { padding-block: 42px; text-align: center; }
 .model-usage .model-panel-icon { margin-inline: auto; }
 .model-usage > p { max-width: 700px; margin-inline: auto; }
-.model-about-cta { margin-top: 26px; }
+.model-about-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
 .model-about-copy, .model-usage { position: relative; padding: 36px; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); }
 .model-panel-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 24px; border: 1px solid hsl(var(--primary) / .22); border-radius: 13px; background: hsl(var(--accent) / .45); color: hsl(var(--accent-foreground)); }
 .model-about-copy { display: grid; grid-template-columns: 46px minmax(0, 1fr); align-items: start; gap: 22px; }

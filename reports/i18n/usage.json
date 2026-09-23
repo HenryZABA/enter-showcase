@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T07:48:39.814Z",
+  "generatedAt": "2026-09-23T08:11:24.216Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -1116,7 +1116,18 @@
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
           "line": 36,
-          "column": 67,
+          "column": 103,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.buildWithEnter",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 51,
+          "column": 393,
           "usageType": "function"
         }
       ]
@@ -1358,7 +1369,7 @@
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
           "line": 51,
-          "column": 271,
+          "column": 218,
           "usageType": "function"
         },
         {
@@ -1441,7 +1452,7 @@
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
           "line": 51,
-          "column": 191,
+          "column": 81,
           "usageType": "function"
         }
       ]
@@ -1452,7 +1463,7 @@
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
           "line": 51,
-          "column": 157,
+          "column": 47,
           "usageType": "function"
         }
       ]

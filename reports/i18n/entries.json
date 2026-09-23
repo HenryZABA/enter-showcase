@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T07:48:39.814Z",
+  "generatedAt": "2026-09-23T08:11:24.216Z",
   "fallbackLng": "en",
-  "total": 238,
+  "total": 239,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -2602,6 +2602,27 @@
         "it": "Esplora gli esempi",
         "ja": "事例を見る",
         "ko": "사례 둘러보기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.buildWithEnter",
+      "group": "modelAstra",
+      "source": "build with enter",
+      "values": {
+        "en": "build with enter",
+        "zh-CN": "用 Enter 创建",
+        "zh-TW": "用 Enter 建立",
+        "es": "Crear con Enter",
+        "pt-BR": "Criar com Enter",
+        "pt-PT": "Criar com Enter",
+        "fr": "Créer avec Enter",
+        "de": "Mit Enter erstellen",
+        "it": "Crea con Enter",
+        "ja": "Enterで作成",
+        "ko": "Enter로 만들기"
       },
       "used": true,
       "missingLanguages": [],

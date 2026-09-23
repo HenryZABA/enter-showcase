@@ -29,6 +29,7 @@
   "modelAstra.useTitle": "Use GPT-6 Astra in Enter",
   "modelAstra.useBody": "Start with an idea and describe what you want to build. Preview the result, explain the changes you want, and keep refining the same project before you publish or share it.",
   "modelAstra.libraryLink": "Explore Enter Library",
+  "modelAstra.buildWithEnter": "build with enter",
   "modelAstra.faqTitle": "FAQs about GPT-6 Astra Prompts",
   "modelAstra.faqBuildQuestion": "What can I build with GPT-6 Astra prompts?",
   "modelAstra.faqBuildAnswer": "Use prompts to describe websites, apps, dashboards, productivity tools, 3D scenes, and interactive experiences. Tailor the content, features, and visual style to your own project.",
