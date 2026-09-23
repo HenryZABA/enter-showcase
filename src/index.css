@@ -72,6 +72,14 @@
     --sidebar-border: 240 5.9% 90%;
     --sidebar-ring: 350 89% 60%;
 
+    /* The consent SDK consumes complete colors, not bare HSL channels. */
+    --consent-surface: 0 0% 100%;
+    --consent-foreground: 240 10% 4%;
+    --consent-muted: 240 4% 42%;
+    --consent-border: 240 6% 85%;
+    --consent-action: 240 10% 10%;
+    --consent-action-foreground: 0 0% 100%;
+
     /* Custom tokens */
     --brand-logo: 240 10% 4%;
     --success: 142 76% 36%;
@@ -150,6 +158,20 @@ body,
 #root {
   width: 100%;
   height: 100%;
+}
+
+/* Bridge only the SDK host: its nested shadow components in v0.0.3 do not
+   receive useHostDesignTokens=false and otherwise inherit invalid bare HSL. */
+converge-cookie-manager {
+  --popover: hsl(var(--consent-surface));
+  --bg-modal: hsl(var(--consent-surface));
+  --popover-foreground: hsl(var(--consent-foreground));
+  --foreground: hsl(var(--consent-foreground));
+  --muted-foreground: hsl(var(--consent-muted));
+  --border: hsl(var(--consent-border));
+  --primary: hsl(var(--consent-action));
+  --primary-foreground: hsl(var(--consent-action-foreground));
+  --ring: hsl(var(--consent-action));
 }
 
 /* Custom scrollbar */

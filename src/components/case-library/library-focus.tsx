@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowLeftRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useCallback, useLayoutEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
 import { libraryWindow } from "./library-window";
@@ -8,16 +8,16 @@ export type LibraryKind = "prompts" | "cases";
 
 export function useLibraryFocus() {
   const [focus, setFocus] = useState<LibraryKind | null>(null);
-  const activate = (kind: LibraryKind) => setFocus(kind);
-  const switchTo = (kind: LibraryKind) => {
-    setFocus(kind);
-    requestAnimationFrame(() => {
-      const heading = document.getElementById(`${kind}-heading`);
-      heading?.scrollIntoView({ block: "start" });
-      heading?.focus({ preventScroll: true });
-    });
-  };
-  return { focus, activate, switchTo };
+  const activate = useCallback((kind: LibraryKind) => setFocus(kind), []);
+  // Removing the preceding library changes document height. Reposition after
+  // React commits that change, before paint, rather than leaving stale scrollY.
+  useLayoutEffect(() => {
+    if (!focus) return;
+    const heading = document.getElementById(`${focus}-heading`);
+    heading?.focus({ preventScroll: true });
+    heading?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [focus]);
+  return { focus, activate, switchTo: activate };
 }
 
 export function LibrarySwitch({ focus, onSwitch }: { focus: LibraryKind | null; onSwitch: (kind: LibraryKind) => void }) {
