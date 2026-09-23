@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T08:49:34.484Z",
+  "generatedAt": "2026-09-23T09:08:51.436Z",
   "fallbackLng": "en",
   "total": 249,
   "items": [
@@ -3261,19 +3261,19 @@
     {
       "key": "modelAstra.hotDescription",
       "group": "modelAstra",
-      "source": "Original prompts created by Enter.",
+      "source": "Explore standout projects built with GPT-6 Astra in Enter. Open a case to see its live preview and prompt.",
       "values": {
-        "en": "Original prompts created by Enter.",
-        "zh-CN": "Enter 原创提示词。",
-        "zh-TW": "Enter 原創提示詞。",
-        "es": "Prompts originales creados por Enter.",
-        "pt-BR": "Prompts originais criados pelo Enter.",
-        "pt-PT": "Prompts originais criados pelo Enter.",
-        "fr": "Prompts originaux créés par Enter.",
-        "de": "Original-Prompts von Enter.",
-        "it": "Prompt originali creati da Enter.",
-        "ja": "Enterが制作したオリジナルプロンプト。",
-        "ko": "Enter에서 제작한 오리지널 프롬프트."
+        "en": "Explore standout projects built with GPT-6 Astra in Enter. Open a case to see its live preview and prompt.",
+        "zh-CN": "精选由 GPT-6 Astra 在 Enter 中打造的优质案例。点击卡片，查看在线预览与提示词。",
+        "zh-TW": "精選由 GPT-6 Astra 在 Enter 中打造的優質案例。點選卡片，查看線上預覽與提示詞。",
+        "es": "Descubre proyectos destacados creados con GPT-6 Astra en Enter. Abre una tarjeta para ver la vista previa y el prompt.",
+        "pt-BR": "Explore projetos selecionados criados com GPT-6 Astra no Enter. Abra um cartão para ver a prévia e o prompt.",
+        "pt-PT": "Explora projetos selecionados criados com GPT-6 Astra no Enter. Abre um cartão para ver a pré-visualização e o prompt.",
+        "fr": "Découvrez des projets réalisés avec GPT-6 Astra dans Enter. Ouvrez une carte pour voir l’aperçu interactif et le prompt.",
+        "de": "Entdecke ausgewählte Projekte, die mit GPT-6 Astra in Enter entstanden sind. Öffne eine Karte für Live-Vorschau und Prompt.",
+        "it": "Esplora progetti selezionati creati con GPT-6 Astra in Enter. Apri una scheda per vedere anteprima e prompt.",
+        "ja": "EnterでGPT-6 Astraを使って制作した注目の事例を紹介。カードを開くと、ライブプレビューとプロンプトを確認できます。",
+        "ko": "Enter에서 GPT-6 Astra로 만든 엄선된 프로젝트를 만나보세요. 카드를 열어 실시간 미리보기와 프롬프트를 확인하세요."
       },
       "used": true,
       "missingLanguages": [],
@@ -3296,7 +3296,7 @@
         "ja": "Enterオリジナルのプロンプトは近日公開予定です。",
         "ko": "Enter 오리지널 프롬프트가 곧 공개됩니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },

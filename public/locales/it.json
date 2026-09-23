@@ -1,6 +1,6 @@
 {
   "modelAstra.hotPrompts": "Prompt popolari",
-  "modelAstra.hotDescription": "Prompt originali creati da Enter.",
+  "modelAstra.hotDescription": "Esplora progetti selezionati creati con GPT-6 Astra in Enter. Apri una scheda per vedere anteprima e prompt.",
   "modelAstra.hotEmpty": "I prompt originali di Enter arriveranno presto.",
   "modelAstra.categoryLabel": "Categorie di prompt",
   "modelAstra.categoryAll": "Tutti",

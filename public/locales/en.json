@@ -15,7 +15,7 @@
   "modelAstra.cardNote": "Available when the content is added.",
   "modelAstra.allDescription": "A space for ideas, live previews, and the prompts behind them.",
   "modelAstra.hotPrompts": "Hot Prompts",
-  "modelAstra.hotDescription": "Original prompts created by Enter.",
+  "modelAstra.hotDescription": "Explore standout projects built with GPT-6 Astra in Enter. Open a case to see its live preview and prompt.",
   "modelAstra.hotEmpty": "Enter originals are coming soon.",
   "modelAstra.categoryLabel": "Prompt categories",
   "modelAstra.categoryAll": "All",

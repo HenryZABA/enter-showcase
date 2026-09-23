@@ -1,6 +1,6 @@
 {
   "modelAstra.hotPrompts": "인기 프롬프트",
-  "modelAstra.hotDescription": "Enter에서 제작한 오리지널 프롬프트.",
+  "modelAstra.hotDescription": "Enter에서 GPT-6 Astra로 만든 엄선된 프로젝트를 만나보세요. 카드를 열어 실시간 미리보기와 프롬프트를 확인하세요.",
   "modelAstra.hotEmpty": "Enter 오리지널 프롬프트가 곧 공개됩니다.",
   "modelAstra.categoryLabel": "프롬프트 카테고리",
   "modelAstra.categoryAll": "전체",

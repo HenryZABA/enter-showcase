@@ -1,6 +1,6 @@
 {
   "modelAstra.hotPrompts": "人気のプロンプト",
-  "modelAstra.hotDescription": "Enterが制作したオリジナルプロンプト。",
+  "modelAstra.hotDescription": "EnterでGPT-6 Astraを使って制作した注目の事例を紹介。カードを開くと、ライブプレビューとプロンプトを確認できます。",
   "modelAstra.hotEmpty": "Enterオリジナルのプロンプトは近日公開予定です。",
   "modelAstra.categoryLabel": "プロンプトのカテゴリ",
   "modelAstra.categoryAll": "すべて",

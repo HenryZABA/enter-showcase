@@ -1,6 +1,6 @@
 {
   "modelAstra.hotPrompts": "热门提示词",
-  "modelAstra.hotDescription": "Enter 原创提示词。",
+  "modelAstra.hotDescription": "精选由 GPT-6 Astra 在 Enter 中打造的优质案例。点击卡片，查看在线预览与提示词。",
   "modelAstra.hotEmpty": "Enter 原创内容即将上线。",
   "modelAstra.categoryLabel": "提示词分类",
   "modelAstra.categoryAll": "全部",
