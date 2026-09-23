@@ -298,7 +298,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "creative",
     previewUrl: "https://cc26e5a341804bfbb139d28f5e49c237.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=cc26e5a341804bfbb139d28f5e49c237",
     promptUrl: postureGuardianRecreationPrompt,
     promptKind: "recreation",
     sourceTitle:
