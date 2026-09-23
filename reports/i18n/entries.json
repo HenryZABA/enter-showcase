@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T11:41:44.218Z",
+  "generatedAt": "2026-09-23T12:01:56.279Z",
   "fallbackLng": "en",
   "total": 296,
   "items": [
@@ -608,7 +608,7 @@
         "ja": "モデルを選んで、生まれた作品の中へ。",
         "ko": "모델을 고르고, 그 작품 속으로 들어가 보세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -629,26 +629,26 @@
         "ja": "モデル別の作品集",
         "ko": "모델별 작품 모음"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
     {
       "key": "collections.directoryGpt6Description",
       "group": "collections",
-      "source": "Shape a world, open a café, build something with GPT-6.",
+      "source": "Fun GPT-6 Astra cases to explore.",
       "values": {
-        "en": "Shape a world, open a café, build something with GPT-6.",
-        "zh-CN": "造个世界，开间咖啡馆，和 GPT-6 一起动手。",
-        "zh-TW": "造個世界，開間咖啡館，和 GPT-6 一起動手。",
-        "es": "Crea un mundo, abre un café y construye con GPT-6.",
-        "pt-BR": "Crie um mundo, abra um café e construa com o GPT-6.",
-        "pt-PT": "Cria um mundo, abre um café e constrói com o GPT-6.",
-        "fr": "Façonnez un monde, ouvrez un café et créez avec GPT-6.",
-        "de": "Gestalte eine Welt, eröffne ein Café und baue mit GPT-6.",
-        "it": "Crea un mondo, apri un caffè e costruisci con GPT-6.",
-        "ja": "世界をつくり、カフェを開く。GPT-6と形にしよう。",
-        "ko": "세상을 만들고 카페를 열며, GPT-6와 함께 만들어 보세요."
+        "en": "Fun GPT-6 Astra cases to explore.",
+        "zh-CN": "这里有好玩有趣的 GPT-6 Astra 案例。",
+        "zh-TW": "這裡有好玩有趣的 GPT-6 Astra 案例。",
+        "es": "Explora casos interesantes hechos con GPT-6 Astra.",
+        "pt-BR": "Conheça cases interessantes feitos com GPT-6 Astra.",
+        "pt-PT": "Explora casos interessantes feitos com GPT-6 Astra.",
+        "fr": "Découvrez des cas intéressants réalisés avec GPT-6 Astra.",
+        "de": "Entdecke spannende Fälle mit GPT-6 Astra.",
+        "it": "Scopri casi interessanti realizzati con GPT-6 Astra.",
+        "ja": "GPT-6 Astraを使った楽しい事例を紹介します。",
+        "ko": "재미있는 GPT-6 Astra 사례를 살펴보세요."
       },
       "used": true,
       "missingLanguages": [],
@@ -867,19 +867,19 @@
     {
       "key": "collections.opusDescription",
       "group": "collections",
-      "source": "A home for verified projects and attributed prompts. Content will appear when available.",
+      "source": "Fun Claude Opus 5.5 cases will be added here.",
       "values": {
-        "en": "A home for verified projects and attributed prompts. Content will appear when available.",
-        "zh-CN": "收录经过核实的项目和注明来源的提示词；有内容后即会展示。",
-        "zh-TW": "收錄經核實的專案和標明來源的提示詞；有內容時即會顯示。",
-        "es": "Un espacio para proyectos verificados y prompts atribuidos. El contenido aparecerá cuando esté disponible.",
-        "pt-BR": "Um espaço para projetos verificados e prompts com atribuição. O conteúdo aparecerá quando estiver disponível.",
-        "pt-PT": "Um espaço para projetos verificados e prompts atribuídos. O conteúdo aparecerá quando estiver disponível.",
-        "fr": "Un espace pour les projets vérifiés et les prompts attribués. Le contenu apparaîtra dès qu’il sera disponible.",
-        "de": "Ein Ort für verifizierte Projekte und Prompts mit Quellenangabe. Inhalte folgen, sobald sie verfügbar sind.",
-        "it": "Uno spazio per progetti verificati e prompt attribuiti. I contenuti appariranno quando disponibili.",
-        "ja": "検証済みプロジェクトと出典付きプロンプトを紹介します。内容は準備が整い次第公開されます。",
-        "ko": "검증된 프로젝트와 출처가 명시된 프롬프트를 위한 공간입니다. 콘텐츠는 준비되는 대로 표시됩니다."
+        "en": "Fun Claude Opus 5.5 cases will be added here.",
+        "zh-CN": "这里将展示好玩有趣的 Claude Opus 5.5 案例。",
+        "zh-TW": "這裡將展示好玩有趣的 Claude Opus 5.5 案例。",
+        "es": "Aquí añadiremos casos interesantes de Claude Opus 5.5.",
+        "pt-BR": "Cases interessantes de Claude Opus 5.5 serão adicionados aqui.",
+        "pt-PT": "Aqui serão adicionados casos interessantes de Claude Opus 5.5.",
+        "fr": "Des cas intéressants liés à Claude Opus 5.5 seront ajoutés ici.",
+        "de": "Spannende Fälle mit Claude Opus 5.5 folgen hier.",
+        "it": "Qui arriveranno casi interessanti legati a Claude Opus 5.5.",
+        "ja": "Claude Opus 5.5を使った楽しい事例を今後紹介します。",
+        "ko": "재미있는 Claude Opus 5.5 사례를 이곳에 추가할 예정입니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -1035,19 +1035,19 @@
     {
       "key": "collections.solLunaDescription",
       "group": "collections",
-      "source": "Two creative rhythms, one place to build: focused foundations and fast-moving iterations.",
+      "source": "Fun GPT-6 Sol & Luna cases will be added here.",
       "values": {
-        "en": "Two creative rhythms, one place to build: focused foundations and fast-moving iterations.",
-        "zh-CN": "两种创作节奏，一个构建空间：扎实起步，快速迭代。",
-        "zh-TW": "兩種創作節奏，一個建立空間：扎實起步，快速迭代。",
-        "es": "Dos ritmos creativos, un lugar para construir: bases enfocadas e iteraciones rápidas.",
-        "pt-BR": "Dois ritmos criativos, um lugar para criar: bases focadas e iterações rápidas.",
-        "pt-PT": "Dois ritmos criativos, um lugar para criar: bases focadas e iterações rápidas.",
-        "fr": "Deux rythmes créatifs, un espace de création : des bases ciblées et des itérations rapides.",
-        "de": "Zwei kreative Rhythmen, ein Ort zum Bauen: fokussierte Grundlagen und schnelle Iterationen.",
-        "it": "Due ritmi creativi, un luogo dove costruire: basi mirate e iterazioni rapide.",
-        "ja": "2つの制作リズムを1つの場所で。集中した土台と素早い改善。",
-        "ko": "두 가지 창작 리듬을 한곳에서: 탄탄한 기반과 빠른 반복."
+        "en": "Fun GPT-6 Sol & Luna cases will be added here.",
+        "zh-CN": "这里将展示好玩有趣的 GPT-6 Sol 与 Luna 案例。",
+        "zh-TW": "這裡將展示好玩有趣的 GPT-6 Sol 與 Luna 案例。",
+        "es": "Aquí añadiremos casos interesantes de GPT-6 Sol y Luna.",
+        "pt-BR": "Cases interessantes de GPT-6 Sol e Luna serão adicionados aqui.",
+        "pt-PT": "Aqui serão adicionados casos interessantes de GPT-6 Sol e Luna.",
+        "fr": "Des cas intéressants liés à GPT-6 Sol et Luna seront ajoutés ici.",
+        "de": "Spannende Fälle mit GPT-6 Sol & Luna folgen hier.",
+        "it": "Qui arriveranno casi interessanti legati a GPT-6 Sol e Luna.",
+        "ja": "GPT-6 Sol・Lunaを使った楽しい事例を今後紹介します。",
+        "ko": "재미있는 GPT-6 Sol 및 Luna 사례를 이곳에 추가할 예정입니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -2372,7 +2372,7 @@
         "ja": "Enter × GPT-6 Astra",
         "ko": "Enter × GPT-6 Astra"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3611,7 +3611,7 @@
         "ja": "アイデアを見つけ、自分らしく。Enterで形に。",
         "ko": "아이디어를 찾고, 나만의 것으로. Enter로 만들어 보세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3800,7 +3800,7 @@
         "ja": "Claude Opus 5.5のプロジェクトと出典付きプロンプトを集める場所です。",
         "ko": "Claude Opus 5.5 프로젝트와 출처를 밝힌 프롬프트를 위한 공간입니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4514,7 +4514,7 @@
         "ja": "集中して作り、勢いよく磨く。Enterで両方を形に。",
         "ko": "집중해서 만들고, 빠르게 다듬고, Enter에서 모두 완성하세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },

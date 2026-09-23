@@ -34,9 +34,9 @@ export const HeroStage = memo(function HeroStage({ content, collectionHref, blen
 
       <div className="container flex min-h-[320px] items-center justify-center py-10 sm:py-12 lg:py-14">
         <div className="relative mx-auto max-w-5xl text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
+          {content.eyebrow && <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-primary">
             {content.eyebrow}
-          </p>
+          </p>}
 
           <h1 className="showcase-hero-title mx-auto mt-4 max-w-4xl font-display text-3xl font-semibold uppercase leading-[1.02] tracking-[-0.05em] text-foreground sm:text-4xl lg:text-[3.15rem]">
             {content.titleLine1}

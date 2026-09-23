@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "在哪里可以探索更多应用灵感？",
   "modelSolLuna.faqIdeasAnswer": "前往 Enter Library 浏览精选项目、在线预览和可复用提示词。",
   "collections.solLunaTitle": "Enter × GPT-6 Sol 与 Luna",
-  "collections.solLunaDescription": "两种创作节奏，一个构建空间：扎实起步，快速迭代。",
+  "collections.solLunaDescription": "这里将展示好玩有趣的 GPT-6 Sol 与 Luna 案例。",
   "collections.openSolLuna": "打开 Enter × GPT-6 Sol 与 Luna 模型页",
   "modelAstra.hotPrompts": "热门提示词",
   "modelAstra.hotDescription": "精选由 GPT-6 Astra 在 Enter 中打造的优质案例。点击卡片，查看在线预览与提示词。",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "合集。",
   "collections.directoryEyebrow": "模型作品集",
   "collections.directoryDescription": "选一个模型，走进它做出的作品。",
-  "collections.directoryGpt6Description": "造个世界，开间咖啡馆，和 GPT-6 一起动手。",
+  "collections.directoryGpt6Description": "这里有好玩有趣的 GPT-6 Astra 案例。",
   "collections.backToCollections": "返回合集",
   "collections.previewPlaceholder": "合集示意图",
   "collections.pauseCarousel": "暂停自动播放",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "在 Enter 中创建下一个项目",
   "modelOpus.useBody": "写下自己的提示词，在 Enter 中开启项目。经过核实的案例上线后，你也可以了解来源，再按自己的需求改写想法。",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "收录经过核实的项目和注明来源的提示词；有内容后即会展示。",
+  "collections.opusDescription": "这里将展示好玩有趣的 Claude Opus 5.5 案例。",
   "collections.openOpus": "打开 Claude Opus 5.5 合集"
 }

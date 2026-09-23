@@ -60,6 +60,8 @@ export type CaseEntry = {
   /** Optional runtime gallery media for catalog entries loaded from the backend. */
   gallery?: {
     imageUrl: string;
+    /** Optional silent video preview; imageUrl is its poster and detail fallback. */
+    videoUrl?: string;
     caption: Localized;
     format: "landscape" | "square";
   };

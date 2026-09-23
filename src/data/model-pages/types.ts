@@ -10,7 +10,6 @@ export type ModelPageModel = {
   canonical: string;
   keywords: string;
   image: string;
-  artCaption: string;
 };
 
 export type ModelComposerCopy = {
@@ -25,9 +24,7 @@ export type ModelPageCopy = {
   title: string;
   description: string;
   back: string;
-  eyebrow: string;
   heading: string;
-  tagline: string;
   browse: string;
   hotCases: string;
   hotDescription: string;

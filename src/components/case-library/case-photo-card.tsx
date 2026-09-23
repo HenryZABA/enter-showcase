@@ -1,5 +1,6 @@
 import { memo, useId, useRef } from "react";
 import { preloadCaseDetail } from "./detail-loader";
+import { ViewportVideo } from "./viewport-video";
 import { useTranslation } from "react-i18next";
 import type { CaseCardProps } from "@/components/case-library/case-card";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -25,17 +26,21 @@ export const CasePhotoCard = memo(function CasePhotoCard({ entry, selectionMode,
       data-selected={selectionMode && selected}
     >
       <div className="case-photo-media">
-        <img
-          src={imageUrl}
-          srcSet={entry.gallery ? undefined : `${caseGalleryImage(entry.id, true)} 600w, ${caseGalleryImage(entry.id)} 1200w`}
-          sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 1023px) calc((100vw - 62px) / 2), 400px"
-          width={1200}
-          height={900}
-          loading="lazy"
-          decoding="async"
-          alt=""
-          draggable={false}
-        />
+        {entry.gallery?.videoUrl ? (
+          <ViewportVideo src={entry.gallery.videoUrl} poster={imageUrl} />
+        ) : (
+          <img
+            src={imageUrl}
+            srcSet={entry.gallery ? undefined : `${caseGalleryImage(entry.id, true)} 600w, ${caseGalleryImage(entry.id)} 1200w`}
+            sizes="(max-width: 639px) calc(100vw - 48px), (max-width: 1023px) calc((100vw - 62px) / 2), 400px"
+            width={1200}
+            height={900}
+            loading="lazy"
+            decoding="async"
+            alt=""
+            draggable={false}
+          />
+        )}
         <div className="case-photo-caption">
           <p id={captionId}>{pickLocalized(gallery.caption, language)}</p>
         </div>

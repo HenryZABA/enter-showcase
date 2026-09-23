@@ -8,7 +8,6 @@ export const solLunaModel: ModelPageModel = {
   canonical: "https://enter.converge.ai/prompts/gpt-6-sol-luna",
   keywords: "GPT-6 Sol, GPT-6 Luna, GPT-6 prompts, GPT-6 app examples, Sol and Luna prompts",
   image: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
-  artCaption: "ENTER × GPT-6 SOL / LUNA",
 };
 
 export const solLunaInitialPrompt = ""; // No model-attributed prompt is published yet.
@@ -18,9 +17,7 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     title: t("modelSolLuna.metaTitle"),
     description: t("modelSolLuna.metaDescription"),
     back: t("modelAstra.back"),
-    eyebrow: t("collections.directoryEyebrow"),
     heading: t("modelSolLuna.heading"),
-    tagline: t("modelSolLuna.tagline"),
     browse: t("modelAstra.browse"),
     hotCases: t("modelPages.hotCases"),
     hotDescription: t("modelPages.hotDescriptionPending"),

@@ -33,7 +33,7 @@ export const gpt6AstraCollection: ShowcaseCollection = {
     openLabel: t("collections.openGpt6"),
     bundleTitle: t("bundle.docTitle"),
     hero: {
-      eyebrow: t("hero.eyebrow"),
+      eyebrow: "",
       titleLine1: t("hero.titleLine1"),
       titleLine2: t("hero.titleLine2"),
       image: assetPath("images/showcase/prism-1280-v1.webp"),

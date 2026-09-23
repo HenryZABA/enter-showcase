@@ -7,7 +7,7 @@ export const gpt6SolLunaCollection: ShowcaseCollection = {
   coverImage: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
   displayName: "GPT-6 Sol & Luna",
   modelPagePath: "/showcases/gpt-6-sol-luna",
-  documentTitle: "Enter × GPT-6 Sol & Luna — Model Library",
+  documentTitle: "Enter × GPT-6 Sol & Luna — Collections",
   heroImage: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
   caseIds: [],
   getCopy: (t) => ({
@@ -16,7 +16,7 @@ export const gpt6SolLunaCollection: ShowcaseCollection = {
     openLabel: t("collections.openSolLuna"),
     bundleTitle: t("bundle.docTitle"),
     hero: {
-      eyebrow: t("collections.directoryEyebrow"),
+      eyebrow: "",
       titleLine1: "GPT-6 Sol",
       titleLine2: "& Luna",
       image: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),

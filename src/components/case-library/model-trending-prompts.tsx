@@ -7,6 +7,7 @@ import type { TrendingPrompt } from "@/data/model-pages/trending-prompts";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { loadPrompt } from "@/lib/prompt-cache";
 import { copyText } from "@/lib/prompt-file";
+import { ViewportVideo } from "./viewport-video";
 
 function TrendingPromptCard({ entry }: { entry: TrendingPrompt }) {
   const { t } = useTranslation();
@@ -43,7 +44,8 @@ function TrendingPromptCard({ entry }: { entry: TrendingPrompt }) {
   };
 
   return <article className="model-trending-card">
-    {entry.mediaUrl && <img className="model-trending-media" src={entry.mediaUrl} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
+    {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
+    {entry.media?.type === "video" && <ViewportVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
     <div className="model-trending-content">
       <h3>{pickLocalized(entry.title, language)}</h3>
       <p className="model-trending-description">{pickLocalized(entry.description, language)}</p>

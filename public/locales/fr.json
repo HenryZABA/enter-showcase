@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "Où découvrir davantage d’idées d’apps ?",
   "modelSolLuna.faqIdeasAnswer": "Consultez Enter Library pour des cas sélectionnés, des aperçus et des prompts réutilisables. Vous pouvez aussi partir de votre propre idée sur la page d’accueil d’Enter.",
   "collections.solLunaTitle": "Enter × GPT-6 Sol et Luna",
-  "collections.solLunaDescription": "Deux rythmes créatifs, un espace de création : des bases ciblées et des itérations rapides.",
+  "collections.solLunaDescription": "Des cas intéressants liés à GPT-6 Sol et Luna seront ajoutés ici.",
   "collections.openSolLuna": "Ouvrir la page GPT-6 Sol et Luna",
   "modelAstra.hotPrompts": "Prompts populaires",
   "modelAstra.hotDescription": "Découvrez des projets réalisés avec GPT-6 Astra dans Enter. Ouvrez une carte pour voir l’aperçu interactif et le prompt.",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "Collections.",
   "collections.directoryEyebrow": "Créations par modèle",
   "collections.directoryDescription": "Choisissez un modèle. Entrez dans ses créations.",
-  "collections.directoryGpt6Description": "Façonnez un monde, ouvrez un café et créez avec GPT-6.",
+  "collections.directoryGpt6Description": "Découvrez des cas intéressants réalisés avec GPT-6 Astra.",
   "collections.backToCollections": "Retour aux collections",
   "collections.previewPlaceholder": "Aperçu de collection",
   "collections.pauseCarousel": "Suspendre le défilement automatique",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Créez votre prochain projet sur Enter",
   "modelOpus.useBody": "Rédigez votre propre prompt pour démarrer un projet sur Enter. Quand des exemples vérifiés seront disponibles, consultez leurs sources et adaptez les idées à votre travail.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "Un espace pour les projets vérifiés et les prompts attribués. Le contenu apparaîtra dès qu’il sera disponible.",
+  "collections.opusDescription": "Des cas intéressants liés à Claude Opus 5.5 seront ajoutés ici.",
   "collections.openOpus": "Ouvrir la collection Claude Opus 5.5"
 }

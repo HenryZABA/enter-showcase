@@ -27,9 +27,7 @@ export default function ShowcaseCollectionsPage() {
           {t("youcases.backToShowcases")}
         </LiquidLink>
         <div className="collection-directory-heading">
-          <p className="collection-directory-eyebrow">{t("collections.directoryEyebrow")}</p>
           <h1>{t("collections.directoryHeading")}</h1>
-          <p className="collection-directory-intro">{t("collections.directoryDescription")}</p>
         </div>
         <div className="collection-directory-grid">
           {showcaseCollections.map((collection, index) => (

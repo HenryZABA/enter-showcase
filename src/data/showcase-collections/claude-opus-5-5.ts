@@ -19,7 +19,7 @@ export const claudeOpus55Collection: ShowcaseCollection = {
     openLabel: t("collections.openOpus"),
     bundleTitle: t("bundle.docTitle"),
     hero: {
-      eyebrow: t("collections.directoryEyebrow"),
+      eyebrow: "",
       titleLine1: "Claude Opus",
       titleLine2: "5.5",
       image: cover,

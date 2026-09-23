@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "Wo finde ich weitere App-Ideen?",
   "modelSolLuna.faqIdeasAnswer": "Besuche Enter Library für kuratierte Beispiele, Vorschauen und wiederverwendbare Prompts. Du kannst auch mit deiner eigenen Idee auf der Enter-Startseite beginnen.",
   "collections.solLunaTitle": "Enter × GPT-6 Sol & Luna",
-  "collections.solLunaDescription": "Zwei kreative Rhythmen, ein Ort zum Bauen: fokussierte Grundlagen und schnelle Iterationen.",
+  "collections.solLunaDescription": "Spannende Fälle mit GPT-6 Sol & Luna folgen hier.",
   "collections.openSolLuna": "Die GPT-6 Sol & Luna Modellseite öffnen",
   "modelAstra.hotPrompts": "Beliebte Prompts",
   "modelAstra.hotDescription": "Entdecke ausgewählte Projekte, die mit GPT-6 Astra in Enter entstanden sind. Öffne eine Karte für Live-Vorschau und Prompt.",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "Sammlungen.",
   "collections.directoryEyebrow": "Werke nach Modell",
   "collections.directoryDescription": "Wähle ein Modell. Entdecke, was damit entsteht.",
-  "collections.directoryGpt6Description": "Gestalte eine Welt, eröffne ein Café und baue mit GPT-6.",
+  "collections.directoryGpt6Description": "Entdecke spannende Fälle mit GPT-6 Astra.",
   "collections.backToCollections": "Zurück zu den Sammlungen",
   "collections.previewPlaceholder": "Sammlungsvorschau",
   "collections.pauseCarousel": "Automatische Wiedergabe pausieren",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Starte dein nächstes Projekt in Enter",
   "modelOpus.useBody": "Schreibe deinen eigenen Prompt, um ein Projekt in Enter zu beginnen. Wenn verifizierte Beispiele verfügbar sind, prüfe ihre Quellen und passe die Ideen an dein Vorhaben an.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "Ein Ort für verifizierte Projekte und Prompts mit Quellenangabe. Inhalte folgen, sobald sie verfügbar sind.",
+  "collections.opusDescription": "Spannende Fälle mit Claude Opus 5.5 folgen hier.",
   "collections.openOpus": "Claude Opus 5.5 Kollektion öffnen"
 }

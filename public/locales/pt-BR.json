@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "Onde posso explorar mais ideias de apps?",
   "modelSolLuna.faqIdeasAnswer": "Visite a Enter Library para ver casos selecionados, prévias e prompts reutilizáveis. Você também pode começar com sua própria ideia na página inicial do Enter.",
   "collections.solLunaTitle": "Enter × GPT-6 Sol e Luna",
-  "collections.solLunaDescription": "Dois ritmos criativos, um lugar para criar: bases focadas e iterações rápidas.",
+  "collections.solLunaDescription": "Cases interessantes de GPT-6 Sol e Luna serão adicionados aqui.",
   "collections.openSolLuna": "Abrir a página do GPT-6 Sol e Luna",
   "modelAstra.hotPrompts": "Prompts em alta",
   "modelAstra.hotDescription": "Explore projetos selecionados criados com GPT-6 Astra no Enter. Abra um cartão para ver a prévia e o prompt.",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "Coleções.",
   "collections.directoryEyebrow": "Criações por modelo",
   "collections.directoryDescription": "Escolha um modelo. Explore o que ele pode criar.",
-  "collections.directoryGpt6Description": "Crie um mundo, abra um café e construa com o GPT-6.",
+  "collections.directoryGpt6Description": "Conheça cases interessantes feitos com GPT-6 Astra.",
   "collections.backToCollections": "Voltar às coleções",
   "collections.previewPlaceholder": "Prévia de coleção",
   "collections.pauseCarousel": "Pausar reprodução automática",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Crie seu próximo projeto no Enter",
   "modelOpus.useBody": "Escreva seu próprio prompt para iniciar um projeto no Enter. Quando houver exemplos verificados, confira as fontes e adapte as ideias ao seu trabalho.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "Um espaço para projetos verificados e prompts com atribuição. O conteúdo aparecerá quando estiver disponível.",
+  "collections.opusDescription": "Cases interessantes de Claude Opus 5.5 serão adicionados aqui.",
   "collections.openOpus": "Abrir a coleção Claude Opus 5.5"
 }

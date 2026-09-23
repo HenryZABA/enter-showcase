@@ -3,6 +3,7 @@ import { createRoot, type Root } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { ModelHotCaseGallery } from '../../src/components/case-library/model-hot-case-gallery';
+import { CollectionCard } from '../../src/components/case-library/collection-card';
 import { ModelTrendingPrompts } from '../../src/components/case-library/model-trending-prompts';
 import { showcaseCollections } from '../../src/data/showcase-collections';
 import { curvedGalleryItems } from '../../src/data/curved-gallery';
@@ -20,6 +21,13 @@ afterEach(async()=>{await act(async()=>root.unmount());element.remove();vi.unstu
 async function render(node:React.ReactNode){await act(async()=>root.render(<MemoryRouter>{node}</MemoryRouter>));}
 
 describe('model membership and attributed prompts',()=>{
+ it('keeps model directory cards free of media badges and Explore model labels',async()=>{
+  await render(<CollectionCard collection={showcaseCollections[2]} href="/prompts/claude-opus-5-5"/>);
+  expect(element.querySelector('.collection-directory-badge')).toBeNull();
+  expect(element.querySelector('.collection-directory-count')).toBeNull();
+  expect(element.textContent).not.toContain('modelAstra.viewModel');
+  expect(element.querySelector('.collection-directory-info h2')?.textContent).toBe('Claude Opus 5.5');
+ });
  it('only Astra owns its six real Hot Cases; other model collections have no borrowed projects',async()=>{
   expect(showcaseCollections.map(c=>c.slug)).toEqual(['gpt6','gpt-6-sol-luna','claude-opus-5-5']);
   await render(<ModelHotCaseGallery collection={showcaseCollections[0]}/>);

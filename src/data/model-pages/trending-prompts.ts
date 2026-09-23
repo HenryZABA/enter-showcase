@@ -8,7 +8,7 @@ export type TrendingPrompt = {
   sourceName: string;
   sourceUrl: string;
   promptUrl: string;
-  mediaUrl?: string;
+  media?: { type: "image"; src: string } | { type: "video"; src: string; poster: string };
   kind: "original";
 };
 

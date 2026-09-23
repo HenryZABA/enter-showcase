@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "¿Dónde puedo explorar más ideas de apps?",
   "modelSolLuna.faqIdeasAnswer": "Visita Enter Library para ver casos seleccionados, vistas previas y prompts reutilizables. También puedes empezar con tu propia idea en la página de inicio de Enter.",
   "collections.solLunaTitle": "Enter × GPT-6 Sol y Luna",
-  "collections.solLunaDescription": "Dos ritmos creativos, un lugar para construir: bases enfocadas e iteraciones rápidas.",
+  "collections.solLunaDescription": "Aquí añadiremos casos interesantes de GPT-6 Sol y Luna.",
   "collections.openSolLuna": "Abrir la página de GPT-6 Sol y Luna",
   "modelAstra.hotPrompts": "Prompts populares",
   "modelAstra.hotDescription": "Descubre proyectos destacados creados con GPT-6 Astra en Enter. Abre una tarjeta para ver la vista previa y el prompt.",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "Colecciones.",
   "collections.directoryEyebrow": "Creaciones por modelo",
   "collections.directoryDescription": "Elige un modelo. Descubre lo que puede crear.",
-  "collections.directoryGpt6Description": "Crea un mundo, abre un café y construye con GPT-6.",
+  "collections.directoryGpt6Description": "Explora casos interesantes hechos con GPT-6 Astra.",
   "collections.backToCollections": "Volver a las colecciones",
   "collections.previewPlaceholder": "Vista previa de colección",
   "collections.pauseCarousel": "Pausar reproducción automática",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Crea tu próximo proyecto en Enter",
   "modelOpus.useBody": "Escribe tu propio prompt para empezar un proyecto en Enter. Cuando haya ejemplos verificados, explora sus fuentes y adapta las ideas a tu trabajo.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "Un espacio para proyectos verificados y prompts atribuidos. El contenido aparecerá cuando esté disponible.",
+  "collections.opusDescription": "Aquí añadiremos casos interesantes de Claude Opus 5.5.",
   "collections.openOpus": "Abrir la colección Claude Opus 5.5"
 }

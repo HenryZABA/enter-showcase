@@ -8,7 +8,6 @@ export const astraModel: ModelPageModel = {
   canonical: "https://enter.converge.ai/prompts/gpt-6-astra",
   keywords: "GPT-6 Astra, GPT-6 Astra prompt, GPT-6 Astra prompts, GPT-6 Astra app examples",
   image: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
-  artCaption: "ENTER × GPT-6 ASTRA",
 };
 
 export const astraInitialPrompt = "Build a responsive project dashboard where I can create projects, assign tasks, track progress, and filter work by status. Add a clean overview with deadlines, priorities, and a dark mode toggle.";
@@ -18,9 +17,7 @@ export function getAstraCopy(t: TFunction): ModelPageCopy {
     title: t("modelAstra.metaTitle"),
     description: t("modelAstra.metaDescription"),
     back: t("modelAstra.back"),
-    eyebrow: t("collections.directoryEyebrow"),
     heading: t("modelAstra.heading"),
-    tagline: t("modelAstra.tagline"),
     browse: t("modelAstra.browse"),
     hotCases: t("modelPages.hotCases"),
     hotDescription: t("modelAstra.hotDescription"),

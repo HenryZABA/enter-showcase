@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "Where can I explore more app ideas?",
   "modelSolLuna.faqIdeasAnswer": "Visit Enter Library to browse curated projects, live previews, and reusable prompts.",
   "collections.solLunaTitle": "Enter × GPT-6 Sol & Luna",
-  "collections.solLunaDescription": "Two creative rhythms, one place to build: focused foundations and fast-moving iterations.",
+  "collections.solLunaDescription": "Fun GPT-6 Sol & Luna cases will be added here.",
   "collections.openSolLuna": "Open the Enter × GPT-6 Sol & Luna model page",
   "modelAstra.metaTitle": "Free GPT-6 Astra Prompts and App Examples | Enter",
   "modelAstra.composerLabel": "Your next project starts here",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "Collections.",
   "collections.directoryEyebrow": "Model Library",
   "collections.directoryDescription": "Pick a model. Step inside what it can build.",
-  "collections.directoryGpt6Description": "Shape a world, open a café, build something with GPT-6.",
+  "collections.directoryGpt6Description": "Fun GPT-6 Astra cases to explore.",
   "collections.backToCollections": "Back to collections",
   "collections.previewPlaceholder": "Collection preview",
   "collections.pauseCarousel": "Pause autoplay",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Create your next project in Enter",
   "modelOpus.useBody": "Write your own prompt to start a project in Enter. Once verified examples are available, explore their sources and adapt the ideas to your own work.",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "A home for verified projects and attributed prompts. Content will appear when available.",
+  "collections.opusDescription": "Fun Claude Opus 5.5 cases will be added here.",
   "collections.openOpus": "Open the Claude Opus 5.5 collection"
 }

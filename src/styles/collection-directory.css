@@ -4,9 +4,7 @@
 }
 .collection-directory-back { margin-top: 28px; }
 .collection-directory-heading { padding: 52px 0 44px; }
-.collection-directory-eyebrow { margin: 0 0 18px; color: hsl(var(--primary)); font: 500 11px var(--font-mono); text-transform: uppercase; letter-spacing: .18em; }
 .collection-directory-heading h1 { margin: 0; color: hsl(var(--foreground)); font-family: var(--font-display); font-size: clamp(42px, 6.5vw, 80px); line-height: 1.05; font-weight: 500; letter-spacing: -.055em; }
-.collection-directory-intro { max-width: 48ch; margin: 22px 0 0; color: hsl(var(--muted-foreground)); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; text-wrap: pretty; }
 .collection-directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .collection-directory-card { position: relative; display: block; min-width: 0; border-radius: var(--collection-radius); color: hsl(var(--foreground)); }
 .collection-directory-link { display: block; border-radius: inherit; }
@@ -15,7 +13,6 @@
 .collection-directory-media { position: relative; aspect-ratio: 16 / 9; isolation: isolate; overflow: hidden; border-radius: var(--collection-radius); background: hsl(var(--card)); border: 1px solid hsl(var(--border)); }
 .collection-directory-media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--collection-overlay); }
 .collection-directory-media :is(img, video) { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 450ms cubic-bezier(.22, 1, .36, 1); }
-.collection-directory-badge { position: absolute; z-index: 1; top: 12px; left: 12px; padding: 6px 10px; border: 1px solid hsl(var(--foreground) / .15); border-radius: 999px; color: hsl(var(--foreground)); background: hsl(var(--background) / .7); backdrop-filter: blur(8px); font: 500 9px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; }
 .collection-directory-info { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 16px 0 0; }
 .collection-directory-info h2 { margin: 0; font-family: var(--font-display); font-size: 22px; font-weight: 500; letter-spacing: -.04em; }
 .collection-directory-info p { margin: 8px 0 12px; color: hsl(var(--muted-foreground)); font-size: 13px; line-height: 1.55; text-wrap: pretty; }

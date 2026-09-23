@@ -23,7 +23,7 @@
   "modelSolLuna.faqIdeasQuestion": "ほかのアプリアイデアはどこで探せますか？",
   "modelSolLuna.faqIdeasAnswer": "Enter Libraryで厳選事例、プレビュー、再利用可能なプロンプトをご覧ください。Enterのホームページから自分のアイデアを始めることもできます。",
   "collections.solLunaTitle": "Enter × GPT-6 Sol・Luna",
-  "collections.solLunaDescription": "2つの制作リズムを1つの場所で。集中した土台と素早い改善。",
+  "collections.solLunaDescription": "GPT-6 Sol・Lunaを使った楽しい事例を今後紹介します。",
   "collections.openSolLuna": "GPT-6 Sol・Lunaモデルページを開く",
   "modelAstra.hotPrompts": "人気のプロンプト",
   "modelAstra.hotDescription": "EnterでGPT-6 Astraを使って制作した注目の事例を紹介。カードを開くと、ライブプレビューとプロンプトを確認できます。",
@@ -81,7 +81,7 @@
   "collections.directoryHeading": "コレクション。",
   "collections.directoryEyebrow": "モデル別の作品集",
   "collections.directoryDescription": "モデルを選んで、生まれた作品の中へ。",
-  "collections.directoryGpt6Description": "世界をつくり、カフェを開く。GPT-6と形にしよう。",
+  "collections.directoryGpt6Description": "GPT-6 Astraを使った楽しい事例を紹介します。",
   "collections.backToCollections": "コレクションに戻る",
   "collections.previewPlaceholder": "コレクションのイメージ",
   "collections.pauseCarousel": "自動再生を一時停止",
@@ -293,6 +293,6 @@
   "modelOpus.useTitle": "Enterで次のプロジェクトを始める",
   "modelOpus.useBody": "自分のプロンプトを書いてEnterでプロジェクトを始めましょう。検証済みの事例が公開されたら出典を確認し、自分の目的に合わせて活用できます。",
   "collections.opusTitle": "Enter × Claude Opus 5.5",
-  "collections.opusDescription": "検証済みプロジェクトと出典付きプロンプトを紹介します。内容は準備が整い次第公開されます。",
+  "collections.opusDescription": "Claude Opus 5.5を使った楽しい事例を今後紹介します。",
   "collections.openOpus": "Claude Opus 5.5コレクションを開く"
 }
