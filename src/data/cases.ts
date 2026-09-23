@@ -210,7 +210,7 @@ const baseCases: CaseEntry[] = [
     },
     category: "business",
     previewUrl: "https://3b395dba2e1f49138c9b8d5ac5b6710e.prod.enterapp.pro",
-    remixUrl: null,
+    remixUrl: "https://enter.converge.ai/workspace/?tab=design-kit&assetType=template&assetId=3b395dba2e1f49138c9b8d5ac5b6710e",
     promptUrl: cafeRecreationPrompt,
     promptKind: "recreation",
     sourceTitle: "Astra 一条提示词5分钟直出咖啡馆移动点单系统",
