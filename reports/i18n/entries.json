@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T06:50:02.230Z",
+  "generatedAt": "2026-09-23T07:48:39.814Z",
   "fallbackLng": "en",
-  "total": 224,
+  "total": 238,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -2524,6 +2524,27 @@
       "status": "complete"
     },
     {
+      "key": "modelAstra.allDescription",
+      "group": "modelAstra",
+      "source": "A space for ideas, live previews, and the prompts behind them.",
+      "values": {
+        "en": "A space for ideas, live previews, and the prompts behind them.",
+        "zh-CN": "汇集灵感、在线预览，以及作品背后的提示词。",
+        "zh-TW": "匯集靈感、線上預覽，以及作品背後的提示詞。",
+        "es": "Un espacio para ideas, vistas previas y los prompts que las hacen posibles.",
+        "pt-BR": "Um espaço para ideias, prévias interativas e os prompts por trás delas.",
+        "pt-PT": "Um espaço para ideias, pré-visualizações e os prompts por trás delas.",
+        "fr": "Un espace pour les idées, les aperçus et les prompts qui leur donnent vie.",
+        "de": "Ein Ort für Ideen, Live-Vorschauen und die Prompts dahinter.",
+        "it": "Uno spazio per idee, anteprime e i prompt che le rendono possibili.",
+        "ja": "アイデア、ライブプレビュー、そして作品を生むプロンプトを集める場所。",
+        "ko": "아이디어, 라이브 미리보기, 그리고 그 뒤에 있는 프롬프트를 위한 공간."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
       "key": "modelAstra.allPrompts",
       "group": "modelAstra",
       "source": "All Prompts",
@@ -2587,6 +2608,90 @@
       "status": "complete"
     },
     {
+      "key": "modelAstra.cardAction",
+      "group": "modelAstra",
+      "source": "Open in Enter",
+      "values": {
+        "en": "Open in Enter",
+        "zh-CN": "在 Enter 中打开",
+        "zh-TW": "在 Enter 中開啟",
+        "es": "Abrir en Enter",
+        "pt-BR": "Abrir no Enter",
+        "pt-PT": "Abrir no Enter",
+        "fr": "Ouvrir dans Enter",
+        "de": "In Enter öffnen",
+        "it": "Apri in Enter",
+        "ja": "Enterで開く",
+        "ko": "Enter에서 열기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.cardDescription",
+      "group": "modelAstra",
+      "source": "A preview and project description will appear here.",
+      "values": {
+        "en": "A preview and project description will appear here.",
+        "zh-CN": "这里将展示预览视频与项目介绍。",
+        "zh-TW": "這裡將展示預覽影片與專案介紹。",
+        "es": "Aquí aparecerán la vista previa y la descripción del proyecto.",
+        "pt-BR": "A prévia e a descrição do projeto aparecerão aqui.",
+        "pt-PT": "A pré-visualização e a descrição do projeto aparecerão aqui.",
+        "fr": "L’aperçu et la description du projet apparaîtront ici.",
+        "de": "Hier erscheinen die Vorschau und Projektbeschreibung.",
+        "it": "Qui appariranno l’anteprima e la descrizione del progetto.",
+        "ja": "プレビューとプロジェクトの説明がここに表示されます。",
+        "ko": "미리보기와 프로젝트 소개가 여기에 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.cardNote",
+      "group": "modelAstra",
+      "source": "Available when the content is added.",
+      "values": {
+        "en": "Available when the content is added.",
+        "zh-CN": "内容补充后开放。",
+        "zh-TW": "內容補充後開放。",
+        "es": "Disponible cuando se añada el contenido.",
+        "pt-BR": "Disponível quando o conteúdo for adicionado.",
+        "pt-PT": "Disponível quando o conteúdo for adicionado.",
+        "fr": "Disponible après l’ajout du contenu.",
+        "de": "Verfügbar, sobald der Inhalt ergänzt wurde.",
+        "it": "Disponibile quando verrà aggiunto il contenuto.",
+        "ja": "コンテンツ追加後に利用できます。",
+        "ko": "콘텐츠 추가 후 이용할 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.casePending",
+      "group": "modelAstra",
+      "source": "App example to be added",
+      "values": {
+        "en": "App example to be added",
+        "zh-CN": "应用案例待补充",
+        "zh-TW": "應用案例待補充",
+        "es": "Ejemplo de app pendiente",
+        "pt-BR": "Exemplo de app a adicionar",
+        "pt-PT": "Exemplo de app a adicionar",
+        "fr": "Exemple d’app à venir",
+        "de": "App-Beispiel folgt",
+        "it": "Esempio di app in arrivo",
+        "ja": "アプリ事例は近日追加予定",
+        "ko": "앱 사례 추가 예정"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
       "key": "modelAstra.casesEmpty",
       "group": "modelAstra",
       "source": "Curated app examples will appear here.",
@@ -2602,6 +2707,111 @@
         "it": "Gli esempi di app selezionati appariranno qui.",
         "ja": "厳選されたアプリ事例をここに掲載します。",
         "ko": "엄선된 앱 사례가 여기에 표시됩니다."
+      },
+      "used": false,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.composerHint",
+      "group": "modelAstra",
+      "source": "Copy your prompt, then paste it in Enter.",
+      "values": {
+        "en": "Copy your prompt, then paste it in Enter.",
+        "zh-CN": "复制提示词后，请在 Enter 中粘贴。",
+        "zh-TW": "複製提示詞後，請在 Enter 中貼上。",
+        "es": "Copia el prompt y pégalo en Enter.",
+        "pt-BR": "Copie o prompt e cole no Enter.",
+        "pt-PT": "Copia o prompt e cola-o no Enter.",
+        "fr": "Copiez le prompt, puis collez-le dans Enter.",
+        "de": "Kopiere den Prompt und füge ihn in Enter ein.",
+        "it": "Copia il prompt, poi incollalo in Enter.",
+        "ja": "プロンプトをコピーしてEnterに貼り付けてください。",
+        "ko": "프롬프트를 복사한 뒤 Enter에 붙여 넣으세요."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.composerLabel",
+      "group": "modelAstra",
+      "source": "Your next project starts here",
+      "values": {
+        "en": "Your next project starts here",
+        "zh-CN": "你的下一个项目，从这里开始",
+        "zh-TW": "你的下一個專案，從這裡開始",
+        "es": "Tu próximo proyecto empieza aquí",
+        "pt-BR": "Seu próximo projeto começa aqui",
+        "pt-PT": "O teu próximo projeto começa aqui",
+        "fr": "Votre prochain projet commence ici",
+        "de": "Dein nächstes Projekt beginnt hier",
+        "it": "Il tuo prossimo progetto inizia qui",
+        "ja": "次のプロジェクトはここから",
+        "ko": "다음 프로젝트를 여기서 시작하세요"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.copyError",
+      "group": "modelAstra",
+      "source": "Could not copy the prompt. Allow clipboard access and try again. Your text is still here.",
+      "values": {
+        "en": "Could not copy the prompt. Allow clipboard access and try again. Your text is still here.",
+        "zh-CN": "未能复制提示词，请允许剪贴板访问后重试。你的输入仍保留在这里。",
+        "zh-TW": "無法複製提示詞，請允許剪貼簿存取後重試。你的輸入仍保留在這裡。",
+        "es": "No se pudo copiar. Permite el acceso al portapapeles e inténtalo de nuevo. Tu texto sigue aquí.",
+        "pt-BR": "Não foi possível copiar. Permita o acesso à área de transferência e tente novamente. Seu texto foi mantido.",
+        "pt-PT": "Não foi possível copiar. Permite o acesso à área de transferência e tenta novamente. O teu texto foi mantido.",
+        "fr": "La copie a échoué. Autorisez l’accès au presse-papiers et réessayez. Votre texte est conservé.",
+        "de": "Kopieren fehlgeschlagen. Erlaube den Zugriff auf die Zwischenablage und versuche es erneut. Dein Text bleibt erhalten.",
+        "it": "Impossibile copiare. Consenti l’accesso agli appunti e riprova. Il tuo testo è ancora qui.",
+        "ja": "コピーできませんでした。クリップボードへのアクセスを許可して再試行してください。入力内容は保持されています。",
+        "ko": "복사하지 못했습니다. 클립보드 접근을 허용하고 다시 시도하세요. 입력한 내용은 유지됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.copyOpen",
+      "group": "modelAstra",
+      "source": "Copy and open Enter",
+      "values": {
+        "en": "Copy and open Enter",
+        "zh-CN": "复制并打开 Enter",
+        "zh-TW": "複製並開啟 Enter",
+        "es": "Copiar y abrir Enter",
+        "pt-BR": "Copiar e abrir Enter",
+        "pt-PT": "Copiar e abrir Enter",
+        "fr": "Copier et ouvrir Enter",
+        "de": "Kopieren und Enter öffnen",
+        "it": "Copia e apri Enter",
+        "ja": "コピーしてEnterを開く",
+        "ko": "복사하고 Enter 열기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.copying",
+      "group": "modelAstra",
+      "source": "Copying…",
+      "values": {
+        "en": "Copying…",
+        "zh-CN": "正在复制…",
+        "zh-TW": "正在複製…",
+        "es": "Copiando…",
+        "pt-BR": "Copiando…",
+        "pt-PT": "A copiar…",
+        "fr": "Copie en cours…",
+        "de": "Wird kopiert…",
+        "it": "Copia in corso…",
+        "ja": "コピー中…",
+        "ko": "복사 중…"
       },
       "used": true,
       "missingLanguages": [],
@@ -2855,16 +3065,16 @@
         "ja": "厳選プロンプト",
         "ko": "추천 프롬프트"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
     {
       "key": "modelAstra.heading",
       "group": "modelAstra",
-      "source": "Prompts & App Examples",
+      "source": "Prompts and App Examples",
       "values": {
-        "en": "Prompts & App Examples",
+        "en": "Prompts and App Examples",
         "zh-CN": "提示词与应用案例",
         "zh-TW": "提示詞與應用案例",
         "es": "Prompts y ejemplos de apps",
@@ -2925,9 +3135,9 @@
     {
       "key": "modelAstra.metaTitle",
       "group": "modelAstra",
-      "source": "Free GPT-6 Astra Prompts & App Examples | Enter",
+      "source": "Free GPT-6 Astra Prompts and App Examples | Enter",
       "values": {
-        "en": "Free GPT-6 Astra Prompts & App Examples | Enter",
+        "en": "Free GPT-6 Astra Prompts and App Examples | Enter",
         "zh-CN": "免费 GPT-6 Astra 提示词与应用案例 | Enter",
         "zh-TW": "免費 GPT-6 Astra 提示詞與應用案例 | Enter",
         "es": "Prompts gratuitos de GPT-6 Astra y ejemplos de apps | Enter",
@@ -2938,6 +3148,69 @@
         "it": "Prompt GPT-6 Astra gratuiti ed esempi di app | Enter",
         "ja": "無料のGPT-6 Astraプロンプトとアプリ事例 | Enter",
         "ko": "무료 GPT-6 Astra 프롬프트 및 앱 사례 | Enter"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.pending",
+      "group": "modelAstra",
+      "source": "Content pending",
+      "values": {
+        "en": "Content pending",
+        "zh-CN": "待补充",
+        "zh-TW": "待補充",
+        "es": "Contenido pendiente",
+        "pt-BR": "Conteúdo pendente",
+        "pt-PT": "Conteúdo pendente",
+        "fr": "Contenu à venir",
+        "de": "Inhalt folgt",
+        "it": "Contenuto in arrivo",
+        "ja": "準備中",
+        "ko": "준비 중"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.promptLabel",
+      "group": "modelAstra",
+      "source": "Prompt",
+      "values": {
+        "en": "Prompt",
+        "zh-CN": "提示词",
+        "zh-TW": "提示詞",
+        "es": "Prompt",
+        "pt-BR": "Prompt",
+        "pt-PT": "Prompt",
+        "fr": "Prompt",
+        "de": "Prompt",
+        "it": "Prompt",
+        "ja": "プロンプト",
+        "ko": "프롬프트"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.promptPending",
+      "group": "modelAstra",
+      "source": "The full prompt will be added here.",
+      "values": {
+        "en": "The full prompt will be added here.",
+        "zh-CN": "完整提示词将在这里补充。",
+        "zh-TW": "完整提示詞將在這裡補充。",
+        "es": "El prompt completo se añadirá aquí.",
+        "pt-BR": "O prompt completo será adicionado aqui.",
+        "pt-PT": "O prompt completo será adicionado aqui.",
+        "fr": "Le prompt complet sera ajouté ici.",
+        "de": "Der vollständige Prompt wird hier ergänzt.",
+        "it": "Il prompt completo verrà aggiunto qui.",
+        "ja": "プロンプト全文をここに追加します。",
+        "ko": "전체 프롬프트가 여기에 추가됩니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -2960,7 +3233,7 @@
         "ja": "プロンプトライブラリは準備中です。",
         "ko": "프롬프트 라이브러리를 준비하고 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3022,6 +3295,27 @@
         "it": "Usa GPT-6 Astra in Enter",
         "ja": "EnterでGPT-6 Astraを使う",
         "ko": "Enter에서 GPT-6 Astra 사용하기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.videoPending",
+      "group": "modelAstra",
+      "source": "Video to be added",
+      "values": {
+        "en": "Video to be added",
+        "zh-CN": "视频待补充",
+        "zh-TW": "影片待補充",
+        "es": "Vídeo pendiente",
+        "pt-BR": "Vídeo a adicionar",
+        "pt-PT": "Vídeo a adicionar",
+        "fr": "Vidéo à venir",
+        "de": "Video folgt",
+        "it": "Video in arrivo",
+        "ja": "動画は近日追加予定",
+        "ko": "영상 추가 예정"
       },
       "used": true,
       "missingLanguages": [],

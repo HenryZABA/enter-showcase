@@ -38,20 +38,20 @@ About 改为有背景层次、细边框及品牌细节的介绍面板，整理�
 - 只在必要时调整 `src/components/case-library/model-empty-section.tsx` 的使用，不改旧集合内容。
 
 ## Implementation checklist
-- [ ] 首屏英文标题及对应 SEO 标题使用 and，移除该位置的 &。
-- [ ] 左栏新增有标签的可编辑 Prompt 输入框，右侧模型图保留。
-- [ ] 按钮复制最新输入成功后打开 Enter 首页；空输入禁用、失败留页提示。
-- [ ] 输入/操作区采用已有分析工具的隐私屏蔽规则，不上报 Prompt。
-- [ ] 移除 Featured 区块，锚点指向唯一 All Prompts 区。
-- [ ] All Prompts 展示三张明确待补充的卡片，含视频位、提示词位和禁用按钮。
-- [ ] About 与 5 条 FAQ 应用新面板样式，原 Header/Footer 不变。
-- [ ] 新文案加入所有现有语言资源，不改变语言清单或 URL 规则。
+- [x] 首屏英文标题及对应 SEO 标题使用 and，移除该位置的 &。
+- [x] 左栏新增有标签的可编辑 Prompt 输入框，右侧模型图保留。
+- [x] 按钮复制最新输入成功后打开 Enter 首页；空输入禁用、失败留页提示。
+- [x] 输入/操作区加入 mp-no-track、mp-block 与 data-clarity-mask；未添加 Prompt 上报逻辑。线上 SDK 屏蔽效果未实测。
+- [x] 移除 Featured 区块，锚点指向唯一 All Prompts 区。
+- [x] All Prompts 展示三张明确待补充的卡片，含视频位、提示词位和禁用按钮。
+- [x] About 与 5 条 FAQ 应用新面板样式，原 Header/Footer 不变。
+- [x] 新文案加入所有现有语言资源，不改变语言清单或 URL 规则。
 
 ## Verification checklist
-- [ ] 正向：编辑 Prompt 后复制结果等于当前内容，成功后跳转指定首页；不带未经支持的参数。
-- [ ] 负向：空格输入不能提交；剪贴板拒绝时无成功提示、无跳转；待补充卡片不能播放或跳转。
-- [ ] 锚点定位 All Prompts；FAQ 可通过键盘展开收起；原入口与旧案例路由未变。
-- [ ] 检查正文和构建 HTML 的英文标题、canonical、FAQ JSON-LD；语言切换后不出现缺失 key。
-- [ ] 使用 `mobile_390` 与 `desktop_1280` 检查同一详情路径，确认输入框、三列转单列、About 和 FAQ 无溢出。
-- [ ] 执行 `pnpm run typecheck`、`pnpm run build`、i18n check/scan 与 `git diff --check`。
-- [ ] 执行相关构建审计；区分原有预算/CSR 告警和本次新增问题。浏览器或发布 HTTP 证据不足时标为未验证，不虚报通过。
+- [x] `tests/model-prompt-action.test.mjs` 的 5 项自动测试通过：原样复制编辑内容、复制先于跳转、空白输入不执行、权限拒绝和剪贴板不可用时不跳转。
+- [x] 卡片使用明确的 disabled 按钮，无 video/source 或假视频请求；输入失败提示与空白禁用逻辑已实现。浏览器系统剪贴板权限弹窗未实测。
+- [ ] 浏览器键盘 FAQ、实际锚点点击、路由往返尚未进行完整交互测试；沿用原生 details/summary 与现有路由，代码未更改旧入口。
+- [x] 两个入口构建 HTML 的英文标题、canonical 与 5 项 FAQ JSON-LD 断言通过；i18n check/scan 通过，完整语言切换交互未实测。
+- [x] `mobile_390` 与 `desktop_1280` 同一路径截图已检查：输入框、三列转单列、About 与 FAQ 无可见横向溢出。现有 Cookie 提示仍可覆盖部分首屏，未更改该公共组件。
+- [x] `pnpm run typecheck`、`pnpm run build`、i18n check/scan 与 `git diff --check` 通过。
+- [x] 严格审计已执行，零错误但因既有 JS/字体预算、CSR 静态正文和外部字体告警未通过；未抬高预算。浏览器性能与发布 HTTP 未验证，未宣称达标。

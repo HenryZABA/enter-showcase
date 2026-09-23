@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T06:50:02.230Z",
+  "generatedAt": "2026-09-23T07:48:39.814Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -18,6 +18,8 @@
     "src/components/case-library/live-frame.tsx",
     "src/components/case-library/model-empty-section.tsx",
     "src/components/case-library/model-faq.tsx",
+    "src/components/case-library/model-prompt-composer.tsx",
+    "src/components/case-library/model-prompt-placeholder.tsx",
     "src/components/case-library/preview-budget.tsx",
     "src/components/case-library/prompt-download-success-dialog.tsx",
     "src/components/case-library/prompt-panel.tsx",
@@ -49,6 +51,7 @@
     "src/lib/curved-gallery/renderer.ts",
     "src/lib/curved-gallery/shaders.ts",
     "src/lib/curved-gallery/surface.ts",
+    "src/lib/model-prompt-action.ts",
     "src/lib/prompt-bundle.ts",
     "src/lib/prompt-cache.ts",
     "src/lib/prompt-file.ts",
@@ -430,18 +433,6 @@
           "line": 19,
           "column": 64,
           "usageType": "function"
-        },
-        {
-          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 41,
-          "column": 101,
-          "usageType": "function"
-        },
-        {
-          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 42,
-          "column": 98,
-          "usageType": "function"
         }
       ]
     },
@@ -467,7 +458,7 @@
         },
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 31,
+          "line": 32,
           "column": 101,
           "usageType": "function"
         },
@@ -1069,8 +1060,8 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 45,
-          "column": 49,
+          "line": 50,
+          "column": 151,
           "usageType": "function"
         }
       ]
@@ -1080,8 +1071,19 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 44,
+          "line": 48,
           "column": 156,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.allDescription",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 44,
+          "column": 197,
           "usageType": "function"
         }
       ]
@@ -1091,8 +1093,8 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 42,
-          "column": 63,
+          "line": 44,
+          "column": 161,
           "usageType": "function"
         }
       ]
@@ -1102,7 +1104,7 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 28,
+          "line": 29,
           "column": 109,
           "usageType": "function"
         }
@@ -1113,19 +1115,107 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 34,
-          "column": 90,
+          "line": 36,
+          "column": 67,
           "usageType": "function"
         }
       ]
     },
     {
-      "key": "modelAstra.casesEmpty",
+      "key": "modelAstra.cardAction",
       "references": [
         {
-          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 41,
-          "column": 139,
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 18,
+          "column": 71,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.cardDescription",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 16,
+          "column": 48,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.cardNote",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 19,
+          "column": 41,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.casePending",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 15,
+          "column": 14,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.composerHint",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-composer.tsx",
+          "line": 40,
+          "column": 68,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.composerLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-composer.tsx",
+          "line": 37,
+          "column": 66,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.copyError",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-composer.tsx",
+          "line": 46,
+          "column": 87,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.copyOpen",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-composer.tsx",
+          "line": 42,
+          "column": 45,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.copying",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-composer.tsx",
+          "line": 42,
+          "column": 19,
           "usageType": "function"
         }
       ]
@@ -1223,7 +1313,7 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 47,
+          "line": 54,
           "column": 26,
           "usageType": "function"
         }
@@ -1252,22 +1342,11 @@
       ]
     },
     {
-      "key": "modelAstra.featured",
-      "references": [
-        {
-          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 41,
-          "column": 68,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelAstra.heading",
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 32,
+          "line": 33,
           "column": 126,
           "usageType": "function"
         }
@@ -1278,13 +1357,13 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 45,
-          "column": 227,
+          "line": 51,
+          "column": 271,
           "usageType": "function"
         },
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 47,
+          "line": 54,
           "column": 109,
           "usageType": "function"
         }
@@ -1313,12 +1392,34 @@
       ]
     },
     {
-      "key": "modelAstra.promptsEmpty",
+      "key": "modelAstra.pending",
       "references": [
         {
-          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 42,
-          "column": 136,
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 10,
+          "column": 48,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.promptLabel",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 17,
+          "column": 92,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.promptPending",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 17,
+          "column": 131,
           "usageType": "function"
         }
       ]
@@ -1328,7 +1429,7 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 33,
+          "line": 34,
           "column": 48,
           "usageType": "function"
         }
@@ -1339,8 +1440,8 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 45,
-          "column": 147,
+          "line": 51,
+          "column": 191,
           "usageType": "function"
         }
       ]
@@ -1350,8 +1451,19 @@
       "references": [
         {
           "file": "src/pages/showcase/Gpt6AstraPage.tsx",
-          "line": 45,
-          "column": 113,
+          "line": 51,
+          "column": 157,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.videoPending",
+      "references": [
+        {
+          "file": "src/components/case-library/model-prompt-placeholder.tsx",
+          "line": 12,
+          "column": 124,
           "usageType": "function"
         }
       ]
@@ -1710,6 +1822,24 @@
       "key": "hero.subtitle",
       "group": "hero",
       "source": "14 published cases created with Enter and GPT-6 Astra — spanning interactive 3D worlds, business tools and creative experiences.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.casesEmpty",
+      "group": "modelAstra",
+      "source": "Curated app examples will appear here.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.featured",
+      "group": "modelAstra",
+      "source": "Featured Prompts",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.promptsEmpty",
+      "group": "modelAstra",
+      "source": "The prompt library is on its way.",
       "severity": "warning"
     },
     {

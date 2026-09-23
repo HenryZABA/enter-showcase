@@ -1,0 +1,55 @@
+{
+  "scope": "Combos-inspired GPT-6 Astra page revision after approved clarification",
+  "profile": "marketing",
+  "routes": ["/prompts/gpt-6-astra", "/showcases/gpt-6-astra"],
+  "delivered": [
+    "Heading and corresponding English SEO title use and instead of ampersand",
+    "Editable prompt composer below left hero text, original model image retained on right",
+    "Copy current prompt before opening https://enter.converge.ai/; no unsupported prompt query parameters",
+    "Empty input disabled; clipboard errors leave text on page with an explicit error",
+    "Featured removed; All Prompts has three explicitly pending media/prompt/disabled-action cards",
+    "About panels and five FAQ accordions restyled using existing theme tokens",
+    "New strings present in all 11 existing locale files; Header, Footer and routes unchanged"
+  ],
+  "verification": {
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "i18nCheckAndScan": "passed",
+    "diffCheck": "passed",
+    "copyActionTests": {
+      "status": "passed",
+      "command": "node --experimental-strip-types --test tests/model-prompt-action.test.mjs",
+      "count": 5,
+      "cases": ["Exact edited text including Unicode, whitespace and newlines", "No operation for whitespace-only input", "Await clipboard before navigation", "No navigation on permission denial", "No navigation when clipboard unavailable"]
+    },
+    "staticSeo": "passed: both generated route HTML files have correct title, canonical and five FAQ entries",
+    "responsiveVisual": {
+      "status": "passed",
+      "route": "/prompts/gpt-6-astra?hl=en",
+      "assumedViewports": ["desktop_1280", "mobile_390"],
+      "evidence": "Full-page website_screenshot captures show left composer/right model on desktop, single-column mobile cards, About panels and FAQ without visible horizontal overflow.",
+      "limitation": "Existing shared cookie notice covers part of the first screen; not modified. Screenshots do not prove keyboard or clipboard behavior."
+    },
+    "buildAudit": {
+      "status": "failed",
+      "strictExitCode": 1,
+      "errors": 0,
+      "warningCodes": ["PUBLIC_HTML_MISSING_CONTENT", "UNVERIFIED_ASSET", "BUDGET_EXCEEDED"],
+      "finalInitialJsRaw": 1644691,
+      "finalInitialJsBrotliEstimate": 345016,
+      "previousRevisionInitialJsRaw": 1611676,
+      "previousRevisionInitialJsBrotliEstimate": 341092,
+      "declaredInitialFontCount": 5,
+      "declaredInitialFontRaw": 115240,
+      "initialDynamicImports": [],
+      "deferredImports": "Existing case dialogs and prompt downloads remain interaction-only; composer adds no dynamic dependency.",
+      "notes": "Existing shared bundle/font budget excess, CSR body with no static H1, and injected external font CSS warnings remain. No budget increases or exemptions claimed; real transfer not measured."
+    },
+    "functionalRegression": "partially-verified: action unit tests and static assertions passed; complete browser keyboard/navigation/clipboard-permission interaction not measured",
+    "browserPerformance": "not-verified: no controlled FCP/LCP/CLS or interaction traces",
+    "deployedHttp": "not-verified: generated local HTML checked, live routing and crawler response not checked",
+    "privacy": "Composer includes mp-no-track, mp-block and data-clarity-mask. No prompt tracking calls added; live SDK masking not measured."
+  },
+  "platformFollowUp": ["Verify real browser clipboard permission and target-site navigation", "Measure browser performance and verify deployed per-route HTML/crawler responses"],
+  "overall": "implemented; build and targeted tests passed; full performance and deployment acceptance not verified"
+}
