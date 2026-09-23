@@ -50,18 +50,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -115,18 +115,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -180,18 +180,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/collections",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/collections",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -245,18 +245,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/collections/gpt6",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/collections/gpt6",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -310,18 +310,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/collections/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/collections/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -375,18 +375,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/collections/gpt-6-sol-luna",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/collections/gpt-6-sol-luna",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -440,18 +440,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/collections/claude-opus-5-5",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/collections/claude-opus-5-5",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -491,18 +491,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -542,18 +542,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/gpt-6-sol-luna",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/gpt-6-sol-luna",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -600,18 +600,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/prompts/claude-opus-5-5",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/prompts/claude-opus-5-5",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -665,18 +665,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -730,18 +730,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/collections",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/collections",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -795,18 +795,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/collections/gpt6",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/collections/gpt6",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -860,18 +860,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/collections/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/collections/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -925,18 +925,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/collections/gpt-6-sol-luna",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/collections/gpt-6-sol-luna",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -990,18 +990,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/collections/claude-opus-5-5",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/collections/claude-opus-5-5",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -1041,18 +1041,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/gpt-6-astra",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/gpt-6-astra",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -1092,18 +1092,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/gpt-6-sol-luna",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/gpt-6-sol-luna",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -1150,18 +1150,18 @@
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsBrotli: 357436 > 153600",
+      "message": "initialJsBrotli: 356894 > 153600",
       "route": "/showcases/claude-opus-5-5",
       "budget": "initialJsBrotli",
-      "actual": 357436,
+      "actual": 356894,
       "limit": 153600
     },
     {
       "code": "BUDGET_EXCEEDED",
-      "message": "initialJsRaw: 1729636 > 512000",
+      "message": "initialJsRaw: 1718856 > 512000",
       "route": "/showcases/claude-opus-5-5",
       "budget": "initialJsRaw",
-      "actual": 1729636,
+      "actual": 1718856,
       "limit": 512000
     },
     {
@@ -1184,11 +1184,11 @@
   "entries": [
     {
       "key": "index.html",
-      "file": "_prompts/index-ChJhnHI8.js",
+      "file": "_prompts/index-BPycxgKH.js",
       "size": {
-        "raw": 1296027,
-        "gzip": 344339,
-        "brotli": 272908
+        "raw": 1285247,
+        "gzip": 343357,
+        "brotli": 272366
       },
       "reachableKeys": [
         "_mixpanel-sdk-Z8GMaB9G.js",
@@ -1200,16 +1200,16 @@
         "_mixpanel-sdk-Z8GMaB9G.js"
       ],
       "staticJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -1223,16 +1223,16 @@
         ]
       },
       "staticCss": {
-        "raw": 75695,
-        "gzip": 14878,
-        "brotli": 12973,
+        "raw": 73907,
+        "gzip": 14598,
+        "brotli": 12720,
         "files": [
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -1242,7 +1242,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1250,7 +1250,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1294,7 +1294,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1305,7 +1305,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1318,16 +1318,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -1341,9 +1341,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1354,11 +1354,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -1468,16 +1468,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -1495,15 +1495,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -1554,7 +1554,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1565,7 +1565,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1578,16 +1578,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -1601,9 +1601,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1614,11 +1614,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -1732,16 +1732,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -1759,15 +1759,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -1818,7 +1818,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1829,7 +1829,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -1842,16 +1842,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -1865,9 +1865,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -1878,11 +1878,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -1981,16 +1981,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -2008,15 +2008,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -2067,7 +2067,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2078,7 +2078,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2091,16 +2091,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -2114,9 +2114,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2127,11 +2127,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -2230,16 +2230,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -2257,15 +2257,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -2316,7 +2316,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2327,7 +2327,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2340,16 +2340,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -2363,9 +2363,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2376,11 +2376,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -2479,16 +2479,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -2506,15 +2506,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -2565,7 +2565,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2576,7 +2576,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2589,16 +2589,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -2612,9 +2612,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2625,11 +2625,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -2728,16 +2728,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -2755,15 +2755,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -2814,7 +2814,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2825,7 +2825,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -2838,16 +2838,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -2861,9 +2861,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -2874,11 +2874,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -2977,16 +2977,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -3004,15 +3004,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -3067,7 +3067,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3078,7 +3078,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3091,16 +3091,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -3114,9 +3114,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -3127,11 +3127,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -3245,16 +3245,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -3272,15 +3272,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -3335,7 +3335,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3346,7 +3346,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3359,16 +3359,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -3382,9 +3382,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -3395,11 +3395,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -3513,16 +3513,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -3540,15 +3540,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -3599,7 +3599,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3610,7 +3610,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3623,16 +3623,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -3646,9 +3646,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -3659,11 +3659,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -3777,16 +3777,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -3804,15 +3804,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -3863,7 +3863,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3874,7 +3874,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -3887,16 +3887,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -3910,9 +3910,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -3923,11 +3923,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -4041,16 +4041,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -4068,15 +4068,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -4127,7 +4127,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4138,7 +4138,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4151,16 +4151,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -4174,9 +4174,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -4187,11 +4187,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -4290,16 +4290,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -4317,15 +4317,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -4376,7 +4376,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4387,7 +4387,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4400,16 +4400,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -4423,9 +4423,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -4436,11 +4436,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -4539,16 +4539,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -4566,15 +4566,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -4625,7 +4625,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4636,7 +4636,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4649,16 +4649,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -4672,9 +4672,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -4685,11 +4685,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -4788,16 +4788,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -4815,15 +4815,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -4874,7 +4874,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4885,7 +4885,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -4898,16 +4898,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -4921,9 +4921,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -4934,11 +4934,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -5037,16 +5037,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -5064,15 +5064,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -5123,7 +5123,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5134,7 +5134,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5147,16 +5147,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -5170,9 +5170,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -5183,11 +5183,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -5286,16 +5286,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -5313,15 +5313,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -5376,7 +5376,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5387,7 +5387,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5400,16 +5400,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -5423,9 +5423,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -5436,11 +5436,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -5554,16 +5554,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -5581,15 +5581,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -5644,7 +5644,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5655,7 +5655,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5668,16 +5668,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -5691,9 +5691,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -5704,11 +5704,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -5822,16 +5822,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -5849,15 +5849,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -5908,7 +5908,7 @@
       "potentialDynamicImports": [
         {
           "key": "src/components/case-library/case-detail-dialog.tsx",
-          "file": "_prompts/case-detail-dialog-68OsAqgA.js",
+          "file": "_prompts/case-detail-dialog-k13GimUc.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5919,7 +5919,7 @@
         },
         {
           "key": "src/lib/prompt-bundle.ts",
-          "file": "_prompts/prompt-bundle--LhAanvj.js",
+          "file": "_prompts/prompt-bundle-Bs5i1Gpq.js",
           "potentialDynamicDepth": 1,
           "importedBy": [
             "index.html"
@@ -5932,16 +5932,16 @@
       "initialDepth": 0,
       "initialDepthBasis": "maximum potential graph depth of declared initial dynamic modules; not measured",
       "initialJs": {
-        "raw": 1729636,
-        "gzip": 474352,
-        "brotli": 357436,
+        "raw": 1718856,
+        "gzip": 473370,
+        "brotli": 356894,
         "files": [
           {
-            "file": "_prompts/index-ChJhnHI8.js",
+            "file": "_prompts/index-BPycxgKH.js",
             "size": {
-              "raw": 1296027,
-              "gzip": 344339,
-              "brotli": 272908
+              "raw": 1285247,
+              "gzip": 343357,
+              "brotli": 272366
             }
           },
           {
@@ -5955,9 +5955,9 @@
         ]
       },
       "initialCss": {
-        "raw": 76778,
-        "gzip": 15119,
-        "brotli": 13188,
+        "raw": 74990,
+        "gzip": 14839,
+        "brotli": 12935,
         "files": [
           {
             "file": "_prompts/fonts/showcase-v1.css",
@@ -5968,11 +5968,11 @@
             }
           },
           {
-            "file": "_prompts/index-Bp_JkqjP.css",
+            "file": "_prompts/index-CZ94OIx6.css",
             "size": {
-              "raw": 75695,
-              "gzip": 14878,
-              "brotli": 12973
+              "raw": 73907,
+              "gzip": 14598,
+              "brotli": 12720
             }
           }
         ]
@@ -6086,16 +6086,16 @@
           }
         },
         {
-          "url": "/_prompts/index-ChJhnHI8.js",
+          "url": "/_prompts/index-BPycxgKH.js",
           "source": "script[src]",
           "category": "script",
           "module": true,
-          "file": "_prompts/index-ChJhnHI8.js",
+          "file": "_prompts/index-BPycxgKH.js",
           "status": "local",
           "size": {
-            "raw": 1296027,
-            "gzip": 344339,
-            "brotli": 272908
+            "raw": 1285247,
+            "gzip": 343357,
+            "brotli": 272366
           }
         },
         {
@@ -6113,15 +6113,15 @@
           }
         },
         {
-          "url": "/_prompts/index-Bp_JkqjP.css",
+          "url": "/_prompts/index-CZ94OIx6.css",
           "source": "link[href]",
           "category": "css",
-          "file": "_prompts/index-Bp_JkqjP.css",
+          "file": "_prompts/index-CZ94OIx6.css",
           "status": "local",
           "size": {
-            "raw": 75695,
-            "gzip": 14878,
-            "brotli": 12973
+            "raw": 73907,
+            "gzip": 14598,
+            "brotli": 12720
           }
         },
         {
@@ -6146,7 +6146,7 @@
         "size": {
           "raw": 7158,
           "gzip": 2100,
-          "brotli": 1724
+          "brotli": 1718
         },
         "status": "mapped",
         "routes": [
@@ -6182,7 +6182,7 @@
         "size": {
           "raw": 9749,
           "gzip": 2964,
-          "brotli": 2398
+          "brotli": 2397
         },
         "status": "mapped",
         "routes": [
@@ -6218,7 +6218,7 @@
         "size": {
           "raw": 9749,
           "gzip": 2964,
-          "brotli": 2398
+          "brotli": 2397
         },
         "status": "mapped",
         "routes": [

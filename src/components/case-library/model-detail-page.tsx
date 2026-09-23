@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowLeft, ArrowUpRight, Layers3 } from "lucide-react";
+import { ArrowDown, ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import type { ModelPageCopy, ModelPageModel } from "@/data/model-pages/types";
 import { trendingPromptsByModel } from "@/data/model-pages/trending-prompts";
@@ -54,13 +54,6 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
         <section id="trending-prompts" className="model-section model-prompts" aria-labelledby="trending-prompts-title">
           <div className="model-prompts-heading"><span className="model-section-index" aria-hidden="true">02 / COMMUNITY PROMPTS</span><h2 id="trending-prompts-title">{copy.trendingPrompts}</h2><p>{copy.trendingDescription}</p></div>
           <ModelTrendingPrompts entries={trendingPromptsByModel[model.slug] ?? []} />
-        </section>
-        <section className="model-section model-about" aria-labelledby="model-about-title">
-          <div className="model-about-heading"><span className="model-section-index" aria-hidden="true">03 / {model.name.toUpperCase()}</span><h2 id="model-about-title">{copy.aboutTitle}</h2></div>
-          <div className="model-about-panels">
-            <div className="model-about-copy"><span className="model-panel-icon"><Layers3 size={22} strokeWidth={1.5} aria-hidden="true" /></span><p>{copy.aboutBody}</p></div>
-            <div className="model-usage"><h3>{copy.useTitle}</h3><p>{copy.useBody}</p><div className="model-about-actions"><a className="model-action theme-primary-gradient" href="https://enter.converge.ai/workspace">{copy.buildWithEnter}<ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
-          </div>
         </section>
         {copy.faqs.length > 0 && <ModelFaq title={copy.faqTitle} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={copy.libraryLink} />}
       </main>

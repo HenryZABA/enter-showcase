@@ -26,11 +26,6 @@ export function getAstraCopy(t: TFunction): ModelPageCopy {
     hotDescription: t("modelAstra.hotDescription"),
     trendingPrompts: t("modelPages.trendingPrompts"),
     trendingDescription: t("modelPages.trendingDescription"),
-    aboutTitle: t("modelAstra.aboutTitle"),
-    aboutBody: t("modelAstra.aboutBody"),
-    useTitle: t("modelAstra.useTitle"),
-    useBody: t("modelAstra.useBody"),
-    buildWithEnter: t("modelAstra.buildWithEnter"),
     faqTitle: t("modelAstra.faqTitle"),
     libraryLink: t("modelAstra.libraryLink"),
     composer: {

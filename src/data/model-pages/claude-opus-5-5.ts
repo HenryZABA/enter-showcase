@@ -25,11 +25,6 @@ export function getOpusCopy(t: TFunction): ModelPageCopy {
     hotDescription: t("modelPages.hotDescriptionPending"),
     trendingPrompts: t("modelPages.trendingPrompts"),
     trendingDescription: t("modelPages.trendingDescription"),
-    aboutTitle: t("modelOpus.aboutTitle"),
-    aboutBody: t("modelOpus.aboutBody"),
-    useTitle: t("modelOpus.useTitle"),
-    useBody: t("modelOpus.useBody"),
-    buildWithEnter: t("modelAstra.buildWithEnter"),
     faqTitle: "",
     libraryLink: t("modelAstra.libraryLink"),
     composer: {

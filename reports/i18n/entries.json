@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T11:34:34.023Z",
+  "generatedAt": "2026-09-23T11:41:44.218Z",
   "fallbackLng": "en",
   "total": 296,
   "items": [
@@ -2624,7 +2624,7 @@
         "ja": "業務ダッシュボードやランディングページから3Dシーン、インタラクティブツールまで。明確なプロンプトが、Enterで次のプロジェクトを始める出発点になります。目的に合わせて詳細を調整し、複数ステップの指示は元の文脈を保ちましょう。このコレクションには、厳選プロンプトと体験できる事例を順次追加します。",
         "ko": "비즈니스 대시보드와 랜딩 페이지부터 3D 장면과 인터랙티브 도구까지, 명확한 프롬프트는 Enter에서 다음 프로젝트를 시작하는 출발점입니다. 목표에 맞게 세부 사항을 조정하고 여러 단계로 된 지침의 원래 맥락을 유지하세요. 엄선된 프롬프트와 체험 가능한 사례가 이 컬렉션에 추가될 예정입니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2645,7 +2645,7 @@
         "ja": "GPT-6 Astraプロンプトについて",
         "ko": "GPT-6 Astra 프롬프트 소개"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2771,7 +2771,7 @@
         "ja": "Enterで作成",
         "ko": "Enter로 만들기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3632,7 +3632,7 @@
         "ja": "アイデアをもとに、作りたいものを説明しましょう。結果をプレビューし、変更したい点を伝え、同じプロジェクトを改善してから公開・共有できます。",
         "ko": "아이디어에서 시작해 만들고 싶은 것을 설명하세요. 결과를 미리 보고 원하는 변경 사항을 전달하면서, 게시하거나 공유하기 전에 같은 프로젝트를 계속 개선할 수 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3653,7 +3653,7 @@
         "ja": "EnterでGPT-6 Astraを使う",
         "ko": "Enter에서 GPT-6 Astra 사용하기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3716,7 +3716,7 @@
         "ja": "Claude Opus 5.5のEnterプロジェクトと、出典を明記したプロンプトを紹介するコレクションです。情報源とモデルの帰属を確認してから公開します。",
         "ko": "이 컬렉션은 Claude Opus 5.5로 만든 Enter 프로젝트와 출처를 밝힌 프롬프트를 모읍니다. 출처와 모델 귀속을 확인한 뒤 콘텐츠를 게시합니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3737,7 +3737,7 @@
         "ja": "このコレクションについて",
         "ko": "컬렉션 소개"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3821,7 +3821,7 @@
         "ja": "自分のプロンプトを書いてEnterでプロジェクトを始めましょう。検証済みの事例が公開されたら出典を確認し、自分の目的に合わせて活用できます。",
         "ko": "직접 프롬프트를 작성해 Enter에서 프로젝트를 시작하세요. 검증된 사례가 등록되면 출처를 살펴보고 자신의 목적에 맞게 활용할 수 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3842,7 +3842,7 @@
         "ja": "Enterで次のプロジェクトを始める",
         "ko": "Enter에서 다음 프로젝트 시작하기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4094,7 +4094,7 @@
         "ja": "SolとLunaは補完し合う2つのクリエイティブモードです。一方は明確で充実した制作を組み立て、もう一方はアイデアと改善を素早く進めます。Enterでは、同じ構造化されたプロンプトを軸に、目的に合わせて内容、画面、操作を調整できます。",
         "ko": "Sol과 Luna를 서로 보완하는 두 가지 창작 모드로 생각해 보세요. 하나는 명확하고 탄탄한 결과를 구성하고, 다른 하나는 아이디어와 개선을 빠르게 이어갑니다. Enter에서는 잘 구조화된 하나의 프롬프트를 바탕으로 목표에 맞게 콘텐츠, 인터페이스, 인터랙션을 조정할 수 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4115,7 +4115,7 @@
         "ja": "GPT-6 Sol・Lunaプロンプトについて",
         "ko": "GPT-6 Sol 및 Luna 프롬프트 소개"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4535,7 +4535,7 @@
         "ja": "まず望む成果を示し、対象ユーザー、内容、重要な操作を加えて、同じプロジェクトを磨きます。制作を導く具体性と、速い方向・じっくりした方向を試せる余白を両立しましょう。",
         "ko": "원하는 결과부터 설명하고 대상 사용자, 콘텐츠, 핵심 인터랙션을 추가한 뒤 같은 프로젝트를 계속 다듬으세요. 제작을 안내할 만큼 구체적으로 쓰되 빠른 방향과 신중한 방향을 시험할 여지를 남겨 두세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4556,7 +4556,7 @@
         "ja": "EnterでGPT-6 Sol・Lunaを使う",
         "ko": "Enter에서 GPT-6 Sol 및 Luna 사용하기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },

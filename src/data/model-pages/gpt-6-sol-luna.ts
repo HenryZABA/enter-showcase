@@ -26,11 +26,6 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     hotDescription: t("modelPages.hotDescriptionPending"),
     trendingPrompts: t("modelPages.trendingPrompts"),
     trendingDescription: t("modelPages.trendingDescription"),
-    aboutTitle: t("modelSolLuna.aboutTitle"),
-    aboutBody: t("modelSolLuna.aboutBody"),
-    useTitle: t("modelSolLuna.useTitle"),
-    useBody: t("modelSolLuna.useBody"),
-    buildWithEnter: t("modelAstra.buildWithEnter"),
     faqTitle: t("modelSolLuna.faqTitle"),
     libraryLink: t("modelAstra.libraryLink"),
     composer: {

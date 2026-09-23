@@ -105,25 +105,6 @@
 .model-card-prompt p { margin-top: 12px; font-size: 12px; line-height: 1.6; color: hsl(var(--muted-foreground)); }
 .model-card-action { width: 100%; margin-top: 24px; border: 1px solid var(--model-rule); background: hsl(var(--secondary)); color: hsl(var(--muted-foreground)); cursor: not-allowed; }
 .model-card-note { margin-top: 12px; text-align: center; font-size: 10px; line-height: 1.5; color: hsl(var(--muted-foreground)); }
-.model-about { padding-bottom: var(--model-space); }
-.model-about-heading { text-align: center; margin: 0 auto 40px; }
-.model-about-heading h2 { margin-top: 16px; }
-.model-about-panels { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; max-width: 920px; margin-inline: auto; }
-.model-about-panels .model-usage { padding-block: 42px; text-align: center; }
-.model-usage .model-panel-icon { margin-inline: auto; }
-.model-usage > p { max-width: 700px; margin-inline: auto; }
-.model-about-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
-.model-about-copy, .model-usage { position: relative; padding: 36px; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); }
-.model-panel-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 24px; border: 1px solid hsl(var(--primary) / .22); border-radius: 13px; background: hsl(var(--accent) / .45); color: hsl(var(--accent-foreground)); }
-.model-about-copy { display: grid; grid-template-columns: 46px minmax(0, 1fr); align-items: start; gap: 22px; }
-.model-about-copy > .model-panel-icon { margin: 4px 0 0; }
-.model-about-copy p, .model-usage p { color: hsl(var(--muted-foreground)); font-size: 15px; line-height: 1.9; }
-@media (max-width: 639px) {
-  .model-about-copy { grid-template-columns: 32px minmax(0, 1fr); gap: 14px; }
-  .model-about-copy > .model-panel-icon { width: 32px; height: 32px; border-radius: 9px; }
-  .model-about-copy > .model-panel-icon svg { width: 18px; height: 18px; }
-}
-.model-usage h3 { max-width: 760px; margin: 0 auto 24px; font-size: clamp(30px, 3.5vw, 44px); line-height: 1.18; font-weight: 600; letter-spacing: -.04em; text-wrap: balance; color: hsl(var(--foreground)); }
 .model-text-link { display: inline-flex; align-items: center; gap: 9px; margin-top: 22px; min-height: 32px; font-size: 13px; color: hsl(var(--foreground)); text-decoration: underline; text-underline-offset: 5px; text-decoration-color: hsl(var(--foreground) / .25); }
 .model-text-link:hover { text-decoration-color: hsl(var(--primary)); }
 .model-faq { padding-bottom: 100px; }
@@ -152,7 +133,6 @@
   .model-headline { font-size: clamp(25px, 2.7vw, 32px); white-space: normal; }
   .model-prompts-grid { gap: 14px; }
   .model-card-content { padding: 20px; }
-  .model-about-copy, .model-usage { padding: 28px; }
 }
 @media (max-width: 767px) {
   .model-hero { grid-template-columns: 1fr; gap: 32px; padding: 40px 0 48px; }
@@ -163,7 +143,6 @@
   .model-category-tab { padding-inline: 15px; }
   .model-collection-empty { min-height: 156px; }
   .model-card-content { padding: 24px; }
-  .model-about-panels { grid-template-columns: 1fr; }
   .model-card-description { min-height: 0; }
 }
 @media (max-width: 639px) {
@@ -180,8 +159,7 @@
   .model-action { width: 100%; }
   .model-art-caption { margin: 12px 6px 0; font-size: 8px; }
   .model-section-index { font-size: 9px; }
-  .model-prompts-heading, .model-about-heading { margin-bottom: 30px; }
-  .model-about-copy, .model-usage { padding: 26px; }
+  .model-prompts-heading { margin-bottom: 30px; }
   .model-faq-item summary { padding: 20px; gap: 18px; font-size: 14px; }
   .model-faq-answer { padding: 0 20px 24px; }
   .model-faq { padding-bottom: 72px; }

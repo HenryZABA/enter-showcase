@@ -33,11 +33,6 @@ export type ModelPageCopy = {
   hotDescription: string;
   trendingPrompts: string;
   trendingDescription: string;
-  aboutTitle: string;
-  aboutBody: string;
-  useTitle: string;
-  useBody: string;
-  buildWithEnter: string;
   faqTitle: string;
   libraryLink: string;
   composer: ModelComposerCopy;
