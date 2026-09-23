@@ -28,7 +28,7 @@ export function ModelDetailPage({ model, copy, initialPrompt, hotContent }: Prop
   useModelPageSeo(model, copy.title, copy.description, copy.faqs);
 
   return (
-    <div className={`showcase model-detail model-detail-${model.slug} flex min-h-screen flex-col`}>
+    <div className="showcase model-detail flex min-h-screen flex-col">
       <Header />
       <main className="container flex-1">
         <div className="model-breadcrumb"><Link to={libraryHref}><ArrowLeft size={15} aria-hidden="true" />{copy.back}</Link><span aria-hidden="true">/</span><span>{model.name}</span></div>

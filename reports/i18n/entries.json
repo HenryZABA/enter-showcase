@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:46:34.916Z",
+  "generatedAt": "2026-09-23T09:58:25.613Z",
   "fallbackLng": "en",
   "total": 275,
   "items": [
@@ -3954,19 +3954,19 @@
     {
       "key": "modelSolLuna.hotDescription",
       "group": "modelSolLuna",
-      "source": "Curated GPT-6 Sol and Luna projects are coming soon.",
+      "source": "Explore standout projects built with GPT-6 Sol and Luna in Enter. Open a case to see its live preview and prompt.",
       "values": {
-        "en": "Curated GPT-6 Sol and Luna projects are coming soon.",
-        "zh-CN": "精选 GPT-6 Sol 与 Luna 项目即将上线。",
-        "zh-TW": "精選 GPT-6 Sol 與 Luna 專案即將推出。",
-        "es": "Muy pronto llegarán proyectos seleccionados de GPT-6 Sol y Luna.",
-        "pt-BR": "Projetos selecionados de GPT-6 Sol e Luna chegarão em breve.",
-        "pt-PT": "Projetos selecionados de GPT-6 Sol e Luna chegarão em breve.",
-        "fr": "Des projets GPT-6 Sol et Luna sélectionnés arrivent bientôt.",
-        "de": "Kuratierte GPT-6 Sol und Luna Projekte folgen in Kürze.",
-        "it": "I progetti selezionati di GPT-6 Sol e Luna arriveranno presto.",
-        "ja": "厳選したGPT-6 SolとLunaのプロジェクトは近日公開予定です。",
-        "ko": "엄선된 GPT-6 Sol 및 Luna 프로젝트가 곧 공개됩니다."
+        "en": "Explore standout projects built with GPT-6 Sol and Luna in Enter. Open a case to see its live preview and prompt.",
+        "zh-CN": "探索在 Enter 中使用 GPT-6 Sol 与 Luna 打造的精选项目。打开案例即可查看在线预览与提示词。",
+        "zh-TW": "探索在 Enter 中使用 GPT-6 Sol 與 Luna 打造的精選專案。開啟案例即可查看線上預覽與提示詞。",
+        "es": "Descubre proyectos destacados creados con GPT-6 Sol y Luna en Enter. Abre un caso para ver su vista previa y el prompt.",
+        "pt-BR": "Explore projetos selecionados criados com GPT-6 Sol e Luna no Enter. Abra um case para ver a prévia e o prompt.",
+        "pt-PT": "Explora projetos selecionados criados com GPT-6 Sol e Luna no Enter. Abre um caso para ver a pré-visualização e o prompt.",
+        "fr": "Découvrez des projets remarquables créés avec GPT-6 Sol et Luna dans Enter. Ouvrez un cas pour voir son aperçu et son prompt.",
+        "de": "Entdecke herausragende Projekte, die mit GPT-6 Sol und Luna in Enter entstanden sind. Öffne ein Beispiel für Vorschau und Prompt.",
+        "it": "Scopri progetti straordinari creati con GPT-6 Sol e Luna in Enter. Apri un caso per vedere anteprima e prompt.",
+        "ja": "EnterでGPT-6 SolとLunaを使って制作した注目プロジェクトを紹介。事例を開くとライブプレビューとプロンプトを確認できます。",
+        "ko": "Enter에서 GPT-6 Sol 및 Luna로 만든 주목할 프로젝트를 살펴보세요. 사례를 열어 라이브 미리보기와 프롬프트를 확인하세요."
       },
       "used": true,
       "missingLanguages": [],
@@ -3989,7 +3989,7 @@
         "ja": "新しいプロンプトとライブ事例を準備しています。",
         "ko": "새로운 프롬프트와 라이브 사례를 준비하고 있습니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
