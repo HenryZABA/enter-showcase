@@ -11,6 +11,7 @@ import CuratedShowcaseCollectionPage from "@/pages/showcase/CuratedShowcaseColle
 import ShowcaseCollectionsPage from "@/pages/showcase/ShowcaseCollectionsPage";
 import ShowcasesPage from "@/pages/showcase/ShowcasesPage";
 import Gpt6AstraPage from "@/pages/showcase/Gpt6AstraPage";
+import Gpt6SolLunaPage from "@/pages/showcase/Gpt6SolLunaPage";
 import { AnalyticsProvider } from "@/providers/analytics-provider";
 import { CookieConsentProvider } from "@/providers/cookie-consent-provider";
 
@@ -59,6 +60,7 @@ function createShowcaseRoutes(prefix: "" | typeof SUBPATH_ROUTE): ReactNode[] {
     <Route key={`${key}-showcases`} path={showcasePath} element={<ShowcasesPage />} />,
     <Route key={`${key}-collections`} path={`${showcasePath}/collections`} element={<ShowcaseCollectionsPage />} />,
     <Route key={`${key}-astra-model`} path={`${showcasePath}/gpt-6-astra`} element={<Gpt6AstraPage />} />,
+    <Route key={`${key}-sol-luna-model`} path={`${showcasePath}/gpt-6-sol-luna`} element={<Gpt6SolLunaPage />} />,
     <Route key={`${key}-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage />} />,
   ];
 }

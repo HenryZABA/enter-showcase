@@ -1,6 +1,6 @@
 import { Plus, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import type { ModelFaq as FaqItem } from "@/data/model-pages/gpt-6-astra";
+import type { ModelFaq as FaqItem } from "@/data/model-pages/types";
 
 type Props = { title: string; faqs: FaqItem[]; libraryHref: string; libraryLabel: string };
 

@@ -1,20 +1,47 @@
 import type { TFunction } from "i18next";
 import { assetPath } from "../../lib/app-paths";
+import type { ModelPageCopy, ModelPageModel } from "./types";
 
-export const astraModel = {
+export const astraModel: ModelPageModel = {
+  slug: "gpt-6-astra",
   name: "GPT-6 Astra",
-  path: "/showcases/gpt-6-astra",
   canonical: "https://enter.converge.ai/prompts/gpt-6-astra",
-  title: "Free GPT-6 Astra Prompts and App Examples | Enter",
-  description: "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
   keywords: "GPT-6 Astra, GPT-6 Astra prompt, GPT-6 Astra prompts, GPT-6 Astra app examples",
   image: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
-} as const;
+  artCaption: "ENTER × GPT-6 ASTRA",
+};
 
-export function getAstraCopy(t: TFunction) {
+export const astraInitialPrompt = "Build a responsive project dashboard where I can create projects, assign tasks, track progress, and filter work by status. Add a clean overview with deadlines, priorities, and a dark mode toggle.";
+
+export function getAstraCopy(t: TFunction): ModelPageCopy {
   return {
     title: t("modelAstra.metaTitle"),
     description: t("modelAstra.metaDescription"),
+    back: t("modelAstra.back"),
+    eyebrow: t("collections.directoryEyebrow"),
+    heading: t("modelAstra.heading"),
+    tagline: t("modelAstra.tagline"),
+    browse: t("modelAstra.browse"),
+    hotPrompts: t("modelAstra.hotPrompts"),
+    hotDescription: t("modelAstra.hotDescription"),
+    allPrompts: t("modelAstra.allPrompts"),
+    allDescription: t("modelAstra.allDescription"),
+    aboutTitle: t("modelAstra.aboutTitle"),
+    aboutBody: t("modelAstra.aboutBody"),
+    useTitle: t("modelAstra.useTitle"),
+    useBody: t("modelAstra.useBody"),
+    buildWithEnter: t("modelAstra.buildWithEnter"),
+    faqTitle: t("modelAstra.faqTitle"),
+    libraryLink: t("modelAstra.libraryLink"),
+    composer: {
+      label: t("modelAstra.composerLabel"), hint: t("modelAstra.composerHint"), copyOpen: t("modelAstra.copyOpen"), copying: t("modelAstra.copying"), copyError: t("modelAstra.copyError"),
+    },
+    placeholder: {
+      pending: t("modelAstra.pending"), videoPending: t("modelAstra.videoPending"), casePending: t("modelAstra.casePending"), cardDescription: t("modelAstra.cardDescription"), promptLabel: t("modelAstra.promptLabel"), promptPending: t("modelAstra.promptPending"), cardAction: t("modelAstra.cardAction"), cardNote: t("modelAstra.cardNote"),
+    },
+    categories: {
+      label: t("modelAstra.categoryLabel"), all: t("modelAstra.categoryAll"), website: t("modelAstra.categoryWebsite"), app: t("modelAstra.categoryApp"), other: t("modelAstra.categoryOther"), empty: t("modelAstra.categoryEmpty"),
+    },
     faqs: [
       { id: "build", question: t("modelAstra.faqBuildQuestion"), answer: t("modelAstra.faqBuildAnswer") },
       { id: "use", question: t("modelAstra.faqUseQuestion"), answer: t("modelAstra.faqUseAnswer") },
@@ -22,18 +49,5 @@ export function getAstraCopy(t: TFunction) {
       { id: "sources", question: t("modelAstra.faqSourcesQuestion"), answer: t("modelAstra.faqSourcesAnswer") },
       { id: "ideas", question: t("modelAstra.faqIdeasQuestion"), answer: t("modelAstra.faqIdeasAnswer") },
     ],
-  };
-}
-
-export type ModelFaq = ReturnType<typeof getAstraCopy>["faqs"][number];
-
-export function astraFaqSchema(faqs: ModelFaq[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map(({ question, answer }) => ({
-      "@type": "Question", name: question,
-      acceptedAnswer: { "@type": "Answer", text: answer },
-    })),
   };
 }

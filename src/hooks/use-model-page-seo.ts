@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { astraModel, astraFaqSchema, type ModelFaq } from "@/data/model-pages/gpt-6-astra";
+import { modelFaqSchema, type ModelFaq, type ModelPageModel } from "@/data/model-pages/types";
 
 /** Restore previous head values when leaving this route, including prebuilt metadata. */
-export function useModelPageSeo(title: string, description: string, faqs: ModelFaq[]) {
-  const schema = JSON.stringify(astraFaqSchema(faqs));
+export function useModelPageSeo(model: ModelPageModel, title: string, description: string, faqs: ModelFaq[]) {
+  const schema = JSON.stringify(modelFaqSchema(faqs));
   useEffect(() => {
-    // Adopt build-time metadata once, retaining the site's default description for SPA exit.
     document.head.querySelectorAll("[data-model-static]").forEach(element => {
       if (element.matches('meta[name="description"]')) {
         element.setAttribute("content", element.getAttribute("data-default-content") ?? "");
@@ -28,17 +27,17 @@ export function useModelPageSeo(title: string, description: string, faqs: ModelF
       });
     };
     setTag('meta[name="description"]', "meta", { name: "description", content: description });
-    setTag('meta[name="keywords"]', "meta", { name: "keywords", content: astraModel.keywords });
-    setTag('link[rel="canonical"]', "link", { rel: "canonical", href: astraModel.canonical });
-    const image = new URL(astraModel.image, astraModel.canonical).href;
-    for (const [property, content] of Object.entries({ "og:title": title, "og:description": description, "og:type": "website", "og:url": astraModel.canonical, "og:image": image })) {
+    setTag('meta[name="keywords"]', "meta", { name: "keywords", content: model.keywords });
+    setTag('link[rel="canonical"]', "link", { rel: "canonical", href: model.canonical });
+    const image = new URL(model.image, model.canonical).href;
+    for (const [property, content] of Object.entries({ "og:title": title, "og:description": description, "og:type": "website", "og:url": model.canonical, "og:image": image })) {
       setTag(`meta[property="${property}"]`, "meta", { property, content });
     }
     const structuredData = document.createElement("script");
     structuredData.type = "application/ld+json";
-    structuredData.dataset.modelSeo = "astra";
+    structuredData.dataset.modelSeo = model.slug;
     structuredData.textContent = schema;
     document.head.append(structuredData);
     return () => { restore.reverse().forEach(cleanup => cleanup()); structuredData.remove(); };
-  }, [title, description, schema]);
+  }, [model, title, description, schema]);
 }

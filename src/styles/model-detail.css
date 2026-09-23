@@ -162,6 +162,15 @@
   .model-faq-answer { padding: 0 20px 24px; }
   .model-faq { padding-bottom: 72px; }
 }
+.model-detail-gpt-6-sol-luna {
+  --model-panel-gradient: radial-gradient(ellipse at 0% 0%, hsl(var(--primary) / .22), transparent 58%), radial-gradient(ellipse at 100% 100%, hsl(var(--accent) / .4), transparent 62%);
+}
+.model-detail-gpt-6-sol-luna .model-art-stage::before { background: radial-gradient(circle at 34% 50%, hsl(var(--primary) / .24), transparent 38%), radial-gradient(circle at 70% 50%, hsl(var(--accent-foreground) / .16), transparent 40%); }
+.model-detail-gpt-6-sol-luna .model-art-stage::after { width: 102%; left: -1%; transform: rotate(-10deg); border-color: hsl(var(--foreground) / .2); }
+.model-detail-gpt-6-sol-luna .model-hero-art img { aspect-ratio: 1.12 / 1; }
+.model-detail-gpt-6-sol-luna .model-name { font-size: clamp(38px, 4.8vw, 64px); white-space: normal; text-wrap: balance; }
+@media (max-width: 767px) { .model-detail-gpt-6-sol-luna .model-hero-art img { aspect-ratio: 16 / 10; } }
+@media (max-width: 639px) { .model-detail-gpt-6-sol-luna .model-name { font-size: clamp(36px, 10.4vw, 56px); } }
 @media (prefers-reduced-motion: reduce) {
   .model-detail *, .model-detail *::before, .model-detail *::after { transition: none !important; }
   .model-copy-spinner { animation: none; }
