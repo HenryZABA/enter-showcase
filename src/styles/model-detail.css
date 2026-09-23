@@ -39,6 +39,9 @@
 .model-composer-error { margin-top: 16px; padding-top: 12px; border-top: 1px solid hsl(var(--destructive) / .5); font-size: 12px; line-height: 1.65; color: hsl(var(--foreground)); }
 .model-action-secondary { border: 1px solid hsl(var(--foreground) / .2); background: hsl(var(--foreground) / .045); color: hsl(var(--foreground)); }
 .model-action-secondary:hover { background: hsl(var(--foreground) / .09); border-color: hsl(var(--primary) / .5); box-shadow: 0 0 24px -8px hsl(var(--primary) / .2); }
+.model-action-workspace { min-width: 200px; border: 1px solid hsl(var(--foreground) / .9); background: hsl(var(--foreground)); color: hsl(var(--background)); box-shadow: 0 4px 18px hsl(var(--background) / .2); }
+.model-action-workspace:hover { background: hsl(var(--foreground) / .88); box-shadow: 0 6px 24px hsl(var(--foreground) / .12); }
+.model-action-workspace:focus-visible { outline: 2px solid hsl(var(--foreground)); outline-offset: 4px; }
 .model-browse-link { margin-top: 20px; gap: 24px; }
 .model-section { padding-top: var(--model-space); border-top: 1px solid var(--model-rule); scroll-margin-top: 120px; }
 .model-section-index { font-family: var(--font-mono); font-size: 10px; font-weight: 400; letter-spacing: .12em; color: hsl(var(--muted-foreground)); }

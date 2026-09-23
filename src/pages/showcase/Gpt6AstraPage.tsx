@@ -48,7 +48,7 @@ export default function Gpt6AstraPage() {
           <div className="model-about-heading"><span className="model-section-index" aria-hidden="true">02 / GPT-6 ASTRA</span><h2 id="model-about-title">{t("modelAstra.aboutTitle")}</h2></div>
           <div className="model-about-panels">
             <div className="model-about-copy"><span className="model-panel-icon"><Layers3 size={22} strokeWidth={1.5} aria-hidden="true" /></span><p>{t("modelAstra.aboutBody")}</p></div>
-            <div className="model-usage"><h3>{t("modelAstra.useTitle")}</h3><p>{t("modelAstra.useBody")}</p><div className="model-about-actions"><Link className="model-action theme-primary-gradient" to={libraryHref}>{t("modelAstra.libraryLink")}<ArrowUpRight size={16} aria-hidden="true" /></Link><a className="model-action model-action-secondary" href="https://enter.converge.ai/workspace">{t("modelAstra.buildWithEnter")}<ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
+            <div className="model-usage"><h3>{t("modelAstra.useTitle")}</h3><p>{t("modelAstra.useBody")}</p><div className="model-about-actions"><Link className="model-action theme-primary-gradient" to={libraryHref}>{t("modelAstra.libraryLink")}<ArrowUpRight size={16} aria-hidden="true" /></Link><a className="model-action model-action-workspace" href="https://enter.converge.ai/workspace">{t("modelAstra.buildWithEnter")}<ArrowUpRight size={16} aria-hidden="true" /></a></div></div>
           </div>
         </section>
         <ModelFaq title={t("modelAstra.faqTitle")} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={t("modelAstra.libraryLink")} />
