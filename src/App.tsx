@@ -42,7 +42,9 @@ function LanguageSync() {
     const language = normalizeLanguage(new URLSearchParams(search).get("hl"));
     if (language && language !== i18n.language) void i18n.changeLanguage(language);
   }, [search, i18n]);
-  useEffect(() => window.scrollTo(0, 0), [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
