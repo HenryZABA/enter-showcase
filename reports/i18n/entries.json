@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T09:36:00.387Z",
+  "generatedAt": "2026-09-23T09:46:34.916Z",
   "fallbackLng": "en",
-  "total": 274,
+  "total": 275,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -3639,10 +3639,10 @@
     {
       "key": "modelSolLuna.aboutBody",
       "group": "modelSolLuna",
-      "source": "Think of Sol and Luna as two complementary creative modes: one for shaping a clear, substantial build and one for moving quickly through ideas and refinements. In Enter, the same well-structured prompt can anchor either workflow while you adapt the content, interface, and interactions to your goal.",
+      "source": "GPT-6 Sol and Luna offer two complementary ways to build in Enter. Use Sol for thoughtful structure and detailed execution. Use Luna to explore directions quickly and refine ideas through iteration. Start with a clear prompt, then continue shaping the same project as your needs evolve.",
       "values": {
-        "en": "Think of Sol and Luna as two complementary creative modes: one for shaping a clear, substantial build and one for moving quickly through ideas and refinements. In Enter, the same well-structured prompt can anchor either workflow while you adapt the content, interface, and interactions to your goal.",
-        "zh-CN": "可以把 Sol 与 Luna 看作两种互补的创作模式：一种用于塑造清晰、完整的构建，另一种用于快速探索想法并持续调整。在 Enter 中，同一条结构清晰的提示词可以支撑两种工作节奏，同时让你按目标修改内容、界面和交互。",
+        "en": "GPT-6 Sol and Luna offer two complementary ways to build in Enter. Use Sol for thoughtful structure and detailed execution. Use Luna to explore directions quickly and refine ideas through iteration. Start with a clear prompt, then continue shaping the same project as your needs evolve.",
+        "zh-CN": "GPT-6 Sol 与 Luna 提供两种互补的 Enter 构建方式。Sol 适合需要审慎结构与细致执行的项目；Luna 适合快速探索方向，并通过迭代完善想法。从一条清晰的提示词开始，再随着需求变化持续塑造同一个项目。",
         "zh-TW": "可將 Sol 與 Luna 視為兩種互補的創作模式：一種用來塑造清晰、完整的作品，另一種用來快速探索想法並持續調整。在 Enter 中，同一條結構清楚的提示詞能支援兩種工作節奏，並讓你依照目標修改內容、介面與互動。",
         "es": "Piensa en Sol y Luna como dos modos creativos complementarios: uno para dar forma a una creación clara y sólida, y otro para avanzar rápidamente entre ideas y mejoras. En Enter, un mismo prompt bien estructurado puede guiar ambos flujos mientras adaptas contenido, interfaz e interacciones a tu objetivo.",
         "pt-BR": "Pense em Sol e Luna como dois modos criativos complementares: um para estruturar uma criação clara e consistente, outro para avançar rapidamente entre ideias e ajustes. No Enter, o mesmo prompt bem estruturado pode orientar os dois fluxos enquanto você adapta conteúdo, interface e interações ao seu objetivo.",
@@ -3681,10 +3681,10 @@
     {
       "key": "modelSolLuna.allDescription",
       "group": "modelSolLuna",
-      "source": "Explore a growing space for focused builds, fast iterations, and the prompts behind them.",
+      "source": "Explore prompts for structured builds, rapid experiments, and everything in between.",
       "values": {
-        "en": "Explore a growing space for focused builds, fast iterations, and the prompts behind them.",
-        "zh-CN": "探索一个持续扩展的空间，汇集专注构建、快速迭代及其背后的提示词。",
+        "en": "Explore prompts for structured builds, rapid experiments, and everything in between.",
+        "zh-CN": "探索适合结构化构建、快速实验以及两者之间各种需求的提示词。",
         "zh-TW": "探索持續擴展的空間，匯集專注建立、快速迭代及其背後的提示詞。",
         "es": "Explora un espacio creciente para creaciones enfocadas, iteraciones rápidas y los prompts que las impulsan.",
         "pt-BR": "Explore um espaço crescente para criações focadas, iterações rápidas e os prompts por trás delas.",
@@ -3702,10 +3702,10 @@
     {
       "key": "modelSolLuna.faqBuildAnswer",
       "group": "modelSolLuna",
-      "source": "Use them to describe websites, apps, dashboards, campaign experiences, productivity tools, and interactive concepts. Adapt the structure, content, and visual direction to your project.",
+      "source": "You can create websites, apps, dashboards, campaign experiences, productivity tools, and interactive concepts. Adapt each prompt to your audience, content, and visual direction.",
       "values": {
-        "en": "Use them to describe websites, apps, dashboards, campaign experiences, productivity tools, and interactive concepts. Adapt the structure, content, and visual direction to your project.",
-        "zh-CN": "可用于描述网站、应用、仪表盘、营销体验、效率工具和交互概念，并根据项目调整结构、内容与视觉方向。",
+        "en": "You can create websites, apps, dashboards, campaign experiences, productivity tools, and interactive concepts. Adapt each prompt to your audience, content, and visual direction.",
+        "zh-CN": "你可以创建网站、应用、仪表盘、营销体验、效率工具和交互概念，并根据受众、内容与视觉方向调整每条提示词。",
         "zh-TW": "可用來描述網站、應用程式、儀表板、行銷體驗、生產力工具和互動概念，並依專案調整結構、內容與視覺方向。",
         "es": "Úsalos para describir sitios, apps, paneles, campañas, herramientas de productividad y conceptos interactivos. Adapta estructura, contenido y dirección visual a tu proyecto.",
         "pt-BR": "Use-os para descrever sites, apps, painéis, campanhas, ferramentas de produtividade e conceitos interativos. Adapte estrutura, conteúdo e direção visual ao seu projeto.",
@@ -3744,10 +3744,10 @@
     {
       "key": "modelSolLuna.faqChooseAnswer",
       "group": "modelSolLuna",
-      "source": "Choose the workflow that fits the task: use a more deliberate direction when the build needs depth and structure, or a faster direction when you want to explore and refine ideas quickly.",
+      "source": "Use Sol when your project benefits from deliberate structure and detailed execution. Use Luna when you want to explore ideas quickly and iterate through different directions.",
       "values": {
-        "en": "Choose the workflow that fits the task: use a more deliberate direction when the build needs depth and structure, or a faster direction when you want to explore and refine ideas quickly.",
-        "zh-CN": "选择适合任务的工作节奏：需要深度与结构时采用更审慎的方向，希望快速探索和完善想法时采用更敏捷的方向。",
+        "en": "Use Sol when your project benefits from deliberate structure and detailed execution. Use Luna when you want to explore ideas quickly and iterate through different directions.",
+        "zh-CN": "当项目需要审慎的结构和细致执行时使用 Sol；当你希望快速探索想法并尝试不同方向时使用 Luna。",
         "zh-TW": "選擇符合任務的工作節奏：需要深度與結構時採用較審慎的方向，希望快速探索和完善想法時採用較敏捷的方向。",
         "es": "Elige el ritmo adecuado para la tarea: una dirección más deliberada si necesitas profundidad y estructura, o una más rápida para explorar y mejorar ideas con agilidad.",
         "pt-BR": "Escolha o ritmo adequado à tarefa: uma direção mais deliberada quando precisar de profundidade e estrutura, ou uma mais rápida para explorar e refinar ideias.",
@@ -3784,12 +3784,54 @@
       "status": "complete"
     },
     {
+      "key": "modelSolLuna.faqEditAnswer",
+      "group": "modelSolLuna",
+      "source": "Yes. Replace the example audience, content, workflow, and design direction with your own requirements before opening the prompt in Enter.",
+      "values": {
+        "en": "Yes. Replace the example audience, content, workflow, and design direction with your own requirements before opening the prompt in Enter.",
+        "zh-CN": "可以。在 Enter 中打开提示词前，将示例受众、内容、工作流程和设计方向替换成你自己的需求。",
+        "zh-TW": "可以。在 Enter 中開啟提示詞前，將範例受眾、內容、工作流程和設計方向替換成你自己的需求。",
+        "es": "Sí. Sustituye el público, el contenido, el flujo de trabajo y la dirección visual del ejemplo por tus propios requisitos antes de abrir el prompt en Enter.",
+        "pt-BR": "Sim. Troque o público, o conteúdo, o fluxo de trabalho e a direção visual do exemplo pelos seus requisitos antes de abrir o prompt no Enter.",
+        "pt-PT": "Sim. Substitui o público, o conteúdo, o fluxo de trabalho e a direção visual do exemplo pelos teus requisitos antes de abrir o prompt no Enter.",
+        "fr": "Oui. Remplacez le public, le contenu, le processus et la direction visuelle de l’exemple par vos propres besoins avant d’ouvrir le prompt dans Enter.",
+        "de": "Ja. Ersetze Zielgruppe, Inhalt, Ablauf und visuelle Richtung des Beispiels durch deine Anforderungen, bevor du den Prompt in Enter öffnest.",
+        "it": "Sì. Sostituisci pubblico, contenuti, flusso di lavoro e direzione visiva dell’esempio con i tuoi requisiti prima di aprire il prompt in Enter.",
+        "ja": "はい。Enterでプロンプトを開く前に、例の対象ユーザー、内容、ワークフロー、デザインの方向性を自分の要件に置き換えられます。",
+        "ko": "네. Enter에서 프롬프트를 열기 전에 예시의 대상 사용자, 콘텐츠, 작업 흐름, 디자인 방향을 자신의 요구 사항으로 바꿀 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelSolLuna.faqEditQuestion",
+      "group": "modelSolLuna",
+      "source": "Can I edit these prompts before building?",
+      "values": {
+        "en": "Can I edit these prompts before building?",
+        "zh-CN": "创建前可以修改这些提示词吗？",
+        "zh-TW": "建立前可以修改這些提示詞嗎？",
+        "es": "¿Puedo editar estos prompts antes de crear?",
+        "pt-BR": "Posso editar estes prompts antes de criar?",
+        "pt-PT": "Posso editar estes prompts antes de criar?",
+        "fr": "Puis-je modifier ces prompts avant de créer ?",
+        "de": "Kann ich diese Prompts vor dem Erstellen bearbeiten?",
+        "it": "Posso modificare questi prompt prima di creare?",
+        "ja": "作成前にこれらのプロンプトを編集できますか？",
+        "ko": "만들기 전에 이 프롬프트를 수정할 수 있나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
       "key": "modelSolLuna.faqIdeasAnswer",
       "group": "modelSolLuna",
-      "source": "Visit Enter Library for curated cases, live previews, and reusable prompts. You can also start with your own idea on the Enter homepage.",
+      "source": "Visit Enter Library to browse curated projects, live previews, and reusable prompts.",
       "values": {
-        "en": "Visit Enter Library for curated cases, live previews, and reusable prompts. You can also start with your own idea on the Enter homepage.",
-        "zh-CN": "前往 Enter Library 浏览精选案例、在线预览和可复用提示词，也可以从 Enter 首页直接开始自己的想法。",
+        "en": "Visit Enter Library to browse curated projects, live previews, and reusable prompts.",
+        "zh-CN": "前往 Enter Library 浏览精选项目、在线预览和可复用提示词。",
         "zh-TW": "前往 Enter Library 瀏覽精選案例、線上預覽和可重複使用的提示詞，也可以從 Enter 首頁直接開始自己的想法。",
         "es": "Visita Enter Library para ver casos seleccionados, vistas previas y prompts reutilizables. También puedes empezar con tu propia idea en la página de inicio de Enter.",
         "pt-BR": "Visite a Enter Library para ver casos selecionados, prévias e prompts reutilizáveis. Você também pode começar com sua própria ideia na página inicial do Enter.",
@@ -3826,48 +3868,6 @@
       "status": "complete"
     },
     {
-      "key": "modelSolLuna.faqSourcesAnswer",
-      "group": "modelSolLuna",
-      "source": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The collection currently contains placeholders while examples are prepared.",
-      "values": {
-        "en": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The collection currently contains placeholders while examples are prepared.",
-        "zh-CN": "精选提示词将由 Enter 制作并测试；外部精选内容会注明作者与来源。目前合集使用占位内容，案例正在准备中。",
-        "zh-TW": "精選提示詞將由 Enter 製作並測試；外部精選內容會註明作者與來源。目前合集使用預留內容，案例正在準備中。",
-        "es": "Enter creará y probará los prompts destacados. Los externos incluirán autor y fuente. La colección usa marcadores mientras se preparan los ejemplos.",
-        "pt-BR": "Os prompts em destaque serão criados e testados pelo Enter. Os externos incluirão autor e fonte. A coleção usa marcadores enquanto os exemplos são preparados.",
-        "pt-PT": "Os prompts em destaque serão criados e testados pelo Enter. Os externos incluirão autor e fonte. A coleção usa marcadores enquanto os exemplos são preparados.",
-        "fr": "Les prompts sélectionnés seront créés et testés par Enter. Les contenus externes mentionneront auteur et source. La collection utilise des emplacements réservés pendant la préparation des exemples.",
-        "de": "Ausgewählte Prompts werden von Enter erstellt und getestet. Externe Inhalte nennen Autor und Quelle. Die Sammlung zeigt Platzhalter, während Beispiele vorbereitet werden.",
-        "it": "I prompt in evidenza saranno creati e testati da Enter. I contenuti esterni riporteranno autore e fonte. La raccolta usa segnaposto mentre gli esempi vengono preparati.",
-        "ja": "厳選プロンプトはEnterが作成・検証します。外部コンテンツには作者と出典を記載します。事例の準備中はプレースホルダーを表示します。",
-        "ko": "추천 프롬프트는 Enter가 제작하고 테스트합니다. 외부 콘텐츠에는 작성자와 출처를 표시합니다. 사례를 준비하는 동안에는 자리 표시 콘텐츠가 보입니다."
-      },
-      "used": true,
-      "missingLanguages": [],
-      "status": "complete"
-    },
-    {
-      "key": "modelSolLuna.faqSourcesQuestion",
-      "group": "modelSolLuna",
-      "source": "How will prompts in this collection be sourced?",
-      "values": {
-        "en": "How will prompts in this collection be sourced?",
-        "zh-CN": "本合集的提示词将从哪里获取？",
-        "zh-TW": "本合集的提示詞將從哪裡取得？",
-        "es": "¿De dónde procederán los prompts de esta colección?",
-        "pt-BR": "De onde virão os prompts desta coleção?",
-        "pt-PT": "De onde virão os prompts desta coleção?",
-        "fr": "D’où viendront les prompts de cette collection ?",
-        "de": "Woher werden die Prompts dieser Sammlung stammen?",
-        "it": "Da dove proverranno i prompt della raccolta?",
-        "ja": "このコレクションのプロンプトはどこから集めますか？",
-        "ko": "이 컬렉션의 프롬프트는 어디에서 가져오나요?"
-      },
-      "used": true,
-      "missingLanguages": [],
-      "status": "complete"
-    },
-    {
       "key": "modelSolLuna.faqTitle",
       "group": "modelSolLuna",
       "source": "FAQs about GPT-6 Sol & Luna Prompts",
@@ -3891,10 +3891,10 @@
     {
       "key": "modelSolLuna.faqUseAnswer",
       "group": "modelSolLuna",
-      "source": "Open Enter and paste or write a prompt when starting a project. Review the result, then continue with clear requests for changes to layout, content, features, or interactions.",
+      "source": "Open Enter and paste or write a prompt when starting a project. Review the result, then request specific changes to the layout, content, features, or interactions.",
       "values": {
-        "en": "Open Enter and paste or write a prompt when starting a project. Review the result, then continue with clear requests for changes to layout, content, features, or interactions.",
-        "zh-CN": "打开 Enter，在新建项目时粘贴或编写提示词。查看结果后，继续清晰说明希望调整的布局、内容、功能或交互。",
+        "en": "Open Enter and paste or write a prompt when starting a project. Review the result, then request specific changes to the layout, content, features, or interactions.",
+        "zh-CN": "打开 Enter，在新建项目时粘贴或编写提示词。查看结果后，再明确提出对布局、内容、功能或交互的修改要求。",
         "zh-TW": "開啟 Enter，在建立專案時貼上或撰寫提示詞。查看結果後，繼續清楚說明希望調整的版面、內容、功能或互動。",
         "es": "Abre Enter y pega o escribe un prompt al iniciar un proyecto. Revisa el resultado y continúa con solicitudes claras sobre diseño, contenido, funciones o interacciones.",
         "pt-BR": "Abra o Enter e cole ou escreva um prompt ao iniciar um projeto. Revise o resultado e continue com pedidos claros de mudanças em layout, conteúdo, recursos ou interações.",
@@ -3954,19 +3954,40 @@
     {
       "key": "modelSolLuna.hotDescription",
       "group": "modelSolLuna",
-      "source": "A dedicated selection for Sol and Luna is taking shape. New prompts and app examples will appear here.",
+      "source": "Curated GPT-6 Sol and Luna projects are coming soon.",
       "values": {
-        "en": "A dedicated selection for Sol and Luna is taking shape. New prompts and app examples will appear here.",
-        "zh-CN": "Sol 与 Luna 的专属精选正在准备中，新的提示词和应用案例将在这里呈现。",
-        "zh-TW": "Sol 與 Luna 的專屬精選正在準備中，新的提示詞與應用案例將在這裡呈現。",
-        "es": "Estamos preparando una selección dedicada a Sol y Luna. Aquí aparecerán nuevos prompts y ejemplos de apps.",
-        "pt-BR": "Uma seleção dedicada a Sol e Luna está sendo preparada. Novos prompts e exemplos de apps aparecerão aqui.",
-        "pt-PT": "Está a ser preparada uma seleção dedicada a Sol e Luna. Novos prompts e exemplos de apps aparecerão aqui.",
-        "fr": "Une sélection dédiée à Sol et Luna est en préparation. De nouveaux prompts et exemples d’apps apparaîtront ici.",
-        "de": "Eine eigene Auswahl für Sol und Luna entsteht. Neue Prompts und App-Beispiele erscheinen hier.",
-        "it": "Stiamo preparando una selezione dedicata a Sol e Luna. Qui appariranno nuovi prompt ed esempi di app.",
-        "ja": "SolとLunaの専用セレクションを準備中です。新しいプロンプトとアプリ事例をここに掲載します。",
-        "ko": "Sol과 Luna 전용 컬렉션을 준비하고 있습니다. 새로운 프롬프트와 앱 사례가 여기에 표시됩니다."
+        "en": "Curated GPT-6 Sol and Luna projects are coming soon.",
+        "zh-CN": "精选 GPT-6 Sol 与 Luna 项目即将上线。",
+        "zh-TW": "精選 GPT-6 Sol 與 Luna 專案即將推出。",
+        "es": "Muy pronto llegarán proyectos seleccionados de GPT-6 Sol y Luna.",
+        "pt-BR": "Projetos selecionados de GPT-6 Sol e Luna chegarão em breve.",
+        "pt-PT": "Projetos selecionados de GPT-6 Sol e Luna chegarão em breve.",
+        "fr": "Des projets GPT-6 Sol et Luna sélectionnés arrivent bientôt.",
+        "de": "Kuratierte GPT-6 Sol und Luna Projekte folgen in Kürze.",
+        "it": "I progetti selezionati di GPT-6 Sol e Luna arriveranno presto.",
+        "ja": "厳選したGPT-6 SolとLunaのプロジェクトは近日公開予定です。",
+        "ko": "엄선된 GPT-6 Sol 및 Luna 프로젝트가 곧 공개됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelSolLuna.hotEmpty",
+      "group": "modelSolLuna",
+      "source": "New prompts and live examples are being prepared.",
+      "values": {
+        "en": "New prompts and live examples are being prepared.",
+        "zh-CN": "新的提示词和在线案例正在准备中。",
+        "zh-TW": "新的提示詞與線上案例正在準備中。",
+        "es": "Estamos preparando nuevos prompts y ejemplos interactivos.",
+        "pt-BR": "Novos prompts e exemplos interativos estão sendo preparados.",
+        "pt-PT": "Estão a ser preparados novos prompts e exemplos interativos.",
+        "fr": "De nouveaux prompts et exemples interactifs sont en préparation.",
+        "de": "Neue Prompts und interaktive Beispiele werden vorbereitet.",
+        "it": "Stiamo preparando nuovi prompt ed esempi interattivi.",
+        "ja": "新しいプロンプトとライブ事例を準備しています。",
+        "ko": "새로운 프롬프트와 라이브 사례를 준비하고 있습니다."
       },
       "used": true,
       "missingLanguages": [],
@@ -3996,10 +4017,10 @@
     {
       "key": "modelSolLuna.metaDescription",
       "group": "modelSolLuna",
-      "source": "Discover GPT-6 Sol and GPT-6 Luna prompts for websites, apps, and interactive experiences in Enter. Explore two complementary ways to build and iterate.",
+      "source": "Explore GPT-6 Sol and Luna prompts for websites, apps, and interactive experiences. Build with thoughtful structure or move quickly through ideas in Enter.",
       "values": {
-        "en": "Discover GPT-6 Sol and GPT-6 Luna prompts for websites, apps, and interactive experiences in Enter. Explore two complementary ways to build and iterate.",
-        "zh-CN": "探索在 Enter 中用于网站、应用与交互体验的 GPT-6 Sol 和 GPT-6 Luna 提示词，了解两种互补的创建与迭代方式。",
+        "en": "Explore GPT-6 Sol and Luna prompts for websites, apps, and interactive experiences. Build with thoughtful structure or move quickly through ideas in Enter.",
+        "zh-CN": "探索适用于网站、应用与交互体验的 GPT-6 Sol 和 Luna 提示词。在 Enter 中进行结构化构建，或快速探索不同想法。",
         "zh-TW": "探索在 Enter 中用於網站、應用程式與互動體驗的 GPT-6 Sol 和 GPT-6 Luna 提示詞，了解兩種互補的建立與迭代方式。",
         "es": "Descubre prompts de GPT-6 Sol y GPT-6 Luna para sitios, apps y experiencias interactivas en Enter. Explora dos formas complementarias de crear e iterar.",
         "pt-BR": "Descubra prompts do GPT-6 Sol e GPT-6 Luna para sites, apps e experiências interativas no Enter. Explore duas formas complementares de criar e iterar.",
@@ -4038,10 +4059,10 @@
     {
       "key": "modelSolLuna.tagline",
       "group": "modelSolLuna",
-      "source": "Build with focus. Iterate with momentum. Shape both with Enter.",
+      "source": "Two models. Two creative rhythms. One place to build.",
       "values": {
-        "en": "Build with focus. Iterate with momentum. Shape both with Enter.",
-        "zh-CN": "专注构建，快速迭代，在 Enter 中塑造两种节奏。",
+        "en": "Two models. Two creative rhythms. One place to build.",
+        "zh-CN": "两个模型，两种创作节奏，一个构建空间。",
         "zh-TW": "專注建立，快速迭代，在 Enter 中塑造兩種節奏。",
         "es": "Crea con enfoque. Itera con impulso. Da forma a ambos con Enter.",
         "pt-BR": "Crie com foco. Itere com ritmo. Dê forma aos dois com Enter.",
@@ -4059,10 +4080,10 @@
     {
       "key": "modelSolLuna.useBody",
       "group": "modelSolLuna",
-      "source": "Start with the outcome you want, add the audience, content, and essential interactions, then refine the same project. Keep the prompt specific enough to guide the build while leaving room to test a faster or more deliberate direction.",
+      "source": "Describe what you want to create, review the first result, and refine the layout, content, features, and interactions—all within the same project.",
       "values": {
-        "en": "Start with the outcome you want, add the audience, content, and essential interactions, then refine the same project. Keep the prompt specific enough to guide the build while leaving room to test a faster or more deliberate direction.",
-        "zh-CN": "先说明你想得到的结果，再补充受众、内容和关键交互，然后围绕同一个项目持续完善。提示词应足够具体以引导构建，同时保留尝试快速或深入方向的空间。",
+        "en": "Describe what you want to create, review the first result, and refine the layout, content, features, and interactions—all within the same project.",
+        "zh-CN": "描述你想创建的内容，查看首次结果，再围绕同一个项目继续完善布局、内容、功能与交互。",
         "zh-TW": "先說明想要的結果，再補充受眾、內容與關鍵互動，接著圍繞同一個專案持續完善。提示詞應足夠具體以引導建立，同時保留嘗試快速或深入方向的空間。",
         "es": "Empieza por el resultado que buscas, añade público, contenido e interacciones esenciales y perfecciona el mismo proyecto. Sé lo bastante concreto para orientar la creación y deja espacio para probar una dirección rápida o más deliberada.",
         "pt-BR": "Comece pelo resultado desejado, adicione público, conteúdo e interações essenciais e refine o mesmo projeto. Seja específico o bastante para orientar a criação, deixando espaço para testar uma direção rápida ou mais deliberada.",
@@ -4080,10 +4101,10 @@
     {
       "key": "modelSolLuna.useTitle",
       "group": "modelSolLuna",
-      "source": "Use GPT-6 Sol & Luna in Enter",
+      "source": "Build with GPT-6 Sol & Luna in Enter",
       "values": {
-        "en": "Use GPT-6 Sol & Luna in Enter",
-        "zh-CN": "在 Enter 中使用 GPT-6 Sol 与 Luna",
+        "en": "Build with GPT-6 Sol & Luna in Enter",
+        "zh-CN": "在 Enter 中使用 GPT-6 Sol 与 Luna 构建",
         "zh-TW": "在 Enter 中使用 GPT-6 Sol 與 Luna",
         "es": "Usar GPT-6 Sol y Luna en Enter",
         "pt-BR": "Use GPT-6 Sol e Luna no Enter",

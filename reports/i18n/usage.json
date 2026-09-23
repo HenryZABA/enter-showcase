@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:36:00.387Z",
+  "generatedAt": "2026-09-23T09:46:34.916Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -1864,6 +1864,28 @@
       ]
     },
     {
+      "key": "modelSolLuna.faqEditAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 49,
+          "column": 74,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelSolLuna.faqEditQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 49,
+          "column": 31,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
       "key": "modelSolLuna.faqIdeasAnswer",
       "references": [
         {
@@ -1881,28 +1903,6 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 50,
           "column": 32,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelSolLuna.faqSourcesAnswer",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 49,
-          "column": 80,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelSolLuna.faqSourcesQuestion",
-      "references": [
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 49,
-          "column": 34,
           "usageType": "function"
         }
       ]
@@ -1958,6 +1958,17 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 26,
           "column": 21,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelSolLuna.hotEmpty",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6SolLunaPage.tsx",
+          "line": 12,
+          "column": 11,
           "usageType": "function"
         }
       ]

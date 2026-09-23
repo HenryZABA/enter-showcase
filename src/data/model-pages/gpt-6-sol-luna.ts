@@ -11,7 +11,7 @@ export const solLunaModel: ModelPageModel = {
   artCaption: "ENTER × GPT-6 SOL / LUNA",
 };
 
-export const solLunaInitialPrompt = "Build a polished product launch workspace with a bold campaign overview, a focused execution board, and a fast iteration panel. Make the experience responsive, cinematic, and easy to refine from first concept to final release.";
+export const solLunaInitialPrompt = "Build a polished product launch workspace with a campaign overview, an execution board, and a rapid iteration area. Make it responsive, visually refined, and easy to evolve from first concept to final release.";
 
 export function getSolLunaCopy(t: TFunction): ModelPageCopy {
   return {
@@ -46,7 +46,7 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
       { id: "build", question: t("modelSolLuna.faqBuildQuestion"), answer: t("modelSolLuna.faqBuildAnswer") },
       { id: "use", question: t("modelSolLuna.faqUseQuestion"), answer: t("modelSolLuna.faqUseAnswer") },
       { id: "choose", question: t("modelSolLuna.faqChooseQuestion"), answer: t("modelSolLuna.faqChooseAnswer") },
-      { id: "sources", question: t("modelSolLuna.faqSourcesQuestion"), answer: t("modelSolLuna.faqSourcesAnswer") },
+      { id: "edit", question: t("modelSolLuna.faqEditQuestion"), answer: t("modelSolLuna.faqEditAnswer") },
       { id: "ideas", question: t("modelSolLuna.faqIdeasQuestion"), answer: t("modelSolLuna.faqIdeasAnswer") },
     ],
   };
