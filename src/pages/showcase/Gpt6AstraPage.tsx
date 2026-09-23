@@ -33,10 +33,10 @@ export default function Gpt6AstraPage() {
             <h1 id="model-title"><span className="model-name">{astraModel.name}</span>{" "}<span className="model-headline">{t("modelAstra.heading")}</span></h1>
             <p className="model-hero-tagline">{t("modelAstra.tagline")}</p>
             <ModelPromptComposer />
-            <a href="#all-prompts" className="model-browse-link">{t("modelAstra.browse")}<ArrowDown size={15} aria-hidden="true" /></a>
+            <a href="#all-prompts" className="model-action model-action-secondary model-browse-link">{t("modelAstra.browse")}<ArrowDown size={15} aria-hidden="true" /></a>
           </div>
           <div className="model-hero-art">
-            <img src={astraModel.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" />
+            <div className="model-art-stage"><img src={astraModel.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" /></div>
             <div className="model-art-caption"><span>ENTER × GPT-6 ASTRA</span><span aria-hidden="true">01 / MODEL</span></div>
           </div>
         </section>
@@ -48,7 +48,7 @@ export default function Gpt6AstraPage() {
           <div className="model-about-heading"><span className="model-section-index" aria-hidden="true">02 / GPT-6 ASTRA</span><h2 id="model-about-title">{t("modelAstra.aboutTitle")}</h2></div>
           <div className="model-about-panels">
             <div className="model-about-copy"><span className="model-panel-icon"><Layers3 size={22} strokeWidth={1.5} aria-hidden="true" /></span><p>{t("modelAstra.aboutBody")}</p></div>
-            <div className="model-usage"><span className="model-panel-icon"><SlidersHorizontal size={22} strokeWidth={1.5} aria-hidden="true" /></span><h3>{t("modelAstra.useTitle")}</h3><p>{t("modelAstra.useBody")}</p><Link className="model-text-link" to={libraryHref}>{t("modelAstra.libraryLink")}<ArrowUpRight size={16} aria-hidden="true" /></Link></div>
+            <div className="model-usage"><span className="model-panel-icon"><SlidersHorizontal size={22} strokeWidth={1.5} aria-hidden="true" /></span><h3>{t("modelAstra.useTitle")}</h3><p>{t("modelAstra.useBody")}</p><Link className="model-action theme-primary-gradient model-about-cta" to={libraryHref}>{t("modelAstra.libraryLink")}<ArrowUpRight size={16} aria-hidden="true" /></Link></div>
           </div>
         </section>
         <ModelFaq title={t("modelAstra.faqTitle")} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={t("modelAstra.libraryLink")} />
