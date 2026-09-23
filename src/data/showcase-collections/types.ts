@@ -17,6 +17,8 @@ export type ShowcaseCollection = {
   coverVideo?: string;
   documentTitle: string;
   displayName: string;
+  /** Optional model introduction destination; does not replace the stored case collection. */
+  modelPagePath?: string;
   heroImage: string;
   caseIds: readonly string[];
   /** Evaluate with the current translator, never cache translated UI at module scope. */

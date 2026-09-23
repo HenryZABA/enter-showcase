@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from "node:url";
 import react from "@vitejs/plugin-react";
 import { defineConfig, type PluginOption } from "vite";
 import { enterDevPlugin, enterProdPlugin } from "vite-plugin-enter-dev";
+import { modelPageHeadPlugin } from "./model-page-head";
 
 const SUBPATH_ASSETS_DIR = "_prompts";
 const publicAssetDirectories = ["locales", "fonts", "images", "media", "brand-footer"];
@@ -39,6 +40,7 @@ export default defineConfig({
     ...enterProdPlugin(),
     ...enterDevPlugin({ react: false }),
     copyPublicAssetsToNamespace(),
+    modelPageHeadPlugin(projectRoot),
   ],
   resolve: {
     alias: {

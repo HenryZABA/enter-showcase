@@ -1,0 +1,50 @@
+{
+  "profile": "marketing",
+  "routes": ["/prompts/gpt-6-astra", "/showcases/gpt-6-astra"],
+  "routeKind": "public",
+  "implemented": [
+    "模型介绍单页复用现有 Header、Footer、主题和 Astra 封面",
+    "轮播与目录卡片进入新模型页；旧集合路由与案例数据保留",
+    "Featured Prompts / Case 与 All Prompts 均为空，无输入框或创建按钮",
+    "27 个新文案 key 接入现有 11 个语言资源",
+    "详情入口构建 HTML 包含 title、description、keywords、canonical、Open Graph 和 FAQ JSON-LD",
+    "页面 metadata 设有 SPA 离开清理逻辑，但完整浏览器往返测试未执行成功"
+  ],
+  "verification": {
+    "typecheck": { "status": "passed", "command": "pnpm run typecheck" },
+    "productionBuild": { "status": "passed", "command": "pnpm run build" },
+    "i18n": { "status": "passed", "commands": ["node /workspace/.agents/skills/enter_i18n@1/assets/scripts/check-i18n.mjs", "node /workspace/.agents/skills/enter_i18n@1/assets/scripts/scan-i18n.mjs"] },
+    "buildAudit": {
+      "status": "failed",
+      "reason": "严格审计退出码 1，零错误但仍有告警；未调整或豁免默认预算。",
+      "command": "node /workspace/performance-audit/audit-vite-build.mjs --profile marketing --dist dist --config /workspace/performance-audit/model-config.json --strict",
+      "warnings": ["既有共享 JS 超预算", "现有品牌字体数量和总量超预算", "平台构建插件注入的外部字体不可离线核验", "公开正文仍为 CSR，无静态 H1/root 正文；本次按确认范围未做全站 SSG", "原首页缺少 canonical/JSON-LD，新详情入口已补齐"],
+      "initialResources": {
+        "baselineJsRaw": 1535429,
+        "finalJsRaw": 1611676,
+        "baselineJsBrotliEstimate": 330228,
+        "finalJsBrotliEstimate": 341092,
+        "declaredFontCount": 5,
+        "declaredFontRaw": 115240,
+        "initialDynamicImports": [],
+        "deferred": "现有 case dialog / prompt download 的交互加载模块，模型页不调用",
+        "actualTransfer": "not-measured"
+      }
+    },
+    "browserPerformance": { "status": "not-verified", "reason": "本地 Chromium 两种启动模式均在启动时 SIGTRAP，未获得 FCP/LCP/CLS/长任务样本，不宣称性能通过。" },
+    "functionalRegression": {
+      "status": "not-verified",
+      "passedAssertions": ["根入口与 /prompts 入口路径映射", "路径边界 /prompts-other 不误匹配", "素材仍使用 /_prompts", "11 个语言资源包含全部新 key", "两个详情入口静态 head 相同且 FAQ 有 5 项", "原首页 head 未被模型 metadata 污染", "git diff --check"],
+      "unverified": ["真实浏览器卡片点击与往返", "FAQ 键盘展开", "语言切换和刷新", "SPA metadata 清理"]
+    },
+    "responsiveVisual": {
+      "status": "not-verified",
+      "assumedViewports": ["mobile_390", "desktop_1280"],
+      "mobile": "390px 全页截图已呈现介绍页、两个空区、FAQ 和原 Footer，无可见横向溢出；共享 Cookie 提示覆盖了部分 Hero。",
+      "desktop": "1280px 截图返回空白，未获取有效桌面画面；未将其标为通过。"
+    },
+    "deployedHttp": { "status": "not-verified", "reason": "只验证本地构建产物，未验证发布站点的路由映射、响应头、抓取与收录。" }
+  },
+  "platformFollowUp": ["验证发布系统按详情目录输出独立 HTML", "在可运行浏览器中完成桌面、导航与性能验收", "SEO 正文预渲染仍需后续单独评估"],
+  "overall": "implemented-with-verification-gaps"
+}

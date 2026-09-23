@@ -76,7 +76,7 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
     <Link
       to={href}
       className="collection-directory-link"
-      aria-label={copy.openLabel}
+      aria-label={collection.modelPagePath ? `${collection.displayName} — ${t("modelAstra.viewModel")}` : copy.openLabel}
     >
       <div className="collection-directory-media">
         {collection.coverVideo ? (
@@ -109,7 +109,7 @@ export const CollectionCard = ({ collection, href, priority = false }: Collectio
         <div>
           <h2>{collection.displayName}</h2>
           <p>{copy.description}</p>
-          <span className="collection-directory-count">{t("collections.caseCount", { value: total })}</span>
+          <span className="collection-directory-count">{collection.modelPagePath ? t("modelAstra.viewModel") : t("collections.caseCount", { value: total })}</span>
         </div>
         <span className="collection-directory-arrow" aria-hidden="true"><ArrowUpRight size={24} /></span>
       </div>

@@ -10,6 +10,7 @@ import { SUBPATH_ROUTE } from "@/lib/app-paths";
 import CuratedShowcaseCollectionPage from "@/pages/showcase/CuratedShowcaseCollectionPage";
 import ShowcaseCollectionsPage from "@/pages/showcase/ShowcaseCollectionsPage";
 import ShowcasesPage from "@/pages/showcase/ShowcasesPage";
+import Gpt6AstraPage from "@/pages/showcase/Gpt6AstraPage";
 import { AnalyticsProvider } from "@/providers/analytics-provider";
 import { CookieConsentProvider } from "@/providers/cookie-consent-provider";
 
@@ -57,6 +58,7 @@ function createShowcaseRoutes(prefix: "" | typeof SUBPATH_ROUTE): ReactNode[] {
       : [<Route key="root-index" path="/" element={<RootRedirect />} />]),
     <Route key={`${key}-showcases`} path={showcasePath} element={<ShowcasesPage />} />,
     <Route key={`${key}-collections`} path={`${showcasePath}/collections`} element={<ShowcaseCollectionsPage />} />,
+    <Route key={`${key}-astra-model`} path={`${showcasePath}/gpt-6-astra`} element={<Gpt6AstraPage />} />,
     <Route key={`${key}-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage />} />,
   ];
 }

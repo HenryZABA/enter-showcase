@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:59:14.696Z",
+  "generatedAt": "2026-09-23T06:50:02.230Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -16,6 +16,9 @@
     "src/components/case-library/filter-bar.tsx",
     "src/components/case-library/hero-stage.tsx",
     "src/components/case-library/live-frame.tsx",
+    "src/components/case-library/model-empty-section.tsx",
+    "src/components/case-library/model-faq.tsx",
+    "src/components/case-library/preview-budget.tsx",
     "src/components/case-library/prompt-download-success-dialog.tsx",
     "src/components/case-library/prompt-panel.tsx",
     "src/components/case-library/showcase-library-view.tsx",
@@ -25,26 +28,38 @@
     "src/data/case-gallery.ts",
     "src/data/cases.ts",
     "src/data/curved-gallery.ts",
+    "src/data/footer.ts",
+    "src/data/model-pages/gpt-6-astra.ts",
     "src/data/showcase-collections.ts",
     "src/data/showcase-collections/gpt-6-astra.ts",
     "src/data/showcase-collections/types.ts",
+    "src/hooks/use-app-href.ts",
     "src/hooks/use-case-filters.ts",
     "src/hooks/use-case-flip.ts",
     "src/hooks/use-current-language.ts",
+    "src/hooks/use-model-page-seo.ts",
     "src/hooks/use-showcase-theme.ts",
     "src/i18n/config.ts",
     "src/i18n/util.ts",
+    "src/lib/analytics/clarity.ts",
+    "src/lib/analytics/gtm.ts",
+    "src/lib/analytics/mixpanel.ts",
+    "src/lib/app-paths.ts",
     "src/lib/curved-gallery/media.ts",
     "src/lib/curved-gallery/renderer.ts",
     "src/lib/curved-gallery/shaders.ts",
     "src/lib/curved-gallery/surface.ts",
     "src/lib/prompt-bundle.ts",
+    "src/lib/prompt-cache.ts",
     "src/lib/prompt-file.ts",
     "src/lib/utils.ts",
     "src/main.tsx",
     "src/pages/showcase/CuratedShowcaseCollectionPage.tsx",
+    "src/pages/showcase/Gpt6AstraPage.tsx",
     "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-    "src/pages/showcase/ShowcasesPage.tsx"
+    "src/pages/showcase/ShowcasesPage.tsx",
+    "src/providers/analytics-provider.tsx",
+    "src/providers/cookie-consent-provider.tsx"
   ],
   "usedKeys": [
     {
@@ -52,7 +67,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 178,
+          "line": 197,
           "column": 20,
           "usageType": "function"
         }
@@ -74,7 +89,7 @@
       "references": [
         {
           "file": "src/lib/prompt-bundle.ts",
-          "line": 12,
+          "line": 13,
           "column": 7,
           "usageType": "function"
         }
@@ -85,7 +100,7 @@
       "references": [
         {
           "file": "src/lib/prompt-bundle.ts",
-          "line": 30,
+          "line": 31,
           "column": 10,
           "usageType": "function"
         },
@@ -102,7 +117,7 @@
       "references": [
         {
           "file": "src/lib/prompt-bundle.ts",
-          "line": 13,
+          "line": 14,
           "column": 7,
           "usageType": "function"
         }
@@ -124,7 +139,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 32,
+          "line": 34,
           "column": 18,
           "usageType": "function"
         }
@@ -135,8 +150,8 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 193,
-          "column": 20,
+          "line": 213,
+          "column": 56,
           "usageType": "function"
         }
       ]
@@ -146,7 +161,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 101,
+          "line": 109,
           "column": 19,
           "usageType": "function"
         }
@@ -218,7 +233,7 @@
       "references": [
         {
           "file": "src/components/case-library/card-live-preview.tsx",
-          "line": 111,
+          "line": 78,
           "column": 32,
           "usageType": "function"
         },
@@ -276,7 +291,7 @@
         {
           "file": "src/components/case-library/case-card.tsx",
           "line": 63,
-          "column": 40,
+          "column": 43,
           "usageType": "function"
         },
         {
@@ -294,7 +309,7 @@
         {
           "file": "src/components/case-library/case-photo-card.tsx",
           "line": 66,
-          "column": 38,
+          "column": 41,
           "usageType": "function"
         }
       ]
@@ -384,7 +399,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 129,
+          "line": 147,
           "column": 16,
           "usageType": "function"
         }
@@ -395,14 +410,14 @@
       "references": [
         {
           "file": "src/components/case-library/collection-card.tsx",
-          "line": 101,
-          "column": 57,
+          "line": 112,
+          "column": 112,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/collection-carousel.tsx",
-          "line": 22,
-          "column": 17,
+          "line": 26,
+          "column": 11,
           "usageType": "function"
         }
       ]
@@ -412,8 +427,20 @@
       "references": [
         {
           "file": "src/components/case-library/collection-carousel.tsx",
-          "line": 17,
+          "line": 19,
           "column": 64,
+          "usageType": "function"
+        },
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 41,
+          "column": 101,
+          "usageType": "function"
+        },
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 42,
+          "column": 98,
           "usageType": "function"
         }
       ]
@@ -423,7 +450,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-          "line": 30,
+          "line": 32,
           "column": 54,
           "usageType": "function"
         }
@@ -434,13 +461,19 @@
       "references": [
         {
           "file": "src/components/case-library/collection-card.tsx",
-          "line": 95,
+          "line": 106,
           "column": 55,
           "usageType": "function"
         },
         {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 31,
+          "column": 101,
+          "usageType": "function"
+        },
+        {
           "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-          "line": 28,
+          "line": 30,
           "column": 56,
           "usageType": "function"
         }
@@ -451,7 +484,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 30,
+          "line": 32,
           "column": 18,
           "usageType": "function"
         }
@@ -462,7 +495,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-          "line": 29,
+          "line": 31,
           "column": 16,
           "usageType": "function"
         }
@@ -473,7 +506,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-          "line": 17,
+          "line": 19,
           "column": 20,
           "usageType": "function"
         }
@@ -484,7 +517,7 @@
       "references": [
         {
           "file": "src/components/case-library/hero-stage.tsx",
-          "line": 49,
+          "line": 50,
           "column": 42,
           "usageType": "function"
         }
@@ -495,7 +528,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 29,
+          "line": 31,
           "column": 12,
           "usageType": "function"
         }
@@ -506,7 +539,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 31,
+          "line": 33,
           "column": 16,
           "usageType": "function"
         }
@@ -517,13 +550,13 @@
       "references": [
         {
           "file": "src/components/case-library/collection-card.tsx",
-          "line": 111,
+          "line": 122,
           "column": 21,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/collection-card.tsx",
-          "line": 112,
+          "line": 123,
           "column": 16,
           "usageType": "function"
         }
@@ -534,13 +567,13 @@
       "references": [
         {
           "file": "src/components/case-library/collection-carousel.tsx",
-          "line": 26,
+          "line": 30,
           "column": 46,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 137,
+          "line": 155,
           "column": 34,
           "usageType": "function"
         }
@@ -568,7 +601,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 25,
+          "line": 39,
           "column": 21,
           "usageType": "function"
         }
@@ -579,13 +612,13 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 64,
+          "line": 85,
           "column": 16,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 91,
+          "line": 112,
           "column": 14,
           "usageType": "function"
         }
@@ -596,7 +629,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 27,
+          "line": 41,
           "column": 19,
           "usageType": "function"
         }
@@ -607,13 +640,13 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 68,
+          "line": 89,
           "column": 16,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 95,
+          "line": 116,
           "column": 14,
           "usageType": "function"
         }
@@ -624,7 +657,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 38,
+          "line": 52,
           "column": 19,
           "usageType": "function"
         }
@@ -635,7 +668,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 36,
+          "line": 50,
           "column": 21,
           "usageType": "function"
         }
@@ -649,6 +682,12 @@
           "line": 25,
           "column": 88,
           "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 58,
+          "column": 76,
+          "usageType": "function"
         }
       ]
     },
@@ -658,6 +697,68 @@
         {
           "file": "src/components/case-library/case-detail-shell.tsx",
           "line": 25,
+          "column": 108,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 58,
+          "column": 96,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 213,
+          "column": 34,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.next",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 266,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.page",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 260,
+          "column": 30,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 264,
+          "column": 91,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.previous",
+      "references": [
+        {
+          "file": "src/components/case-library/showcase-library-view.tsx",
+          "line": 262,
+          "column": 52,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "common.retry",
+      "references": [
+        {
+          "file": "src/components/case-library/prompt-panel.tsx",
+          "line": 59,
           "column": 108,
           "usageType": "function"
         }
@@ -679,13 +780,13 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 49,
+          "line": 70,
           "column": 12,
           "usageType": "function"
         },
         {
           "file": "src/lib/prompt-bundle.ts",
-          "line": 32,
+          "line": 33,
           "column": 11,
           "usageType": "function"
         },
@@ -702,7 +803,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 84,
+          "line": 105,
           "column": 15,
           "usageType": "function"
         }
@@ -713,7 +814,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 109,
+          "line": 130,
           "column": 13,
           "usageType": "function"
         }
@@ -724,7 +825,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 85,
+          "line": 106,
           "column": 15,
           "usageType": "function"
         }
@@ -735,7 +836,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 110,
+          "line": 131,
           "column": 13,
           "usageType": "function"
         }
@@ -746,7 +847,7 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 58,
+          "line": 79,
           "column": 14,
           "usageType": "function"
         }
@@ -758,18 +859,18 @@
         {
           "file": "src/components/case-library/case-card.tsx",
           "line": 63,
-          "column": 76,
+          "column": 79,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/case-photo-card.tsx",
           "line": 66,
-          "column": 74,
+          "column": 77,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 55,
+          "line": 76,
           "column": 14,
           "usageType": "function"
         }
@@ -780,7 +881,7 @@
       "references": [
         {
           "file": "src/components/case-library/filter-bar.tsx",
-          "line": 55,
+          "line": 56,
           "column": 27,
           "usageType": "function"
         }
@@ -791,7 +892,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 242,
+          "line": 274,
           "column": 83,
           "usageType": "function"
         }
@@ -802,7 +903,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 241,
+          "line": 273,
           "column": 80,
           "usageType": "function"
         }
@@ -813,7 +914,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 233,
+          "line": 253,
           "column": 18,
           "usageType": "function"
         }
@@ -824,7 +925,7 @@
       "references": [
         {
           "file": "src/components/case-library/filter-bar.tsx",
-          "line": 65,
+          "line": 66,
           "column": 23,
           "usageType": "function"
         }
@@ -835,7 +936,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcasesPage.tsx",
-          "line": 14,
+          "line": 18,
           "column": 14,
           "usageType": "function"
         }
@@ -868,7 +969,7 @@
       "references": [
         {
           "file": "src/components/case-library/hero-stage.tsx",
-          "line": 56,
+          "line": 57,
           "column": 18,
           "usageType": "function"
         }
@@ -879,7 +980,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 34,
+          "line": 36,
           "column": 16,
           "usageType": "function"
         }
@@ -890,7 +991,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 35,
+          "line": 37,
           "column": 19,
           "usageType": "function"
         }
@@ -901,7 +1002,7 @@
       "references": [
         {
           "file": "src/data/showcase-collections/gpt-6-astra.ts",
-          "line": 36,
+          "line": 38,
           "column": 19,
           "usageType": "function"
         }
@@ -912,7 +1013,7 @@
       "references": [
         {
           "file": "src/components/case-library/card-live-preview.tsx",
-          "line": 139,
+          "line": 106,
           "column": 36,
           "usageType": "function"
         },
@@ -951,7 +1052,7 @@
       "references": [
         {
           "file": "src/components/case-library/card-live-preview.tsx",
-          "line": 139,
+          "line": 106,
           "column": 19,
           "usageType": "function"
         },
@@ -964,11 +1065,326 @@
       ]
     },
     {
+      "key": "modelAstra.aboutBody",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 45,
+          "column": 49,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.aboutTitle",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 44,
+          "column": 156,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.allPrompts",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 42,
+          "column": 63,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.back",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 28,
+          "column": 109,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.browse",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 34,
+          "column": 90,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.casesEmpty",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 41,
+          "column": 139,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqBuildAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 19,
+          "column": 74,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqBuildQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 19,
+          "column": 32,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqEditAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 21,
+          "column": 72,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqEditQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 21,
+          "column": 31,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqIdeasAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 23,
+          "column": 74,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqIdeasQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 23,
+          "column": 32,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqSourcesAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 22,
+          "column": 78,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqSourcesQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 22,
+          "column": 34,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqTitle",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 47,
+          "column": 26,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqUseAnswer",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 20,
+          "column": 70,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.faqUseQuestion",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 20,
+          "column": 30,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.featured",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 41,
+          "column": 68,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.heading",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 32,
+          "column": 126,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.libraryLink",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 45,
+          "column": 227,
+          "usageType": "function"
+        },
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 47,
+          "column": 109,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.metaDescription",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 17,
+          "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.metaTitle",
+      "references": [
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 16,
+          "column": 12,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.promptsEmpty",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 42,
+          "column": 136,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.tagline",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 33,
+          "column": 48,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.useBody",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 45,
+          "column": 147,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.useTitle",
+      "references": [
+        {
+          "file": "src/pages/showcase/Gpt6AstraPage.tsx",
+          "line": 45,
+          "column": 113,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "modelAstra.viewModel",
+      "references": [
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 79,
+          "column": 77,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/collection-card.tsx",
+          "line": 112,
+          "column": 84,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/collection-carousel.tsx",
+          "line": 25,
+          "column": 11,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
       "key": "nav.youcases",
       "references": [
         {
           "file": "src/components/layout/Header.tsx",
-          "line": 20,
+          "line": 21,
           "column": 98,
           "usageType": "function"
         }
@@ -979,7 +1395,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcasesPage.tsx",
-          "line": 17,
+          "line": 21,
           "column": 18,
           "usageType": "function"
         }
@@ -990,7 +1406,7 @@
       "references": [
         {
           "file": "src/pages/showcase/ShowcaseCollectionsPage.tsx",
-          "line": 25,
+          "line": 27,
           "column": 12,
           "usageType": "function"
         }
@@ -1001,7 +1417,7 @@
       "references": [
         {
           "file": "src/components/layout/Header.tsx",
-          "line": 21,
+          "line": 22,
           "column": 110,
           "usageType": "function"
         }
@@ -1012,7 +1428,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 143,
+          "line": 161,
           "column": 20,
           "usageType": "function"
         }
@@ -1153,12 +1569,6 @@
       "severity": "warning"
     },
     {
-      "key": "common.next",
-      "group": "common",
-      "source": "Next",
-      "severity": "warning"
-    },
-    {
       "key": "common.noData",
       "group": "common",
       "source": "No data found",
@@ -1177,27 +1587,9 @@
       "severity": "warning"
     },
     {
-      "key": "common.page",
-      "group": "common",
-      "source": "Page",
-      "severity": "warning"
-    },
-    {
-      "key": "common.previous",
-      "group": "common",
-      "source": "Previous",
-      "severity": "warning"
-    },
-    {
       "key": "common.profile",
       "group": "common",
       "source": "Profile",
-      "severity": "warning"
-    },
-    {
-      "key": "common.retry",
-      "group": "common",
-      "source": "Retry",
       "severity": "warning"
     },
     {

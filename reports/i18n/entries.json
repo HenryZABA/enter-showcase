@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T06:59:14.696Z",
+  "generatedAt": "2026-09-23T06:50:02.230Z",
   "fallbackLng": "en",
-  "total": 197,
+  "total": 224,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -1406,7 +1406,7 @@
         "ja": "Next",
         "ko": "Next"
       },
-      "used": false,
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1490,7 +1490,7 @@
         "ja": "Page",
         "ko": "Page"
       },
-      "used": false,
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1511,7 +1511,7 @@
         "ja": "Previous",
         "ko": "Previous"
       },
-      "used": false,
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1553,7 +1553,7 @@
         "ja": "再試行",
         "ko": "다시 시도"
       },
-      "used": false,
+      "used": true,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -2476,6 +2476,573 @@
         "it": "Questa scena sta impiegando più tempo del previsto. Puoi attendere o aprirla in una nuova scheda.",
         "ja": "シーンの表示に通常より時間がかかっています。このまま待つか、新しいタブで開いてください。",
         "ko": "장면을 불러오는 데 평소보다 오래 걸립니다. 계속 기다리거나 새 탭에서 열 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.aboutBody",
+      "group": "modelAstra",
+      "source": "From business dashboards and landing pages to 3D scenes and interactive tools, a clear prompt is a starting point for your next project in Enter. Adapt the details to your own goal and preserve the original context of multi-step instructions. Curated prompts and live examples will be added to this collection.",
+      "values": {
+        "en": "From business dashboards and landing pages to 3D scenes and interactive tools, a clear prompt is a starting point for your next project in Enter. Adapt the details to your own goal and preserve the original context of multi-step instructions. Curated prompts and live examples will be added to this collection.",
+        "zh-CN": "从业务仪表盘、落地页到 3D 场景和交互工具，清晰的提示词是你在 Enter 中开启下一个项目的起点。根据自己的目标调整细节，并保留多步骤指令的原始上下文。我们将陆续为本合集添加精选提示词与可体验案例。",
+        "zh-TW": "從業務儀表板、登陸頁到 3D 場景和互動工具，清晰的提示詞是你在 Enter 中開啟下一個專案的起點。依照自己的目標調整細節，並保留多步驟指令的原始脈絡。我們將陸續為本合集加入精選提示詞與可體驗案例。",
+        "es": "Desde paneles empresariales y páginas de destino hasta escenas 3D y herramientas interactivas, un prompt claro es el punto de partida de tu próximo proyecto en Enter. Adapta los detalles a tu objetivo y conserva el contexto de las instrucciones de varios pasos. Añadiremos prompts seleccionados y ejemplos interactivos a esta colección.",
+        "pt-BR": "De painéis de negócios e landing pages a cenas 3D e ferramentas interativas, um prompt claro é o ponto de partida para seu próximo projeto no Enter. Adapte os detalhes ao seu objetivo e preserve o contexto das instruções com várias etapas. Adicionaremos prompts selecionados e exemplos interativos a esta coleção.",
+        "pt-PT": "De painéis de negócios e páginas de destino a cenas 3D e ferramentas interativas, um prompt claro é o ponto de partida para o teu próximo projeto no Enter. Adapta os detalhes ao teu objetivo e preserva o contexto das instruções com várias etapas. Adicionaremos prompts selecionados e exemplos interativos a esta coleção.",
+        "fr": "Tableaux de bord, pages de destination, scènes 3D ou outils interactifs : un prompt clair est le point de départ de votre prochain projet dans Enter. Adaptez les détails à votre objectif et préservez le contexte des instructions en plusieurs étapes. Des prompts sélectionnés et des exemples interactifs enrichiront cette collection.",
+        "de": "Von Business-Dashboards und Landingpages bis zu 3D-Szenen und interaktiven Tools: Ein klarer Prompt ist der Ausgangspunkt für dein nächstes Projekt in Enter. Passe die Details an dein Ziel an und bewahre den Kontext mehrstufiger Anweisungen. Kuratierte Prompts und Live-Beispiele werden diese Sammlung ergänzen.",
+        "it": "Dalle dashboard aziendali e landing page alle scene 3D e agli strumenti interattivi, un prompt chiaro è il punto di partenza del tuo prossimo progetto in Enter. Adatta i dettagli al tuo obiettivo e conserva il contesto delle istruzioni in più passaggi. Aggiungeremo prompt selezionati ed esempi interattivi a questa raccolta.",
+        "ja": "業務ダッシュボードやランディングページから3Dシーン、インタラクティブツールまで。明確なプロンプトが、Enterで次のプロジェクトを始める出発点になります。目的に合わせて詳細を調整し、複数ステップの指示は元の文脈を保ちましょう。このコレクションには、厳選プロンプトと体験できる事例を順次追加します。",
+        "ko": "비즈니스 대시보드와 랜딩 페이지부터 3D 장면과 인터랙티브 도구까지, 명확한 프롬프트는 Enter에서 다음 프로젝트를 시작하는 출발점입니다. 목표에 맞게 세부 사항을 조정하고 여러 단계로 된 지침의 원래 맥락을 유지하세요. 엄선된 프롬프트와 체험 가능한 사례가 이 컬렉션에 추가될 예정입니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.aboutTitle",
+      "group": "modelAstra",
+      "source": "About GPT-6 Astra Prompts",
+      "values": {
+        "en": "About GPT-6 Astra Prompts",
+        "zh-CN": "关于 GPT-6 Astra 提示词",
+        "zh-TW": "關於 GPT-6 Astra 提示詞",
+        "es": "Acerca de los prompts de GPT-6 Astra",
+        "pt-BR": "Sobre os prompts do GPT-6 Astra",
+        "pt-PT": "Sobre os prompts do GPT-6 Astra",
+        "fr": "À propos des prompts GPT-6 Astra",
+        "de": "Über GPT-6 Astra Prompts",
+        "it": "Informazioni sui prompt GPT-6 Astra",
+        "ja": "GPT-6 Astraプロンプトについて",
+        "ko": "GPT-6 Astra 프롬프트 소개"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.allPrompts",
+      "group": "modelAstra",
+      "source": "All Prompts",
+      "values": {
+        "en": "All Prompts",
+        "zh-CN": "全部提示词",
+        "zh-TW": "全部提示詞",
+        "es": "Todos los prompts",
+        "pt-BR": "Todos os prompts",
+        "pt-PT": "Todos os prompts",
+        "fr": "Tous les prompts",
+        "de": "Alle Prompts",
+        "it": "Tutti i prompt",
+        "ja": "すべてのプロンプト",
+        "ko": "모든 프롬프트"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.back",
+      "group": "modelAstra",
+      "source": "Back to Library",
+      "values": {
+        "en": "Back to Library",
+        "zh-CN": "返回案例库",
+        "zh-TW": "返回案例庫",
+        "es": "Volver a la biblioteca",
+        "pt-BR": "Voltar à biblioteca",
+        "pt-PT": "Voltar à biblioteca",
+        "fr": "Retour à la bibliothèque",
+        "de": "Zurück zur Bibliothek",
+        "it": "Torna alla libreria",
+        "ja": "ライブラリに戻る",
+        "ko": "라이브러리로 돌아가기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.browse",
+      "group": "modelAstra",
+      "source": "Browse Examples",
+      "values": {
+        "en": "Browse Examples",
+        "zh-CN": "浏览案例",
+        "zh-TW": "瀏覽案例",
+        "es": "Ver ejemplos",
+        "pt-BR": "Explorar exemplos",
+        "pt-PT": "Explorar exemplos",
+        "fr": "Voir les exemples",
+        "de": "Beispiele ansehen",
+        "it": "Esplora gli esempi",
+        "ja": "事例を見る",
+        "ko": "사례 둘러보기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.casesEmpty",
+      "group": "modelAstra",
+      "source": "Curated app examples will appear here.",
+      "values": {
+        "en": "Curated app examples will appear here.",
+        "zh-CN": "精选应用案例将在这里展示。",
+        "zh-TW": "精選應用案例將在這裡展示。",
+        "es": "Aquí aparecerán ejemplos de apps seleccionados.",
+        "pt-BR": "Exemplos de apps selecionados aparecerão aqui.",
+        "pt-PT": "Os exemplos de apps selecionados aparecerão aqui.",
+        "fr": "Les exemples d’apps sélectionnés apparaîtront ici.",
+        "de": "Hier erscheinen kuratierte App-Beispiele.",
+        "it": "Gli esempi di app selezionati appariranno qui.",
+        "ja": "厳選されたアプリ事例をここに掲載します。",
+        "ko": "엄선된 앱 사례가 여기에 표시됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqBuildAnswer",
+      "group": "modelAstra",
+      "source": "Use prompts to describe websites, apps, dashboards, productivity tools, 3D scenes, and interactive experiences. Tailor the content, features, and visual style to your own project.",
+      "values": {
+        "en": "Use prompts to describe websites, apps, dashboards, productivity tools, 3D scenes, and interactive experiences. Tailor the content, features, and visual style to your own project.",
+        "zh-CN": "你可以用提示词描述网站、应用、仪表盘、效率工具、3D 场景及交互体验，并根据项目需要调整内容、功能和视觉风格。",
+        "zh-TW": "你可以用提示詞描述網站、應用程式、儀表板、生產力工具、3D 場景及互動體驗，並依照專案需求調整內容、功能和視覺風格。",
+        "es": "Describe sitios web, apps, paneles, herramientas de productividad, escenas 3D y experiencias interactivas. Adapta el contenido, las funciones y el estilo visual a tu proyecto.",
+        "pt-BR": "Descreva sites, apps, painéis, ferramentas de produtividade, cenas 3D e experiências interativas. Adapte o conteúdo, os recursos e o estilo visual ao seu projeto.",
+        "pt-PT": "Descreve sites, apps, painéis, ferramentas de produtividade, cenas 3D e experiências interativas. Adapta o conteúdo, as funcionalidades e o estilo visual ao teu projeto.",
+        "fr": "Décrivez des sites, apps, tableaux de bord, outils de productivité, scènes 3D et expériences interactives. Adaptez leur contenu, leurs fonctionnalités et leur style à votre projet.",
+        "de": "Beschreibe Websites, Apps, Dashboards, Produktivitätstools, 3D-Szenen und interaktive Erlebnisse. Passe Inhalte, Funktionen und Gestaltung an dein Projekt an.",
+        "it": "Descrivi siti, app, dashboard, strumenti di produttività, scene 3D ed esperienze interattive. Adatta contenuti, funzionalità e stile visivo al tuo progetto.",
+        "ja": "ウェブサイト、アプリ、ダッシュボード、業務効率化ツール、3Dシーン、インタラクティブ体験を記述できます。内容、機能、デザインを自分のプロジェクトに合わせて調整しましょう。",
+        "ko": "웹사이트, 앱, 대시보드, 생산성 도구, 3D 장면, 인터랙티브 경험을 설명할 수 있습니다. 프로젝트에 맞게 콘텐츠, 기능, 시각적 스타일을 조정하세요."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqBuildQuestion",
+      "group": "modelAstra",
+      "source": "What can I build with GPT-6 Astra prompts?",
+      "values": {
+        "en": "What can I build with GPT-6 Astra prompts?",
+        "zh-CN": "GPT-6 Astra 提示词可以用来创建什么？",
+        "zh-TW": "GPT-6 Astra 提示詞可以用來建立什麼？",
+        "es": "¿Qué puedo crear con los prompts de GPT-6 Astra?",
+        "pt-BR": "O que posso criar com os prompts do GPT-6 Astra?",
+        "pt-PT": "O que posso criar com os prompts do GPT-6 Astra?",
+        "fr": "Que puis-je créer avec les prompts GPT-6 Astra ?",
+        "de": "Was kann ich mit GPT-6 Astra Prompts bauen?",
+        "it": "Cosa posso creare con i prompt GPT-6 Astra?",
+        "ja": "GPT-6 Astraプロンプトで何を作れますか？",
+        "ko": "GPT-6 Astra 프롬프트로 무엇을 만들 수 있나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqEditAnswer",
+      "group": "modelAstra",
+      "source": "Yes. Replace the example content with your own audience, workflow, brand, data, and design preferences. Specific requirements make the first result easier to evaluate.",
+      "values": {
+        "en": "Yes. Replace the example content with your own audience, workflow, brand, data, and design preferences. Specific requirements make the first result easier to evaluate.",
+        "zh-CN": "可以。用你自己的受众、工作流程、品牌、数据和设计偏好替换示例内容。越明确的需求，越便于评估初版结果。",
+        "zh-TW": "可以。用自己的受眾、工作流程、品牌、資料和設計偏好取代範例內容。需求越明確，越便於評估初版結果。",
+        "es": "Sí. Sustituye el contenido de ejemplo por tu público, flujo de trabajo, marca, datos y preferencias de diseño. Los requisitos concretos facilitan evaluar el primer resultado.",
+        "pt-BR": "Sim. Substitua o conteúdo de exemplo pelo seu público, fluxo de trabalho, marca, dados e preferências de design. Requisitos específicos facilitam a avaliação do primeiro resultado.",
+        "pt-PT": "Sim. Substitui o conteúdo de exemplo pelo teu público, fluxo de trabalho, marca, dados e preferências de design. Requisitos específicos facilitam a avaliação do primeiro resultado.",
+        "fr": "Oui. Adaptez l’exemple à votre public, vos processus, votre marque, vos données et vos préférences visuelles. Des exigences précises facilitent l’évaluation du premier résultat.",
+        "de": "Ja. Ersetze Beispielinhalte durch deine Zielgruppe, Abläufe, Marke, Daten und Designvorlieben. Präzise Anforderungen erleichtern die Bewertung des ersten Ergebnisses.",
+        "it": "Sì. Sostituisci i contenuti di esempio con il tuo pubblico, flusso di lavoro, marchio, dati e preferenze di design. Requisiti precisi facilitano la valutazione del primo risultato.",
+        "ja": "はい。例の内容を、自分の対象ユーザー、業務フロー、ブランド、データ、デザインの好みに置き換えられます。要件が具体的だと、最初の結果を評価しやすくなります。",
+        "ko": "네. 예제 내용을 자신의 대상 사용자, 업무 흐름, 브랜드, 데이터, 디자인 선호도로 바꾸세요. 요구 사항이 구체적일수록 첫 결과를 평가하기 쉽습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqEditQuestion",
+      "group": "modelAstra",
+      "source": "Can I edit a prompt before building?",
+      "values": {
+        "en": "Can I edit a prompt before building?",
+        "zh-CN": "创建前可以修改提示词吗？",
+        "zh-TW": "建立前可以修改提示詞嗎？",
+        "es": "¿Puedo editar un prompt antes de crear?",
+        "pt-BR": "Posso editar um prompt antes de criar?",
+        "pt-PT": "Posso editar um prompt antes de criar?",
+        "fr": "Puis-je modifier un prompt avant de créer ?",
+        "de": "Kann ich einen Prompt vor dem Erstellen bearbeiten?",
+        "it": "Posso modificare un prompt prima di creare?",
+        "ja": "作成前にプロンプトを編集できますか？",
+        "ko": "만들기 전에 프롬프트를 수정할 수 있나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqIdeasAnswer",
+      "group": "modelAstra",
+      "source": "Visit Enter Library for curated cases, live previews, and reusable prompts. You can also describe your own idea on the Enter homepage.",
+      "values": {
+        "en": "Visit Enter Library for curated cases, live previews, and reusable prompts. You can also describe your own idea on the Enter homepage.",
+        "zh-CN": "前往 Enter Library 浏览精选案例、在线预览和可复用提示词。你也可以在 Enter 首页直接描述自己的想法。",
+        "zh-TW": "前往 Enter Library 瀏覽精選案例、線上預覽和可重複使用的提示詞。你也可以在 Enter 首頁直接描述自己的想法。",
+        "es": "Visita Enter Library para descubrir casos seleccionados, vistas previas interactivas y prompts reutilizables. También puedes describir tu idea en la página de inicio de Enter.",
+        "pt-BR": "Visite a Enter Library para ver casos selecionados, prévias interativas e prompts reutilizáveis. Você também pode descrever sua ideia na página inicial do Enter.",
+        "pt-PT": "Visita a Enter Library para consultar casos selecionados, pré-visualizações interativas e prompts reutilizáveis. Também podes descrever a tua ideia na página inicial do Enter.",
+        "fr": "Consultez Enter Library pour des cas sélectionnés, des aperçus interactifs et des prompts réutilisables. Vous pouvez aussi décrire votre idée sur la page d’accueil d’Enter.",
+        "de": "Besuche Enter Library für kuratierte Beispiele, Live-Vorschauen und wiederverwendbare Prompts. Du kannst deine eigene Idee auch auf der Enter-Startseite beschreiben.",
+        "it": "Visita Enter Library per casi selezionati, anteprime interattive e prompt riutilizzabili. Puoi anche descrivere la tua idea nella homepage di Enter.",
+        "ja": "Enter Libraryで厳選事例、ライブプレビュー、再利用可能なプロンプトをご覧ください。Enterのホームページで自分のアイデアを直接説明することもできます。",
+        "ko": "Enter Library에서 엄선된 사례, 라이브 미리보기, 재사용 가능한 프롬프트를 살펴보세요. Enter 홈페이지에서 자신의 아이디어를 직접 설명할 수도 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqIdeasQuestion",
+      "group": "modelAstra",
+      "source": "Where can I explore more app ideas?",
+      "values": {
+        "en": "Where can I explore more app ideas?",
+        "zh-CN": "在哪里可以探索更多应用灵感？",
+        "zh-TW": "在哪裡可以探索更多應用靈感？",
+        "es": "¿Dónde puedo encontrar más ideas de apps?",
+        "pt-BR": "Onde posso encontrar mais ideias de apps?",
+        "pt-PT": "Onde posso encontrar mais ideias de apps?",
+        "fr": "Où trouver d’autres idées d’apps ?",
+        "de": "Wo finde ich weitere App-Ideen?",
+        "it": "Dove posso trovare altre idee per app?",
+        "ja": "ほかのアプリアイデアはどこで探せますか？",
+        "ko": "더 많은 앱 아이디어는 어디에서 찾을 수 있나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqSourcesAnswer",
+      "group": "modelAstra",
+      "source": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The library is currently empty; creators can contact support@enter.pro about future listings.",
+      "values": {
+        "en": "Featured prompts will be created and tested by Enter. Externally curated prompts will include author and source attribution. The library is currently empty; creators can contact support@enter.pro about future listings.",
+        "zh-CN": "精选提示词将由 Enter 团队制作并测试。外部整理的提示词将注明作者与来源。目前提示词库为空；创作者可通过 support@enter.pro 联系我们，咨询未来收录事宜。",
+        "zh-TW": "精選提示詞將由 Enter 團隊製作並測試。外部整理的提示詞將註明作者與來源。目前提示詞庫為空；創作者可透過 support@enter.pro 聯絡我們，詢問未來收錄事宜。",
+        "es": "Enter creará y probará los prompts destacados. Los prompts externos incluirán autor y fuente. La biblioteca está vacía por ahora; los creadores pueden contactar con support@enter.pro sobre futuras publicaciones.",
+        "pt-BR": "Os prompts em destaque serão criados e testados pelo Enter. Os prompts externos incluirão autor e fonte. A biblioteca está vazia no momento; criadores podem entrar em contato pelo support@enter.pro sobre futuras publicações.",
+        "pt-PT": "Os prompts em destaque serão criados e testados pelo Enter. Os prompts externos incluirão autor e fonte. A biblioteca está vazia neste momento; os criadores podem contactar support@enter.pro sobre futuras publicações.",
+        "fr": "Les prompts sélectionnés seront créés et testés par Enter. Les prompts externes mentionneront leur auteur et leur source. La bibliothèque est actuellement vide ; les créateurs peuvent écrire à support@enter.pro au sujet de futurs ajouts.",
+        "de": "Ausgewählte Prompts werden von Enter erstellt und getestet. Externe Prompts erhalten Autoren- und Quellenangaben. Die Bibliothek ist derzeit leer; Urheber können sich zu künftigen Einträgen an support@enter.pro wenden.",
+        "it": "I prompt in evidenza saranno creati e testati da Enter. Quelli esterni riporteranno autore e fonte. La libreria è attualmente vuota; i creatori possono scrivere a support@enter.pro per le future pubblicazioni.",
+        "ja": "厳選プロンプトはEnterチームが作成・検証する予定です。外部のプロンプトには作者と出典を明記します。現在ライブラリは空です。今後の掲載についてはsupport@enter.proまでお問い合わせください。",
+        "ko": "추천 프롬프트는 Enter 팀이 제작하고 테스트할 예정입니다. 외부 프롬프트에는 작성자와 출처를 표기합니다. 현재 라이브러리는 비어 있으며, 향후 게재 문의는 support@enter.pro로 보내실 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqSourcesQuestion",
+      "group": "modelAstra",
+      "source": "How will prompts in this collection be sourced?",
+      "values": {
+        "en": "How will prompts in this collection be sourced?",
+        "zh-CN": "本合集的提示词将从哪里收集？",
+        "zh-TW": "本合集的提示詞將從哪裡收集？",
+        "es": "¿De dónde procederán los prompts de esta colección?",
+        "pt-BR": "De onde virão os prompts desta coleção?",
+        "pt-PT": "De onde virão os prompts desta coleção?",
+        "fr": "D’où viendront les prompts de cette collection ?",
+        "de": "Woher werden die Prompts dieser Sammlung stammen?",
+        "it": "Da dove proverranno i prompt della raccolta?",
+        "ja": "このコレクションのプロンプトはどこから集めますか？",
+        "ko": "이 컬렉션의 프롬프트는 어디에서 가져오나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqTitle",
+      "group": "modelAstra",
+      "source": "FAQs about GPT-6 Astra Prompts",
+      "values": {
+        "en": "FAQs about GPT-6 Astra Prompts",
+        "zh-CN": "GPT-6 Astra 提示词常见问题",
+        "zh-TW": "GPT-6 Astra 提示詞常見問題",
+        "es": "Preguntas sobre prompts de GPT-6 Astra",
+        "pt-BR": "Perguntas sobre prompts do GPT-6 Astra",
+        "pt-PT": "Perguntas sobre prompts do GPT-6 Astra",
+        "fr": "FAQ sur les prompts GPT-6 Astra",
+        "de": "Fragen zu GPT-6 Astra Prompts",
+        "it": "Domande sui prompt GPT-6 Astra",
+        "ja": "GPT-6 Astraプロンプトのよくある質問",
+        "ko": "GPT-6 Astra 프롬프트 FAQ"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqUseAnswer",
+      "group": "modelAstra",
+      "source": "Open Enter and describe your project or paste a prompt when starting a new project. Review the first result, then request changes to the layout, features, content, or interactions.",
+      "values": {
+        "en": "Open Enter and describe your project or paste a prompt when starting a new project. Review the first result, then request changes to the layout, features, content, or interactions.",
+        "zh-CN": "打开 Enter，在新建项目时描述你的需求或粘贴提示词。查看初版结果，再提出对布局、功能、内容或交互的修改要求。",
+        "zh-TW": "開啟 Enter，在新建專案時描述需求或貼上提示詞。查看初版結果，再提出對版面、功能、內容或互動的修改要求。",
+        "es": "Abre Enter y describe tu proyecto o pega un prompt al empezar uno nuevo. Revisa el primer resultado y solicita cambios en el diseño, las funciones, el contenido o las interacciones.",
+        "pt-BR": "Abra o Enter e descreva seu projeto ou cole um prompt ao iniciar um novo projeto. Analise o primeiro resultado e solicite ajustes no layout, nos recursos, no conteúdo ou nas interações.",
+        "pt-PT": "Abre o Enter e descreve o teu projeto ou cola um prompt ao iniciar um novo projeto. Analisa o primeiro resultado e pede alterações à disposição, às funcionalidades, ao conteúdo ou às interações.",
+        "fr": "Ouvrez Enter et décrivez votre projet ou collez un prompt à sa création. Examinez le premier résultat, puis demandez des ajustements de mise en page, de fonctionnalités, de contenu ou d’interactions.",
+        "de": "Öffne Enter und beschreibe beim Anlegen eines Projekts deine Idee oder füge einen Prompt ein. Prüfe das erste Ergebnis und fordere Änderungen an Layout, Funktionen, Inhalten oder Interaktionen an.",
+        "it": "Apri Enter e descrivi il tuo progetto o incolla un prompt quando ne inizi uno nuovo. Esamina il primo risultato e richiedi modifiche a layout, funzionalità, contenuti o interazioni.",
+        "ja": "Enterを開き、新規プロジェクト作成時にアイデアを説明するか、プロンプトを貼り付けます。最初の結果を確認し、レイアウト、機能、内容、操作の変更を依頼してください。",
+        "ko": "Enter를 열고 새 프로젝트를 시작할 때 요구 사항을 설명하거나 프롬프트를 붙여 넣으세요. 첫 결과를 확인한 뒤 레이아웃, 기능, 콘텐츠, 인터랙션의 변경을 요청하세요."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.faqUseQuestion",
+      "group": "modelAstra",
+      "source": "How do I use a GPT-6 Astra prompt in Enter?",
+      "values": {
+        "en": "How do I use a GPT-6 Astra prompt in Enter?",
+        "zh-CN": "如何在 Enter 中使用 GPT-6 Astra 提示词？",
+        "zh-TW": "如何在 Enter 中使用 GPT-6 Astra 提示詞？",
+        "es": "¿Cómo uso un prompt de GPT-6 Astra en Enter?",
+        "pt-BR": "Como uso um prompt do GPT-6 Astra no Enter?",
+        "pt-PT": "Como utilizo um prompt do GPT-6 Astra no Enter?",
+        "fr": "Comment utiliser un prompt GPT-6 Astra dans Enter ?",
+        "de": "Wie verwende ich einen GPT-6 Astra Prompt in Enter?",
+        "it": "Come uso un prompt GPT-6 Astra in Enter?",
+        "ja": "EnterでGPT-6 Astraプロンプトを使うには？",
+        "ko": "Enter에서 GPT-6 Astra 프롬프트를 어떻게 사용하나요?"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.featured",
+      "group": "modelAstra",
+      "source": "Featured Prompts",
+      "values": {
+        "en": "Featured Prompts",
+        "zh-CN": "精选提示词",
+        "zh-TW": "精選提示詞",
+        "es": "Prompts destacados",
+        "pt-BR": "Prompts em destaque",
+        "pt-PT": "Prompts em destaque",
+        "fr": "Prompts sélectionnés",
+        "de": "Ausgewählte Prompts",
+        "it": "Prompt in evidenza",
+        "ja": "厳選プロンプト",
+        "ko": "추천 프롬프트"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.heading",
+      "group": "modelAstra",
+      "source": "Prompts & App Examples",
+      "values": {
+        "en": "Prompts & App Examples",
+        "zh-CN": "提示词与应用案例",
+        "zh-TW": "提示詞與應用案例",
+        "es": "Prompts y ejemplos de apps",
+        "pt-BR": "Prompts e exemplos de apps",
+        "pt-PT": "Prompts e exemplos de apps",
+        "fr": "Prompts et exemples d’apps",
+        "de": "Prompts und App-Beispiele",
+        "it": "Prompt ed esempi di app",
+        "ja": "プロンプトとアプリ事例",
+        "ko": "프롬프트와 앱 사례"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.libraryLink",
+      "group": "modelAstra",
+      "source": "Explore Enter Library",
+      "values": {
+        "en": "Explore Enter Library",
+        "zh-CN": "探索 Enter Library",
+        "zh-TW": "探索 Enter Library",
+        "es": "Explorar Enter Library",
+        "pt-BR": "Explorar Enter Library",
+        "pt-PT": "Explorar Enter Library",
+        "fr": "Explorer Enter Library",
+        "de": "Enter Library entdecken",
+        "it": "Esplora Enter Library",
+        "ja": "Enter Libraryを見る",
+        "ko": "Enter Library 둘러보기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.metaDescription",
+      "group": "modelAstra",
+      "source": "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
+      "values": {
+        "en": "Discover GPT-6 Astra prompts for websites, apps, and interactive experiences in Enter. Learn how to get started; curated prompts and app examples are coming soon.",
+        "zh-CN": "了解在 Enter 中用于网站、应用及交互体验的 GPT-6 Astra 提示词。探索入门方法；精选提示词与应用案例即将推出。",
+        "zh-TW": "了解在 Enter 中用於網站、應用程式及互動體驗的 GPT-6 Astra 提示詞。探索入門方法；精選提示詞與應用案例即將推出。",
+        "es": "Descubre prompts de GPT-6 Astra para sitios web, apps y experiencias interactivas en Enter. Próximamente: prompts seleccionados y ejemplos de apps.",
+        "pt-BR": "Descubra prompts do GPT-6 Astra para sites, apps e experiências interativas no Enter. Prompts selecionados e exemplos de apps estarão disponíveis em breve.",
+        "pt-PT": "Descobre prompts do GPT-6 Astra para sites, apps e experiências interativas no Enter. Prompts selecionados e exemplos de apps estarão disponíveis em breve.",
+        "fr": "Découvrez les prompts GPT-6 Astra pour créer des sites, apps et expériences interactives dans Enter. Prompts sélectionnés et exemples bientôt disponibles.",
+        "de": "Entdecke GPT-6 Astra Prompts für Websites, Apps und interaktive Erlebnisse in Enter. Kuratierte Prompts und App-Beispiele folgen in Kürze.",
+        "it": "Scopri prompt GPT-6 Astra per siti, app ed esperienze interattive in Enter. Prompt selezionati ed esempi di app saranno disponibili a breve.",
+        "ja": "Enterでウェブサイト、アプリ、インタラクティブ体験を作るためのGPT-6 Astraプロンプトをご紹介。厳選プロンプトとアプリ事例は近日公開予定です。",
+        "ko": "Enter에서 웹사이트, 앱, 인터랙티브 경험을 위한 GPT-6 Astra 프롬프트를 알아보세요. 엄선된 프롬프트와 앱 사례가 곧 공개됩니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.metaTitle",
+      "group": "modelAstra",
+      "source": "Free GPT-6 Astra Prompts & App Examples | Enter",
+      "values": {
+        "en": "Free GPT-6 Astra Prompts & App Examples | Enter",
+        "zh-CN": "免费 GPT-6 Astra 提示词与应用案例 | Enter",
+        "zh-TW": "免費 GPT-6 Astra 提示詞與應用案例 | Enter",
+        "es": "Prompts gratuitos de GPT-6 Astra y ejemplos de apps | Enter",
+        "pt-BR": "Prompts gratuitos do GPT-6 Astra e exemplos de apps | Enter",
+        "pt-PT": "Prompts gratuitos do GPT-6 Astra e exemplos de apps | Enter",
+        "fr": "Prompts GPT-6 Astra gratuits et exemples d’apps | Enter",
+        "de": "Kostenlose GPT-6 Astra Prompts und App-Beispiele | Enter",
+        "it": "Prompt GPT-6 Astra gratuiti ed esempi di app | Enter",
+        "ja": "無料のGPT-6 Astraプロンプトとアプリ事例 | Enter",
+        "ko": "무료 GPT-6 Astra 프롬프트 및 앱 사례 | Enter"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.promptsEmpty",
+      "group": "modelAstra",
+      "source": "The prompt library is on its way.",
+      "values": {
+        "en": "The prompt library is on its way.",
+        "zh-CN": "提示词库正在准备中。",
+        "zh-TW": "提示詞庫正在準備中。",
+        "es": "La biblioteca de prompts estará disponible pronto.",
+        "pt-BR": "A biblioteca de prompts está chegando.",
+        "pt-PT": "A biblioteca de prompts está a chegar.",
+        "fr": "La bibliothèque de prompts arrive bientôt.",
+        "de": "Die Prompt-Bibliothek folgt in Kürze.",
+        "it": "La libreria di prompt è in arrivo.",
+        "ja": "プロンプトライブラリは準備中です。",
+        "ko": "프롬프트 라이브러리를 준비하고 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.tagline",
+      "group": "modelAstra",
+      "source": "Find an idea. Make it yours. Build it with Enter.",
+      "values": {
+        "en": "Find an idea. Make it yours. Build it with Enter.",
+        "zh-CN": "发现灵感，融入你的想法，用 Enter 实现。",
+        "zh-TW": "發現靈感，融入你的想法，用 Enter 實現。",
+        "es": "Encuentra una idea. Hazla tuya. Créala con Enter.",
+        "pt-BR": "Encontre uma ideia. Deixe com a sua cara. Crie com Enter.",
+        "pt-PT": "Encontra uma ideia. Torna-a tua. Cria com Enter.",
+        "fr": "Trouvez une idée. Personnalisez-la. Créez avec Enter.",
+        "de": "Finde eine Idee. Mach sie zu deiner. Baue mit Enter.",
+        "it": "Trova un’idea. Falla tua. Creala con Enter.",
+        "ja": "アイデアを見つけ、自分らしく。Enterで形に。",
+        "ko": "아이디어를 찾고, 나만의 것으로. Enter로 만들어 보세요."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.useBody",
+      "group": "modelAstra",
+      "source": "Start with an idea and describe what you want to build. Preview the result, explain the changes you want, and keep refining the same project before you publish or share it.",
+      "values": {
+        "en": "Start with an idea and describe what you want to build. Preview the result, explain the changes you want, and keep refining the same project before you publish or share it.",
+        "zh-CN": "从一个想法出发，描述你想创建的内容。预览结果，说明希望修改的地方，持续完善同一个项目，再发布或分享。",
+        "zh-TW": "從一個想法出發，描述你想建立的內容。預覽結果，說明希望修改的地方，持續完善同一個專案，再發佈或分享。",
+        "es": "Empieza con una idea y describe lo que quieres crear. Previsualiza el resultado, explica los cambios que deseas y sigue perfeccionando el mismo proyecto antes de publicarlo o compartirlo.",
+        "pt-BR": "Comece com uma ideia e descreva o que quer criar. Visualize o resultado, explique as mudanças desejadas e continue aprimorando o mesmo projeto antes de publicar ou compartilhar.",
+        "pt-PT": "Começa com uma ideia e descreve o que queres criar. Pré-visualiza o resultado, explica as alterações desejadas e continua a aperfeiçoar o mesmo projeto antes de publicar ou partilhar.",
+        "fr": "Partez d’une idée et décrivez ce que vous souhaitez créer. Prévisualisez le résultat, expliquez les modifications souhaitées et affinez le même projet avant de le publier ou de le partager.",
+        "de": "Beginne mit einer Idee und beschreibe, was du bauen möchtest. Prüfe die Vorschau, erkläre gewünschte Änderungen und verfeinere dasselbe Projekt, bevor du es veröffentlichst oder teilst.",
+        "it": "Parti da un’idea e descrivi cosa vuoi creare. Visualizza il risultato, spiega le modifiche desiderate e continua a perfezionare lo stesso progetto prima di pubblicarlo o condividerlo.",
+        "ja": "アイデアをもとに、作りたいものを説明しましょう。結果をプレビューし、変更したい点を伝え、同じプロジェクトを改善してから公開・共有できます。",
+        "ko": "아이디어에서 시작해 만들고 싶은 것을 설명하세요. 결과를 미리 보고 원하는 변경 사항을 전달하면서, 게시하거나 공유하기 전에 같은 프로젝트를 계속 개선할 수 있습니다."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.useTitle",
+      "group": "modelAstra",
+      "source": "Use GPT-6 Astra in Enter",
+      "values": {
+        "en": "Use GPT-6 Astra in Enter",
+        "zh-CN": "在 Enter 中使用 GPT-6 Astra",
+        "zh-TW": "在 Enter 中使用 GPT-6 Astra",
+        "es": "Usar GPT-6 Astra en Enter",
+        "pt-BR": "Use GPT-6 Astra no Enter",
+        "pt-PT": "Usa GPT-6 Astra no Enter",
+        "fr": "Utiliser GPT-6 Astra dans Enter",
+        "de": "GPT-6 Astra in Enter nutzen",
+        "it": "Usa GPT-6 Astra in Enter",
+        "ja": "EnterでGPT-6 Astraを使う",
+        "ko": "Enter에서 GPT-6 Astra 사용하기"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "modelAstra.viewModel",
+      "group": "modelAstra",
+      "source": "Explore the model",
+      "values": {
+        "en": "Explore the model",
+        "zh-CN": "了解模型",
+        "zh-TW": "了解模型",
+        "es": "Explorar el modelo",
+        "pt-BR": "Conhecer o modelo",
+        "pt-PT": "Conhecer o modelo",
+        "fr": "Découvrir le modèle",
+        "de": "Modell entdecken",
+        "it": "Scopri il modello",
+        "ja": "モデルを詳しく見る",
+        "ko": "모델 알아보기"
       },
       "used": true,
       "missingLanguages": [],

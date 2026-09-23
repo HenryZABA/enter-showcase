@@ -21,7 +21,9 @@ export function CollectionCarousel({ paused = false }: { paused?: boolean }) {
     const query = new URLSearchParams({ hl: language });
     return {
       ...item,
-      subtitle: t("collections.caseCount", { lng: language, value: collection ? getShowcaseCollectionCases(collection).length : 0 }),
+      subtitle: collection?.modelPagePath
+        ? t("modelAstra.viewModel", { lng: language })
+        : t("collections.caseCount", { lng: language, value: collection ? getShowcaseCollectionCases(collection).length : 0 }),
       href: item.href ? `${appHref(item.href)}?${query}` : undefined,
     };
   }), [appHref, t, language]);
