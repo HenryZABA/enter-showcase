@@ -94,9 +94,7 @@ html.showcase-active,
   .library-prompt-section .model-trending-content { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 12px; padding: 10px 16px 12px; }
   .library-prompt-section .model-original-badge { display: none; }
   .library-prompt-section .model-trending-source { grid-column: 1 / -1; font-size: 11px; line-height: 1.6; }
-  .library-prompt-section .model-trending-disclosure { grid-column: 1; grid-row: 2; margin: 0; border: 0; }
-  .library-prompt-section .model-trending-disclosure summary { min-height: 36px; padding: 6px 0; font-size: 11px; }
-  .library-prompt-section .model-trending-disclosure[open] { grid-column: 1 / -1; grid-row: 3; }
+  .library-prompt-section .model-trending-read { grid-column: 1; grid-row: 2; min-height: 36px; padding: 6px 0; font-size: 11px; }
   .library-prompt-section .model-trending-copy { grid-column: 2; grid-row: 2; width: auto; min-height: 36px; gap: 6px; padding: 7px 12px; font-size: 11px; }
   @media (min-width: 640px) and (max-width: 1023px) { .library-prompt-section .model-trending-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   #prompts-heading, #cases-heading { scroll-margin-top: 100px; }
@@ -209,6 +207,7 @@ html.showcase-active,
   .prism-button-soft { --glass-blur: 14px; --glass-inner-blur: 6px; --glass-inner-opacity: 0.5; }
 
   #cases[data-flip-front="true"] { z-index: 45; }
+  #prompts[data-flip-front="true"] { position: relative; z-index: 45; }
   [data-flip-source="true"] {
     position: relative;
     z-index: 49;
