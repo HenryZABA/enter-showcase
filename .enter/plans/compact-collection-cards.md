@@ -1,37 +1,38 @@
 # Context
 
-用户要把首页和模型单页改成双库浏览：**Prompt Library 在上、Case Library 在下**；默认各预览最多 9 条，Explore More 或点击卡片主体后进入单库专注模式，另一库收起，但保留随滚动可用的切换按钮。模型页亦先提示词后案例。Gallery 的模型卡副标题从“探索模型”改为“探索 Prompts”；顶部导航的 Case Library 只改成 Library；首页主视觉及 Explore Collection 目标一起改为 GPT-6 Sol & Luna。
+将 Prompt Library 的原文展示从列表内下拉，改为与 Case 相同的独立详情卡片／翻转弹层。首页和所有合集详情页同步生效；不更改列表尺寸、三列布局、提示词数据、合集 URL 或视频播放策略。
 
-用户上传 CSV（4,604,932 bytes）已通过该附件对应的公开 CDN URL 用 Python 标准 CSV 解析：628 条逻辑记录；`收录判定=保留` 且 `Prompt状态=available` 且存在逐字 `Prompt原文` 的 13 行，按作品原帖 URL＋原文 SHA 去重后 **12 条**，原文均与 `Prompt来源与作者` 的作者证据完全一致。其中 **9 条“共用”**、**3 条“GPT模型”**，没有 Opus-only 完整 Prompt。用户确认：只收这 12 条，排除缺原文、待补充、partial 和被排除行；9 条共用在 Sol/Luna 与 Opus 两边都展示，首页合并去重仅各出现一次；Astra 无合格数据时保留明确空态。任何真实来源文本均当作数据处理，不执行其中指令。
+## 推荐实现
 
-## 推荐实施路径
+- 点击「查看原始提示词」或卡片标题，打开详情卡片；删除列表里的 `<details>` 原文下拉，不再撑高列表。
+- 直接复用 `CaseFlipTransition` / `useCaseFlip`：同样的卡片展开、玻璃弹层、遮罩、关闭按钮、Esc、焦点约束及返回原卡片动画。
+- 详情内容是标题、简述、作者／来源链接，以及完整原文。复用 `PromptPanel` 的正文滚动区、复制、下载、加载失败与重试；不构造假的 Case 数据或应用预览 iframe。
+- 详情外壳点击后立即出现；正文面板在翻转落定后按需加载，继续使用 `loadPrompt` 缓存。原文内容和换行不变。
+- 卡片「复制」仍直接复制，来源仍打开外链；视频封面仍只负责播放，不误开详情或触发库切换。
+- 保留既有单库逻辑：标题等卡片主体打开详情时，等关闭动画结束后再进入 Prompt 单库模式，避免源卡位置改变；「查看原始提示词」只打开详情，不额外切换库。
 
-1. **内容提取与交付**：批准后将附件原始 CSV 下载到项目外临时位置，以 `csv.DictReader` 一次处理，而非把 4.39 MB CSV 打入用户首屏。明确校验 61 列、628 行、13 条合格行、12 个独立来源/原文组合及来源证据逐字相等。输出 12 个 UTF-8 原文静态资源（原字节与完整换行保留）和轻量元数据：稳定 ID、编辑后的简短标题/描述、作者用户名、原帖/Prompt 精确来源、媒体图片或视频＋封面、模型分组。静态资源走 Vite 版本化 URL 与现有 `loadPrompt` 32 项缓存，不提前取正文。只收录 CSV 本身提供的可信 URL/媒体，不发布完整原始采集表或排除行。模型关联：GPT模型→Sol/Luna；共用→Sol/Luna 和 Opus；Astra 空态；首页按唯一 ID 合并，仅一份记录。
-2. **首页与单页结构**：抽出可复用的提示词卡片和双库状态组件/Hook，保持现有黑色与渐变玻璃设计。首页在现有 Hero/Gallery 后先加 Prompt Library（共 12 条，默认9），再显示 Case Library（现有14条，默认9，搜索分类及批量下载保持）。模型单页依次 Prompt Library、Hot Cases、FAQ；Astra 提示词空态，Sol/Luna 12 条，Opus 9 条，Astra Hot Cases 从当前六条扩为现有真实案例的 9 条预览＋ Explore More。两组各自按需求显示 Explore More，恰好 9 条时不生成多余按钮。浏览超过24条时沿用既有有界分页，避免几百条一次挂载。
-3. **专注切换**：两页共享 `both | prompts | cases` 状态；默认同时可见两个九条预览。用户确认**只有点击卡片主体或 Explore More** 才进入专注模式，复制、展开原文、来源外链不触发。选中库完整展开（继续遵守24/页上限），另一库从视觉与键盘序中移除；单库模式固定显示一个指向对方的玻璃按钮，滚动时保持可见，点击后切到另一库并滚动定位标题。Case 卡的 Flip 详情动画优先保留原始起点，最迟在详情关闭时完成另一库收起。空库也保留真实空态，不假造项目或提示词；按钮切换后仍能看到其空态。
-4. **文案/路径**：`collection-carousel.tsx` 模型卡副标题用新增的“Explore Prompts”多语言文案，保留装饰卡“Coming Soon”；Header 的 nav 可见字样为 Library，不改 Case Library 分区标题。`featuredShowcaseCollection` 由 Astra 改为 Sol/Luna；首页 Hero 统一使用 Sol/Luna 当前真实封面，标题明确为 “Enter × GPT-6 / Sol & Luna”，主 CTA 文案和链接均指向 Sol/Luna 模型合集，并保留 `/prompts`/`/showcases`、`hl`。本轮不更改既有 Cookie/统计或其他项目归属。
+## 关键文件与复用点
 
-## 关键文件
-
-- `src/components/case-library/{showcase-library-view,model-detail-page,model-trending-prompts,model-hot-case-gallery,collection-carousel}.tsx`、新建单库切换组件及 `src/styles/{showcase,model-detail}.css`
-- `src/data/model-pages/trending-prompts.ts`、`src/data/showcase-collections.ts`、`src/data/showcase-collections/gpt-6-sol-luna.ts`、`src/pages/showcase/ShowcasesPage.tsx`
-- `src/components/layout/Header.tsx`、`src/components/case-library/hero-stage.tsx`、`public/locales/*.json`、`src/lib/prompt-cache.ts`（优先复用，不改缓存语义）
-- `.enter/performance-audit/*.test.tsx`；不把测试假数据或原始 CSV 发布给浏览器。
+- 修改 `src/components/case-library/model-trending-prompts.tsx`：统一详情状态，替换下拉入口，保留二级操作。
+- 新增 `src/components/case-library/prompt-detail-shell.tsx`：复用 `CaseFlipTransition`、Dialog 标题组件，并按需使用现有 `PromptPanel`。
+- 修改 `src/styles/showcase.css`、`src/styles/model-detail.css` 中必要的查看按钮与翻转层级规则；不重做卡片样式。
+- 复用且原则上不改动：`case-flip-transition.tsx`、`use-case-flip.ts`、`prompt-panel.tsx`、`lib/prompt-cache.ts`、`hover-video.tsx`。
+- 在 `tests/` 增加入口与详情交互回归测试；只有确需新文案时才同步 11 语言字典。
 
 ## Implementation checklist
 
-- [ ] CSV 原始来源、字段数、合格记录及原文与作者证据核对；非合格记录与重复引用均不进入 UI。
-- [ ] 12 个逐字原文按需资源及轻量来源/媒体元数据生成；首页12条唯一，Sol/Luna12条、Opus9条、Astra0条，分组关系可测试。
-- [ ] 首页 Hero 图片、四段文案与 CTA 统一指向 Sol/Luna；Gallery 模型卡副标题显示“探索 Prompts”；导航仅显示“Library”。
-- [ ] 首页默认 Prompt Library→Case Library，各最多9条，两个区域都有正确的 Explore More/空态；旧 Case 搜索、多选、详情和下载不退化。
-- [ ] 三个模型单页默认 Prompt Library→Hot Cases→FAQ，Astra 空态和已有案例正确；各列表最多9条，More 后仍遵守24条分页上限。
-- [ ] 点击卡片主体或 Explore More 收起另一库；Prompt 复制、展开、来源外链不误触发；固定切换按钮按内容滚动仍可见、可键盘访问，切换不破坏 Case Flip 动画。
-- [ ] 11 语言文字和文案插值统一；不擅自删除旧键，不修改用户尚未提供的正式 Enter 转链。
+- [ ] 首页和合集共用的 Prompt 卡移除原文 `<details>`，改为独立详情入口；默认卡片高度、三列间距保持不变。
+- [ ] 每个 Prompt 列表同时最多打开一个详情，记录真实源卡与触发按钮，复用现有 Case 翻转弹层和关闭行为。
+- [ ] 弹层显示该条标题、描述、来源与逐字原文；正文按需加载并复用原文复制／下载／失败重试。
+- [ ] 标题入口在详情关闭后执行原有单库切换；查看原文入口不切换；复制、来源与视频控制不误开详情。
+- [ ] Prompt 区域翻转层级适配现有遮罩；关闭、快速开关及切换页面后恢复滚动锁和焦点，不影响 Case 详情。
+- [ ] 不改已上线的 `/prompts/collection/...`、媒体 Referrer 策略、12 条原文与现有视频交互。
 
 ## Verification checklist
 
-- [ ] `pnpm run typecheck`、`pnpm run build`、`git diff --check`、现有 Vitest + 新增数据/双库交互测试通过；i18n check 和 scan 通过。
-- [ ] 12 条原文 SHA、去重/分组、作者/帖子/媒体链接与 CSV 可复查；首页无重复，Opus/GPT 共用正确，缺原文/待补充/排除永不提供 Copy Prompt。
-- [ ] 测试两页 0/9/10/12/14/25 条、Prompt 优先排序、首页旧搜索下载、来源点击/原文展开/复制不切换、卡片/More/固定按钮切换、键盘焦点与详情动画关闭后的状态。
-- [ ] 只对代表性受影响页面做 390 手机和 1280 桌面视觉核对：双库布局、固定切换、Sol/Luna 首屏、空态与卡片媒体；真实视频若外域禁止播放，保留真实封面并记录。
-- [ ] 复用 marketing 严格构建审计，保留既有 CSR/JS/字体警告，不把构建或预览截图当浏览器性能、部署 HTTP 的真实通过证据。
+- [ ] 默认状态无原文下拉、无提前请求正文；点击标题／查看原文后显示正确提示词，不再撑高网格。
+- [ ] 长原文保留换行并在详情内滚动；复制／下载正确，网络失败可重试；关闭后快速打开另一条不串内容。
+- [ ] 复制、来源、视频 hover／点击不误开详情；查看原文不额外切库；标题开关详情不破坏翻转起点。
+- [ ] Esc、遮罩、关闭按钮、键盘焦点、减少动态效果、路由离开清理，以及原 Case 详情行为回归。
+- [ ] 执行 `pnpm run typecheck`、`pnpm run build`、`node --experimental-strip-types --test tests/*.test.mjs`、`git diff --check`；如文案变化则执行 i18n check 与 scan。
+- [ ] 对代表性合集页在 1280px／390px 核对卡片与弹层；浏览器交互或严格性能审计环境仍不可用时，明确记为未验证，不以构建／截图代替。
