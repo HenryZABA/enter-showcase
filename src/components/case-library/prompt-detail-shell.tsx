@@ -8,6 +8,7 @@ import type { TrendingPrompt } from "@/data/model-pages/trending-prompts";
 import type { CaseFlipOrigin } from "@/hooks/use-case-flip";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { CaseFlipTransition } from "./case-flip-transition";
+import { DownloadPromptButton } from "./download-prompt-button";
 
 type PanelProps = { promptUrl: string; promptKind: "original"; title: string };
 let pending: Promise<typeof import("./prompt-panel")> | undefined;
@@ -47,7 +48,10 @@ export function PromptDetailShell({ entry, origin, onClosed }: { entry: Trending
         <DialogTitle className="font-display text-2xl font-medium">{title}</DialogTitle>
         <DialogDescription className="text-base leading-relaxed text-muted-foreground">{pickLocalized(entry.description, language)}</DialogDescription>
       </DialogHeader>
-      <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>
+      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
+        <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>
+        <DownloadPromptButton title={title} promptUrl={entry.promptUrl} promptKind="original" />
+      </div>
       {settled && <PromptDetailBody entry={entry} title={title} />}
     </>}
   </CaseFlipTransition>;

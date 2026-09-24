@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T05:02:09.087Z",
+  "generatedAt": "2026-09-24T09:23:15.824Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -13,6 +13,7 @@
     "src/components/case-library/collection-card.tsx",
     "src/components/case-library/collection-carousel.tsx",
     "src/components/case-library/detail-loader.ts",
+    "src/components/case-library/download-prompt-button.tsx",
     "src/components/case-library/filter-bar.tsx",
     "src/components/case-library/hero-stage.tsx",
     "src/components/case-library/hover-video.tsx",
@@ -26,6 +27,7 @@
     "src/components/case-library/model-prompt-composer.tsx",
     "src/components/case-library/model-trending-prompts.tsx",
     "src/components/case-library/preview-budget.tsx",
+    "src/components/case-library/prompt-detail-shell.tsx",
     "src/components/case-library/prompt-panel.tsx",
     "src/components/case-library/showcase-library-view.tsx",
     "src/components/case-library/viewport-video.tsx",
@@ -85,7 +87,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 208,
+          "line": 210,
           "column": 20,
           "usageType": "function"
         }
@@ -180,7 +182,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 110,
+          "line": 112,
           "column": 21,
           "usageType": "function"
         }
@@ -191,7 +193,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 224,
+          "line": 226,
           "column": 56,
           "usageType": "function"
         }
@@ -202,7 +204,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 112,
+          "line": 114,
           "column": 19,
           "usageType": "function"
         }
@@ -253,7 +255,7 @@
         },
         {
           "file": "src/components/case-library/case-detail-dialog.tsx",
-          "line": 15,
+          "line": 16,
           "column": 93,
           "usageType": "function"
         }
@@ -270,7 +272,7 @@
         },
         {
           "file": "src/components/case-library/case-detail-dialog.tsx",
-          "line": 17,
+          "line": 18,
           "column": 269,
           "usageType": "function"
         }
@@ -287,8 +289,8 @@
         },
         {
           "file": "src/components/case-library/case-detail-dialog.tsx",
-          "line": 18,
-          "column": 58,
+          "line": 21,
+          "column": 71,
           "usageType": "function"
         }
       ]
@@ -407,7 +409,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 150,
+          "line": 152,
           "column": 16,
           "usageType": "function"
         }
@@ -479,7 +481,7 @@
       "references": [
         {
           "file": "src/components/case-library/hero-stage.tsx",
-          "line": 50,
+          "line": 51,
           "column": 42,
           "usageType": "function"
         }
@@ -579,7 +581,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 158,
+          "line": 160,
           "column": 34,
           "usageType": "function"
         }
@@ -615,73 +617,11 @@
           "line": 38,
           "column": 73,
           "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "common.copied",
-      "references": [
-        {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 38,
-          "column": 21,
-          "usageType": "function"
         },
         {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 39,
-          "column": 21,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "common.copy",
-      "references": [
-        {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 85,
-          "column": 16,
-          "usageType": "function"
-        },
-        {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 112,
-          "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "common.copyFailed",
-      "references": [
-        {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 40,
-          "column": 19,
-          "usageType": "function"
-        },
-        {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 41,
-          "column": 19,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "common.download",
-      "references": [
-        {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 89,
-          "column": 16,
-          "usageType": "function"
-        },
-        {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 116,
-          "column": 14,
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 44,
+          "column": 78,
           "usageType": "function"
         }
       ]
@@ -690,8 +630,8 @@
       "key": "common.downloadFailed",
       "references": [
         {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 52,
+          "file": "src/components/case-library/download-prompt-button.tsx",
+          "line": 41,
           "column": 19,
           "usageType": "function"
         }
@@ -701,8 +641,8 @@
       "key": "common.downloadStarted",
       "references": [
         {
-          "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 50,
+          "file": "src/components/case-library/download-prompt-button.tsx",
+          "line": 38,
           "column": 21,
           "usageType": "function"
         }
@@ -718,8 +658,14 @@
           "usageType": "function"
         },
         {
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 35,
+          "column": 74,
+          "usageType": "function"
+        },
+        {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 58,
+          "line": 32,
           "column": 76,
           "usageType": "function"
         }
@@ -741,20 +687,20 @@
           "usageType": "function"
         },
         {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 64,
-          "column": 219,
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 35,
+          "column": 94,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 58,
+          "line": 32,
           "column": 96,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 224,
+          "line": 226,
           "column": 34,
           "usageType": "function"
         }
@@ -803,14 +749,14 @@
       "key": "common.retry",
       "references": [
         {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 64,
-          "column": 189,
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 36,
+          "column": 106,
           "usageType": "function"
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 59,
+          "line": 33,
           "column": 108,
           "usageType": "function"
         }
@@ -832,8 +778,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 70,
-          "column": 12,
+          "line": 37,
+          "column": 125,
           "usageType": "function"
         },
         {
@@ -855,8 +801,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 105,
-          "column": 15,
+          "line": 45,
+          "column": 36,
           "usageType": "function"
         }
       ]
@@ -866,8 +812,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 130,
-          "column": 13,
+          "line": 50,
+          "column": 79,
           "usageType": "function"
         }
       ]
@@ -877,8 +823,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 106,
-          "column": 15,
+          "line": 45,
+          "column": 70,
           "usageType": "function"
         }
       ]
@@ -888,8 +834,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 131,
-          "column": 13,
+          "line": 50,
+          "column": 112,
           "usageType": "function"
         }
       ]
@@ -899,8 +845,8 @@
       "references": [
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 79,
-          "column": 14,
+          "line": 40,
+          "column": 60,
           "usageType": "function"
         }
       ]
@@ -922,8 +868,8 @@
         },
         {
           "file": "src/components/case-library/prompt-panel.tsx",
-          "line": 76,
-          "column": 14,
+          "line": 39,
+          "column": 146,
           "usageType": "function"
         }
       ]
@@ -944,7 +890,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 263,
+          "line": 265,
           "column": 83,
           "usageType": "function"
         }
@@ -955,7 +901,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 262,
+          "line": 264,
           "column": 80,
           "usageType": "function"
         }
@@ -1021,7 +967,7 @@
       "references": [
         {
           "file": "src/components/case-library/hero-stage.tsx",
-          "line": 57,
+          "line": 58,
           "column": 18,
           "usageType": "function"
         }
@@ -1065,7 +1011,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 48,
+          "line": 23,
           "column": 24,
           "usageType": "function"
         }
@@ -1082,7 +1028,7 @@
         },
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 175,
+          "line": 177,
           "column": 149,
           "usageType": "function"
         }
@@ -1191,29 +1137,6 @@
       ]
     },
     {
-      "key": "modelAstra.composerHint",
-      "references": [
-        {
-          "file": "src/data/model-pages/claude-opus-5-5.ts",
-          "line": 28,
-          "column": 51,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 29,
-          "column": 51,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 29,
-          "column": 51,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelAstra.composerLabel",
       "references": [
         {
@@ -1232,75 +1155,6 @@
           "file": "src/data/model-pages/gpt-6-sol-luna.ts",
           "line": 29,
           "column": 14,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.copyError",
-      "references": [
-        {
-          "file": "src/data/model-pages/claude-opus-5-5.ts",
-          "line": 28,
-          "column": 162,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 29,
-          "column": 162,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 29,
-          "column": 162,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.copyOpen",
-      "references": [
-        {
-          "file": "src/data/model-pages/claude-opus-5-5.ts",
-          "line": 28,
-          "column": 91,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 29,
-          "column": 91,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 29,
-          "column": 91,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelAstra.copying",
-      "references": [
-        {
-          "file": "src/data/model-pages/claude-opus-5-5.ts",
-          "line": 28,
-          "column": 126,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-astra.ts",
-          "line": 29,
-          "column": 126,
-          "usageType": "function"
-        },
-        {
-          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
-          "line": 29,
-          "column": 126,
           "usageType": "function"
         }
       ]
@@ -1533,28 +1387,6 @@
       ]
     },
     {
-      "key": "modelPages.characters",
-      "references": [
-        {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 63,
-          "column": 130,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
-      "key": "modelPages.copyPrompt",
-      "references": [
-        {
-          "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 68,
-          "column": 10,
-          "usageType": "function"
-        }
-      ]
-    },
-    {
       "key": "modelPages.hotCases",
       "references": [
         {
@@ -1599,8 +1431,14 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 58,
+          "line": 33,
           "column": 47,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 47,
+          "column": 97,
           "usageType": "function"
         }
       ]
@@ -1610,7 +1448,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 76,
+          "line": 49,
           "column": 154,
           "usageType": "function"
         }
@@ -1621,8 +1459,8 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 63,
-          "column": 64,
+          "line": 35,
+          "column": 159,
           "usageType": "function"
         }
       ]
@@ -1632,8 +1470,14 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 59,
+          "line": 34,
           "column": 45,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/prompt-detail-shell.tsx",
+          "line": 52,
+          "column": 47,
           "usageType": "function"
         }
       ]
@@ -1850,6 +1694,40 @@
       ]
     },
     {
+      "key": "prompt.downloadHint",
+      "references": [
+        {
+          "file": "src/data/model-pages/claude-opus-5-5.ts",
+          "line": 28,
+          "column": 51,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-astra.ts",
+          "line": 29,
+          "column": 51,
+          "usageType": "function"
+        },
+        {
+          "file": "src/data/model-pages/gpt-6-sol-luna.ts",
+          "line": 29,
+          "column": 51,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "prompt.downloadMd",
+      "references": [
+        {
+          "file": "src/components/case-library/download-prompt-button.tsx",
+          "line": 47,
+          "column": 152,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
       "key": "showcase.bundleTitle",
       "references": [
         {
@@ -1939,7 +1817,7 @@
         {
           "file": "src/components/layout/Header.tsx",
           "line": 22,
-          "column": 110,
+          "column": 109,
           "usageType": "function"
         }
       ]
@@ -1949,7 +1827,7 @@
       "references": [
         {
           "file": "src/components/case-library/showcase-library-view.tsx",
-          "line": 164,
+          "line": 166,
           "column": 20,
           "usageType": "function"
         }
@@ -2078,9 +1956,33 @@
       "severity": "warning"
     },
     {
+      "key": "common.copied",
+      "group": "common",
+      "source": "Prompt copied to clipboard",
+      "severity": "warning"
+    },
+    {
+      "key": "common.copy",
+      "group": "common",
+      "source": "Copy",
+      "severity": "warning"
+    },
+    {
+      "key": "common.copyFailed",
+      "group": "common",
+      "source": "Could not copy automatically. Select the text and copy it manually.",
+      "severity": "warning"
+    },
+    {
       "key": "common.delete",
       "group": "common",
       "source": "Delete",
+      "severity": "warning"
+    },
+    {
+      "key": "common.download",
+      "group": "common",
+      "source": "Download .md",
       "severity": "warning"
     },
     {
@@ -2378,6 +2280,30 @@
       "severity": "warning"
     },
     {
+      "key": "modelAstra.composerHint",
+      "group": "modelAstra",
+      "source": "Copy your prompt, then paste it in Enter.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.copyError",
+      "group": "modelAstra",
+      "source": "Could not copy the prompt. Allow clipboard access and try again. Your text is still here.",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.copyOpen",
+      "group": "modelAstra",
+      "source": "Copy and open Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "modelAstra.copying",
+      "group": "modelAstra",
+      "source": "Copying…",
+      "severity": "warning"
+    },
+    {
       "key": "modelAstra.featured",
       "group": "modelAstra",
       "source": "Featured Prompts",
@@ -2477,6 +2403,18 @@
       "key": "modelOpus.useTitle",
       "group": "modelOpus",
       "source": "Create your next project in Enter",
+      "severity": "warning"
+    },
+    {
+      "key": "modelPages.characters",
+      "group": "modelPages",
+      "source": "characters",
+      "severity": "warning"
+    },
+    {
+      "key": "modelPages.copyPrompt",
+      "group": "modelPages",
+      "source": "Copy Prompt",
       "severity": "warning"
     },
     {

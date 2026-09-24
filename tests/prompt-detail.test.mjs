@@ -10,21 +10,21 @@ const compile = code => ts.transpileModule(code, { compilerOptions: { jsx: ts.Js
 const flatten = element => React.isValidElement(element) ? [element, ...React.Children.toArray(element.props.children).flatMap(flatten)] : [];
 const entry = { id: "test", title: { en: "Original" }, description: { en: "Description" }, promptUrl: "/_prompts/test.txt", sourceName: "Author", sourceUrl: "https://example.test/source", kind: "original", media: { type: "video", src: "video.mp4", poster: "poster.webp" } };
 
-function renderCard(copyOk = true) {
+function renderCard() {
   const sourceElement = {};
   const opened = [], requests = [], copied = [], navigated = [];
   const dependencies = {
     React, useTranslation: () => ({ t: key => key }), useCurrentLanguage: () => "en",
     useRef: () => ({ current: sourceElement }), useState: value => [value, () => {}],
     loadPrompt: async url => { requests.push(url); return "exact\noriginal"; },
-    copyText: async text => { copied.push(text); return copyOk; }, toast: { success() {}, error() {} },
+    DownloadPromptButton: () => null,
     openEnter: () => navigated.push("https://enter.converge.ai/s/B1GyrW"),
     pickLocalized: value => value.en, HoverVideo: () => null,
     ArrowUpRight: () => null, ChevronRight: () => null, LoaderCircle: () => null, Copy: () => null,
   };
   const Card = new Function(...Object.keys(dependencies), `${compile(cardFunction)}; return TrendingPromptCard;`)(...Object.values(dependencies));
   const nodes = flatten(Card({ entry, onOpen: detail => opened.push(detail) }));
-  return { nodes, opened, requests, copied, navigated, sourceElement, HoverVideo: dependencies.HoverVideo };
+  return { nodes, opened, requests, copied, navigated, sourceElement, HoverVideo: dependencies.HoverVideo, DownloadPromptButton: dependencies.DownloadPromptButton };
 }
 
 test("prompt list has no inline disclosure or eager body request", () => {
@@ -47,22 +47,16 @@ test("title opens detail and defers primary library focus until after close", ()
   assert.equal(view.opened[0].origin.trigger, trigger);
 });
 
-test("copy remains direct and video/source controls do not receive detail open handlers", async () => {
+test("card uses the shared MD download without giving secondary controls detail-open handlers", () => {
   const view = renderCard();
-  view.nodes.find(node => node.props.className?.includes("model-trending-copy")).props.onClick();
-  await new Promise(resolve => setImmediate(resolve));
-  assert.deepEqual(view.copied, ["exact\noriginal"]);
-  assert.deepEqual(view.navigated, ["https://enter.converge.ai/s/B1GyrW"]);
+  const download = view.nodes.find(node => node.type === view.DownloadPromptButton);
+  assert.equal(download.props.promptUrl, entry.promptUrl);
+  assert.equal(download.props.promptKind, "original");
+  assert.equal(download.props.appearance, "card");
+  assert.equal(download.props.onOpen, undefined);
   assert.equal(view.opened.length, 0);
   assert.equal(view.nodes.find(node => node.type === view.HoverVideo).props.onClick, undefined);
   assert.equal(view.nodes.find(node => node.type === "a").props.onClick, undefined);
-});
-
-test("failed list-card copy does not open Enter", async () => {
-  const view = renderCard(false);
-  view.nodes.find(node => node.props.className?.includes("model-trending-copy")).props.onClick();
-  await new Promise(resolve => setImmediate(resolve));
-  assert.equal(view.navigated.length, 0);
 });
 
 test("only a primary-entry detail close activates the other-library collapse", () => {

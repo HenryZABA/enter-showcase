@@ -97,7 +97,7 @@
   "bundle.docTitle": "Enter × GPT-6 Astra — 사례 라이브러리 · 사용 가능한 프롬프트",
   "showcase.bundleTitle": "Enter Library — 사례 라이브러리 · 사용 가능한 프롬프트",
   "bundle.done": "프롬프트 묶음을 다운로드했습니다",
-  "bundle.downloadSelectedCount": "선택 항목 다운로드 ({{value}})",
+  "bundle.downloadSelectedCount": "MD 파일 다운로드 ({{value}})",
   "bundle.failed": "이 브라우저에서 프롬프트 묶음을 다운로드할 수 없습니다.",
   "bundle.successBody": "선택한 프롬프트 {{value}}개가 준비되었습니다. Enter에서 제작해 보세요.",
   "bundle.successTitle": "프롬프트를 다운로드했습니다",
@@ -303,5 +303,7 @@
   "video.label": "동영상 · 재생",
   "video.play": "동영상 재생",
   "video.pause": "동영상 일시정지",
-  "video.retry": "재생 실패 · 재시도"
+  "video.retry": "재생 실패 · 재시도",
+  "prompt.downloadMd": "MD 파일 다운로드",
+  "prompt.downloadHint": "Markdown 파일을 다운로드한 후 Enter에서 계속하세요."
 }

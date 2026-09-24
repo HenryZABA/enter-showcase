@@ -26,7 +26,7 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     faqTitle: t("modelSolLuna.faqTitle"),
     libraryLink: t("modelAstra.libraryLink"),
     composer: {
-      label: t("modelAstra.composerLabel"), hint: t("modelAstra.composerHint"), copyOpen: t("modelAstra.copyOpen"), copying: t("modelAstra.copying"), copyError: t("modelAstra.copyError"),
+      label: t("modelAstra.composerLabel"), hint: t("prompt.downloadHint"),
     },
     faqs: [
       { id: "build", question: t("modelSolLuna.faqBuildQuestion"), answer: t("modelSolLuna.faqBuildAnswer") },

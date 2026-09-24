@@ -15,9 +15,6 @@ export type ModelPageModel = {
 export type ModelComposerCopy = {
   label: string;
   hint: string;
-  copyOpen: string;
-  copying: string;
-  copyError: string;
 };
 
 export type ModelPageCopy = {

@@ -97,7 +97,7 @@
   "bundle.docTitle": "Enter × GPT-6 Astra — 事例ライブラリ · 利用可能なプロンプト",
   "showcase.bundleTitle": "Enter Library — 事例ライブラリ · 利用可能なプロンプト",
   "bundle.done": "プロンプト集をダウンロードしました",
-  "bundle.downloadSelectedCount": "選択項目をダウンロード（{{value}}）",
+  "bundle.downloadSelectedCount": "MD ファイルをダウンロード ({{value}})",
   "bundle.failed": "このブラウザではプロンプト集をダウンロードできませんでした。",
   "bundle.successBody": "選択した{{value}}件のプロンプトを利用できます。Enterで制作を試してみましょう。",
   "bundle.successTitle": "プロンプトをダウンロードしました",
@@ -303,5 +303,7 @@
   "video.label": "動画 · 再生",
   "video.play": "動画を再生",
   "video.pause": "動画を一時停止",
-  "video.retry": "再生失敗 · 再試行"
+  "video.retry": "再生失敗 · 再試行",
+  "prompt.downloadMd": "MD ファイルをダウンロード",
+  "prompt.downloadHint": "Markdown ファイルをダウンロードして、Enter で続けます。"
 }

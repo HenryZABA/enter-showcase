@@ -62,8 +62,8 @@
 .model-trending-source a:hover { text-decoration-color: hsl(var(--primary)); }
 .model-trending-read { display: flex; align-items: center; gap: 8px; width: 100%; padding: 16px 0; border: 0; background: transparent; color: hsl(var(--foreground)); font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; }
 .model-trending-read:hover { color: hsl(var(--primary)); }
-.model-trending-copy { width: 100%; border: 0; cursor: pointer; }
-.model-trending-copy:focus-visible, .model-trending-source a:focus-visible, .model-trending-read:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+.model-trending-download { width: 100%; border: 0; cursor: pointer; }
+.model-trending-download:focus-visible, .model-trending-source a:focus-visible, .model-trending-read:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
 @media (max-width: 767px) { .model-trending-grid { grid-template-columns: minmax(0, 1fr); } }
 .model-category-browser { width: 100%; }
 .model-category-browser > .model-collection-empty { max-width: 920px; margin-inline: auto; }

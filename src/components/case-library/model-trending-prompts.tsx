@@ -1,14 +1,11 @@
-import { ArrowUpRight, BookText, ChevronRight, Copy, LoaderCircle } from "lucide-react";
+import { ArrowUpRight, BookText, ChevronRight } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { toast } from "sonner";
 import { pickLocalized } from "@/data/cases";
 import type { TrendingPrompt } from "@/data/model-pages/trending-prompts";
 import type { CaseFlipOrigin } from "@/hooks/use-case-flip";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
-import { loadPrompt } from "@/lib/prompt-cache";
-import { copyText } from "@/lib/prompt-file";
-import { openEnter } from "@/lib/model-prompt-action";
+import { DownloadPromptButton } from "./download-prompt-button";
 import { HoverVideo } from "./hover-video";
 import { PromptDetailShell } from "./prompt-detail-shell";
 
@@ -18,23 +15,8 @@ function TrendingPromptCard({ entry, onOpen }: { entry: TrendingPrompt; onOpen: 
   const { t } = useTranslation();
   const language = useCurrentLanguage();
   const source = useRef<HTMLElement>(null);
-  const [busy, setBusy] = useState(false);
   const open = (trigger: HTMLElement, focusAfterClose: boolean) => {
     if (source.current) onOpen({ entry, origin: { source: source.current, trigger }, focusAfterClose });
-  };
-  const handleCopy = async () => {
-    if (busy) return;
-    setBusy(true);
-    try {
-      const text = await loadPrompt(entry.promptUrl);
-      if (!await copyText(text)) throw new Error("Clipboard unavailable");
-      toast.success(t("common.copied"));
-      openEnter();
-    } catch {
-      toast.error(t("common.copyFailed"));
-    } finally {
-      setBusy(false);
-    }
   };
   const title = pickLocalized(entry.title, language);
   const intro = <><span className="model-trending-title">{title}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></>;
@@ -51,10 +33,7 @@ function TrendingPromptCard({ entry, onOpen }: { entry: TrendingPrompt; onOpen: 
       <span className="model-original-badge">{t("modelPages.originalPrompts")}</span>
       <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>
       <button type="button" className="model-trending-read" onClick={event => open(event.currentTarget, false)}><ChevronRight size={16} aria-hidden="true" />{t("modelPages.readPrompt")}</button>
-      <button type="button" className="model-action theme-primary-gradient model-trending-copy" onClick={() => void handleCopy()} disabled={busy} aria-busy={busy}>
-        {busy ? <LoaderCircle className="model-copy-spinner" size={17} aria-hidden="true" /> : <Copy size={17} aria-hidden="true" />}
-        {t("modelPages.copyPrompt")}
-      </button>
+      <DownloadPromptButton title={title} promptUrl={entry.promptUrl} promptKind="original" appearance="card" className="model-action theme-primary-gradient model-trending-download" />
     </div>
   </article>;
 }

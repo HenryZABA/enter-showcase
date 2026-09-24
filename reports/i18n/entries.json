@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-24T05:02:09.087Z",
+  "generatedAt": "2026-09-24T09:23:15.824Z",
   "fallbackLng": "en",
-  "total": 305,
+  "total": 307,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -216,19 +216,19 @@
     {
       "key": "bundle.downloadSelectedCount",
       "group": "bundle",
-      "source": "Download selected ({{value}})",
+      "source": "Download MD file ({{value}})",
       "values": {
-        "en": "Download selected ({{value}})",
-        "zh-CN": "下载所选（{{value}}）",
-        "zh-TW": "下載所選（{{value}}）",
-        "es": "Descargar selección ({{value}})",
-        "pt-BR": "Baixar selecionados ({{value}})",
-        "pt-PT": "Transferir selecionados ({{value}})",
-        "fr": "Télécharger la sélection ({{value}})",
-        "de": "Auswahl herunterladen ({{value}})",
-        "it": "Scarica selezionati ({{value}})",
-        "ja": "選択項目をダウンロード（{{value}}）",
-        "ko": "선택 항목 다운로드 ({{value}})"
+        "en": "Download MD file ({{value}})",
+        "zh-CN": "下载 MD 文件 ({{value}})",
+        "zh-TW": "下載 MD 檔案 ({{value}})",
+        "es": "Descargar archivo MD ({{value}})",
+        "pt-BR": "Baixar arquivo MD ({{value}})",
+        "pt-PT": "Descarregar ficheiro MD ({{value}})",
+        "fr": "Télécharger le fichier MD ({{value}})",
+        "de": "MD-Datei herunterladen ({{value}})",
+        "it": "Scarica il file MD ({{value}})",
+        "ja": "MD ファイルをダウンロード ({{value}})",
+        "ko": "MD 파일 다운로드 ({{value}})"
       },
       "used": true,
       "missingLanguages": [],
@@ -1238,7 +1238,7 @@
         "ja": "プロンプトをクリップボードにコピーしました",
         "ko": "프롬프트를 클립보드에 복사했습니다"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1259,7 +1259,7 @@
         "ja": "コピー",
         "ko": "복사"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1280,7 +1280,7 @@
         "ja": "自動コピーできませんでした。テキストを選択して手動でコピーしてください。",
         "ko": "자동으로 복사하지 못했습니다. 텍스트를 선택해 직접 복사해 주세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -1322,7 +1322,7 @@
         "ja": ".mdをダウンロード",
         "ko": ".md 다운로드"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3128,7 +3128,7 @@
         "ja": "プロンプトをコピーしてEnterに貼り付けてください。",
         "ko": "프롬프트를 복사한 뒤 Enter에 붙여 넣으세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3170,7 +3170,7 @@
         "ja": "コピーできませんでした。クリップボードへのアクセスを許可して再試行してください。入力内容は保持されています。",
         "ko": "복사하지 못했습니다. 클립보드 접근을 허용하고 다시 시도하세요. 입력한 내용은 유지됩니다."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3191,7 +3191,7 @@
         "ja": "コピーしてEnterを開く",
         "ko": "복사하고 Enter 열기"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3212,7 +3212,7 @@
         "ja": "コピー中…",
         "ko": "복사 중…"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -3989,7 +3989,7 @@
         "ja": "文字",
         "ko": "자"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4010,7 +4010,7 @@
         "ja": "プロンプトをコピー",
         "ko": "프롬프트 복사"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4744,6 +4744,48 @@
         "it": "Libreria",
         "ja": "ライブラリ",
         "ko": "라이브러리"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "prompt.downloadHint",
+      "group": "prompt",
+      "source": "Download the Markdown file, then continue in Enter.",
+      "values": {
+        "en": "Download the Markdown file, then continue in Enter.",
+        "zh-CN": "下载 Markdown 文件后，前往 Enter 继续使用。",
+        "zh-TW": "下載 Markdown 檔案後，前往 Enter 繼續使用。",
+        "es": "Descarga el archivo Markdown y continúa en Enter.",
+        "pt-BR": "Baixe o arquivo Markdown e continue no Enter.",
+        "pt-PT": "Descarrega o ficheiro Markdown e continua no Enter.",
+        "fr": "Téléchargez le fichier Markdown, puis continuez dans Enter.",
+        "de": "Lade die Markdown-Datei herunter und fahre in Enter fort.",
+        "it": "Scarica il file Markdown, poi continua su Enter.",
+        "ja": "Markdown ファイルをダウンロードして、Enter で続けます。",
+        "ko": "Markdown 파일을 다운로드한 후 Enter에서 계속하세요."
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "prompt.downloadMd",
+      "group": "prompt",
+      "source": "Download MD file",
+      "values": {
+        "en": "Download MD file",
+        "zh-CN": "下载 MD 文件",
+        "zh-TW": "下載 MD 檔案",
+        "es": "Descargar archivo MD",
+        "pt-BR": "Baixar arquivo MD",
+        "pt-PT": "Descarregar ficheiro MD",
+        "fr": "Télécharger le fichier MD",
+        "de": "MD-Datei herunterladen",
+        "it": "Scarica il file MD",
+        "ja": "MD ファイルをダウンロード",
+        "ko": "MD 파일 다운로드"
       },
       "used": true,
       "missingLanguages": [],

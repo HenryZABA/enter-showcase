@@ -97,7 +97,7 @@
   "bundle.docTitle": "Enter × GPT-6 Astra — Biblioteca de casos · Prompts disponíveis",
   "showcase.bundleTitle": "Enter Library — Biblioteca de casos · Prompts disponíveis",
   "bundle.done": "Pacote de prompts transferido",
-  "bundle.downloadSelectedCount": "Transferir selecionados ({{value}})",
+  "bundle.downloadSelectedCount": "Descarregar ficheiro MD ({{value}})",
   "bundle.failed": "Não foi possível transferir o pacote de prompts neste navegador.",
   "bundle.successBody": "Os {{value}} prompts selecionados estão prontos. Abra o Enter para os experimentar.",
   "bundle.successTitle": "Prompts transferidos",
@@ -303,5 +303,7 @@
   "video.label": "Vídeo · Reproduzir",
   "video.play": "Reproduzir vídeo",
   "video.pause": "Pausar vídeo",
-  "video.retry": "Falha · Tentar novamente"
+  "video.retry": "Falha · Tentar novamente",
+  "prompt.downloadMd": "Descarregar ficheiro MD",
+  "prompt.downloadHint": "Descarrega o ficheiro Markdown e continua no Enter."
 }

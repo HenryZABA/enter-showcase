@@ -25,7 +25,7 @@ export function getOpusCopy(t: TFunction): ModelPageCopy {
     faqTitle: "",
     libraryLink: t("modelAstra.libraryLink"),
     composer: {
-      label: t("modelAstra.composerLabel"), hint: t("modelAstra.composerHint"), copyOpen: t("modelAstra.copyOpen"), copying: t("modelAstra.copying"), copyError: t("modelAstra.copyError"),
+      label: t("modelAstra.composerLabel"), hint: t("prompt.downloadHint"),
     },
     faqs: [],
   };

@@ -97,7 +97,7 @@
   "bundle.docTitle": "Enter × GPT-6 Astra — 案例库 · 可用提示词",
   "showcase.bundleTitle": "Enter Library — 案例库 · 可用提示词",
   "bundle.done": "提示词合集已下载",
-  "bundle.downloadSelectedCount": "下载所选（{{value}}）",
+  "bundle.downloadSelectedCount": "下载 MD 文件 ({{value}})",
   "bundle.failed": "当前浏览器无法下载提示词合集。",
   "bundle.successBody": "你选择的 {{value}} 份提示词已准备好，可以前往 Enter 尝试构建。",
   "bundle.successTitle": "提示词已下载",
@@ -303,5 +303,7 @@
   "video.label": "视频 · 播放",
   "video.play": "播放视频",
   "video.pause": "暂停视频",
-  "video.retry": "播放失败 · 重试"
+  "video.retry": "播放失败 · 重试",
+  "prompt.downloadMd": "下载 MD 文件",
+  "prompt.downloadHint": "下载 Markdown 文件后，前往 Enter 继续使用。"
 }
