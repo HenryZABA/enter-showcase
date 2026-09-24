@@ -24,9 +24,6 @@ export function getOpusCopy(t: TFunction): ModelPageCopy {
     trendingDescription: t("modelPages.trendingDescription"),
     faqTitle: "",
     libraryLink: t("modelAstra.libraryLink"),
-    composer: {
-      label: t("modelAstra.composerLabel"), hint: t("prompt.downloadHint"),
-    },
     faqs: [],
   };
 }

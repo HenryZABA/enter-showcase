@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LibraryMore, LibraryPagination, LibrarySwitch, useLibraryFocus, useLibraryPage } from "./library-focus";
 import { useLocation } from "react-router-dom";
@@ -14,18 +14,17 @@ import { Footer } from "@/components/layout/Footer";
 import { ModelFaq } from "./model-faq";
 import { ModelHotCaseGallery } from "./model-hot-case-gallery";
 import { ModelTrendingPrompts } from "./model-trending-prompts";
-import { ModelPromptComposer } from "./model-prompt-composer";
+import { HeroStage } from "./hero-stage";
 import "@/styles/showcase.css";
 import "@/styles/model-detail.css";
 
 type Props = {
   model: ModelPageModel;
   copy: ModelPageCopy;
-  initialPrompt: string;
   collection: ShowcaseCollection;
 };
 
-export function ModelDetailPage({ model, collection, copy, initialPrompt }: Props) {
+export function ModelDetailPage({ model, collection, copy }: Props) {
   const { t } = useTranslation();
   const { focus, activate, switchTo } = useLibraryFocus();
   const promptEntries = trendingPromptsByModel[model.slug] ?? [];
@@ -39,18 +38,10 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
   return (
     <div className="showcase model-detail flex min-h-screen flex-col">
       <Header />
-      <main className="container flex-1">
-        <div className="model-breadcrumb"><LiquidLink to={libraryHref} size="lg"><ArrowLeft aria-hidden="true" />{copy.back}</LiquidLink><span aria-hidden="true">/</span><span>{model.name}</span></div>
-        <section className="model-hero" aria-labelledby="model-title">
-          <div className="model-hero-copy">
-            <h1 id="model-title"><span className="model-name">{model.name}</span>{" "}<span className="model-headline">{copy.heading}</span></h1>
-            <ModelPromptComposer modelLabel={model.name.toUpperCase()} initialPrompt={initialPrompt} copy={copy.composer} />
-            {collection.caseIds.length > 0 && <a href="#hot-cases" className="model-action model-action-secondary model-browse-link">{copy.browse}<ArrowDown size={15} aria-hidden="true" /></a>}
-          </div>
-          <div className="model-hero-art">
-            <div className="model-art-stage"><img src={model.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" /></div>
-          </div>
-        </section>
+      <main className="flex-1">
+        <div className="container"><div className="model-breadcrumb"><LiquidLink to={libraryHref} size="lg"><ArrowLeft aria-hidden="true" />{copy.back}</LiquidLink><span aria-hidden="true">/</span><span>{model.name}</span></div></div>
+        <HeroStage compact blended content={{ eyebrow: "", titleLine1: model.name, titleLine2: copy.heading, image: model.image, imageWidth: 1280, imageHeight: 720 }} />
+        <div className="container">
         {focus !== "cases" && <section id="prompts" className="model-section model-prompts library-prompt-section" aria-labelledby="prompts-heading">
           <div className="model-prompts-heading"><h2 id="prompts-heading" tabIndex={-1}>{t("library.prompts")}</h2><p>{copy.trendingDescription}</p></div>
           <ModelTrendingPrompts entries={promptEntries.slice(promptPage.start, promptPage.start + promptPage.size)} onPrimaryAction={() => activate("prompts")} />
@@ -62,6 +53,7 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
           <ModelHotCaseGallery collection={collection} focused={focus === "cases"} onFocus={() => activate("cases")} />
         </section>}
         {copy.faqs.length > 0 && <ModelFaq title={copy.faqTitle} faqs={copy.faqs} libraryHref={libraryHref} libraryLabel={copy.libraryLink} />}
+        </div>
       </main>
       <Footer />
       <LibrarySwitch focus={focus} onSwitch={switchTo} />

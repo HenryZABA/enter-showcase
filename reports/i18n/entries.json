@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T09:23:15.824Z",
+  "generatedAt": "2026-09-24T14:04:16.004Z",
   "fallbackLng": "en",
   "total": 307,
   "items": [
@@ -3149,7 +3149,7 @@
         "ja": "次のプロジェクトはここから",
         "ko": "다음 프로젝트를 여기서 시작하세요"
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },
@@ -4766,7 +4766,7 @@
         "ja": "Markdown ファイルをダウンロードして、Enter で続けます。",
         "ko": "Markdown 파일을 다운로드한 후 Enter에서 계속하세요."
       },
-      "used": true,
+      "used": false,
       "missingLanguages": [],
       "status": "complete"
     },

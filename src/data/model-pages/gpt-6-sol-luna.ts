@@ -10,8 +10,6 @@ export const solLunaModel: ModelPageModel = {
   image: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
 };
 
-export const solLunaInitialPrompt = ""; // No model-attributed prompt is published yet.
-
 export function getSolLunaCopy(t: TFunction): ModelPageCopy {
   return {
     title: t("modelSolLuna.metaTitle"),
@@ -25,9 +23,6 @@ export function getSolLunaCopy(t: TFunction): ModelPageCopy {
     trendingDescription: t("modelPages.trendingDescription"),
     faqTitle: t("modelSolLuna.faqTitle"),
     libraryLink: t("modelAstra.libraryLink"),
-    composer: {
-      label: t("modelAstra.composerLabel"), hint: t("prompt.downloadHint"),
-    },
     faqs: [
       { id: "build", question: t("modelSolLuna.faqBuildQuestion"), answer: t("modelSolLuna.faqBuildAnswer") },
       { id: "use", question: t("modelSolLuna.faqUseQuestion"), answer: t("modelSolLuna.faqUseAnswer") },

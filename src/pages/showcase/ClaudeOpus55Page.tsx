@@ -5,5 +5,5 @@ import { claudeOpus55Collection } from "@/data/showcase-collections/claude-opus-
 
 export default function ClaudeOpus55Page() {
   const { t } = useTranslation();
-  return <ModelDetailPage model={opusModel} collection={claudeOpus55Collection} copy={getOpusCopy(t)} initialPrompt="" />;
+  return <ModelDetailPage model={opusModel} collection={claudeOpus55Collection} copy={getOpusCopy(t)} />;
 }

@@ -35,7 +35,7 @@ test("shared action downloads MD before opening Enter, with no clipboard access"
   assert.doesNotMatch(source, /clipboard|copyText/);
 });
 
-test("edited composer text is downloaded verbatim instead of refetching the original", async () => {
+test("explicit prompt text is downloaded verbatim instead of refetching the original", async () => {
   const edited = ["  Edited", "提示词  "].join(NL);
   const view = render({ promptText: edited, promptKind: "recreation" });
   view.element.props.onClick(); await flush();

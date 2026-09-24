@@ -10,8 +10,6 @@ export const astraModel: ModelPageModel = {
   image: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
 };
 
-export const astraInitialPrompt = "Build a responsive project dashboard where I can create projects, assign tasks, track progress, and filter work by status. Add a clean overview with deadlines, priorities, and a dark mode toggle.";
-
 export function getAstraCopy(t: TFunction): ModelPageCopy {
   return {
     title: t("modelAstra.metaTitle"),
@@ -25,9 +23,6 @@ export function getAstraCopy(t: TFunction): ModelPageCopy {
     trendingDescription: t("modelPages.trendingDescription"),
     faqTitle: t("modelAstra.faqTitle"),
     libraryLink: t("modelAstra.libraryLink"),
-    composer: {
-      label: t("modelAstra.composerLabel"), hint: t("prompt.downloadHint"),
-    },
     faqs: [
       { id: "build", question: t("modelAstra.faqBuildQuestion"), answer: t("modelAstra.faqBuildAnswer") },
       { id: "use", question: t("modelAstra.faqUseQuestion"), answer: t("modelAstra.faqUseAnswer") },

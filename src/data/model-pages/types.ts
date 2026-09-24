@@ -12,11 +12,6 @@ export type ModelPageModel = {
   image: string;
 };
 
-export type ModelComposerCopy = {
-  label: string;
-  hint: string;
-};
-
 export type ModelPageCopy = {
   title: string;
   description: string;
@@ -29,7 +24,6 @@ export type ModelPageCopy = {
   trendingDescription: string;
   faqTitle: string;
   libraryLink: string;
-  composer: ModelComposerCopy;
   faqs: ModelFaq[];
 };
 
