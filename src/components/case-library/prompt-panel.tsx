@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import type { PromptKind } from "@/data/cases";
 import { buildSinglePromptMarkdown } from "@/lib/prompt-bundle";
 import { copyText, downloadTextFile, sanitizeFilename } from "@/lib/prompt-file";
+import { openEnter } from "@/lib/model-prompt-action";
 
 type PromptPanelProps = {
   /** Versioned prompt asset; the body is loaded only inside the detail panel. */
@@ -37,6 +38,7 @@ export const PromptPanel = ({ promptUrl, promptKind, title }: PromptPanelProps) 
     const ok = await copyText(prompt);
     if (ok) {
       toast.success(t("common.copied"));
+      openEnter();
     } else {
       toast.error(t("common.copyFailed"));
     }
@@ -48,6 +50,7 @@ export const PromptPanel = ({ promptUrl, promptKind, title }: PromptPanelProps) 
     const ok = downloadTextFile(`${sanitizeFilename(title)}-prompt.md`, markdown);
     if (ok) {
       toast.success(t("common.downloadStarted"));
+      openEnter();
     } else {
       toast.error(t("common.downloadFailed"));
     }

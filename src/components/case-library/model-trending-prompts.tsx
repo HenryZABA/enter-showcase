@@ -8,6 +8,7 @@ import type { CaseFlipOrigin } from "@/hooks/use-case-flip";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { loadPrompt } from "@/lib/prompt-cache";
 import { copyText } from "@/lib/prompt-file";
+import { openEnter } from "@/lib/model-prompt-action";
 import { HoverVideo } from "./hover-video";
 import { PromptDetailShell } from "./prompt-detail-shell";
 
@@ -28,6 +29,7 @@ function TrendingPromptCard({ entry, onOpen }: { entry: TrendingPrompt; onOpen: 
       const text = await loadPrompt(entry.promptUrl);
       if (!await copyText(text)) throw new Error("Clipboard unavailable");
       toast.success(t("common.copied"));
+      openEnter();
     } catch {
       toast.error(t("common.copyFailed"));
     } finally {

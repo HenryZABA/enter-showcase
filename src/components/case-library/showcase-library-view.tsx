@@ -28,6 +28,7 @@ import { useAppHref } from "@/hooks/use-app-href";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 
 import { downloadTextFile } from "@/lib/prompt-file";
+import { openEnter } from "@/lib/model-prompt-action";
 import { useShowcaseTheme } from "@/hooks/use-showcase-theme";
 
 const StableHeader = memo(Header);
@@ -107,6 +108,7 @@ export const ShowcaseLibraryView = ({
       const { buildPromptBundle } = await import("@/lib/prompt-bundle");
       const content = await buildPromptBundle(selectedEntries, t, language, { title: bundleTitle, total: entries.length });
       if (!downloadTextFile(fileName, content)) throw new Error("Download failed");
+      openEnter();
       toast.success(t("bundle.done"));
     } catch {
       toast.error(t("bundle.failed"));

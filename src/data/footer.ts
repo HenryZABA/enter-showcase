@@ -1,3 +1,5 @@
+import { ENTER_DESTINATION } from "@/lib/model-prompt-action";
+
 export type FooterLink = {
   label: string;
   href: string;
@@ -8,13 +10,13 @@ export type FooterColumn = {
   links: readonly FooterLink[];
 };
 
-// Destinations verified against Enter's live footer. Keep existing campaign parameters.
+// Enter destinations share the supplied campaign link; other brands, legal and social URLs stay unchanged.
 export const footerColumns: readonly FooterColumn[] = [
   {
     title: "PRODUCTS",
     links: [
-      { label: "Enter Code", href: "https://enter.converge.ai/code" },
-      { label: "Enter CLI", href: "https://enter.converge.ai/cli" },
+      { label: "Enter Code", href: ENTER_DESTINATION },
+      { label: "Enter CLI", href: ENTER_DESTINATION },
       { label: "Framia", href: "https://framia.converge.ai/?utm_source=enter&utm_medium=web&utm_content=footer_products" },
       { label: "Converge", href: "https://converge.ai/" },
     ],
@@ -22,35 +24,35 @@ export const footerColumns: readonly FooterColumn[] = [
   {
     title: "SOLUTIONS",
     links: [
-      { label: "AI All", href: "https://enter.converge.ai/ai-all" },
-      { label: "Templates", href: "https://enter.converge.ai/marketplace/templates" },
-      { label: "Components", href: "https://enter.converge.ai/marketplace/components" },
+      { label: "AI All", href: ENTER_DESTINATION },
+      { label: "Templates", href: ENTER_DESTINATION },
+      { label: "Components", href: ENTER_DESTINATION },
     ],
   },
   {
     title: "FEATURES",
     links: [
-      { label: "Enter April Launch", href: "https://enter.converge.ai/blog/enter-april-launch" },
-      { label: "Enter Cloud", href: "https://enter.converge.ai/blog/enter-cloud" },
-      { label: "Enter Skills", href: "https://enter.converge.ai/blog/introducing-enter-skills" },
-      { label: "AI App Builder", href: "https://enter.converge.ai/features/ai-app-builder" },
-      { label: "AI Website Builder", href: "https://enter.converge.ai/features/ai-website-builder" },
-      { label: "Website Templates", href: "https://enter.converge.ai/features/website-template" },
-      { label: "Online Code Editor", href: "https://enter.converge.ai/features/code-editor" },
-      { label: "AI Agent Builder", href: "https://enter.converge.ai/features/ai-agent-builder" },
-      { label: "Visual Editor", href: "https://enter.converge.ai/features/visual-editor" },
+      { label: "Enter April Launch", href: ENTER_DESTINATION },
+      { label: "Enter Cloud", href: ENTER_DESTINATION },
+      { label: "Enter Skills", href: ENTER_DESTINATION },
+      { label: "AI App Builder", href: ENTER_DESTINATION },
+      { label: "AI Website Builder", href: ENTER_DESTINATION },
+      { label: "Website Templates", href: ENTER_DESTINATION },
+      { label: "Online Code Editor", href: ENTER_DESTINATION },
+      { label: "AI Agent Builder", href: ENTER_DESTINATION },
+      { label: "Visual Editor", href: ENTER_DESTINATION },
     ],
   },
   {
     title: "RESOURCES",
     links: [
-      { label: "Blog", href: "https://enter.converge.ai/blog" },
-      { label: "Changelog", href: "https://enter.converge.ai/blog/enters-changelog" },
-      { label: "Enter Code Docs", href: "https://enter.converge.ai/docs/code" },
-      { label: "Forum", href: "https://enter.converge.ai/forum?utm_source=enter&utm_medium=web&utm_content=home" },
-      { label: "Features", href: "https://enter.converge.ai/features" },
-      { label: "Activity", href: "https://enter.converge.ai/forum/activities" },
-      { label: "Ambassador", href: "https://enter.converge.ai/ambassador" },
+      { label: "Blog", href: ENTER_DESTINATION },
+      { label: "Changelog", href: ENTER_DESTINATION },
+      { label: "Enter Code Docs", href: ENTER_DESTINATION },
+      { label: "Forum", href: ENTER_DESTINATION },
+      { label: "Features", href: ENTER_DESTINATION },
+      { label: "Activity", href: ENTER_DESTINATION },
+      { label: "Ambassador", href: ENTER_DESTINATION },
     ],
   },
   {

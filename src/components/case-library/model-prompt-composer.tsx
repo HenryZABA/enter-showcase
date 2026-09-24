@@ -1,7 +1,7 @@
 import { useId, useRef, useState, type FormEvent } from "react";
 import { ArrowUpRight, Copy, LoaderCircle } from "lucide-react";
 import type { ModelComposerCopy } from "@/data/model-pages/types";
-import { copyPromptAndOpenEnter } from "@/lib/model-prompt-action";
+import { copyPromptAndOpenEnter, openEnter } from "@/lib/model-prompt-action";
 
 type Props = { modelLabel: string; initialPrompt: string; copy: ModelComposerCopy };
 
@@ -21,7 +21,7 @@ export function ModelPromptComposer({ modelLabel, initialPrompt, copy }: Props) 
     try {
       await copyPromptAndOpenEnter(prompt, {
         copy: text => navigator.clipboard.writeText(text),
-        navigate: url => window.location.assign(url),
+        navigate: openEnter,
       });
     } catch {
       setFailed(true);

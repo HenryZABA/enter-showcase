@@ -3,6 +3,7 @@ import { memo } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/ui/button";
+import { ENTER_DESTINATION } from "@/lib/model-prompt-action";
 
 import type { ShowcaseHeroContent } from "@/data/showcase-collections";
 
@@ -50,7 +51,7 @@ export const HeroStage = memo(function HeroStage({ content, collectionHref, blen
               <Link to={collectionHref}>{t("collections.exploreCollection")}</Link>
             ) : (
               <a
-                href="https://enter.converge.ai/"
+                href={ENTER_DESTINATION}
                 target="_blank"
                 rel="noopener noreferrer"
               >
