@@ -7,7 +7,7 @@ import type { TrendingPrompt } from "@/data/model-pages/trending-prompts";
 import { useCurrentLanguage } from "@/hooks/use-current-language";
 import { loadPrompt } from "@/lib/prompt-cache";
 import { copyText } from "@/lib/prompt-file";
-import { ViewportVideo } from "./viewport-video";
+import { HoverVideo } from "./hover-video";
 
 function TrendingPromptCard({ entry, onPrimaryAction }: { entry: TrendingPrompt; onPrimaryAction: () => void }) {
   const { t } = useTranslation();
@@ -46,7 +46,7 @@ function TrendingPromptCard({ entry, onPrimaryAction }: { entry: TrendingPrompt;
   return <article className="model-trending-card">
     <button type="button" className="model-trending-primary" onClick={onPrimaryAction} aria-label={`${t("library.openPrompts")}: ${pickLocalized(entry.title, language)}`}>
       {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
-      {entry.media?.type === "video" && <ViewportVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
+      {entry.media?.type === "video" && <HoverVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
       <span className="model-trending-intro"><span className="model-trending-title">{pickLocalized(entry.title, language)}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></span>
     </button>
     <div className="model-trending-content">
