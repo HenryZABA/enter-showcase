@@ -299,5 +299,9 @@
   "library.switchPrompts": "切換至 Prompt Library",
   "library.switchCases": "切換至 Case Library",
   "library.openPrompts": "探索此提示詞",
-  "library.explorePrompts": "探索 Prompts"
+  "library.explorePrompts": "探索 Prompts",
+  "video.label": "影片 · 播放",
+  "video.play": "播放影片",
+  "video.pause": "暫停影片",
+  "video.retry": "播放失敗 · 重試"
 }

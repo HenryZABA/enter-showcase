@@ -1,0 +1,8 @@
+.hover-video { position: relative; overflow: hidden; padding: 0; cursor: pointer; background: hsl(var(--card)); text-align: left; }
+.hover-video video { display: block; width: 100%; height: 100%; aspect-ratio: inherit; object-fit: cover; pointer-events: none; }
+.hover-video-badge { position: absolute; right: 10px; top: 10px; display: inline-flex; align-items: center; gap: 6px; max-width: calc(100% - 20px); padding: 6px 9px; border: 1px solid hsl(var(--foreground) / .25); border-radius: 999px; color: hsl(var(--foreground)); background: hsl(var(--background) / .88); font-size: 11px; line-height: 1.4; pointer-events: none; }
+.hover-video:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: -3px; }
+.hover-video-spinner { animation: hover-video-spin 1s linear infinite; }
+.model-trending-title-button { width: 100%; border: 0; background: transparent; text-align: left; cursor: pointer; }
+@keyframes hover-video-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .hover-video-spinner { animation: none; } }

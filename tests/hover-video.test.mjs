@@ -16,8 +16,10 @@ function fixture({ coarse = false, reduced = false, play } = {}) {
     pause() { this.paused = true; },
     play() { this.plays += 1; this.paused = false; return play ? play() : Promise.resolve(); },
   });
-  const unbind = bindHoverVideo(video, "https://example.test/real-video.mp4");
-  return { video, document, emit(type, pointerType = "mouse") { video.dispatchEvent(Object.assign(new Event(type), { pointerType })); },
+  const target = new EventTarget();
+  const states = [];
+  const unbind = bindHoverVideo(video, "https://example.test/real-video.mp4", { target, onStateChange: state => states.push(state) });
+  return { video, document, states, emit(type, pointerType = "mouse") { target.dispatchEvent(Object.assign(new Event(type), { pointerType })); },
     cleanup() { unbind(); globalThis.window = originalWindow; globalThis.document = originalDocument; } };
 }
 
@@ -36,11 +38,23 @@ test("hover alone starts muted video; leaving unloads it and restores poster", a
   } finally { f.cleanup(); }
 });
 
-test("touch, coarse pointer and reduced motion do not request video", () => {
-  for (const options of [{ coarse: true }, { reduced: true }, {}]) {
+test("real mouse hover works even when a hybrid device reports a coarse primary pointer", () => {
+  const f = fixture({ coarse: true });
+  try { f.emit("pointerenter"); assert.equal(f.video.plays, 1); assert.equal(f.states.at(-1), "loading"); }
+  finally { f.cleanup(); }
+});
+
+test("touch and reduced motion skip hover but allow explicit click playback", async () => {
+  for (const options of [{ reduced: true }, {}]) {
     const f = fixture(options);
-    try { f.emit("pointerenter", Object.keys(options).length ? "mouse" : "touch"); assert.equal(f.video.plays, 0); assert.equal(f.video.src, ""); }
-    finally { f.cleanup(); }
+    try {
+      f.emit("pointerenter", options.reduced ? "mouse" : "touch");
+      assert.equal(f.video.plays, 0); assert.equal(f.video.src, "");
+      f.emit("click"); await Promise.resolve();
+      assert.equal(f.video.plays, 1); assert.equal(f.states.at(-1), "playing");
+      f.emit("pointerleave", "touch"); assert.equal(f.video.paused, false);
+      f.emit("click"); assert.equal(f.video.paused, true);
+    } finally { f.cleanup(); }
   }
 });
 
@@ -52,7 +66,8 @@ test("play rejection restores poster, while stale rejection cannot stop a new ho
     rejects[0](new Error("cancelled")); await new Promise(resolve => setImmediate(resolve));
     assert.ok(f.video.src); assert.equal(f.video.paused, false);
     rejects[1](new Error("denied")); await new Promise(resolve => setImmediate(resolve));
-    assert.equal(f.video.src, ""); assert.equal(f.video.paused, true);
+    assert.equal(f.video.src, ""); assert.equal(f.video.paused, true); assert.equal(f.states.at(-1), "error");
+    f.emit("click"); assert.equal(f.states.at(-1), "loading");
   } finally { f.cleanup(); }
 });
 

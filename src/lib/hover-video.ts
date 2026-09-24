@@ -1,11 +1,17 @@
-/** No media request until mouse hover. Resetting the source restores the poster. */
-export function bindHoverVideo(video: HTMLVideoElement, src: string) {
-  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+export type VideoPreviewState = "idle" | "loading" | "playing" | "error";
+
+/** Bind to the visible cover button, not the nested decorative video element. */
+export function bindHoverVideo(video: HTMLVideoElement, src: string, options: {
+  target?: HTMLElement;
+  onStateChange?: (state: VideoPreviewState) => void;
+} = {}) {
+  const target = options.target ?? video;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let active = false;
   let generation = 0;
-
-  const stop = () => {
+  let state: VideoPreviewState = "idle";
+  const update = (next: VideoPreviewState) => { state = next; options.onStateChange?.(next); };
+  const reset = (next: VideoPreviewState = "idle") => {
     active = false;
     generation += 1;
     video.pause();
@@ -13,41 +19,57 @@ export function bindHoverVideo(video: HTMLVideoElement, src: string) {
       video.removeAttribute("src");
       video.load();
     }
+    update(next);
   };
-  const enter = (event: PointerEvent) => {
-    if (event.pointerType === "touch" || !finePointer.matches || reducedMotion.matches || document.hidden || active) return;
+  const stop = () => reset();
+  const start = () => {
+    if (document.hidden || active) return;
     active = true;
     const request = ++generation;
+    update("loading");
     video.muted = true;
     video.defaultMuted = true;
     video.src = src;
     video.load();
     void video.play().then(() => {
       if (!active) video.pause();
+      else if (request === generation) update("playing");
     }).catch(() => {
-      // A cancelled earlier request must not stop a newer hover session.
-      if (request === generation) stop();
+      if (request === generation) reset("error");
     });
   };
+  const enter = (event: PointerEvent) => {
+    // The actual input event is authoritative, even on hybrid devices or iframes
+    // whose primary-pointer media query reports coarse/no hover.
+    if (event.pointerType !== "mouse" || reducedMotion.matches) return;
+    start();
+  };
+  const leave = (event: PointerEvent) => { if (event.pointerType === "mouse") stop(); };
+  const click = (event: Event) => {
+    event.stopPropagation();
+    if (state === "playing") stop();
+    else start(); // Explicit activation is allowed with reduced motion and touch.
+  };
+  const error = () => reset("error");
   const visibility = () => { if (document.hidden) stop(); };
   const observer = typeof IntersectionObserver === "undefined" ? null : new IntersectionObserver(([entry]) => {
     if (!entry.isIntersecting) stop();
   });
-  observer?.observe(video);
-  video.addEventListener("pointerenter", enter);
-  video.addEventListener("pointerleave", stop);
-  video.addEventListener("error", stop);
+  observer?.observe(target);
+  target.addEventListener("pointerenter", enter);
+  target.addEventListener("pointerleave", leave);
+  target.addEventListener("click", click);
+  video.addEventListener("error", error);
   document.addEventListener("visibilitychange", visibility);
-  finePointer.addEventListener("change", stop);
   reducedMotion.addEventListener("change", stop);
 
   return () => {
     observer?.disconnect();
-    video.removeEventListener("pointerenter", enter);
-    video.removeEventListener("pointerleave", stop);
-    video.removeEventListener("error", stop);
+    target.removeEventListener("pointerenter", enter);
+    target.removeEventListener("pointerleave", leave);
+    target.removeEventListener("click", click);
+    video.removeEventListener("error", error);
     document.removeEventListener("visibilitychange", visibility);
-    finePointer.removeEventListener("change", stop);
     reducedMotion.removeEventListener("change", stop);
     stop();
   };

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:42:51.728Z",
+  "generatedAt": "2026-09-24T05:02:09.087Z",
   "fallbackLng": "en",
   "sourceFiles": [
     "src/App.tsx",
@@ -15,6 +15,7 @@
     "src/components/case-library/detail-loader.ts",
     "src/components/case-library/filter-bar.tsx",
     "src/components/case-library/hero-stage.tsx",
+    "src/components/case-library/hover-video.tsx",
     "src/components/case-library/library-focus.tsx",
     "src/components/case-library/library-window.ts",
     "src/components/case-library/live-frame.tsx",
@@ -57,10 +58,12 @@
     "src/lib/analytics/gtm.ts",
     "src/lib/analytics/mixpanel.ts",
     "src/lib/app-paths.ts",
+    "src/lib/curved-gallery/label.ts",
     "src/lib/curved-gallery/media.ts",
     "src/lib/curved-gallery/renderer.ts",
     "src/lib/curved-gallery/shaders.ts",
     "src/lib/curved-gallery/surface.ts",
+    "src/lib/hover-video.ts",
     "src/lib/model-prompt-action.ts",
     "src/lib/prompt-bundle.ts",
     "src/lib/prompt-cache.ts",
@@ -732,8 +735,14 @@
           "usageType": "function"
         },
         {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 20,
+          "column": 30,
+          "usageType": "function"
+        },
+        {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 59,
+          "line": 64,
           "column": 219,
           "usageType": "function"
         },
@@ -795,7 +804,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 59,
+          "line": 64,
           "column": 189,
           "usageType": "function"
         },
@@ -1056,8 +1065,8 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 47,
-          "column": 103,
+          "line": 48,
+          "column": 24,
           "usageType": "function"
         }
       ]
@@ -1528,7 +1537,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 58,
+          "line": 63,
           "column": 130,
           "usageType": "function"
         }
@@ -1539,7 +1548,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 63,
+          "line": 68,
           "column": 10,
           "usageType": "function"
         }
@@ -1590,7 +1599,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 53,
+          "line": 58,
           "column": 47,
           "usageType": "function"
         }
@@ -1601,7 +1610,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 71,
+          "line": 76,
           "column": 154,
           "usageType": "function"
         }
@@ -1612,7 +1621,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 58,
+          "line": 63,
           "column": 64,
           "usageType": "function"
         }
@@ -1623,7 +1632,7 @@
       "references": [
         {
           "file": "src/components/case-library/model-trending-prompts.tsx",
-          "line": 54,
+          "line": 59,
           "column": 45,
           "usageType": "function"
         }
@@ -1847,6 +1856,68 @@
           "file": "src/pages/showcase/ShowcasesPage.tsx",
           "line": 21,
           "column": 18,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "video.label",
+      "references": [
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 20,
+          "column": 132,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "video.pause",
+      "references": [
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 15,
+          "column": 39,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 20,
+          "column": 113,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "video.play",
+      "references": [
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 15,
+          "column": 97,
+          "usageType": "function"
+        }
+      ]
+    },
+    {
+      "key": "video.retry",
+      "references": [
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 15,
+          "column": 78,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 20,
+          "column": 72,
+          "usageType": "function"
+        },
+        {
+          "file": "src/components/case-library/hover-video.tsx",
+          "line": 22,
+          "column": 66,
           "usageType": "function"
         }
       ]

@@ -299,5 +299,9 @@
   "library.switchPrompts": "Zur Prompt-Bibliothek wechseln",
   "library.switchCases": "Zur Fallbibliothek wechseln",
   "library.openPrompts": "Diesen Prompt erkunden",
-  "library.explorePrompts": "Prompts erkunden"
+  "library.explorePrompts": "Prompts erkunden",
+  "video.label": "Video · Abspielen",
+  "video.play": "Video abspielen",
+  "video.pause": "Video pausieren",
+  "video.retry": "Fehler · Erneut versuchen"
 }

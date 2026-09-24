@@ -43,12 +43,17 @@ function TrendingPromptCard({ entry, onPrimaryAction }: { entry: TrendingPrompt;
     }
   };
 
+  const title = pickLocalized(entry.title, language);
+  const intro = <><span className="model-trending-title">{title}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></>;
+  const openLabel = `${t("library.openPrompts")}: ${title}`;
   return <article className="model-trending-card">
-    <button type="button" className="model-trending-primary" onClick={onPrimaryAction} aria-label={`${t("library.openPrompts")}: ${pickLocalized(entry.title, language)}`}>
+    {entry.media?.type === "video" ? <div className="model-trending-primary">
+      <HoverVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />
+      <button type="button" className="model-trending-intro model-trending-title-button" onClick={onPrimaryAction} aria-label={openLabel}>{intro}</button>
+    </div> : <button type="button" className="model-trending-primary" onClick={onPrimaryAction} aria-label={openLabel}>
       {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
-      {entry.media?.type === "video" && <HoverVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />}
-      <span className="model-trending-intro"><span className="model-trending-title">{pickLocalized(entry.title, language)}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></span>
-    </button>
+      <span className="model-trending-intro">{intro}</span>
+    </button>}
     <div className="model-trending-content">
       <span className="model-original-badge">{t("modelPages.originalPrompts")}</span>
       <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>

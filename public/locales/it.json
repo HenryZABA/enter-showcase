@@ -299,5 +299,9 @@
   "library.switchPrompts": "Vai alla libreria dei prompt",
   "library.switchCases": "Vai alla libreria dei casi",
   "library.openPrompts": "Esplora questo prompt",
-  "library.explorePrompts": "Esplora i prompt"
+  "library.explorePrompts": "Esplora i prompt",
+  "video.label": "Video · Riproduci",
+  "video.play": "Riproduci video",
+  "video.pause": "Metti in pausa",
+  "video.retry": "Errore · Riprova"
 }

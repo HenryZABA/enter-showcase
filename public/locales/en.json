@@ -299,5 +299,9 @@
   "library.switchPrompts": "Switch to Prompt Library",
   "library.switchCases": "Switch to Case Library",
   "library.openPrompts": "Explore this prompt",
-  "library.explorePrompts": "Explore Prompts"
+  "library.explorePrompts": "Explore Prompts",
+  "video.label": "Video · Play",
+  "video.play": "Play video",
+  "video.pause": "Pause video",
+  "video.retry": "Playback failed · Retry"
 }

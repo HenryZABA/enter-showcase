@@ -299,5 +299,9 @@
   "library.switchPrompts": "프롬프트 라이브러리로 전환",
   "library.switchCases": "사례 라이브러리로 전환",
   "library.openPrompts": "이 프롬프트 탐색",
-  "library.explorePrompts": "프롬프트 탐색"
+  "library.explorePrompts": "프롬프트 탐색",
+  "video.label": "동영상 · 재생",
+  "video.play": "동영상 재생",
+  "video.pause": "동영상 일시정지",
+  "video.retry": "재생 실패 · 재시도"
 }

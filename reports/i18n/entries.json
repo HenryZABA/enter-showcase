@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-23T12:42:51.728Z",
+  "generatedAt": "2026-09-24T05:02:09.087Z",
   "fallbackLng": "en",
-  "total": 301,
+  "total": 305,
   "items": [
     {
       "key": "bundle.buttonWithCount",
@@ -4765,6 +4765,90 @@
         "it": "Enter Library — Raccolta di casi · Prompt disponibili",
         "ja": "Enter Library — 事例ライブラリ · 利用可能なプロンプト",
         "ko": "Enter Library — 사례 라이브러리 · 사용 가능한 프롬프트"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "video.label",
+      "group": "video",
+      "source": "Video · Play",
+      "values": {
+        "en": "Video · Play",
+        "zh-CN": "视频 · 播放",
+        "zh-TW": "影片 · 播放",
+        "es": "Vídeo · Reproducir",
+        "pt-BR": "Vídeo · Reproduzir",
+        "pt-PT": "Vídeo · Reproduzir",
+        "fr": "Vidéo · Lire",
+        "de": "Video · Abspielen",
+        "it": "Video · Riproduci",
+        "ja": "動画 · 再生",
+        "ko": "동영상 · 재생"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "video.pause",
+      "group": "video",
+      "source": "Pause video",
+      "values": {
+        "en": "Pause video",
+        "zh-CN": "暂停视频",
+        "zh-TW": "暫停影片",
+        "es": "Pausar vídeo",
+        "pt-BR": "Pausar vídeo",
+        "pt-PT": "Pausar vídeo",
+        "fr": "Mettre en pause",
+        "de": "Video pausieren",
+        "it": "Metti in pausa",
+        "ja": "動画を一時停止",
+        "ko": "동영상 일시정지"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "video.play",
+      "group": "video",
+      "source": "Play video",
+      "values": {
+        "en": "Play video",
+        "zh-CN": "播放视频",
+        "zh-TW": "播放影片",
+        "es": "Reproducir vídeo",
+        "pt-BR": "Reproduzir vídeo",
+        "pt-PT": "Reproduzir vídeo",
+        "fr": "Lire la vidéo",
+        "de": "Video abspielen",
+        "it": "Riproduci video",
+        "ja": "動画を再生",
+        "ko": "동영상 재생"
+      },
+      "used": true,
+      "missingLanguages": [],
+      "status": "complete"
+    },
+    {
+      "key": "video.retry",
+      "group": "video",
+      "source": "Playback failed · Retry",
+      "values": {
+        "en": "Playback failed · Retry",
+        "zh-CN": "播放失败 · 重试",
+        "zh-TW": "播放失敗 · 重試",
+        "es": "Error · Reintentar",
+        "pt-BR": "Falha · Tentar novamente",
+        "pt-PT": "Falha · Tentar novamente",
+        "fr": "Échec · Réessayer",
+        "de": "Fehler · Erneut versuchen",
+        "it": "Errore · Riprova",
+        "ja": "再生失敗 · 再試行",
+        "ko": "재생 실패 · 재시도"
       },
       "used": true,
       "missingLanguages": [],

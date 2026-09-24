@@ -299,5 +299,9 @@
   "library.switchPrompts": "プロンプトライブラリへ切り替え",
   "library.switchCases": "ケースライブラリへ切り替え",
   "library.openPrompts": "このプロンプトを見る",
-  "library.explorePrompts": "プロンプトを探す"
+  "library.explorePrompts": "プロンプトを探す",
+  "video.label": "動画 · 再生",
+  "video.play": "動画を再生",
+  "video.pause": "動画を一時停止",
+  "video.retry": "再生失敗 · 再試行"
 }
