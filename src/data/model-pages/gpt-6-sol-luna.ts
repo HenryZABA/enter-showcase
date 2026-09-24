@@ -5,7 +5,7 @@ import type { ModelPageCopy, ModelPageModel } from "./types";
 export const solLunaModel: ModelPageModel = {
   slug: "gpt-6-sol-luna",
   name: "GPT-6 Sol & Luna",
-  canonical: "https://enter.converge.ai/prompts/gpt-6-sol-luna",
+  canonical: "https://enter.converge.ai/prompts/collection/gpt-6-sol-luna",
   keywords: "GPT-6 Sol, GPT-6 Luna, GPT-6 prompts, GPT-6 app examples, Sol and Luna prompts",
   image: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
 };

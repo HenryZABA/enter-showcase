@@ -54,7 +54,7 @@ export const ShowcaseLibraryView = ({
   const { t } = useTranslation();
   const language = useCurrentLanguage();
   const appHref = useAppHref();
-  const collectionsHref = `${appHref("/showcases/collections")}?${new URLSearchParams({ hl: language })}`;
+  const collectionsHref = `${appHref("/showcases/collection")}?${new URLSearchParams({ hl: language })}`;
   useShowcaseTheme(documentTitle);
 
   const {

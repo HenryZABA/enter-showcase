@@ -9,7 +9,7 @@ export const claudeOpus55Collection: ShowcaseCollection = {
   legacySlugs: [],
   coverImage: cover,
   displayName: "Claude Opus 5.5",
-  modelPagePath: "/showcases/claude-opus-5-5",
+  modelPagePath: "/showcases/collection/claude-opus-5-5",
   documentTitle: "Claude Opus 5.5 — Enter Collections",
   heroImage: cover,
   caseIds: [],

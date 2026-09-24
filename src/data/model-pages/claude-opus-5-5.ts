@@ -5,7 +5,7 @@ import type { ModelPageCopy, ModelPageModel } from "./types";
 export const opusModel: ModelPageModel = {
   slug: "claude-opus-5-5",
   name: "Claude Opus 5.5",
-  canonical: "https://enter.converge.ai/prompts/claude-opus-5-5",
+  canonical: "https://enter.converge.ai/prompts/collection/claude-opus-5-5",
   keywords: "Claude Opus 5.5, Enter model collection",
   image: assetPath("media/showcase-collections/claude-opus-5-5-cover-v1.webp"),
 };

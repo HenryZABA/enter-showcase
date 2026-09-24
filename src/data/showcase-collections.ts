@@ -13,7 +13,7 @@ export const getShowcaseCollection = (slug: string) =>
   showcaseCollections.find((collection) => collection.slug === slug) ?? null;
 
 export const showcaseCollectionHref = (collection: ShowcaseCollection) =>
-  collection.modelPagePath ?? `/showcases/collections/${collection.slug}`;
+  collection.modelPagePath ?? `/showcases/collection/${collection.slug}`;
 
 /** Explicit membership prevents new Showcase entries from joining older collections. */
 export function getShowcaseCollectionCases(collection: ShowcaseCollection, catalog: readonly CaseEntry[] = cases) {

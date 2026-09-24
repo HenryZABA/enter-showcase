@@ -19,7 +19,7 @@ export function Header({ showSearch: _showSearch = false }: { showSearch?: boole
    </Link>
    <nav aria-label="Library" className="ml-auto flex items-center gap-1">
     <Link className="rounded-full px-3 py-2 text-sm hover:bg-secondary" to={href('/showcases')}>{t('nav.youcases')}</Link>
-    <Link className="rounded-full px-3 py-2 text-sm hover:bg-secondary" to={href('/showcases/collections')}>{t('youcases.collections')}</Link>
+    <Link className="rounded-full px-3 py-2 text-sm hover:bg-secondary" to={href('/showcases/collection')}>{t('youcases.collections')}</Link>
    </nav>
    <LanguageSwitcher className="min-w-[110px] w-[130px]" />
   </div>

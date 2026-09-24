@@ -5,7 +5,7 @@ import type { ModelPageCopy, ModelPageModel } from "./types";
 export const astraModel: ModelPageModel = {
   slug: "gpt-6-astra",
   name: "GPT-6 Astra",
-  canonical: "https://enter.converge.ai/prompts/gpt-6-astra",
+  canonical: "https://enter.converge.ai/prompts/collection/gpt-6-astra",
   keywords: "GPT-6 Astra, GPT-6 Astra prompt, GPT-6 Astra prompts, GPT-6 Astra app examples",
   image: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
 };

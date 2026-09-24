@@ -6,7 +6,7 @@ export const gpt6SolLunaCollection: ShowcaseCollection = {
   legacySlugs: [],
   coverImage: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
   displayName: "GPT-6 Sol & Luna",
-  modelPagePath: "/showcases/gpt-6-sol-luna",
+  modelPagePath: "/showcases/collection/gpt-6-sol-luna",
   documentTitle: "Enter × GPT-6 Sol & Luna — Collections",
   heroImage: assetPath("media/showcase-collections/gpt-6-sol-luna-dual-star.webp"),
   caseIds: [],

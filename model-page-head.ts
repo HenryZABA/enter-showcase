@@ -48,9 +48,12 @@ export function modelPageHeadPlugin(projectRoot: string): PluginOption {
           .replace(originalDescription, `<meta data-model-static data-default-content="${originalContent}" name="description" content="${escapeAttribute(copy.description)}">`)
           .replace("</head>", `${tags}</head>`);
         for (const prefix of ["prompts", "showcases"]) {
-          const destination = path.join(outDir, prefix, model.slug);
-          fs.mkdirSync(destination, { recursive: true });
-          fs.writeFileSync(path.join(destination, "index.html"), html);
+          // Retain legacy entry HTML; React redirects it to the new collection URL.
+          for (const route of [path.join(prefix, "collection", model.slug), path.join(prefix, model.slug)]) {
+            const destination = path.join(outDir, route);
+            fs.mkdirSync(destination, { recursive: true });
+            fs.writeFileSync(path.join(destination, "index.html"), html);
+          }
         }
       }
     },

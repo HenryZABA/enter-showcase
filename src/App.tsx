@@ -3,7 +3,7 @@ import { BrowserRouter, Link, Navigate, Route, Routes, useLocation, useParams } 
 import { Toaster } from "sonner";
 import { useTranslation } from "react-i18next";
 
-import { getShowcaseCollection, showcaseCollections } from "@/data/showcase-collections";
+import { getShowcaseCollection, showcaseCollectionHref, showcaseCollections } from "@/data/showcase-collections";
 import { useAppHref } from "@/hooks/use-app-href";
 import { normalizeLanguage } from "@/i18n/util";
 import { SUBPATH_ROUTE } from "@/lib/app-paths";
@@ -27,10 +27,17 @@ function MissingPage() {
   );
 }
 
-function CollectionPage() {
+function CollectionPage({ legacy = false }: { legacy?: boolean }) {
   const { slug = "" } = useParams();
-  const collection = getShowcaseCollection(slug) ?? showcaseCollections.find((item) => item.legacySlugs.includes(slug));
-  return collection ? <CuratedShowcaseCollectionPage collection={collection} /> : <MissingPage />;
+  const appHref = useAppHref();
+  const collection = getShowcaseCollection(slug) ?? showcaseCollections.find((item) => item.legacySlugs?.includes(slug));
+  if (!collection) return <MissingPage />;
+  return legacy ? <PageRedirect to={appHref(showcaseCollectionHref(collection))} /> : <CuratedShowcaseCollectionPage collection={collection} />;
+}
+
+function PageRedirect({ to }: { to: string }) {
+  const { search, hash } = useLocation();
+  return <Navigate to={`${to}${search}${hash}`} replace />;
 }
 
 function RootRedirect() {
@@ -59,11 +66,16 @@ function createShowcaseRoutes(prefix: "" | typeof SUBPATH_ROUTE): ReactNode[] {
       ? []
       : [<Route key="root-index" path="/" element={<RootRedirect />} />]),
     <Route key={`${key}-showcases`} path={showcasePath} element={<ShowcasesPage />} />,
-    <Route key={`${key}-collections`} path={`${showcasePath}/collections`} element={<ShowcaseCollectionsPage />} />,
-    <Route key={`${key}-astra-model`} path={`${showcasePath}/gpt-6-astra`} element={<Gpt6AstraPage />} />,
-    <Route key={`${key}-sol-luna-model`} path={`${showcasePath}/gpt-6-sol-luna`} element={<Gpt6SolLunaPage />} />,
-    <Route key={`${key}-opus-model`} path={`${showcasePath}/claude-opus-5-5`} element={<ClaudeOpus55Page />} />,
-    <Route key={`${key}-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage />} />,
+    <Route key={`${key}-collections`} path={`${showcasePath}/collection`} element={<ShowcaseCollectionsPage />} />,
+    <Route key={`${key}-astra-model`} path={`${showcasePath}/collection/gpt-6-astra`} element={<Gpt6AstraPage />} />,
+    <Route key={`${key}-sol-luna-model`} path={`${showcasePath}/collection/gpt-6-sol-luna`} element={<Gpt6SolLunaPage />} />,
+    <Route key={`${key}-opus-model`} path={`${showcasePath}/collection/claude-opus-5-5`} element={<ClaudeOpus55Page />} />,
+    <Route key={`${key}-collection`} path={`${showcasePath}/collection/:slug`} element={<CollectionPage />} />,
+    <Route key={`${key}-legacy-collections`} path={`${showcasePath}/collections`} element={<PageRedirect to={`${showcasePath}/collection`} />} />,
+    <Route key={`${key}-legacy-astra`} path={`${showcasePath}/gpt-6-astra`} element={<PageRedirect to={`${showcasePath}/collection/gpt-6-astra`} />} />,
+    <Route key={`${key}-legacy-sol-luna`} path={`${showcasePath}/gpt-6-sol-luna`} element={<PageRedirect to={`${showcasePath}/collection/gpt-6-sol-luna`} />} />,
+    <Route key={`${key}-legacy-opus`} path={`${showcasePath}/claude-opus-5-5`} element={<PageRedirect to={`${showcasePath}/collection/claude-opus-5-5`} />} />,
+    <Route key={`${key}-legacy-collection`} path={`${showcasePath}/collections/:slug`} element={<CollectionPage legacy />} />,
   ];
 }
 

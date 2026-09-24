@@ -8,7 +8,7 @@ export const gpt6AstraCollection: ShowcaseCollection = {
   coverImage: assetPath("media/showcase-collections/gpt-6-astra-poster-v1.webp"),
   coverVideo: assetPath("media/showcase-collections/gpt-6-astra-v1.mp4"),
   displayName: "GPT-6 Astra",
-  modelPagePath: "/showcases/gpt-6-astra",
+  modelPagePath: "/showcases/collection/gpt-6-astra",
   documentTitle: "Enter × GPT-6 Astra — Case Library",
   heroImage: assetPath("images/showcase/prism-1280-v1.webp"),
   caseIds: [
