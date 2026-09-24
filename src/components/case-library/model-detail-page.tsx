@@ -51,7 +51,7 @@ export function ModelDetailPage({ model, collection, copy, initialPrompt }: Prop
             <div className="model-art-stage"><img src={model.image} alt="" width={1280} height={720} fetchPriority="high" decoding="async" /></div>
           </div>
         </section>
-        {focus !== "cases" && <section id="prompts" className="model-section model-prompts" aria-labelledby="prompts-heading">
+        {focus !== "cases" && <section id="prompts" className="model-section model-prompts library-prompt-section" aria-labelledby="prompts-heading">
           <div className="model-prompts-heading"><h2 id="prompts-heading" tabIndex={-1}>{t("library.prompts")}</h2><p>{copy.trendingDescription}</p></div>
           <ModelTrendingPrompts entries={promptEntries.slice(promptPage.start, promptPage.start + promptPage.size)} onPrimaryAction={() => activate("prompts")} />
           {promptPage.more && <LibraryMore onClick={() => { promptPage.expand(); activate("prompts"); }} />}

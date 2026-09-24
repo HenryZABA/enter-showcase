@@ -24,7 +24,7 @@ export function ModelHotCaseGallery({ collection, focused, onFocus }: { collecti
   if (entries.length === 0) return <div className="model-collection-empty" role="status"><LayoutGrid size={26} strokeWidth={1.25} aria-hidden="true" /><p>{t("modelPages.casesEmpty")}</p></div>;
 
   return <>
-    <div className="model-hot-grid">
+    <div className="case-photogrid">
       {displayed.map((entry, index) => (
         <CasePhotoCard
           key={entry.id}

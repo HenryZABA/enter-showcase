@@ -47,13 +47,6 @@
 .model-prompts-heading > p { font-size: 14px; line-height: 1.7; color: hsl(var(--muted-foreground)); }
 .model-prompts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .model-hot-cases { padding-bottom: var(--model-space); }
-.model-hot-grid { --photo-radius: 14px; --photo-overlay: linear-gradient(180deg, transparent 0%, hsl(var(--background) / .5) 38%, hsl(var(--background) / .96) 100%); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.model-hot-grid .case-photo-card, .model-hot-grid .case-photo-card[data-format="square"] { grid-row: auto; aspect-ratio: 4 / 3; }
-/* Only model Hot Cases reveal captions at rest; the main Case Library keeps its hover treatment. */
-.model-hot-grid .case-photo-caption::before,
-.model-hot-grid .case-photo-caption p { opacity: 1; transform: none; font-size: clamp(14px, 1.3vw, 17px); }
-@media (max-width: 767px) { .model-hot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
-@media (max-width: 639px) { .model-hot-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
 .model-trending-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .model-trending-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); box-shadow: var(--shadow-panel); }
 .model-trending-media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--model-rule); }
@@ -143,7 +136,6 @@
   .model-card-description { min-height: 0; }
 }
 @media (max-width: 639px) {
-  .showcase.model-detail .container { padding-left: 22px; padding-right: 22px; }
   .model-breadcrumb { padding-top: 20px; font-size: 11px; gap: 12px; }
   .model-name { font-size: clamp(40px, 11.3vw, 68px); }
   .model-headline { font-size: clamp(34px, 9.8vw, 52px); white-space: normal; }
