@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookText, ChevronRight } from "lucide-react";
+import { ArrowUpRight, BookText } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { pickLocalized } from "@/data/cases";
@@ -19,20 +19,17 @@ function TrendingPromptCard({ entry, onOpen }: { entry: TrendingPrompt; onOpen: 
     if (source.current) onOpen({ entry, origin: { source: source.current, trigger }, focusAfterClose });
   };
   const title = pickLocalized(entry.title, language);
-  const intro = <><span className="model-trending-title">{title}</span><span className="model-trending-description">{pickLocalized(entry.description, language)}</span></>;
   const openLabel = `${t("library.openPrompts")}: ${title}`;
   return <article ref={source} className="model-trending-card">
-    {entry.media?.type === "video" ? <div className="model-trending-primary">
-      <HoverVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} />
-      <button type="button" className="model-trending-intro model-trending-title-button" onClick={event => open(event.currentTarget, true)} aria-label={openLabel}>{intro}</button>
-    </div> : <button type="button" className="model-trending-primary" onClick={event => open(event.currentTarget, true)} aria-label={openLabel}>
-      {entry.media?.type === "image" && <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />}
-      <span className="model-trending-intro">{intro}</span>
-    </button>}
+    <button type="button" className="model-trending-intro model-trending-title-button" onClick={event => open(event.currentTarget, true)} aria-label={openLabel}>
+      <span className="model-trending-title">{title}</span>
+    </button>
+    {entry.media?.type === "video" ? <HoverVideo className="model-trending-media" src={entry.media.src} poster={entry.media.poster} /> : entry.media?.type === "image" ?
+      <button type="button" className="model-trending-primary" onClick={event => open(event.currentTarget, true)} aria-label={openLabel}>
+        <img className="model-trending-media" src={entry.media.src} alt="" width={1280} height={720} loading="lazy" decoding="async" />
+      </button> : null}
     <div className="model-trending-content">
-      <span className="model-original-badge">{t("modelPages.originalPrompts")}</span>
       <p className="model-trending-source">{t("modelPages.source")} <a href={entry.sourceUrl} target="_blank" rel="noopener noreferrer">{entry.sourceName}<ArrowUpRight size={13} aria-hidden="true" /></a></p>
-      <button type="button" className="model-trending-read" onClick={event => open(event.currentTarget, false)}><ChevronRight size={16} aria-hidden="true" />{t("modelPages.readPrompt")}</button>
       <DownloadPromptButton title={title} promptUrl={entry.promptUrl} promptKind="original" appearance="card" className="model-action theme-primary-gradient model-trending-download" />
     </div>
   </article>;

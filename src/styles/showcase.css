@@ -88,14 +88,11 @@ html.showcase-active,
   .library-prompt-section .model-trending-card { --shadow-panel: 0 18px 50px -28px hsl(var(--background) / .9); border-radius: 14px; background: var(--glass-surface); }
   .library-prompt-section .model-trending-primary { display: block; overflow: hidden; }
   .library-prompt-section .model-trending-media { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; border: 0; }
-  .library-prompt-section .model-trending-intro { display: grid; gap: 4px; padding: 12px 16px 0; }
+  .library-prompt-section .model-trending-intro { display: grid; align-items: center; min-height: 56px; padding: 14px 16px; }
   .library-prompt-section .model-trending-title { font-size: 16px; line-height: 1.4; letter-spacing: -.01em; }
-  .library-prompt-section .model-trending-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; color: hsl(var(--foreground) / .78); font-size: 12px; line-height: 1.5; }
-  .library-prompt-section .model-trending-content { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 12px; padding: 10px 16px 12px; }
-  .library-prompt-section .model-original-badge { display: none; }
-  .library-prompt-section .model-trending-source { grid-column: 1 / -1; font-size: 11px; line-height: 1.6; }
-  .library-prompt-section .model-trending-read { grid-column: 1; grid-row: 2; min-height: 36px; padding: 6px 0; font-size: 11px; }
-  .library-prompt-section .model-trending-download { grid-column: 2; grid-row: 2; width: auto; min-height: 36px; gap: 6px; padding: 7px 12px; font-size: 11px; }
+  .library-prompt-section .model-trending-content { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 16px; }
+  .library-prompt-section .model-trending-content .model-trending-source { min-width: 0; margin: 0; font-size: 11px; line-height: 1.6; }
+  .library-prompt-section .model-trending-download { grid-column: 2; grid-row: 1; width: auto; max-width: 160px; min-height: 36px; gap: 6px; padding: 7px 12px; font-size: 11px; white-space: normal; }
   @media (min-width: 640px) and (max-width: 1023px) { .library-prompt-section .model-trending-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   #prompts-heading, #cases-heading { scroll-margin-top: 100px; }
   .library-switch { position: fixed; z-index: 43; bottom: max(24px, env(safe-area-inset-bottom)); right: 24px; filter: drop-shadow(0 12px 20px hsl(var(--background) / .75)); }

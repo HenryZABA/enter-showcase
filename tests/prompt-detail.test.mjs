@@ -33,10 +33,17 @@ test("prompt list has no inline disclosure or eager body request", () => {
   assert.equal(view.requests.length, 0);
 });
 
-test("read button opens a detail card with the real source and without library focus", () => {
-  const view = renderCard(), trigger = {};
-  view.nodes.find(node => node.props.className === "model-trending-read").props.onClick({ currentTarget: trigger });
-  assert.deepEqual(view.opened, [{ entry, origin: { source: view.sourceElement, trigger }, focusAfterClose: false }]);
+test("compact card contains title, media, and a single source/download row without description or read controls", () => {
+  const view = renderCard();
+  const children = React.Children.toArray(view.nodes[0].props.children);
+  assert.match(children[0].props.className, /model-trending-title-button/);
+  assert.equal(children[1].type, view.HoverVideo);
+  assert.equal(children[2].props.className, "model-trending-content");
+  const footer = React.Children.toArray(children[2].props.children);
+  assert.equal(footer.length, 2);
+  assert.equal(footer[0].props.className, "model-trending-source");
+  assert.equal(footer[1].type, view.DownloadPromptButton);
+  assert.equal(view.nodes.some(node => /model-trending-description|model-trending-read|model-original-badge/.test(node.props.className ?? "")), false);
   assert.equal(view.requests.length, 0);
 });
 

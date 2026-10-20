@@ -28,7 +28,7 @@
 .model-trending-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--model-rule); border-radius: var(--model-panel-radius); background: var(--model-panel-gradient), hsl(var(--card)); box-shadow: var(--shadow-panel); }
 .model-trending-media { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--model-rule); }
 .model-trending-primary { display: block; width: 100%; padding: 0; border: 0; background: transparent; text-align: left; cursor: pointer; }
-.model-trending-primary:hover .model-trending-title { color: hsl(var(--primary)); }
+.model-trending-title-button:hover .model-trending-title { color: hsl(var(--primary)); }
 .model-trending-intro { display: grid; gap: 12px; padding: clamp(20px, 2.4vw, 30px) clamp(20px, 2.4vw, 30px) 0; }
 .model-trending-title { font-family: var(--font-display); font-size: clamp(21px, 2.2vw, 29px); font-weight: 600; line-height: 1.2; letter-spacing: -.04em; color: hsl(var(--foreground)); }
 .model-trending-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; gap: 16px; padding: 16px clamp(20px, 2.4vw, 30px) clamp(20px, 2.4vw, 30px); }
@@ -37,10 +37,8 @@
 .model-trending-source { font-size: 12px; line-height: 1.6; color: hsl(var(--muted-foreground)); }
 .model-trending-source a { display: inline-flex; align-items: center; gap: 3px; color: hsl(var(--foreground)); text-decoration: underline; text-decoration-color: hsl(var(--foreground) / .4); text-underline-offset: 3px; overflow-wrap: anywhere; }
 .model-trending-source a:hover { text-decoration-color: hsl(var(--primary)); }
-.model-trending-read { display: flex; align-items: center; gap: 8px; width: 100%; padding: 16px 0; border: 0; background: transparent; color: hsl(var(--foreground)); font-size: 12px; font-weight: 600; cursor: pointer; text-align: left; }
-.model-trending-read:hover { color: hsl(var(--primary)); }
 .model-trending-download { width: 100%; border: 0; cursor: pointer; }
-.model-trending-download:focus-visible, .model-trending-source a:focus-visible, .model-trending-read:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+.model-trending-download:focus-visible, .model-trending-source a:focus-visible, .model-trending-title-button:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
 @media (max-width: 767px) { .model-trending-grid { grid-template-columns: minmax(0, 1fr); } }
 .model-category-browser { width: 100%; }
 .model-category-browser > .model-collection-empty { max-width: 920px; margin-inline: auto; }
