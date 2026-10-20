@@ -47,7 +47,7 @@ export const HeroStage = memo(function HeroStage({ content, collectionHref, blen
             </span>
           </h1>
 
-          <Button asChild className="theme-primary-gradient mt-6 h-11 rounded-lg border-0 px-7 font-medium hover:bg-transparent">
+          <Button asChild shape="pill" className="theme-primary-gradient mt-6 h-11 border-0 px-7 font-medium hover:bg-transparent">
             {collectionHref ? (
               <Link to={collectionHref}>{t("collections.exploreCollection")}</Link>
             ) : (
